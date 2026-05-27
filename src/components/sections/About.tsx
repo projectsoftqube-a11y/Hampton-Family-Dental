@@ -150,7 +150,7 @@ export default function About() {
               <div className="absolute inset-0 bg-gradient-to-t from-navy/15 via-transparent to-transparent" />
 
               {/* Floating top-left small chip */}
-              <div className="absolute top-5 left-5 flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/90 backdrop-blur-md shadow-sm">
+              <div className="absolute top-5 right-5 flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/90 backdrop-blur-md shadow-sm">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
                 <span className="text-navy text-[10px] tracking-widest uppercase font-semibold">
                   Now Welcoming
@@ -182,8 +182,8 @@ export default function About() {
               transition={{ delay: 0.4, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
               className="absolute -top-6 -left-6 z-10"
             >
-              <div className="relative w-28 h-28 md:w-32 md:h-32">
-                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary to-primary-dark animate-float premium-shadow" />
+              <div className="relative w-28 h-28 md:w-32 md:h-32 animate-float">
+                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary to-primary-dark premium-shadow" />
                 <div className="absolute inset-2 rounded-full border border-white/40" />
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
                   <span className="font-heading text-3xl md:text-4xl font-bold leading-none">
