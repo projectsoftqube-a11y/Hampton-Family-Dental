@@ -346,8 +346,8 @@ export default function Footer() {
       <a
         href="#home"
         aria-label="Back to top"
-        className="group hidden md:flex fixed bottom-6 right-6 z-40 w-11 h-11 rounded-full
-          bg-white/8 backdrop-blur-md border border-white/15 text-white
+        className="group hidden sm:flex fixed bottom-6 right-6 z-40 w-11 h-11 rounded-full
+          bg-[#0bb3b6] backdrop-blur-md border border-white/15 text-white
           hover:bg-primary hover:border-primary
           items-center justify-center
           shadow-[0_10px_30px_rgba(0,0,0,0.3)]

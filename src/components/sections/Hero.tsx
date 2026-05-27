@@ -231,7 +231,7 @@ export default function Hero() {
           transition={{ duration: 1.1, delay: 0.55, ease: [0.25, 0.1, 0.25, 1] }}
           className="font-heading text-white mb-8"
           style={{
-            fontSize: "clamp(2.8rem, 9vw, 8.5rem)",
+            fontSize: "clamp(2.8rem, 5vw, 8rem)",
             lineHeight: 0.98,
             letterSpacing: "-0.04em",
           }}
