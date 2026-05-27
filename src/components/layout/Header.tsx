@@ -32,6 +32,8 @@ export default function Header() {
 
   const { scrollY } = useScroll();
   const lastScrollY = useRef(0);
+  // Timer that brings the header back after the user stops scrolling.
+  const idleTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   // Track active section
   useEffect(() => {
@@ -59,17 +61,37 @@ export default function Header() {
   }, []);
 
   // Show/hide + scrolled state
+  // Strategy: hide on downward scroll past 200px, then bring it back as soon
+  // as the user stops scrolling (200ms of stillness counts as "stopped").
   useMotionValueEvent(scrollY, "change", (latest) => {
     const diff = latest - lastScrollY.current;
     setIsScrolled(latest > 60);
-    if (latest > 200) {
-      if (diff > 8) setIsHidden(true);
-      else if (diff < -8) setIsHidden(false);
-    } else {
+
+    if (latest > 200 && diff > 8) {
+      // Actively scrolling downward — hide the header.
+      setIsHidden(true);
+    } else if (latest <= 200) {
+      // Near the top — always show.
       setIsHidden(false);
     }
+
+    // Reset the idle timer on every scroll event. When this timeout fires,
+    // it means no scroll has happened for the timeout window → user has
+    // stopped → show the header again.
+    if (idleTimerRef.current) clearTimeout(idleTimerRef.current);
+    idleTimerRef.current = setTimeout(() => {
+      setIsHidden(false);
+    }, 200);
+
     lastScrollY.current = latest;
   });
+
+  // Cleanup the idle timer on unmount
+  useEffect(() => {
+    return () => {
+      if (idleTimerRef.current) clearTimeout(idleTimerRef.current);
+    };
+  }, []);
 
   return (
     <>
