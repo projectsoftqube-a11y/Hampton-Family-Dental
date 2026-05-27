@@ -7,14 +7,17 @@ import {
   Phone,
   MapPin,
   Clock,
-  Mail,
   X,
   ArrowUpRight,
   Calendar,
   Sparkles,
-  Globe,
-  MessageCircle,
 } from "lucide-react";
+import {
+  FacebookIcon,
+  InstagramIcon,
+  TwitterIcon,
+  YouTubeIcon,
+} from "@/components/icons/SocialIcons";
 
 // Lenis instance exposed by SmoothScrollProvider — used to scroll smoothly
 // to the target section when a menu link is clicked.
@@ -347,11 +350,18 @@ export default function MobileMenu({
               Follow Us
             </p>
             <div className="flex items-center gap-2">
-              {[Globe, MessageCircle, Mail].map((Icon, idx) => (
+              {[
+                { Icon: FacebookIcon, href: "https://facebook.com", label: "Facebook" },
+                { Icon: InstagramIcon, href: "https://instagram.com", label: "Instagram" },
+                { Icon: TwitterIcon, href: "https://x.com", label: "X / Twitter" },
+                { Icon: YouTubeIcon, href: "https://youtube.com", label: "YouTube" },
+              ].map(({ Icon, href, label }) => (
                 <a
-                  key={idx}
-                  href="#"
-                  aria-label="Social link"
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
                   className="w-8 h-8 rounded-full bg-white/5 border border-white/10
                     flex items-center justify-center text-white/60
                     hover:text-primary-light hover:bg-primary/10 hover:border-primary/30
