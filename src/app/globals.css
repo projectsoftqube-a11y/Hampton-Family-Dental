@@ -248,3 +248,27 @@ html {
 .scrollbar-soft:hover::-webkit-scrollbar-thumb {
   background: rgba(40, 47, 90, 0.4);
 }
+
+/* ─── Services pinned carousel — short-viewport fit ───
+   While the Services section is pinned, the fixed site header, the section
+   header, and the progress bar all share one viewport height. On short
+   screens (laptops, ~600–820px tall) that left too little room and clipped
+   the cards. Here we compress the section header so a full card — image,
+   title, benefits, and the "Book Consultation" footer — always stays visible.
+   Tall screens keep the full editorial header untouched. */
+@media (max-height: 820px) {
+  #services .svc-header {
+    padding-top: 5.25rem; /* clears the ~80px fixed site header */
+    padding-bottom: 0.25rem;
+  }
+  #services .svc-eyebrow {
+    margin-bottom: 0.5rem;
+  }
+  #services .svc-title {
+    font-size: clamp(1.4rem, 3vw, 2.1rem) !important;
+    margin-bottom: 0.25rem;
+  }
+  #services .svc-desc {
+    display: none;
+  }
+}

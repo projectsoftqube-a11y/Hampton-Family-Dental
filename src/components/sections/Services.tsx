@@ -168,7 +168,9 @@ export default function Services() {
         <div className="absolute bottom-[15%] left-[5%] w-[380px] h-[380px] rounded-full bg-navy/[0.05] blur-[120px] pointer-events-none" />
 
         {/* ──── Header (left-aligned editorial) ──── */}
-        <div className="relative z-10 max-w-[1400px] w-full mx-auto px-5 md:px-10 pt-14 md:pt-16 pb-4 md:pb-5">
+        {/* Top padding clears the fixed site header; compact vertical rhythm so a
+            full service card fits within the pinned viewport on laptop screens. */}
+        <div className="svc-header relative z-10 max-w-[1400px] w-full mx-auto px-5 md:px-10 pt-20 md:pt-24 pb-2 md:pb-3">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
             <div className="max-w-2xl">
               <motion.div
@@ -176,7 +178,7 @@ export default function Services() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
-                className="inline-flex items-center gap-3 mb-4"
+                className="svc-eyebrow inline-flex items-center gap-3 mb-4"
               >
                 <div className="h-px w-8 bg-primary" />
                 <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-beige-light border border-primary/15">
@@ -192,9 +194,9 @@ export default function Services() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.7, delay: 0.1 }}
-                className="font-heading text-navy mb-3"
+                className="svc-title font-heading text-navy mb-2"
                 style={{
-                  fontSize: "clamp(2rem, 4.5vw, 3.75rem)",
+                  fontSize: "clamp(1.9rem, 4vw, 3.25rem)",
                   lineHeight: 1.02,
                   letterSpacing: "-0.03em",
                 }}
@@ -210,7 +212,7 @@ export default function Services() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.25 }}
-                className="text-navy/55 text-sm md:text-base leading-relaxed max-w-xl"
+                className="svc-desc text-navy/55 text-sm md:text-base leading-relaxed max-w-xl"
               >
                 From routine care to transformative cosmetic treatments — every
                 service is delivered with precision and warmth.
@@ -237,7 +239,8 @@ export default function Services() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ delay: 0.05 * i, duration: 0.55 }}
-                className="group relative shrink-0 w-[80vw] sm:w-[55vw] md:w-[420px] lg:w-[440px]
+                className="group relative shrink-0 flex flex-col w-[80vw] sm:w-[55vw] md:w-[420px] lg:w-[440px]
+                  h-[clamp(300px,calc(100vh_-_240px),470px)]
                   bg-beige-light rounded-[28px] overflow-hidden
                   border border-navy/[0.06]
                   shadow-[0_20px_60px_-25px_rgba(40,47,90,0.18)]
@@ -250,8 +253,9 @@ export default function Services() {
                   bg-gradient-to-r from-primary via-primary-light to-primary
                   scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-700" />
 
-                {/* ── Image area ── */}
-                <div className="relative h-[200px] md:h-[220px] overflow-hidden">
+                {/* ── Image area — flexes to fill leftover height so the content
+                    below (title, benefits, footer) is always fully visible ── */}
+                <div className="relative flex-1 min-h-0 overflow-hidden">
                   <Image
                     src={service.image}
                     alt={service.title}
@@ -307,7 +311,7 @@ export default function Services() {
                 </div>
 
                 {/* ── Content ── */}
-                <div className="px-5 md:px-6 pt-5 pb-5">
+                <div className="px-5 md:px-6 pt-4 pb-4">
                   {/* Tiny eyebrow */}
                   <div className="flex items-center gap-2 mb-2">
                     <div className="h-px w-5 bg-primary" />
@@ -323,12 +327,12 @@ export default function Services() {
                   </h3>
 
                   {/* Description */}
-                  <p className="text-navy/60 text-[13px] leading-relaxed mb-4 line-clamp-2">
+                  <p className="text-navy/60 text-[13px] leading-relaxed mb-3 line-clamp-2">
                     {service.desc}
                   </p>
 
                   {/* Benefits list */}
-                  <ul className="space-y-1 mb-4">
+                  <ul className="space-y-1 mb-3">
                     {service.benefits.map((benefit) => (
                       <li key={benefit} className="flex items-center gap-2">
                         <span className="shrink-0 w-3.5 h-3.5 rounded-full bg-primary/15 border border-primary/25
@@ -368,7 +372,7 @@ export default function Services() {
               viewport={{ once: true }}
               transition={{ delay: 0.3, duration: 0.6 }}
               className="shrink-0 w-[80vw] sm:w-[55vw] md:w-[420px] lg:w-[440px]
-                h-[490px] md:h-[510px] rounded-[28px] overflow-hidden
+                h-[clamp(300px,calc(100vh_-_240px),470px)] rounded-[28px] overflow-hidden
                 bg-gradient-to-br from-navy via-navy-dark to-navy
                 relative flex flex-col items-center justify-center p-8 text-center group cursor-pointer
                 shadow-[0_15px_50px_-20px_rgba(40,47,90,0.3)]"
@@ -403,7 +407,7 @@ export default function Services() {
         </div>
 
         {/* ──── Progress bar ──── */}
-        <div className="relative z-10 max-w-[1400px] w-full mx-auto px-5 md:px-10 pb-10 pt-4">
+        <div className="relative z-10 max-w-[1400px] w-full mx-auto px-5 md:px-10 pb-5 pt-2">
           <div className="flex items-center gap-4">
             <motion.span className="text-navy/40 font-mono text-xs tabular-nums w-10">
               {progressPercent}
