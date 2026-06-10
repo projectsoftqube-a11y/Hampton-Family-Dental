@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import {
   motion,
   AnimatePresence,
@@ -25,15 +25,11 @@ const navLinks = [
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isHidden, setIsHidden] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
   const [hoveredLink, setHoveredLink] = useState<string | null>(null);
 
   const { scrollY } = useScroll();
-  const lastScrollY = useRef(0);
-  // Timer that brings the header back after the user stops scrolling.
-  const idleTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   // Track active section.
   // Was: a non-passive `scroll` listener that read offsetTop/offsetHeight for
@@ -63,47 +59,19 @@ export default function Header() {
     return () => observer.disconnect();
   }, []);
 
-  // Show/hide + scrolled state
-  // Strategy: hide on downward scroll past 200px, then bring it back as soon
-  // as the user stops scrolling (200ms of stillness counts as "stopped").
-  // State setters are guarded so React only re-renders when a value actually
-  // flips — not on every scroll frame.
+  // Scrolled state only — the header stays pinned and visible at all times
+  // (no hide-on-scroll). The setter is guarded so React only re-renders when
+  // the boolean actually flips, not on every scroll frame.
   useMotionValueEvent(scrollY, "change", (latest) => {
-    const diff = latest - lastScrollY.current;
     const scrolled = latest > 60;
     setIsScrolled((prev) => (prev === scrolled ? prev : scrolled));
-
-    if (latest > 200 && diff > 8) {
-      // Actively scrolling downward — hide the header.
-      setIsHidden((prev) => (prev ? prev : true));
-    } else if (latest <= 200) {
-      // Near the top — always show.
-      setIsHidden((prev) => (prev ? false : prev));
-    }
-
-    // Reset the idle timer on every scroll event. When this timeout fires,
-    // it means no scroll has happened for the timeout window → user has
-    // stopped → show the header again.
-    if (idleTimerRef.current) clearTimeout(idleTimerRef.current);
-    idleTimerRef.current = setTimeout(() => {
-      setIsHidden(false);
-    }, 200);
-
-    lastScrollY.current = latest;
   });
-
-  // Cleanup the idle timer on unmount
-  useEffect(() => {
-    return () => {
-      if (idleTimerRef.current) clearTimeout(idleTimerRef.current);
-    };
-  }, []);
 
   return (
     <>
       <motion.header
         initial={{ y: -120 }}
-        animate={{ y: isHidden ? -160 : 0 }}
+        animate={{ y: 0 }}
         transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
         className="fixed top-0 left-0 right-0 z-50 w-full"
       >
