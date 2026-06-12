@@ -13,14 +13,14 @@ import Image from "next/image";
 import MobileMenu from "./MobileMenu";
 
 const navLinks = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Gallery", href: "#gallery" },
-  { label: "Technology", href: "#technology" },
-  { label: "Testimonials", href: "#testimonials" },
-  { label: "FAQ", href: "#faq" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "/#home" },
+  { label: "About", href: "/#about" },
+  { label: "Services", href: "/#services" },
+  { label: "Gallery", href: "/#gallery" },
+  { label: "Technology", href: "/#technology" },
+  { label: "Testimonials", href: "/#testimonials" },
+  { label: "FAQ", href: "/#faq" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 export default function Header() {
@@ -37,7 +37,7 @@ export default function Header() {
   // setState each time. Now an IntersectionObserver does zero per-frame work
   // and only updates state when the visible section actually changes.
   useEffect(() => {
-    const ids = navLinks.map((l) => l.href.slice(1));
+    const ids = navLinks.map((l) => l.href.replace("/#", "").replace("#", ""));
     const elements = ids
       .map((id) => document.getElementById(id))
       .filter((el): el is HTMLElement => el !== null);
@@ -105,18 +105,24 @@ export default function Header() {
                   <span className="tracking-wide">283 Second Street Pike, Southampton, PA</span>
                 </a>
                 <span className="flex items-center gap-1.5">
-                  <Clock className="w-3 h-3" />
-                  <span className="tracking-wide">
-                    Mon–Thu · Fri–Sun Closed
+                  <Clock className="w-3 h-3 text-primary-light/80" />
+                  <span className="tracking-wide hidden xl:inline">
+                    Mon: 8am–6pm · Tue: 8am–4pm · Wed: 9am–1pm · Thu: 8am–4pm
+                  </span>
+                  <span className="tracking-wide xl:hidden">
+                    Mon: 8am–6pm · Tue/Thu: 8am–4pm · Wed: 9am–1pm
                   </span>
                 </span>
               </div>
-              <div className="flex items-center gap-2">
+              <Link
+                href="/specials"
+                className="flex items-center gap-2 group hover:text-primary-light transition-colors"
+              >
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                <span className="tracking-widest uppercase text-white/60">
-                  Now Accepting New Patients
+                <span className="tracking-widest uppercase text-white/60 group-hover:text-primary-light transition-colors">
+                  No Insurance, No Problem
                 </span>
-              </div>
+              </Link>
             </div>
           </div>
         </motion.div>
@@ -165,7 +171,7 @@ export default function Header() {
               className="hidden lg:flex items-center gap-1 relative"
             >
               {navLinks.map((link) => {
-                const id = link.href.replace("#", "");
+                const id = link.href.replace("/#", "").replace("#", "");
                 const isActive = activeSection === id;
                 const isHovered = hoveredLink === id;
 
@@ -238,7 +244,7 @@ export default function Header() {
               >
                 <Phone className="w-3.5 h-3.5" />
                 <span className="text-xs font-semibold tracking-wider">
-                  (215) 357-2224
+                  Call 215-357-2224!
                 </span>
               </a>
 

@@ -95,29 +95,33 @@ export default function MobileMenu({
     e.preventDefault();
     e.stopPropagation();
 
-    if (!href.startsWith("#")) {
+    const isHomePage = typeof window !== "undefined" && window.location.pathname === "/";
+    const hasHash = href.includes("#");
+
+    if (isHomePage && hasHash) {
+      const id = href.split("#")[1];
       onClose();
-      return;
+
+      // Run the scroll on the next frame so the menu starts its exit animation
+      // before we move the page underneath it.
+      requestAnimationFrame(() => {
+        const el = document.getElementById(id);
+        if (!el) return;
+        const lenis = (window as unknown as { __lenis?: LenisLike }).__lenis;
+        if (lenis) {
+          lenis.scrollTo(el, { offset: -72, duration: 1.4 });
+        } else {
+          el.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+        if (window.history.replaceState) {
+          window.history.replaceState(null, "", href);
+        }
+      });
+    } else {
+      onClose();
+      // Navigate to another page or external link
+      window.location.href = href;
     }
-
-    const id = href.slice(1);
-    onClose();
-
-    // Run the scroll on the next frame so the menu starts its exit animation
-    // before we move the page underneath it.
-    requestAnimationFrame(() => {
-      const el = document.getElementById(id);
-      if (!el) return;
-      const lenis = (window as unknown as { __lenis?: LenisLike }).__lenis;
-      if (lenis) {
-        lenis.scrollTo(el, { offset: -72, duration: 1.4 });
-      } else {
-        el.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
-      if (window.history.replaceState) {
-        window.history.replaceState(null, "", href);
-      }
-    });
   };
 
   return (
@@ -208,7 +212,7 @@ export default function MobileMenu({
         {/* ────────── Nav links ────────── */}
         <nav className="relative z-10 flex-1 min-h-0 px-6 py-2 overflow-y-auto scrollbar-soft">
           {links.map((link, i) => {
-            const id = link.href.replace("#", "");
+            const id = link.href.replace("/#", "").replace("#", "");
             const isActive = activeSection === id;
             return (
               <motion.div
@@ -289,10 +293,14 @@ export default function MobileMenu({
               <p className="text-[10px] tracking-widest uppercase text-white/40">
                 Hours
               </p>
-              <p className="text-white text-xs font-semibold mt-0.5 leading-tight">
-                Mon–Thu
+              <p className="text-white text-[11px] font-semibold mt-0.5 leading-snug">
+                Mon: 8am–6pm
                 <br />
-                Fri–Sun Closed
+                Tue/Thu: 8am–4pm
+                <br />
+                Wed: 9am–1pm
+                <br />
+                <span className="text-white/40 text-[10px] font-medium">Fri–Sun Closed</span>
               </p>
             </motion.div>
 

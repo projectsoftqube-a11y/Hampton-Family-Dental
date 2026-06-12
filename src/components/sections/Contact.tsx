@@ -35,7 +35,7 @@ const contactInfo: {
     icon: Phone,
     label: "Call Us",
     value: "(215) 357-2224",
-    sub: "Mon · 8am – 6pm",
+    sub: "Mon–Thu Office Hours",
     href: "tel:+12153572224",
   },
   {
@@ -48,8 +48,8 @@ const contactInfo: {
   {
     icon: Clock,
     label: "Hours",
-    value: "Mon–Thu Open",
-    sub: "Fri–Sun · Closed",
+    value: "Mon: 8am–6pm | Wed: 9am–1pm",
+    sub: "Tue & Thu: 8am–4pm | Fri–Sun Closed",
   },
 ];
 

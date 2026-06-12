@@ -18,7 +18,6 @@ const services = [
   "Dental Implants",
   "Teeth Whitening",
   "Family Care",
-  "Pediatric Dentistry",
   "Porcelain Veneers",
   "Emergency Care",
 ];
@@ -162,7 +161,7 @@ export default function Hero() {
           className="text-white/50 text-[10px] tracking-[0.4em] uppercase whitespace-nowrap"
           style={{ writingMode: "vertical-rl", transform: "rotate(180deg)" }}
         >
-          Est. 2004 · Hampton · NY
+          Est. 2004 · Southampton · PA
         </span>
         <div className="h-16 w-px bg-gradient-to-b from-white/30 to-transparent" />
       </motion.div>
@@ -347,7 +346,7 @@ export default function Hero() {
             <span className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/30 to-white/0
               -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
             <span className="relative z-10 text-sm tracking-wide">
-              Book Your Visit
+              Schedule Now
             </span>
             <span className="relative z-10 w-10 h-10 rounded-full bg-white/15 flex items-center justify-center group-hover:bg-white/25 transition-colors">
               <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />

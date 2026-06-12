@@ -300,7 +300,7 @@ export default function Footer() {
                 {[
                   { day: "Mon", time: "8:00 AM – 6:00 PM", open: true },
                   { day: "Tue", time: "8:00 AM – 4:00 PM", open: true },
-                  { day: "Wed", time: "8:00 AM – 12:00 PM", open: true },
+                  { day: "Wed", time: "9:00 AM – 1:00 PM", open: true },
                   { day: "Thu", time: "8:00 AM – 4:00 PM", open: true },
                   { day: "Fri", time: "Closed", open: false },
                   { day: "Sat", time: "Closed", open: false },
