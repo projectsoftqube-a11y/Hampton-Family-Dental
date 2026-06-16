@@ -1,8 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
 import Link from "next/link";
 import {
   Sparkles,
@@ -23,7 +21,7 @@ export default function SpecialsPage() {
       code: "SPECIAL-001",
       title: "Complimentary First Visit",
       subtitle: "Experience the Hampton Difference",
-      desc: "Includes a comprehensive clinical exam, high-definition digital X-rays, and a personalized dental health roadmap with Dr. James Hampton.",
+      desc: "Includes a comprehensive clinical exam, high-definition digital X-rays, and a personalized dental health roadmap with Dr. Jeffrey Brenner.",
       value: "$295",
       price: "FREE",
       features: [
@@ -103,9 +101,7 @@ export default function SpecialsPage() {
   ];
 
   return (
-    <>
-      <Header />
-      <main className="bg-white overflow-hidden">
+    <main className="bg-white overflow-hidden">
         {/* ───────── Hero Section ───────── */}
         <section className="relative pt-36 pb-20 md:pt-44 md:pb-28 bg-navy-dark text-white">
           {/* Ambient background decoration */}
@@ -409,7 +405,5 @@ export default function SpecialsPage() {
           </div>
         </section>
       </main>
-      <Footer />
-    </>
   );
 }

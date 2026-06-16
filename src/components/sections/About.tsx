@@ -3,6 +3,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import {
   Quote,
   Heart,
@@ -244,7 +245,7 @@ export default function About() {
               ))}
             </div>
 
-            {/* Quote Card — light premium */}
+            {/* ── Meet Our Dentists Block ── */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -257,51 +258,76 @@ export default function About() {
               <div className="absolute -top-20 -right-20 w-60 h-60 rounded-full bg-primary/10 blur-3xl pointer-events-none" />
               <div className="absolute -bottom-10 -left-10 w-40 h-40 rounded-full bg-primary/6 blur-2xl pointer-events-none" />
 
-              {/* Big decorative quote mark */}
-              <Quote className="absolute top-6 right-7 w-20 h-20 text-primary/12 -rotate-180 pointer-events-none" strokeWidth={1} />
-
               <div className="relative">
-                <div className="flex items-center gap-2 mb-5">
+                <div className="flex items-center gap-2 mb-6">
                   <div className="h-px w-8 bg-primary" />
                   <span className="text-primary text-[10px] tracking-[0.25em] uppercase font-semibold">
-                    From the Founder
+                    Meet Our Dentists
                   </span>
                 </div>
 
-                <p className="font-heading text-navy text-xl md:text-2xl italic leading-snug mb-7 max-w-2xl"
+                <p className="font-heading text-navy text-lg md:text-xl leading-snug mb-7 max-w-2xl italic"
                    style={{ letterSpacing: "-0.01em" }}>
                   &ldquo;Our mission is simple — to provide dental care so
                   comfortable, and results so beautiful, that you actually look
                   forward to visiting the dentist.&rdquo;
                 </p>
 
-                <div className="flex items-center justify-between gap-4 pt-5 border-t border-navy/8">
-                  <div className="flex items-center gap-3">
-                    <div className="w-12 h-12 rounded-full overflow-hidden ring-2 ring-primary/30">
+                {/* Two doctor cards side-by-side */}
+                <div className="grid sm:grid-cols-2 gap-4 pt-5 border-t border-navy/8">
+                  {/* Dr. Jeffrey Brenner */}
+                  <Link
+                    href="/about/dr-jeffrey-brenner"
+                    className="group flex items-center gap-3 p-3 rounded-xl hover:bg-primary/[0.04] transition-colors"
+                  >
+                    <div className="w-14 h-14 rounded-full overflow-hidden ring-2 ring-primary/30 shrink-0">
                       <Image
                         src="/images/dentist_portrait_1779858109259.webp"
-                        alt="Dr. Hampton"
-                        width={48}
-                        height={48}
+                        alt="Dr. Jeffrey Brenner"
+                        width={56}
+                        height={56}
                         className="object-cover w-full h-full"
                       />
                     </div>
-                    <div>
-                      <p className="font-semibold text-navy text-sm">
-                        Dr. James Hampton
+                    <div className="min-w-0">
+                      <p className="font-semibold text-navy text-sm group-hover:text-primary transition-colors">
+                        Dr. Jeffrey Brenner
                       </p>
                       <p className="text-navy/50 text-xs">
-                        Founder & Lead Dentist
+                        Founder · DDS · Since 2004
+                      </p>
+                      <p className="text-primary text-[10px] mt-1 font-semibold tracking-wider uppercase flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                        Learn More <ArrowUpRight className="w-3 h-3" />
                       </p>
                     </div>
-                  </div>
+                  </Link>
 
-                  <div className="hidden sm:flex items-center gap-1.5">
-                    <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
-                    <span className="text-navy/50 text-[10px] tracking-[0.2em] uppercase">
-                      DDS · Since 2004
-                    </span>
-                  </div>
+                  {/* Dr. Keyur Dudhat */}
+                  <Link
+                    href="/about/dr-keyur-dudhat"
+                    className="group flex items-center gap-3 p-3 rounded-xl hover:bg-primary/[0.04] transition-colors"
+                  >
+                    <div className="w-14 h-14 rounded-full overflow-hidden ring-2 ring-primary/30 shrink-0 bg-navy/5 flex items-center justify-center">
+                      <Image
+                        src="/images/cosmetic_smile_1779858128482.webp"
+                        alt="Dr. Keyur Dudhat"
+                        width={56}
+                        height={56}
+                        className="object-cover w-full h-full"
+                      />
+                    </div>
+                    <div className="min-w-0">
+                      <p className="font-semibold text-navy text-sm group-hover:text-primary transition-colors">
+                        Dr. Keyur Dudhat
+                      </p>
+                      <p className="text-navy/50 text-xs">
+                        General & Cosmetic Dentist
+                      </p>
+                      <p className="text-primary text-[10px] mt-1 font-semibold tracking-wider uppercase flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                        Learn More <ArrowUpRight className="w-3 h-3" />
+                      </p>
+                    </div>
+                  </Link>
                 </div>
               </div>
             </motion.div>

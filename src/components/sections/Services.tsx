@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import {
   Stethoscope,
   Sparkles,
@@ -24,6 +25,7 @@ const services = [
     tag: "Restorative",
     duration: "3–6 months",
     benefits: ["Permanent solution", "Preserves bone", "Like real teeth"],
+    href: "/restorative-dentistry/dental-implants",
   },
   {
     icon: ShieldCheck,
@@ -33,6 +35,7 @@ const services = [
     tag: "Restorative",
     duration: "2 visits",
     benefits: ["Restores tooth strength", "Natural-looking ceramic", "Long-term protection"],
+    href: "/restorative-dentistry/dental-crowns",
   },
   {
     icon: AlertCircle,
@@ -42,6 +45,7 @@ const services = [
     tag: "Urgent",
     duration: "Same day",
     benefits: ["24/7 availability", "Pain relief", "Trauma care"],
+    href: "/general-dentistry/emergency-dentistry",
   },
   {
     icon: Stethoscope,
@@ -51,6 +55,7 @@ const services = [
     tag: "Preventive",
     duration: "30–60 min",
     benefits: ["Routine cleanings", "Cavity prevention", "Oral exams"],
+    href: "/general-dentistry",
   },
   {
     icon: Layers,
@@ -60,6 +65,7 @@ const services = [
     tag: "Restorative",
     duration: "1 visit",
     benefits: ["Tooth-colored composite", "Halts tooth decay", "Quick single-visit treatment"],
+    href: "/restorative-dentistry/dental-fillings",
   },
   {
     icon: Sun,
@@ -69,6 +75,7 @@ const services = [
     tag: "Aesthetic",
     duration: "60 min",
     benefits: ["Up to 8 shades brighter", "Safe & gentle", "Long-lasting"],
+    href: "/cosmetic-dentistry/teeth-whitening",
   },
   {
     icon: Sparkles,
@@ -78,6 +85,7 @@ const services = [
     tag: "Specialty",
     duration: "Varies",
     benefits: ["Discreet alignment", "Fights gum disease", "Home-use comfort"],
+    href: "/cosmetic-dentistry/clear-correct",
   },
   {
     icon: SmilePlus,
@@ -87,6 +95,7 @@ const services = [
     tag: "Orthodontic",
     duration: "6–18 months",
     benefits: ["Nearly invisible", "Removable trays", "Faster than braces"],
+    href: "/cosmetic-dentistry/invisalign",
   },
 ];
 
@@ -100,6 +109,7 @@ interface ServiceItem {
   benefits: string[];
   id: string;
   isCustom: false;
+  href: string;
 }
 
 interface CustomItem {
@@ -228,8 +238,9 @@ export default function Services() {
               if (!item.isCustom) {
                 const service = item;
                 return (
-                  <article
+                  <Link
                     key={`copy1-${item.id}`}
+                    href={service.href}
                     className="group relative shrink-0 flex flex-col w-[80vw] sm:w-[55vw] md:w-[420px] lg:w-[440px]
                       h-[440px]
                       bg-beige-light rounded-[28px] overflow-hidden
@@ -327,13 +338,12 @@ export default function Services() {
 
                       {/* Footer button */}
                       <div className="flex items-center justify-between pt-3 border-t border-navy/8">
-                        <a
-                          href="#contact"
+                        <span
                           className="text-navy text-[11px] font-semibold tracking-[0.2em] uppercase
                             group-hover:text-primary transition-colors duration-300"
                         >
-                          Book Consultation
-                        </a>
+                          Learn More
+                        </span>
                         <div className="w-9 h-9 rounded-full bg-navy
                           flex items-center justify-center
                           group-hover:bg-primary group-hover:scale-110
@@ -343,12 +353,13 @@ export default function Services() {
                         </div>
                       </div>
                     </div>
-                  </article>
+                  </Link>
                 );
               } else {
                 return (
-                  <div
+                  <Link
                     key={`copy1-${item.id}`}
+                    href="/patient-information/scheduling"
                     className="shrink-0 w-[80vw] sm:w-[55vw] md:w-[420px] lg:w-[440px]
                       h-[440px] rounded-[28px] overflow-hidden
                       bg-gradient-to-br from-navy via-navy-dark to-navy
@@ -369,8 +380,7 @@ export default function Services() {
                       Tell us what your smile needs — we&apos;ll craft a personalized
                       plan together.
                     </p>
-                    <a
-                      href="#contact"
+                    <div
                       className="group/btn inline-flex items-center gap-3 pl-6 pr-2 py-2 rounded-full
                         bg-white text-navy font-semibold text-sm
                         hover:scale-105 transition-transform duration-300 relative"
@@ -379,8 +389,8 @@ export default function Services() {
                       <span className="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
                         <ArrowUpRight className="w-3.5 h-3.5 text-white group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
                       </span>
-                    </a>
-                  </div>
+                    </div>
+                  </Link>
                 );
               }
             })}
@@ -392,8 +402,9 @@ export default function Services() {
               if (!item.isCustom) {
                 const service = item;
                 return (
-                  <article
+                  <Link
                     key={`copy2-${item.id}`}
+                    href={service.href}
                     className="group relative shrink-0 flex flex-col w-[80vw] sm:w-[55vw] md:w-[420px] lg:w-[440px]
                       h-[440px]
                       bg-beige-light rounded-[28px] overflow-hidden
@@ -491,13 +502,12 @@ export default function Services() {
 
                       {/* Footer button */}
                       <div className="flex items-center justify-between pt-3 border-t border-navy/8">
-                        <a
-                          href="#contact"
+                        <span
                           className="text-navy text-[11px] font-semibold tracking-[0.2em] uppercase
                             group-hover:text-primary transition-colors duration-300"
                         >
-                          Book Consultation
-                        </a>
+                          Learn More
+                        </span>
                         <div className="w-9 h-9 rounded-full bg-navy
                           flex items-center justify-center
                           group-hover:bg-primary group-hover:scale-110
@@ -507,12 +517,13 @@ export default function Services() {
                         </div>
                       </div>
                     </div>
-                  </article>
+                  </Link>
                 );
               } else {
                 return (
-                  <div
+                  <Link
                     key={`copy2-${item.id}`}
+                    href="/patient-information/scheduling"
                     className="shrink-0 w-[80vw] sm:w-[55vw] md:w-[420px] lg:w-[440px]
                       h-[440px] rounded-[28px] overflow-hidden
                       bg-gradient-to-br from-navy via-navy-dark to-navy
@@ -533,8 +544,7 @@ export default function Services() {
                       Tell us what your smile needs — we&apos;ll craft a personalized
                       plan together.
                     </p>
-                    <a
-                      href="#contact"
+                    <div
                       className="group/btn inline-flex items-center gap-3 pl-6 pr-2 py-2 rounded-full
                         bg-white text-navy font-semibold text-sm
                         hover:scale-105 transition-transform duration-300 relative"
@@ -543,8 +553,8 @@ export default function Services() {
                       <span className="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
                         <ArrowUpRight className="w-3.5 h-3.5 text-white group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
                       </span>
-                    </a>
-                  </div>
+                    </div>
+                  </Link>
                 );
               }
             })}

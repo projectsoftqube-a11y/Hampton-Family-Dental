@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import {
@@ -71,7 +72,7 @@ export default function Hero() {
           }
         }
       },
-      { threshold: 0.1 }
+      { threshold: 0.1 },
     );
     io.observe(section);
 
@@ -81,7 +82,6 @@ export default function Hero() {
       v.removeEventListener("error", onError);
     };
   }, []);
-
 
   return (
     <section
@@ -144,8 +144,7 @@ export default function Hero() {
       <div
         className="absolute inset-0 z-[2] opacity-[0.05] pointer-events-none mix-blend-overlay"
         style={{
-          backgroundImage:
-            "url('/images/noise.webp')",
+          backgroundImage: "url('/images/noise.webp')",
         }}
       />
 
@@ -183,7 +182,11 @@ export default function Hero() {
           transition={{ duration: 28, repeat: Infinity, ease: "linear" }}
           className="absolute inset-0 rounded-full will-change-transform"
         >
-          <svg viewBox="0 0 200 200" className="w-full h-full" shapeRendering="geometricPrecision">
+          <svg
+            viewBox="0 0 200 200"
+            className="w-full h-full"
+            shapeRendering="geometricPrecision"
+          >
             <defs>
               <path
                 id="circlePath"
@@ -206,7 +209,10 @@ export default function Hero() {
         </motion.div>
         <div className="absolute inset-3 rounded-full border border-primary-light/25" />
         <div className="relative flex flex-col items-center justify-center w-16 lg:w-20 h-16 lg:h-20 rounded-full bg-primary/20 border border-primary/40 shadow-[0_0_30px_rgba(11,179,182,0.4)]">
-          <Award className="w-5 lg:w-6 h-5 lg:h-6 text-primary-light mb-0.5 lg:mb-1" strokeWidth={2.2} />
+          <Award
+            className="w-5 lg:w-6 h-5 lg:h-6 text-primary-light mb-0.5 lg:mb-1"
+            strokeWidth={2.2}
+          />
           <span className="font-heading text-white text-sm lg:text-base font-bold leading-none">
             20+
           </span>
@@ -216,24 +222,24 @@ export default function Hero() {
         </div>
       </motion.div>
 
-{/* ───────── Main Content ───────── */}
+      {/* ───────── Main Content ───────── */}
       <motion.div
         style={{ y: contentY, opacity: contentOpacity }}
         className="relative z-10 h-full w-full max-w-[1400px] mx-auto px-5 md:px-12 lg:px-16
-          flex flex-col justify-center pt-28 pb-44 md:pb-40"
+          flex flex-col justify-center pt-24 sm:pt-28 md:pt-36 pb-24 sm:pb-28 md:pb-32"
       >
         {/* Eyebrow */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.4 }}
-          className="flex items-center gap-3 mb-8"
+          className="flex items-center gap-3 mb-4 md:mb-6 lg:mb-8"
         >
           <div className="h-px w-10 bg-gradient-to-r from-transparent to-primary-light" />
           <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-full backdrop-blur-md bg-white/8 border border-white/15">
             <Sparkles className="w-3 h-3 text-primary-light" />
             <span className="text-white/90 text-[10px] tracking-[0.25em] uppercase font-semibold">
-              Luxury Dental Excellence
+              Family Dental Excellence
             </span>
           </div>
         </motion.div>
@@ -242,19 +248,23 @@ export default function Hero() {
         <motion.h1
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.1, delay: 0.55, ease: [0.25, 0.1, 0.25, 1] }}
-          className="font-heading text-white mb-8"
+          transition={{
+            duration: 1.1,
+            delay: 0.55,
+            ease: [0.25, 0.1, 0.25, 1],
+          }}
+          className="font-heading text-white mb-4 md:mb-6 lg:mb-8"
           style={{
             fontSize: "clamp(2.8rem, 5vw, 8rem)",
             lineHeight: 0.98,
             letterSpacing: "-0.04em",
           }}
         >
-          <span className="block">Modern</span>
+          <span className="block">Modern Family</span>
           <span className="block">
             <span className="relative inline-block">
               <span className="bg-gradient-to-br from-primary-light via-primary to-primary-light bg-clip-text text-transparent italic font-normal">
-                Dentistry,
+                Dentistry
               </span>
               <motion.span
                 initial={{ scaleX: 0 }}
@@ -265,11 +275,11 @@ export default function Hero() {
               />
             </span>
           </span>
-          <span className="block">Genuine Comfort.</span>
+          <span className="block">in Southampton, PA.</span>
         </motion.h1>
 
         {/* Sub + side panel layout */}
-        <div className="grid md:grid-cols-[1.4fr_1fr] gap-8 md:gap-16 items-end mb-12">
+        <div className="grid md:grid-cols-[1.4fr_1fr] gap-4 md:gap-16 items-end mb-6 md:mb-8 lg:mb-10">
           {/* Subheadline */}
           <motion.p
             initial={{ opacity: 0, y: 25 }}
@@ -278,52 +288,21 @@ export default function Hero() {
             className="text-white/70 max-w-xl leading-relaxed"
             style={{ fontSize: "clamp(1.05rem, 1.4vw, 1.2rem)" }}
           >
-            Premium family and cosmetic dentistry — blending advanced technology,
-            world-class artistry, and a calm, refined experience designed entirely
-            around your smile.
+            Comprehensive family and cosmetic dentistry — blending advanced
+            technology, compassionate care, and a calm, welcoming experience
+            designed entirely around your smile.
           </motion.p>
 
-          {/* Patient trust strip */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 1.05 }}
-            className="flex items-center gap-4"
+          {/* Brand bridge */}
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 1 }}
+            className="text-primary-light/70 text-[13px] mt-3 italic tracking-wide"
           >
-            <div className="flex -space-x-3">
-              {avatars.map((src, i) => (
-                <div
-                  key={i}
-                  className="w-10 h-10 rounded-full ring-2 ring-navy-dark overflow-hidden bg-navy"
-                >
-                  <Image
-                    src={src}
-                    alt="Happy patient"
-                    width={40}
-                    height={40}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              ))}
-              <div className="w-10 h-10 rounded-full ring-2 ring-navy-dark bg-primary/20 backdrop-blur-md border border-primary/30 flex items-center justify-center text-primary-light text-[10px] font-bold">
-                +5K
-              </div>
-            </div>
-            <div className="min-w-0">
-              <div className="flex items-center gap-1">
-                {[...Array(5)].map((_, i) => (
-                  <Star
-                    key={i}
-                    className="w-3 h-3 fill-primary-light text-primary-light"
-                  />
-                ))}
-                <span className="text-white text-xs font-bold ml-1">4.9</span>
-              </div>
-              <p className="text-white/55 text-[11px] mt-0.5 tracking-wide">
-                Trusted by 5,000+ happy smiles
-              </p>
-            </div>
-          </motion.div>
+            Formerly Brenner Dental Group — same trusted team, same Southampton
+            location.
+          </motion.p>
         </div>
 
         {/* CTAs */}
@@ -333,8 +312,8 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 1.2 }}
           className="flex flex-wrap items-center gap-4"
         >
-          <a
-            href="#contact"
+          <Link
+            href="/patient-information/scheduling"
             className="group relative inline-flex items-center gap-3
               pl-7 pr-2 py-2 rounded-full
               bg-gradient-to-r from-primary to-primary-dark text-white font-semibold
@@ -343,18 +322,20 @@ export default function Hero() {
               hover:scale-[1.03] active:scale-[0.98]
               transition-all duration-500 overflow-hidden"
           >
-            <span className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/30 to-white/0
-              -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
+            <span
+              className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/30 to-white/0
+              -translate-x-full group-hover:translate-x-full transition-transform duration-1000"
+            />
             <span className="relative z-10 text-sm tracking-wide">
               Schedule Now
             </span>
             <span className="relative z-10 w-10 h-10 rounded-full bg-white/15 flex items-center justify-center group-hover:bg-white/25 transition-colors">
               <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
             </span>
-          </a>
+          </Link>
 
-          <a
-            href="#services"
+          <Link
+            href="/#services"
             className="group inline-flex items-center gap-2.5
               px-6 py-3.5 rounded-full
               backdrop-blur-md bg-white/8 border border-white/25 text-white font-semibold text-sm
@@ -366,8 +347,7 @@ export default function Hero() {
               <Play className="w-2.5 h-2.5 fill-white text-white ml-0.5" />
             </span>
             <span>Explore Services</span>
-          </a>
-
+          </Link>
         </motion.div>
       </motion.div>
 

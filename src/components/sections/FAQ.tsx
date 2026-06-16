@@ -52,7 +52,7 @@ const faqs: { category: Category; q: string; a: string }[] = [
   {
     category: "Family",
     q: "At what age should my child first visit the dentist?",
-    a: "We recommend your child's first dental visit by their first birthday or within six months of their first tooth appearing. Early visits help establish good oral health habits and allow us to monitor development. Our pediatric care is designed to make children feel comfortable and excited about dental visits.",
+    a: "We recommend your child's first dental visit by their first birthday or within six months of their first tooth appearing. Early visits help establish good oral health habits and allow us to monitor development. Our team is experienced with young patients and creates a warm, welcoming environment so children feel comfortable and even excited about dental visits.",
   },
   {
     category: "Booking",

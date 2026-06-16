@@ -60,7 +60,6 @@ const services = [
   "Teeth Whitening",
   "Veneers",
   "Dental Implants",
-  "Pediatric Dentistry",
   "Emergency Care",
 ];
 
@@ -164,7 +163,7 @@ export default function Contact() {
             transition={{ duration: 0.6, delay: 0.25 }}
             className="text-white/55 mt-4 leading-relaxed text-sm md:text-base"
           >
-            Ready to experience luxury dental care? Fill out the form below — we
+            Ready to experience quality dental care? Fill out the form below — we
             reply within hours, not days.
           </motion.p>
         </div>
@@ -497,7 +496,7 @@ export default function Contact() {
                   Same-day appointments available for urgent care.
                 </p>
                 <a
-                  href="tel:+15551234567"
+                  href="tel:+12153572224"
                   className="group flex items-center justify-between gap-2 pl-4 pr-2 py-2 rounded-full
                     bg-white text-primary-dark font-semibold
                     hover:scale-[1.02] active:scale-[0.98]

@@ -20,34 +20,35 @@ import {
   TwitterIcon,
   YouTubeIcon,
 } from "@/components/icons/SocialIcons";
+import { practiceInfo } from "@/lib/navigation";
 
 const quickLinks = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Smile Gallery", href: "#gallery" },
-  { label: "Technology", href: "#technology" },
-  { label: "Testimonials", href: "#testimonials" },
-  { label: "FAQ", href: "#faq" },
-  { label: "Contact", href: "#contact" },
+  { label: "About Us", href: "/about" },
+  { label: "Our Story", href: "/about/our-story" },
+  { label: "Dr. Jeffrey Brenner", href: "/about/dr-jeffrey-brenner" },
+  { label: "Dr. Keyur Dudhat", href: "/about/dr-keyur-dudhat" },
+  { label: "Patient Reviews", href: "/about/patient-reviews" },
+  { label: "Specials", href: "/specials" },
+  { label: "Contact Us", href: "/contact" },
+  { label: "Scheduling", href: "/patient-information/scheduling" },
 ];
 
-const services = [
-  "General Dentistry",
-  "Cosmetic Dentistry",
-  "Invisalign",
-  "Teeth Whitening",
-  "Porcelain Veneers",
-  "Dental Implants",
-  "Pediatric Dentistry",
-  "Emergency Care",
+const serviceLinks = [
+  { label: "General Dentistry", href: "/general-dentistry" },
+  { label: "Restorative Dentistry", href: "/restorative-dentistry" },
+  { label: "Cosmetic Dentistry", href: "/cosmetic-dentistry" },
+  { label: "Dental Implants", href: "/restorative-dentistry/dental-implants" },
+  { label: "Invisalign", href: "/cosmetic-dentistry/invisalign" },
+  { label: "Teeth Whitening", href: "/cosmetic-dentistry/teeth-whitening" },
+  { label: "Emergency Dentistry", href: "/general-dentistry/emergency-dentistry" },
+  { label: "Dental Crowns", href: "/restorative-dentistry/dental-crowns" },
 ];
 
 const socials = [
-  { icon: FacebookIcon, href: "https://www.facebook.com/BrennerDentalGroup", label: "Facebook" },
-  { icon: InstagramIcon, href: "https://instagram.com", label: "Instagram" },
-  { icon: TwitterIcon, href: "https://x.com", label: "X / Twitter" },
-  { icon: YouTubeIcon, href: "https://youtube.com", label: "YouTube" },
+  { icon: FacebookIcon, href: practiceInfo.socials.facebook, label: "Facebook" },
+  { icon: InstagramIcon, href: practiceInfo.socials.instagram, label: "Instagram" },
+  { icon: TwitterIcon, href: practiceInfo.socials.twitter, label: "X / Twitter" },
+  { icon: YouTubeIcon, href: practiceInfo.socials.youtube, label: "YouTube" },
 ];
 
 export default function Footer() {
@@ -100,14 +101,14 @@ export default function Footer() {
                 </span>
               </h2>
               <p className="text-white/55 text-sm md:text-base max-w-md">
-                Premium family and cosmetic dentistry, designed entirely around
+                Trusted family and cosmetic dentistry, designed entirely around
                 you.
               </p>
             </div>
 
             <div className="flex flex-col gap-3 lg:items-end">
               <Link
-                href="#contact"
+                href="/patient-information/scheduling"
                 className="group inline-flex justify-between items-center gap-3 pl-6 pr-2 py-2.5 rounded-full
                   bg-gradient-to-r from-primary to-primary-dark text-white font-semibold
                   shadow-[0_10px_40px_rgba(11,179,182,0.4)]
@@ -124,11 +125,11 @@ export default function Footer() {
                 </span>
               </Link>
               <a
-                href="tel:+(215) 357-2224"
+                href={practiceInfo.phoneTel}
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.04] border border-white/10 text-white text-sm hover:bg-white/[0.08] hover:border-primary/30 transition-all"
               >
                 <Phone className="w-3.5 h-3.5 text-primary-light" />
-                <span className="font-semibold">(215) 357-2224</span>
+                <span className="font-semibold">{practiceInfo.phone}</span>
               </a>
             </div>
           </div>
@@ -141,7 +142,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 py-12 lg:py-16">
           {/* Brand (4 cols) */}
           <div className="lg:col-span-4">
-            <Link href="#home" className="inline-flex items-center mb-5 group">
+            <Link href="/" className="inline-flex items-center mb-5 group">
               <Image
                 src="/logo.svg"
                 alt="Hampton Family Dental"
@@ -150,15 +151,18 @@ export default function Footer() {
                 className="h-10 w-auto object-contain brightness-0 invert transition-transform duration-500 group-hover:scale-[1.02]"
               />
             </Link>
-            <p className="text-white/45 text-sm leading-relaxed mb-6 max-w-sm">
-              Premium family and cosmetic dentistry. Where advanced technology
+            <p className="text-white/45 text-sm leading-relaxed mb-2 max-w-sm">
+              Trusted family and cosmetic dentistry. Where advanced technology
               meets compassionate, judgement-free care for every smile.
+            </p>
+            <p className="text-white/30 text-xs mb-6 italic">
+              Formerly {practiceInfo.formerName}
             </p>
 
             {/* Contact mini-cards */}
             <div className="space-y-2.5 mb-6">
               <a
-                href="https://www.google.com/maps/search/?api=1&query=283+Second+Street+Pike,+Suite+140,+Southampton,+PA+18966"
+                href={practiceInfo.address.mapsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 text-white/55 text-sm hover:text-primary-light transition-colors group"
@@ -166,16 +170,16 @@ export default function Footer() {
                 <div className="w-7 h-7 rounded-lg bg-primary/15 border border-primary/25 flex items-center justify-center shrink-0">
                   <MapPin className="w-3 h-3 text-primary-light" />
                 </div>
-                <span>283 Second Street Pike, Suite 140, Southampton, PA 18966</span>
+                <span>{practiceInfo.address.full}</span>
               </a>
               <a
-                href="mailto:hello@hamptonfamilydental.com"
+                href={`mailto:${practiceInfo.email}`}
                 className="flex items-center gap-3 text-white/55 text-sm hover:text-primary-light transition-colors group"
               >
                 <div className="w-7 h-7 rounded-lg bg-primary/15 border border-primary/25 flex items-center justify-center shrink-0">
                   <Mail className="w-3 h-3 text-primary-light" />
                 </div>
-                <span className="truncate">hello@hamptonfamilydental.com</span>
+                <span className="truncate">{practiceInfo.email}</span>
               </a>
             </div>
 
@@ -185,6 +189,8 @@ export default function Footer() {
                 <a
                   key={social.label}
                   href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label={social.label}
                   className="w-9 h-9 rounded-xl bg-white/[0.05] border border-white/10
                     flex items-center justify-center text-white/55
@@ -197,7 +203,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Quick Links (3 cols) */}
+          {/* Quick Links (2 cols) */}
           <div className="lg:col-span-2">
             <h4 className="font-heading text-white font-bold text-base mb-5 flex items-center gap-2">
               <span className="w-1 h-1 rounded-full bg-primary-light" />
@@ -228,22 +234,22 @@ export default function Footer() {
               Services
             </h4>
             <ul className="space-y-2.5">
-              {services.map((service) => (
-                <li key={service}>
+              {serviceLinks.map((link) => (
+                <li key={link.label}>
                   <Link
-                    href="#services"
+                    href={link.href}
                     className="group inline-flex items-center gap-1.5 text-white/50 text-sm
                       hover:text-primary-light transition-colors duration-200"
                   >
                     <span className="w-0 group-hover:w-3 h-px bg-primary-light transition-all duration-300" />
-                    <span>{service}</span>
+                    <span>{link.label}</span>
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Newsletter (3 cols) */}
+          {/* Newsletter + Hours (3 cols) */}
           <div className="lg:col-span-3">
             <h4 className="font-heading text-white font-bold text-base mb-3 flex items-center gap-2">
               <span className="w-1 h-1 rounded-full bg-primary-light" />
@@ -295,17 +301,8 @@ export default function Footer() {
                 </div>
               </div>
 
-              {/* Day-by-day list */}
               <ul className="space-y-1.5 text-[12px]">
-                {[
-                  { day: "Mon", time: "8:00 AM – 6:00 PM", open: true },
-                  { day: "Tue", time: "8:00 AM – 4:00 PM", open: true },
-                  { day: "Wed", time: "9:00 AM – 1:00 PM", open: true },
-                  { day: "Thu", time: "8:00 AM – 4:00 PM", open: true },
-                  { day: "Fri", time: "Closed", open: false },
-                  { day: "Sat", time: "Closed", open: false },
-                  { day: "Sun", time: "Closed", open: false },
-                ].map((row) => (
+                {practiceInfo.hours.map((row) => (
                   <li
                     key={row.day}
                     className="flex items-center justify-between gap-3"
@@ -344,21 +341,21 @@ export default function Footer() {
 
           <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-xs order-3 lg:order-2">
             <Link
-              href="#"
+              href="/privacy-policy"
               className="text-white/35 hover:text-primary-light transition-colors whitespace-nowrap"
             >
               Privacy Policy
             </Link>
             <span className="w-1 h-1 rounded-full bg-white/15" />
             <Link
-              href="#"
+              href="/terms"
               className="text-white/35 hover:text-primary-light transition-colors whitespace-nowrap"
             >
               Terms of Service
             </Link>
             <span className="w-1 h-1 rounded-full bg-white/15" />
             <Link
-              href="#"
+              href="/accessibility"
               className="text-white/35 hover:text-primary-light transition-colors whitespace-nowrap"
             >
               Accessibility
@@ -380,10 +377,9 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Back to top button — hidden on small screens to avoid overlapping
-          the footer credit text; shown from md+ when there's room. */}
-      <a
-        href="#home"
+      {/* Back to top button */}
+      <button
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         aria-label="Back to top"
         className="group hidden sm:flex fixed bottom-6 right-6 z-40 w-11 h-11 rounded-full
           bg-[#0bb3b6] backdrop-blur-md border border-white/15 text-white
@@ -394,7 +390,7 @@ export default function Footer() {
           opacity-70 hover:opacity-100 focus:opacity-100"
       >
         <ArrowUp className="w-4 h-4" />
-      </a>
+      </button>
     </footer>
   );
 }

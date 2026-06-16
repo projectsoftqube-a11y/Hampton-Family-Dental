@@ -1,8 +1,10 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import {
   Phone,
   MapPin,
@@ -11,6 +13,7 @@ import {
   ArrowUpRight,
   Calendar,
   Sparkles,
+  ChevronDown,
 } from "lucide-react";
 import {
   FacebookIcon,
@@ -18,19 +21,9 @@ import {
   TwitterIcon,
   YouTubeIcon,
 } from "@/components/icons/SocialIcons";
-
-// Lenis instance exposed by SmoothScrollProvider — used to scroll smoothly
-// to the target section when a menu link is clicked.
-type LenisLike = {
-  scrollTo: (
-    target: HTMLElement | string | number,
-    options?: { offset?: number; duration?: number }
-  ) => void;
-};
+import { mainNav, practiceInfo } from "@/lib/navigation";
 
 interface MobileMenuProps {
-  links: { label: string; href: string }[];
-  activeSection?: string;
   onClose: () => void;
 }
 
@@ -64,7 +57,7 @@ const linkVariants = {
     opacity: 1,
     x: 0,
     transition: {
-      delay: 0.3 + i * 0.05,
+      delay: 0.3 + i * 0.04,
       duration: 0.45,
       ease: [0.16, 1, 0.3, 1] as const,
     },
@@ -77,51 +70,17 @@ const cardVariants = {
   visible: (i: number) => ({
     opacity: 1,
     y: 0,
-    transition: { delay: 0.6 + i * 0.08, duration: 0.4 },
+    transition: { delay: 0.5 + i * 0.08, duration: 0.4 },
   }),
   exit: { opacity: 0, transition: { duration: 0.2 } },
 };
 
-export default function MobileMenu({
-  links,
-  activeSection = "home",
-  onClose,
-}: MobileMenuProps) {
-  // Centralized nav-link handler — closes the menu and smoothly scrolls to
-  // the target section. The global SmoothScrollProvider handler is told to
-  // ignore clicks inside this menu via the data-skip-smooth-scroll marker
-  // so we never get racing handlers.
-  const handleNavigate = (e: React.MouseEvent, href: string) => {
-    e.preventDefault();
-    e.stopPropagation();
+export default function MobileMenu({ onClose }: MobileMenuProps) {
+  const pathname = usePathname();
+  const [expandedIdx, setExpandedIdx] = useState<number | null>(null);
 
-    const isHomePage = typeof window !== "undefined" && window.location.pathname === "/";
-    const hasHash = href.includes("#");
-
-    if (isHomePage && hasHash) {
-      const id = href.split("#")[1];
-      onClose();
-
-      // Run the scroll on the next frame so the menu starts its exit animation
-      // before we move the page underneath it.
-      requestAnimationFrame(() => {
-        const el = document.getElementById(id);
-        if (!el) return;
-        const lenis = (window as unknown as { __lenis?: LenisLike }).__lenis;
-        if (lenis) {
-          lenis.scrollTo(el, { offset: -72, duration: 1.4 });
-        } else {
-          el.scrollIntoView({ behavior: "smooth", block: "start" });
-        }
-        if (window.history.replaceState) {
-          window.history.replaceState(null, "", href);
-        }
-      });
-    } else {
-      onClose();
-      // Navigate to another page or external link
-      window.location.href = href;
-    }
+  const toggleExpand = (idx: number) => {
+    setExpandedIdx((prev) => (prev === idx ? null : idx));
   };
 
   return (
@@ -131,7 +90,6 @@ export default function MobileMenu({
       initial="hidden"
       animate="visible"
       exit="exit"
-      data-skip-smooth-scroll
     >
       {/* Backdrop */}
       <motion.div
@@ -139,8 +97,7 @@ export default function MobileMenu({
         onClick={onClose}
       />
 
-      {/* Panel — promoted to its own compositing layer so the slide-in transform
-          doesn't force a re-rasterization of the heavy blurred orbs inside. */}
+      {/* Panel */}
       <motion.div
         variants={panelVariants}
         style={{ willChange: "transform", transform: "translateZ(0)" }}
@@ -149,9 +106,7 @@ export default function MobileMenu({
           shadow-[-30px_0_80px_rgba(0,0,0,0.4)]
           flex flex-col overflow-hidden"
       >
-        {/* Ambient orbs — GPU-promoted so the blur is rasterized once, not per frame.
-            Reduced blur radius (100→70px) for a meaningful perf win at virtually
-            identical visual cost. */}
+        {/* Ambient orbs */}
         <div
           style={{ transform: "translateZ(0)" }}
           className="absolute top-[10%] -right-20 w-72 h-72 rounded-full bg-primary/20 blur-[70px] pointer-events-none"
@@ -165,8 +120,7 @@ export default function MobileMenu({
         <div
           className="absolute inset-0 opacity-[0.04] pointer-events-none mix-blend-overlay"
           style={{
-            backgroundImage:
-              "url('/images/noise.webp')",
+            backgroundImage: "url('/images/noise.webp')",
           }}
         />
 
@@ -203,57 +157,151 @@ export default function MobileMenu({
           <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/15 border border-primary/25">
             <Sparkles className="w-3 h-3 text-primary-light" />
             <span className="text-[10px] tracking-widest uppercase text-primary-light font-semibold">
-              Luxury Care
+              Family Care
             </span>
           </div>
           <div className="h-px flex-1 bg-gradient-to-r from-white/15 to-transparent" />
         </motion.div>
 
-        {/* ────────── Nav links ────────── */}
+        {/* ────────── Nav links (accordion) ────────── */}
         <nav className="relative z-10 flex-1 min-h-0 px-6 py-2 overflow-y-auto scrollbar-soft">
-          {links.map((link, i) => {
-            const id = link.href.replace("/#", "").replace("#", "");
-            const isActive = activeSection === id;
+          {mainNav.map((item, i) => {
+            const hasChildren = item.children && item.children.length > 0;
+            const isExpanded = expandedIdx === i;
+            const isActive =
+              pathname === item.href ||
+              item.children?.some((c) => pathname === c.href);
+
             return (
               <motion.div
-                key={link.label}
+                key={item.href}
                 custom={i}
                 variants={linkVariants}
                 className="relative"
               >
-                <Link
-                  href={link.href}
-                  onClick={(e) => handleNavigate(e, link.href)}
-                  className="group flex items-center justify-between py-2.5
-                    border-b border-white/8 transition-colors"
-                >
-                  <div className="flex items-baseline gap-3">
-                    <span
-                      className={`text-[10px] font-mono tabular-nums transition-colors ${
-                        isActive ? "text-primary-light" : "text-white/30"
-                      }`}
+                {hasChildren ? (
+                  <>
+                    {/* Parent row — tapping toggles accordion */}
+                    <div className="flex items-center border-b border-white/8">
+                      {/* Label links to hub page */}
+                      <Link
+                        href={item.href}
+                        onClick={onClose}
+                        className="flex-1 py-2.5"
+                      >
+                        <div className="flex items-baseline gap-3">
+                          <span
+                            className={`text-[10px] font-mono tabular-nums transition-colors ${
+                              isActive ? "text-primary-light" : "text-white/30"
+                            }`}
+                          >
+                            {String(i + 1).padStart(2, "0")}
+                          </span>
+                          <span
+                            className={`font-heading text-[1.15rem] leading-none transition-colors ${
+                              isActive
+                                ? "text-primary-light"
+                                : "text-white hover:text-primary-light"
+                            }`}
+                          >
+                            {item.label}
+                          </span>
+                        </div>
+                      </Link>
+
+                      {/* Expand/collapse toggle */}
+                      <button
+                        onClick={() => toggleExpand(i)}
+                        aria-label={
+                          isExpanded
+                            ? `Collapse ${item.label}`
+                            : `Expand ${item.label}`
+                        }
+                        className="w-9 h-9 flex items-center justify-center rounded-full
+                          hover:bg-white/10 transition-colors"
+                      >
+                        <ChevronDown
+                          className={`w-4 h-4 text-white/50 transition-transform duration-300 ${
+                            isExpanded ? "rotate-180" : ""
+                          }`}
+                        />
+                      </button>
+                    </div>
+
+                    {/* Children (accordion body) */}
+                    <motion.div
+                      initial={false}
+                      animate={{
+                        height: isExpanded ? "auto" : 0,
+                        opacity: isExpanded ? 1 : 0,
+                      }}
+                      transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
+                      className="overflow-hidden"
                     >
-                      0{i + 1}
-                    </span>
-                    <span
-                      className={`font-heading text-[1.25rem] leading-none transition-colors ${
-                        isActive
-                          ? "text-primary-light"
-                          : "text-white group-hover:text-primary-light"
-                      }`}
-                    >
-                      {link.label}
-                    </span>
-                  </div>
-                  <ArrowUpRight
-                    className={`w-3.5 h-3.5 transition-all duration-300
-                      ${
-                        isActive
-                          ? "text-primary-light translate-x-0.5 -translate-y-0.5"
-                          : "text-white/30 group-hover:text-primary-light group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-                      }`}
-                  />
-                </Link>
+                      <div className="pl-9 py-1.5 space-y-0.5">
+                        {item.children!.map((child) => {
+                          const isChildActive = pathname === child.href;
+                          return (
+                            <Link
+                              key={child.href}
+                              href={child.href}
+                              onClick={onClose}
+                              className={`group flex items-center gap-2.5 py-2 text-[13px] transition-colors ${
+                                isChildActive
+                                  ? "text-primary-light"
+                                  : "text-white/55 hover:text-primary-light"
+                              }`}
+                            >
+                              <span
+                                className={`w-1 h-1 rounded-full transition-colors ${
+                                  isChildActive
+                                    ? "bg-primary-light"
+                                    : "bg-white/25 group-hover:bg-primary-light"
+                                }`}
+                              />
+                              <span>{child.label}</span>
+                            </Link>
+                          );
+                        })}
+                      </div>
+                    </motion.div>
+                  </>
+                ) : (
+                  /* Simple link (Specials, Contact Us) */
+                  <Link
+                    href={item.href}
+                    onClick={onClose}
+                    className="group flex items-center justify-between py-2.5
+                      border-b border-white/8 transition-colors"
+                  >
+                    <div className="flex items-baseline gap-3">
+                      <span
+                        className={`text-[10px] font-mono tabular-nums transition-colors ${
+                          isActive ? "text-primary-light" : "text-white/30"
+                        }`}
+                      >
+                        {String(i + 1).padStart(2, "0")}
+                      </span>
+                      <span
+                        className={`font-heading text-[1.15rem] leading-none transition-colors ${
+                          isActive
+                            ? "text-primary-light"
+                            : "text-white group-hover:text-primary-light"
+                        }`}
+                      >
+                        {item.label}
+                      </span>
+                    </div>
+                    <ArrowUpRight
+                      className={`w-3.5 h-3.5 transition-all duration-300
+                        ${
+                          isActive
+                            ? "text-primary-light translate-x-0.5 -translate-y-0.5"
+                            : "text-white/30 group-hover:text-primary-light group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                        }`}
+                    />
+                  </Link>
+                )}
               </motion.div>
             );
           })}
@@ -262,10 +310,10 @@ export default function MobileMenu({
         {/* ────────── Info cards ────────── */}
         <div className="relative z-10 px-6 pt-2 pb-5 space-y-2 shrink-0">
           <motion.a
-            href="tel:+12153572224"
+            href={practiceInfo.phoneTel}
             custom={0}
             variants={cardVariants}
-            className="flex items-center gap-3 p-3 rounded-2xl bg-white/[0.04] border border-white/10
+            className="hidden md:flex items-center gap-3 p-3 rounded-2xl bg-white/[0.04] border border-white/10
               hover:bg-white/[0.08] hover:border-primary/30 transition-all duration-300 group"
           >
             <div className="w-10 h-10 rounded-xl bg-primary/15 border border-primary/25 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
@@ -276,12 +324,12 @@ export default function MobileMenu({
                 Call Us
               </p>
               <p className="text-white font-semibold text-sm">
-                (215) 357-2224
+                {practiceInfo.phone}
               </p>
             </div>
           </motion.a>
 
-          <div className="grid grid-cols-2 gap-2.5">
+          <div className="hidden md:grid grid-cols-2 gap-2.5">
             <motion.div
               custom={1}
               variants={cardVariants}
@@ -300,14 +348,16 @@ export default function MobileMenu({
                 <br />
                 Wed: 9am–1pm
                 <br />
-                <span className="text-white/40 text-[10px] font-medium">Fri–Sun Closed</span>
+                <span className="text-white/40 text-[10px] font-medium">
+                  Fri–Sun Closed
+                </span>
               </p>
             </motion.div>
 
             <motion.a
               custom={2}
               variants={cardVariants}
-              href="https://www.google.com/maps/search/?api=1&query=283+Second+Street+Pike,+Suite+140,+Southampton,+PA+18966"
+              href={practiceInfo.address.mapsUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="block p-3 rounded-2xl bg-white/[0.04] border border-white/10
@@ -322,7 +372,7 @@ export default function MobileMenu({
               <p className="text-white text-xs font-semibold mt-0.5 leading-tight">
                 283 Second Street Pike,
                 <br />
-                Southampton, PA
+                Suite 140, Southampton, PA
               </p>
             </motion.a>
           </div>
@@ -330,8 +380,8 @@ export default function MobileMenu({
           {/* CTA */}
           <motion.div custom={3} variants={cardVariants} className="pt-1">
             <Link
-              href="#contact"
-              onClick={(e) => handleNavigate(e, "#contact")}
+              href="/patient-information/scheduling"
+              onClick={onClose}
               className="group relative flex items-center justify-between gap-2 w-full
                 pl-5 pr-2 py-3 rounded-full
                 bg-gradient-to-r from-primary to-primary-dark text-white
@@ -343,7 +393,7 @@ export default function MobileMenu({
               <span className="relative z-10 flex items-center gap-2">
                 <Calendar className="w-4 h-4" />
                 <span className="font-semibold tracking-wide">
-                  Book Appointment
+                  Schedule Now
                 </span>
               </span>
               <span className="relative z-10 w-9 h-9 rounded-full bg-white/15 flex items-center justify-center group-hover:bg-white/25 transition-colors">
@@ -363,10 +413,26 @@ export default function MobileMenu({
             </p>
             <div className="flex items-center gap-2">
               {[
-                { Icon: FacebookIcon, href: "https://www.facebook.com/BrennerDentalGroup", label: "Facebook" },
-                { Icon: InstagramIcon, href: "https://instagram.com", label: "Instagram" },
-                { Icon: TwitterIcon, href: "https://x.com", label: "X / Twitter" },
-                { Icon: YouTubeIcon, href: "https://youtube.com", label: "YouTube" },
+                {
+                  Icon: FacebookIcon,
+                  href: practiceInfo.socials.facebook,
+                  label: "Facebook",
+                },
+                {
+                  Icon: InstagramIcon,
+                  href: practiceInfo.socials.instagram,
+                  label: "Instagram",
+                },
+                {
+                  Icon: TwitterIcon,
+                  href: practiceInfo.socials.twitter,
+                  label: "X / Twitter",
+                },
+                {
+                  Icon: YouTubeIcon,
+                  href: practiceInfo.socials.youtube,
+                  label: "YouTube",
+                },
               ].map(({ Icon, href, label }) => (
                 <a
                   key={label}

@@ -1,5 +1,3 @@
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
 import Hero from "@/components/sections/Hero";
 import TrustStats from "@/components/sections/TrustStats";
 import About from "@/components/sections/About";
@@ -14,22 +12,18 @@ import CTABanner from "@/components/sections/CTABanner";
 
 export default function Home() {
   return (
-    <>
-      <Header />
-      <main>
-        <Hero />
-        <TrustStats />
-        <Services />
-        <About />
-        <WhyChooseUs />
-        <SmileGallery />
-        <Technology />
-        <Testimonials />
-        <CTABanner />
-        <FAQ />
-        <Contact />
-      </main>
-      <Footer />
-    </>
+    <main>
+      <Hero />
+      <TrustStats />
+      <Services />
+      <About />
+      <WhyChooseUs />
+      <SmileGallery />
+      <Technology />
+      <Testimonials />
+      <CTABanner />
+      <FAQ />
+      <Contact />
+    </main>
   );
 }
