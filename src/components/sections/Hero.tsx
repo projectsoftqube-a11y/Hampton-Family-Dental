@@ -226,7 +226,7 @@ export default function Hero() {
       <motion.div
         style={{ y: contentY, opacity: contentOpacity }}
         className="relative z-10 h-full w-full max-w-[1400px] mx-auto px-5 md:px-12 lg:px-16
-          flex flex-col justify-center pt-24 sm:pt-28 md:pt-36 pb-24 sm:pb-28 md:pb-32"
+          flex flex-col justify-center pt-20 sm:pt-24 md:pt-36 pb-20 sm:pb-24 md:pb-28"
       >
         {/* Eyebrow */}
         <motion.div
@@ -255,7 +255,7 @@ export default function Hero() {
           }}
           className="font-heading text-white mb-4 md:mb-6 lg:mb-8"
           style={{
-            fontSize: "clamp(2.8rem, 5vw, 8rem)",
+            fontSize: "clamp(2rem, 5vw, 8rem)",
             lineHeight: 0.98,
             letterSpacing: "-0.04em",
           }}
@@ -285,8 +285,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 25 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.85 }}
-            className="text-white/70 max-w-xl leading-relaxed"
-            style={{ fontSize: "clamp(1.05rem, 1.4vw, 1.2rem)" }}
+            className="text-white/70 max-w-xl leading-relaxed text-sm md:text-base lg:text-[1.2rem]"
           >
             Comprehensive family and cosmetic dentistry — blending advanced
             technology, compassionate care, and a calm, welcoming experience
@@ -298,7 +297,7 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 1 }}
-            className="text-primary-light/70 text-[13px] mt-3 italic tracking-wide"
+            className="text-primary-light/70 text-[11px] md:text-xs lg:text-[13px] mt-1.5 md:mt-3 italic tracking-wide"
           >
             Formerly Brenner Dental Group — same trusted team, same Southampton
             location.
@@ -310,7 +309,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 1.2 }}
-          className="flex flex-wrap items-center gap-4"
+          className="flex flex-wrap items-center gap-3 md:gap-4"
         >
           <Link
             href="/patient-information/scheduling"
