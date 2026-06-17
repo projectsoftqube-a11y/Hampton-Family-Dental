@@ -168,7 +168,7 @@ export default function Services() {
       <div className="absolute bottom-[15%] left-[5%] w-[380px] h-[380px] rounded-full bg-navy/[0.05] blur-[120px] pointer-events-none" />
 
       {/* ──── Header ──── */}
-      <div className="svc-header relative z-10 max-w-[1400px] w-full mx-auto px-5 md:px-10 pb-6 pt-0">
+      <div className="svc-header relative z-10 max-w-[1400px] w-full mx-auto px-5 md:px-10 pb-6 !pt-0">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
           <div className="max-w-2xl">
             <motion.div
