@@ -1,7 +1,8 @@
 import ServicePageTemplate from "@/components/service-page/ServicePageTemplate";
+import { buildServicePageMetadata } from "@/components/service-page/servicePageMetadata";
 
-export default function CheckupsAndXRaysPage() {
-  const data = {
+
+const data = {
     eyebrow: "General Dentistry",
     title: "Dental Checkups & Digital X-Rays in Southampton, PA",
     intro: "Catch decay, fractures, and structural alignment issues early. Our comprehensive examinations and low-radiation digital x-rays provide a clear diagnostic look to protect your oral health and design a personalized care roadmap.",
@@ -68,7 +69,10 @@ export default function CheckupsAndXRaysPage() {
       { label: "General Dentistry", href: "/general-dentistry" },
       { label: "Dental Checkups & X-Rays" },
     ],
-  };
+};
 
+export const metadata = buildServicePageMetadata(data);
+
+export default function CheckupsAndXRaysPage() {
   return <ServicePageTemplate {...data} />;
 }

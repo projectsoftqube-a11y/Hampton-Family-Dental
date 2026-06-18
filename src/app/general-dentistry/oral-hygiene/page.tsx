@@ -1,7 +1,8 @@
 import ServicePageTemplate from "@/components/service-page/ServicePageTemplate";
+import { buildServicePageMetadata } from "@/components/service-page/servicePageMetadata";
 
-export default function OralHygienePage() {
-  const data = {
+
+const data = {
     eyebrow: "General Dentistry",
     title: "Oral Hygiene & Teeth Cleanings in Southampton, PA",
     intro: "Maintain a healthy, vibrant smile with professional cleanings and preventative hygiene care. Regular scaling and polishing remove stubborn plaque and tartar buildup, preventing gum disease and protecting your overall health.",
@@ -68,7 +69,10 @@ export default function OralHygienePage() {
       { label: "General Dentistry", href: "/general-dentistry" },
       { label: "Oral Hygiene" },
     ],
-  };
+};
 
+export const metadata = buildServicePageMetadata(data);
+
+export default function OralHygienePage() {
   return <ServicePageTemplate {...data} />;
 }

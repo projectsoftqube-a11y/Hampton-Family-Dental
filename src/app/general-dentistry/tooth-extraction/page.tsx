@@ -1,7 +1,8 @@
 import ServicePageTemplate from "@/components/service-page/ServicePageTemplate";
+import { buildServicePageMetadata } from "@/components/service-page/servicePageMetadata";
 
-export default function ToothExtractionPage() {
-  const data = {
+
+const data = {
     eyebrow: "General Dentistry",
     title: "Tooth Extractions in Southampton, PA",
     intro: "Remove damaged, decayed, or crowded teeth safely and comfortably. Dr. Brenner and Dr. Dudhat perform gentle tooth extractions, including wisdom teeth removals, utilizing advanced local anesthetics and comfortable care practices.",
@@ -68,7 +69,10 @@ export default function ToothExtractionPage() {
       { label: "General Dentistry", href: "/general-dentistry" },
       { label: "Tooth Extraction" },
     ],
-  };
+};
 
+export const metadata = buildServicePageMetadata(data);
+
+export default function ToothExtractionPage() {
   return <ServicePageTemplate {...data} />;
 }

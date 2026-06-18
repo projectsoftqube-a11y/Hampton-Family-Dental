@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { ChevronDown, HelpCircle } from "lucide-react";
 
 interface FAQItem {
@@ -11,12 +11,14 @@ interface FAQItem {
 
 interface FAQBlockProps {
   faqs: FAQItem[];
+  schemaFaqs?: FAQItem[];
   title?: string;
   subtitle?: string;
 }
 
 export default function FAQBlock({
   faqs,
+  schemaFaqs,
   title = "Frequently Asked Questions",
   subtitle = "Have questions about this dental service? Explore answers to common patient questions.",
 }: FAQBlockProps) {
@@ -30,7 +32,7 @@ export default function FAQBlock({
   const schema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": faqs.map((faq) => ({
+    "mainEntity": (schemaFaqs || faqs).map((faq) => ({
       "@type": "Question",
       "name": faq.q,
       "acceptedAnswer": {
@@ -45,7 +47,9 @@ export default function FAQBlock({
       {/* Schema Injection */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(schema).replace(/</g, "\\u003c"),
+        }}
       />
 
       <div className="max-w-[850px] mx-auto px-5">
@@ -72,6 +76,7 @@ export default function FAQBlock({
                 {/* Trigger Button */}
                 <button
                   onClick={() => toggleOpen(idx)}
+                  aria-expanded={isOpen}
                   className="flex items-center justify-between w-full p-5 text-left text-navy font-heading font-bold text-sm md:text-base hover:text-primary transition-colors duration-200"
                 >
                   <span className="flex items-center gap-3 pr-4">
@@ -86,20 +91,16 @@ export default function FAQBlock({
                 </button>
 
                 {/* Content Accordion */}
-                <AnimatePresence initial={false}>
-                  {isOpen && (
-                    <motion.div
-                      initial={{ height: 0, opacity: 0 }}
-                      animate={{ height: "auto", opacity: 1 }}
-                      exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
-                    >
-                      <div className="px-5 pb-5 pt-1 text-navy/70 text-xs md:text-sm leading-relaxed border-t border-navy/[0.03]">
-                        {faq.a}
-                      </div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
+                <motion.div
+                  initial={false}
+                  animate={isOpen ? { height: "auto", opacity: 1 } : { height: 0, opacity: 0 }}
+                  transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
+                  className="overflow-hidden"
+                >
+                  <div className="px-5 pb-5 pt-1 text-navy/70 text-xs md:text-sm leading-relaxed border-t border-navy/[0.03]">
+                    {faq.a}
+                  </div>
+                </motion.div>
               </div>
             );
           })}

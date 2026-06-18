@@ -1,7 +1,8 @@
 import ServicePageTemplate from "@/components/service-page/ServicePageTemplate";
+import { buildServicePageMetadata } from "@/components/service-page/servicePageMetadata";
 
-export default function DenturesPage() {
-  const data = {
+
+const data = {
     eyebrow: "Restorative Dentistry",
     title: "Full & Partial Dentures in Southampton, PA",
     intro: "Restore your smile and reclaim your quality of life with our premium, custom-fitted dentures. Our dentures are designed to fit comfortably, support your facial structure, and blend naturally with your appearance.",
@@ -72,7 +73,10 @@ export default function DenturesPage() {
       { label: "Restorative Dentistry", href: "/restorative-dentistry" },
       { label: "Dentures" },
     ],
-  };
+};
 
+export const metadata = buildServicePageMetadata(data);
+
+export default function DenturesPage() {
   return <ServicePageTemplate {...data} />;
 }

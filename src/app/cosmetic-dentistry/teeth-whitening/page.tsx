@@ -1,7 +1,8 @@
 import ServicePageTemplate from "@/components/service-page/ServicePageTemplate";
+import { buildServicePageMetadata } from "@/components/service-page/servicePageMetadata";
 
-export default function TeethWhiteningPage() {
-  const data = {
+
+const data = {
     eyebrow: "Cosmetic Dentistry",
     title: "Teeth Whitening in Southampton, PA",
     intro: "Brighten your smile up to 8 shades in a single visit. We offer professional, clinical-grade teeth whitening treatments that lift stubborn stains from coffee, tea, wine, and aging, safely and comfortably.",
@@ -72,7 +73,10 @@ export default function TeethWhiteningPage() {
       { label: "Cosmetic Dentistry", href: "/cosmetic-dentistry" },
       { label: "Teeth Whitening" },
     ],
-  };
+};
 
+export const metadata = buildServicePageMetadata(data);
+
+export default function TeethWhiteningPage() {
   return <ServicePageTemplate {...data} />;
 }

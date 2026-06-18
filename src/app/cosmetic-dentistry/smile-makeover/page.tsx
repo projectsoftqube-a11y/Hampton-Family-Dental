@@ -1,7 +1,8 @@
 import ServicePageTemplate from "@/components/service-page/ServicePageTemplate";
+import { buildServicePageMetadata } from "@/components/service-page/servicePageMetadata";
 
-export default function SmileMakeoverPage() {
-  const data = {
+
+const data = {
     eyebrow: "Cosmetic Dentistry",
     title: "Smile Makeovers in Southampton, PA",
     intro: "Rebuild, restore, and transform your entire smile. A smile makeover is a comprehensive, personalized plan combining multiple cosmetic and restorative treatments to achieve the symmetrical, radiant smile you have always wanted.",
@@ -68,7 +69,10 @@ export default function SmileMakeoverPage() {
       { label: "Cosmetic Dentistry", href: "/cosmetic-dentistry" },
       { label: "Smile Makeover" },
     ],
-  };
+};
 
+export const metadata = buildServicePageMetadata(data);
+
+export default function SmileMakeoverPage() {
   return <ServicePageTemplate {...data} />;
 }

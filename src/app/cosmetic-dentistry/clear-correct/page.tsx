@@ -1,7 +1,8 @@
 import ServicePageTemplate from "@/components/service-page/ServicePageTemplate";
+import { buildServicePageMetadata } from "@/components/service-page/servicePageMetadata";
 
-export default function ClearCorrectPage() {
-  const data = {
+
+const data = {
     eyebrow: "Cosmetic Dentistry",
     title: "Clear Correct Orthodontic Aligners in Southampton, PA",
     intro: "Achieve a straight, aligned smile with Clear Correct. This advanced clear aligner system offers a comfortable, discreet, and cost-effective alternative to traditional braces and Invisalign.",
@@ -68,7 +69,10 @@ export default function ClearCorrectPage() {
       { label: "Cosmetic Dentistry", href: "/cosmetic-dentistry" },
       { label: "Clear Correct" },
     ],
-  };
+};
 
+export const metadata = buildServicePageMetadata(data);
+
+export default function ClearCorrectPage() {
   return <ServicePageTemplate {...data} />;
 }

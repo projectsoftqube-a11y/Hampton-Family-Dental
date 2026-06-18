@@ -1,7 +1,8 @@
 import ServicePageTemplate from "@/components/service-page/ServicePageTemplate";
+import { buildServicePageMetadata } from "@/components/service-page/servicePageMetadata";
 
-export default function DentalCrownsPage() {
-  const data = {
+
+const data = {
     eyebrow: "Restorative Dentistry",
     title: "Dental Crowns in Southampton, PA",
     intro: "Protect, strengthen, and restore teeth damaged by severe decay, cracks, or wear. Our custom dental crowns are crafted from premium dental ceramics to blend seamlessly with your smile and restore full biting strength.",
@@ -64,7 +65,10 @@ export default function DentalCrownsPage() {
       { label: "Restorative Dentistry", href: "/restorative-dentistry" },
       { label: "Dental Crowns" },
     ],
-  };
+};
 
+export const metadata = buildServicePageMetadata(data);
+
+export default function DentalCrownsPage() {
   return <ServicePageTemplate {...data} />;
 }

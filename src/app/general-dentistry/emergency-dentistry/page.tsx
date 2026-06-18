@@ -1,7 +1,8 @@
 import ServicePageTemplate from "@/components/service-page/ServicePageTemplate";
+import { buildServicePageMetadata } from "@/components/service-page/servicePageMetadata";
 
-export default function EmergencyDentistryPage() {
-  const data = {
+
+const data = {
     eyebrow: "General Dentistry",
     title: "Emergency Dentist in Southampton, PA",
     intro: "Get relief from throbbing tooth pain, broken crowns, or dental trauma. We offer same-day emergency appointments during office hours and 24/7 phone support, ensuring you get help when you need it most.",
@@ -68,7 +69,10 @@ export default function EmergencyDentistryPage() {
       { label: "General Dentistry", href: "/general-dentistry" },
       { label: "Emergency Dentistry" },
     ],
-  };
+};
 
+export const metadata = buildServicePageMetadata(data);
+
+export default function EmergencyDentistryPage() {
   return <ServicePageTemplate {...data} />;
 }

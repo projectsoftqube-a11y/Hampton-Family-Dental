@@ -1,7 +1,8 @@
 import ServicePageTemplate from "@/components/service-page/ServicePageTemplate";
+import { buildServicePageMetadata } from "@/components/service-page/servicePageMetadata";
 
-export default function PorcelainVeneersPage() {
-  const data = {
+
+const data = {
     eyebrow: "Cosmetic Dentistry",
     title: "Porcelain Veneers in Southampton, PA",
     intro: "Correct cracks, gaps, chips, or severe discoloration instantly. Our custom porcelain veneers are handcrafted to bond securely to the front of your teeth, creating a symmetrical, bright, and stunning smile.",
@@ -64,7 +65,10 @@ export default function PorcelainVeneersPage() {
       { label: "Cosmetic Dentistry", href: "/cosmetic-dentistry" },
       { label: "Porcelain Veneers" },
     ],
-  };
+};
 
+export const metadata = buildServicePageMetadata(data);
+
+export default function PorcelainVeneersPage() {
   return <ServicePageTemplate {...data} />;
 }

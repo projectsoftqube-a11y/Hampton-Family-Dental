@@ -1,7 +1,8 @@
 import ServicePageTemplate from "@/components/service-page/ServicePageTemplate";
+import { buildServicePageMetadata } from "@/components/service-page/servicePageMetadata";
 
-export default function RootCanalPage() {
-  const data = {
+
+const data = {
     eyebrow: "Restorative Dentistry",
     title: "Root Canal Treatment in Southampton, PA",
     intro: "Save an infected, painful, or deeply decayed tooth from extraction. Modern root canal therapy is a highly routine, comfortable procedure that clears away dental infections, eliminates toothaches, and preserves your natural smile.",
@@ -68,7 +69,10 @@ export default function RootCanalPage() {
       { label: "Restorative Dentistry", href: "/restorative-dentistry" },
       { label: "Root Canal Treatment" },
     ],
-  };
+};
 
+export const metadata = buildServicePageMetadata(data);
+
+export default function RootCanalPage() {
   return <ServicePageTemplate {...data} />;
 }

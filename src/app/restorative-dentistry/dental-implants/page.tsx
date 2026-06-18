@@ -1,7 +1,8 @@
 import ServicePageTemplate from "@/components/service-page/ServicePageTemplate";
+import { buildServicePageMetadata } from "@/components/service-page/servicePageMetadata";
 
-export default function DentalImplantsPage() {
-  const data = {
+
+const data = {
     eyebrow: "Restorative Dentistry",
     title: "Dental Implants in Southampton, PA",
     intro: "Restore the complete look, strength, and functionality of missing teeth. Dental implants are biocompatible titanium posts that act as permanent anchors for premium crown restorations, protecting your jawbone and adjacent teeth.",
@@ -72,7 +73,10 @@ export default function DentalImplantsPage() {
       { label: "Restorative Dentistry", href: "/restorative-dentistry" },
       { label: "Dental Implants" },
     ],
-  };
+};
 
+export const metadata = buildServicePageMetadata(data);
+
+export default function DentalImplantsPage() {
   return <ServicePageTemplate {...data} />;
 }

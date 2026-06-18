@@ -1,7 +1,8 @@
 import ServicePageTemplate from "@/components/service-page/ServicePageTemplate";
+import { buildServicePageMetadata } from "@/components/service-page/servicePageMetadata";
 
-export default function DentalFillingsPage() {
-  const data = {
+
+const data = {
     eyebrow: "Restorative Dentistry",
     title: "Dental Fillings in Southampton, PA",
     intro: "Treat cavities and repair minor tooth decay or chips with our modern, metal-free composite dental fillings. Crafted from composite resin, these fillings match the shade of your teeth to preserve both structure and aesthetics.",
@@ -64,7 +65,10 @@ export default function DentalFillingsPage() {
       { label: "Restorative Dentistry", href: "/restorative-dentistry" },
       { label: "Dental Fillings" },
     ],
-  };
+};
 
+export const metadata = buildServicePageMetadata(data);
+
+export default function DentalFillingsPage() {
   return <ServicePageTemplate {...data} />;
 }

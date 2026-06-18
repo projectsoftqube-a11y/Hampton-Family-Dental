@@ -1,7 +1,8 @@
 import ServicePageTemplate from "@/components/service-page/ServicePageTemplate";
+import { buildServicePageMetadata } from "@/components/service-page/servicePageMetadata";
 
-export default function OralCancerScreeningPage() {
-  const data = {
+
+const data = {
     eyebrow: "General Dentistry",
     title: "Oral Cancer Screenings in Southampton, PA",
     intro: "Protect your long-term health with routine, non-invasive oral cancer screenings. Performed during your regular checkup, this simple exam identifies tissue changes early when treatment is most successful.",
@@ -64,7 +65,10 @@ export default function OralCancerScreeningPage() {
       { label: "General Dentistry", href: "/general-dentistry" },
       { label: "Oral Cancer Screening" },
     ],
-  };
+};
 
+export const metadata = buildServicePageMetadata(data);
+
+export default function OralCancerScreeningPage() {
   return <ServicePageTemplate {...data} />;
 }

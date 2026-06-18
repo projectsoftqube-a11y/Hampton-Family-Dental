@@ -1,7 +1,8 @@
 import ServicePageTemplate from "@/components/service-page/ServicePageTemplate";
+import { buildServicePageMetadata } from "@/components/service-page/servicePageMetadata";
 
-export default function PerioProtectPage() {
-  const data = {
+
+const data = {
     eyebrow: "General Dentistry",
     title: "Perio Protect Gum Therapy in Southampton, PA",
     intro: "Fight gum disease and chronic bad breath at home. Perio Protect uses custom-fitted dental trays to deliver antibiotic gel deep beneath the gumline, targeting bacteria that regular brushing and flossing cannot reach.",
@@ -68,7 +69,10 @@ export default function PerioProtectPage() {
       { label: "General Dentistry", href: "/general-dentistry" },
       { label: "Perio Protect" },
     ],
-  };
+};
 
+export const metadata = buildServicePageMetadata(data);
+
+export default function PerioProtectPage() {
   return <ServicePageTemplate {...data} />;
 }

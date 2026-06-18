@@ -1,7 +1,8 @@
 import ServicePageTemplate from "@/components/service-page/ServicePageTemplate";
+import { buildServicePageMetadata } from "@/components/service-page/servicePageMetadata";
 
-export default function DentalBridgesPage() {
-  const data = {
+
+const data = {
     eyebrow: "Restorative Dentistry",
     title: "Dental Bridges in Southampton, PA",
     intro: "Bridge the gap left by missing teeth with our custom porcelain dental bridges. A bridge restores your ability to chew and speak properly, prevents surrounding teeth from shifting, and completes your smile seamlessly.",
@@ -64,7 +65,10 @@ export default function DentalBridgesPage() {
       { label: "Restorative Dentistry", href: "/restorative-dentistry" },
       { label: "Dental Bridges" },
     ],
-  };
+};
 
+export const metadata = buildServicePageMetadata(data);
+
+export default function DentalBridgesPage() {
   return <ServicePageTemplate {...data} />;
 }

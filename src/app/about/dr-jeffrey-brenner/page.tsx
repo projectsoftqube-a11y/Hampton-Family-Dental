@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Sparkles, Calendar, Phone, Award, BookOpen, Heart, GraduationCap, ArrowLeft, CheckCircle } from "lucide-react";
 import Breadcrumbs from "@/components/shared/Breadcrumbs";
+import { absoluteUrl } from "@/lib/site";
 
 export default function DrBrennerBioPage() {
   const breadcrumbs = [
@@ -34,7 +35,7 @@ export default function DrBrennerBioPage() {
       "Dental Crowns",
       "Preventive Dentistry"
     ],
-    "image": "https://hampton-family-dental.com/images/dentist_portrait_1779858109259.webp",
+    "image": absoluteUrl("/images/dentist_portrait_1779858109259.webp"),
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "283 Second Street Pike, Suite 140",

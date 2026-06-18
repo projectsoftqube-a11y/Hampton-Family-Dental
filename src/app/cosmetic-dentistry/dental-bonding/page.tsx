@@ -1,7 +1,8 @@
 import ServicePageTemplate from "@/components/service-page/ServicePageTemplate";
+import { buildServicePageMetadata } from "@/components/service-page/servicePageMetadata";
 
-export default function DentalBondingPage() {
-  const data = {
+
+const data = {
     eyebrow: "Cosmetic Dentistry",
     title: "Dental Bonding in Southampton, PA",
     intro: "Correct chipped, cracked, decayed, or gapped teeth in a single visit. Dental bonding uses a tooth-colored composite resin to rebuild and reshape damaged teeth, delivering an immediate, natural-looking improvement.",
@@ -68,7 +69,10 @@ export default function DentalBondingPage() {
       { label: "Cosmetic Dentistry", href: "/cosmetic-dentistry" },
       { label: "Dental Bonding" },
     ],
-  };
+};
 
+export const metadata = buildServicePageMetadata(data);
+
+export default function DentalBondingPage() {
   return <ServicePageTemplate {...data} />;
 }

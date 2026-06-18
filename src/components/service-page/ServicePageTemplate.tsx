@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import { Sparkles, Check, ArrowRight, ShieldCheck, DollarSign, Calendar, Clock, ArrowUpRight } from "lucide-react";
+import { Sparkles, Check, ShieldCheck, DollarSign, Calendar, Clock, ArrowUpRight } from "lucide-react";
 import Breadcrumbs from "@/components/shared/Breadcrumbs";
 import DoctorBlock from "@/components/shared/DoctorBlock";
 import FAQBlock from "@/components/shared/FAQBlock";
@@ -19,9 +19,28 @@ interface CostInfo {
   financingNote: string;
 }
 
+interface TextLink {
+  text: string;
+  href: string;
+  external?: boolean;
+}
+
+interface LinkedTextBlock {
+  text: string;
+  links?: TextLink[];
+}
+
+interface ComparisonTable {
+  title: string;
+  intro: LinkedTextBlock;
+  columns: string[];
+  rows: string[][];
+}
+
 interface RelatedService {
   label: string;
   href: string;
+  external?: boolean;
 }
 
 interface FAQ {
@@ -36,20 +55,74 @@ interface ServicePageTemplateProps {
   duration: string;
   visits: string;
   image: string;
+  introBody?: LinkedTextBlock;
   whatIs: {
     title: string;
     text: string;
+    links?: TextLink[];
   };
+  benefitsTitle?: string;
   benefits: string[];
   processSteps: Step[];
+  comparison?: ComparisonTable;
+  candidacyBody?: {
+    title: string;
+    text: string;
+    links?: TextLink[];
+  };
   candidacy: {
     text: string;
     checks: string[];
   };
+  costBody?: {
+    title: string;
+    text: string;
+    links?: TextLink[];
+  };
   costInfo: CostInfo;
   faqs: FAQ[];
+  faqTitle?: string;
+  schemaFaqs?: FAQ[];
+  medicalProcedureSchema?: Record<string, unknown>;
   relatedServices: RelatedService[];
+  externalLinks?: RelatedService[];
+  areasServedLine?: string;
   breadcrumbs: { label: string; href?: string }[];
+}
+
+function LinkedText({
+  text,
+  links = [],
+}: {
+  text: string;
+  links?: TextLink[];
+}) {
+  if (links.length === 0) return <>{text}</>;
+
+  const parts: React.ReactNode[] = [];
+  let remaining = text;
+
+  links.forEach((link) => {
+    const idx = remaining.indexOf(link.text);
+    if (idx === -1) return;
+    const before = remaining.slice(0, idx);
+    if (before) parts.push(before);
+    parts.push(
+      <Link
+        key={`${link.href}-${parts.length}`}
+        href={link.href}
+        target={link.external ? "_blank" : undefined}
+        rel={link.external ? "noopener noreferrer" : undefined}
+        className="font-semibold text-primary-dark underline decoration-primary/30 underline-offset-4 hover:text-primary"
+      >
+        {link.text}
+      </Link>,
+    );
+    remaining = remaining.slice(idx + link.text.length);
+  });
+
+  if (remaining) parts.push(remaining);
+  return <>{parts}</>;
 }
 
 export default function ServicePageTemplate({
@@ -59,18 +132,28 @@ export default function ServicePageTemplate({
   duration,
   visits,
   image,
+  introBody,
   whatIs,
+  benefitsTitle = "Key Patient Benefits",
   benefits,
   processSteps,
+  comparison,
+  candidacyBody,
   candidacy,
+  costBody,
   costInfo,
   faqs,
+  faqTitle,
+  schemaFaqs,
+  medicalProcedureSchema,
   relatedServices,
+  externalLinks = [],
+  areasServedLine,
   breadcrumbs,
 }: ServicePageTemplateProps) {
 
   // JSON-LD Service Schema
-  const serviceSchema = {
+  const serviceSchema = medicalProcedureSchema || {
     "@context": "https://schema.org",
     "@type": "MedicalProcedure",
     "name": title,
@@ -87,7 +170,16 @@ export default function ServicePageTemplate({
         "postalCode": "18966",
         "addressCountry": "US"
       }
-    }
+    },
+    "areaServed": [
+      "Southampton PA",
+      "Richboro PA",
+      "Warminster PA",
+      "Newtown PA",
+      "Holland PA",
+      "Feasterville PA",
+      "Huntingdon Valley PA",
+    ],
   };
 
   return (
@@ -95,7 +187,9 @@ export default function ServicePageTemplate({
       {/* Schema Injection */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(serviceSchema).replace(/</g, "\\u003c"),
+        }}
       />
 
       {/* ─── Hero Section ─── */}
@@ -174,6 +268,14 @@ export default function ServicePageTemplate({
             
             {/* Left Main Column: Definitions, Benefits, Process */}
             <div className="lg:col-span-7 space-y-12">
+
+              {introBody && (
+                <div className="rounded-3xl bg-beige-light/20 border border-navy/[0.04] p-6 md:p-8">
+                  <p className="text-navy/70 text-sm md:text-base leading-relaxed">
+                    <LinkedText text={introBody.text} links={introBody.links} />
+                  </p>
+                </div>
+              )}
               
               {/* Definition */}
               <div className="space-y-4">
@@ -185,13 +287,15 @@ export default function ServicePageTemplate({
                   {whatIs.title}
                 </h2>
                 <p className="text-navy/70 text-sm md:text-base leading-relaxed">
-                  {whatIs.text}
+                  <LinkedText text={whatIs.text} links={whatIs.links} />
                 </p>
               </div>
 
               {/* Benefits */}
               <div className="bg-beige-light/20 border border-navy/[0.04] p-6 md:p-8 rounded-3xl space-y-6">
-                <h3 className="font-heading text-navy text-xl font-bold">Key Patient Benefits</h3>
+                <h2 className="font-heading text-navy text-2xl md:text-3xl font-bold leading-tight">
+                  {benefitsTitle}
+                </h2>
                 <div className="grid sm:grid-cols-2 gap-4">
                   {benefits.map((benefit) => (
                     <div key={benefit} className="flex items-start gap-3 bg-white p-3 rounded-xl border border-navy/[0.03] shadow-sm">
@@ -221,6 +325,87 @@ export default function ServicePageTemplate({
                   ))}
                 </div>
               </div>
+
+              {comparison && (
+                <div className="space-y-5">
+                  <h2 className="font-heading text-navy text-2xl md:text-3xl font-bold leading-tight">
+                    {comparison.title}
+                  </h2>
+                  <p className="text-navy/70 text-sm md:text-base leading-relaxed">
+                    <LinkedText
+                      text={comparison.intro.text}
+                      links={comparison.intro.links}
+                    />
+                  </p>
+                  <div className="overflow-hidden rounded-3xl border border-navy/[0.06] shadow-sm">
+                    <div className="overflow-x-auto">
+                      <table className="w-full min-w-[680px] border-collapse bg-white text-sm">
+                        <thead className="bg-navy text-white">
+                          <tr>
+                            {comparison.columns.map((column) => (
+                              <th
+                                key={column}
+                                className="px-5 py-4 text-left text-[11px] font-bold uppercase tracking-[0.18em]"
+                              >
+                                {column}
+                              </th>
+                            ))}
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {comparison.rows.map((row) => (
+                            <tr
+                              key={row.join("-")}
+                              className="border-t border-navy/[0.06] odd:bg-beige-light/20"
+                            >
+                              {row.map((cell, idx) => (
+                                <td
+                                  key={`${row[0]}-${idx}`}
+                                  className={`px-5 py-4 align-middle text-navy/70 leading-relaxed ${
+                                    idx === 0
+                                      ? "font-heading font-bold text-navy"
+                                      : "text-sm"
+                                  }`}
+                                >
+                                  {cell}
+                                </td>
+                              ))}
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {candidacyBody && (
+                <div className="space-y-4">
+                  <h2 className="font-heading text-navy text-2xl md:text-3xl font-bold leading-tight">
+                    {candidacyBody.title}
+                  </h2>
+                  <p className="text-navy/70 text-sm md:text-base leading-relaxed">
+                    <LinkedText
+                      text={candidacyBody.text}
+                      links={candidacyBody.links}
+                    />
+                  </p>
+                </div>
+              )}
+
+              {costBody && (
+                <div className="bg-navy-dark text-white p-6 md:p-8 rounded-3xl space-y-4 shadow-lg relative overflow-hidden">
+                  <div className="absolute top-[-50%] right-[-10%] w-[260px] h-[260px] rounded-full bg-primary/15 blur-3xl" />
+                  <div className="relative space-y-4">
+                    <h2 className="font-heading text-2xl md:text-3xl font-bold leading-tight">
+                      {costBody.title}
+                    </h2>
+                    <p className="text-white/72 text-sm md:text-base leading-relaxed">
+                      <LinkedText text={costBody.text} links={costBody.links} />
+                    </p>
+                  </div>
+                </div>
+              )}
 
             </div>
 
@@ -282,7 +467,11 @@ export default function ServicePageTemplate({
       <DoctorBlock />
 
       {/* ─── FAQ Accordion Block ─── */}
-      <FAQBlock faqs={faqs} title={`${title} FAQs`} />
+      <FAQBlock
+        faqs={faqs}
+        schemaFaqs={schemaFaqs}
+        title={faqTitle || `${title} FAQs`}
+      />
 
       {/* ─── Related Services Navigation ─── */}
       {relatedServices.length > 0 && (
@@ -296,6 +485,8 @@ export default function ServicePageTemplate({
                 <Link
                   key={rel.href}
                   href={rel.href}
+                  target={rel.external ? "_blank" : undefined}
+                  rel={rel.external ? "noopener noreferrer" : undefined}
                   className="group inline-flex items-center gap-2 bg-white border border-navy/5 px-5 py-2.5 rounded-full text-xs font-semibold hover:border-primary hover:text-primary transition-all duration-300 shadow-sm"
                 >
                   {rel.label}
@@ -303,6 +494,40 @@ export default function ServicePageTemplate({
                 </Link>
               ))}
             </div>
+          </div>
+        </section>
+      )}
+
+      {externalLinks.length > 0 && (
+        <section className="py-10 bg-white border-t border-navy/5">
+          <div className="max-w-[1000px] mx-auto px-5">
+            <h4 className="text-navy/45 text-[10px] tracking-widest uppercase font-bold text-center mb-5">
+              External authority
+            </h4>
+            <div className="flex flex-wrap justify-center gap-4">
+              {externalLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group inline-flex items-center gap-2 bg-beige-light/30 border border-navy/5 px-5 py-2.5 rounded-full text-xs font-semibold hover:border-primary hover:text-primary transition-all duration-300 shadow-sm"
+                >
+                  {link.label}
+                  <ArrowUpRight className="w-3.5 h-3.5 text-navy/30 group-hover:text-primary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {areasServedLine && (
+        <section className="py-8 bg-beige-light/20 border-t border-navy/5">
+          <div className="max-w-[1000px] mx-auto px-5 text-center">
+            <p className="text-navy/65 text-sm md:text-base leading-relaxed">
+              {areasServedLine}
+            </p>
           </div>
         </section>
       )}

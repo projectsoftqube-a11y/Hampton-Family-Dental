@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ChevronRight, Home } from "lucide-react";
+import { absoluteUrl } from "@/lib/site";
 
 interface BreadcrumbItem {
   label: string;
@@ -20,13 +21,13 @@ export default function Breadcrumbs({ items }: BreadcrumbsProps) {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://hampton-family-dental.com"
+        "item": absoluteUrl()
       },
       ...items.map((item, idx) => ({
         "@type": "ListItem",
         "position": idx + 2,
         "name": item.label,
-        ...(item.href ? { "item": `https://hampton-family-dental.com${item.href}` } : {})
+        ...(item.href ? { "item": absoluteUrl(item.href) } : {})
       }))
     ]
   };
@@ -36,7 +37,9 @@ export default function Breadcrumbs({ items }: BreadcrumbsProps) {
       {/* Schema JSON-LD */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(schema).replace(/</g, "\\u003c"),
+        }}
       />
       <ol className="flex flex-wrap items-center gap-2 text-xs font-medium text-white/50 tracking-wider uppercase font-body">
         <li className="flex items-center">
