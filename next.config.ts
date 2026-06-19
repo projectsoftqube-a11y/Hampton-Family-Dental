@@ -41,6 +41,11 @@ const nextConfig: NextConfig = {
         destination: "/restorative-dentistry/dental-fillings",
         permanent: true,
       },
+      {
+        source: "/root-canal",
+        destination: "/restorative-dentistry/root-canal",
+        permanent: true,
+      },
     ];
   },
 };
