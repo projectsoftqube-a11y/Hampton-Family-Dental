@@ -484,7 +484,7 @@ export default function ServicePageTemplate({
             >
               {areasServedLine && (
                 <div className="space-y-2 text-center md:text-left">
-                  <h4 className="text-primary-dark text-[10px] tracking-widest uppercase font-bold">
+                  <h4 className="text-primary-dark text-[16px] tracking-widest uppercase font-bold">
                     Areas We Serve
                   </h4>
                   <p className="text-navy/70 text-sm md:text-base leading-relaxed">

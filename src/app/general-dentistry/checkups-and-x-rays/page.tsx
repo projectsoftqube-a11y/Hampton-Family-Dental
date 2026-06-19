@@ -1,78 +1,167 @@
-import ServicePageTemplate from "@/components/service-page/ServicePageTemplate";
-import { buildServicePageMetadata } from "@/components/service-page/servicePageMetadata";
+import type { Metadata } from "next";
+import { SITE_URL } from "@/lib/site";
+import CheckupsAndXRaysClient from "./CheckupsAndXRaysClient";
 
-
-const data = {
-    eyebrow: "General Dentistry",
-    title: "Dental Checkups & Digital X-Rays in Southampton, PA",
-    intro: "Catch decay, fractures, and structural alignment issues early. Our comprehensive examinations and low-radiation digital x-rays provide a clear diagnostic look to protect your oral health and design a personalized care roadmap.",
-    duration: "30–60 minutes",
-    visits: "Every 6 months",
-    image: "/images/service_general_1779858374972.webp",
-    whatIs: {
-      title: "What Happens During a Comprehensive Dental Exam?",
-      text: "A regular dental checkup is your primary line of defense. Dr. Brenner or Dr. Dudhat will evaluate your teeth, check existing restorations for leaks or wear, inspect your gums for signs of disease, and perform a screening of your jaw joint (TMJ). Digital x-rays are captured to inspect bone health, scan beneath your gums, and check for decay hiding between your teeth.",
-    },
-    benefits: [
-      "Catches cavities and tooth cracks before they cause pain",
-      "Low-radiation digital scans are safe and instant",
-      "Evaluates bite alignment & jaw joint health",
-      "Monitors bone levels to prevent tooth loss",
-    ],
-    processSteps: [
-      {
-        title: "Digital X-Ray Diagnostic Scan",
-        text: "We capture high-definition digital x-rays, exposing you to up to 80% less radiation than traditional film scans.",
-      },
-      {
-        title: "Clinical Tooth Evaluation",
-        text: "Dr. Brenner or Dr. Dudhat inspects every tooth, checking for cavities, cracks, or wear, and evaluating existing fillings or crowns.",
-      },
-      {
-        title: "Gum & Bone Inspection",
-        text: "We evaluate your gum pocket depths and inspect diagnostic bone levels on the digital x-rays to screen for periodontal disease.",
-      },
-      {
-        title: "Consultation & Treatment Roadmap",
-        text: "We sit down to review your diagnostic scans, discuss findings, answer your questions, and map out a personalized treatment plan.",
-      },
-    ],
-    candidacy: {
-      text: "Dental checkups and x-rays are essential for all patients, from young children to seniors, to prevent painful and costly dental issues.",
-      checks: [
-        "Essential for all family members",
-        "Every 6 months to maintain oral health",
-        "Experiencing cold sensitivity or jaw clicking",
-        "First visit recommendation by age 1",
-      ],
-    },
-    costInfo: {
-      text: "Diagnostic checkups and x-rays are almost always covered at 100% by dental insurance, with no deductibles or co-pays.",
-      financingNote: "Our in-house membership plans cover all exams and routine x-rays. New patients without insurance get our $149 Welcome Special.",
-    },
-    faqs: [
-      {
-        q: "Are digital dental X-rays safe?",
-        a: "Yes! Digital x-rays expose you to negligible levels of radiation. They are up to 80% lower than traditional film x-rays and are completely safe. We also provide protective lead aprons for additional comfort.",
-      },
-      {
-        q: "How often do I need dental X-rays?",
-        a: "For healthy adult patients, we typically capture a basic set of bite-wing x-rays once a year. A full-mouth scan or panoramic x-ray is generally recommended every 3 to 5 years.",
-      },
-    ],
-    relatedServices: [
-      { label: "Oral Hygiene", href: "/general-dentistry/oral-hygiene" },
-      { label: "Oral Cancer Screening", href: "/general-dentistry/oral-cancer-screening" },
-      { label: "Dental Fillings", href: "/restorative-dentistry/dental-fillings" },
-    ],
-    breadcrumbs: [
-      { label: "General Dentistry", href: "/general-dentistry" },
-      { label: "Dental Checkups & X-Rays" },
-    ],
+export const metadata: Metadata = {
+  title: "Dental Checkup & X-Rays in Southampton, PA | Hampton",
+  description:
+    "Dental checkups & digital X-rays in Southampton, PA — catch problems early. New-patient $149 Welcome Special. Formerly Brenner Dental Group. (215) 357-2224.",
+  keywords: [
+    "dental checkup southampton pa",
+    "dental exam southampton",
+    "dental x-rays southampton",
+    "dentist appointment southampton",
+    "family checkup 18966",
+  ],
+  alternates: {
+    canonical: `${SITE_URL}/general-dentistry/checkups-and-x-rays`,
+  },
+  openGraph: {
+    title: "Dental Checkup & X-Rays in Southampton, PA | Hampton",
+    description:
+      "Dental checkups & digital X-rays in Southampton, PA — catch problems early. New-patient $149 Welcome Special. Formerly Brenner Dental Group. (215) 357-2224.",
+    url: `${SITE_URL}/general-dentistry/checkups-and-x-rays`,
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Dental Checkup & X-Rays in Southampton, PA | Hampton",
+    description:
+      "Dental checkups & digital X-rays in Southampton, PA — catch problems early. New-patient $149 Welcome Special. Formerly Brenner Dental Group. (215) 357-2224.",
+  },
 };
 
-export const metadata = buildServicePageMetadata(data);
-
 export default function CheckupsAndXRaysPage() {
-  return <ServicePageTemplate {...data} />;
+  const medicalProcedureSchema = {
+    "@context": "https://schema.org",
+    "@type": "MedicalProcedure",
+    "name": "Dental Checkup and Digital X-Rays",
+    "description": "Comprehensive dental exam with low-radiation digital X-rays to detect decay, cracks, gum disease, and bite problems early, for patients in Southampton, PA.",
+    "provider": {
+      "@type": "Dentist",
+      "name": "Hampton Family Dental",
+      "telephone": "+12153572224",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "283 Second Street Pike, Suite 140",
+        "addressLocality": "Southampton",
+        "addressRegion": "PA",
+        "postalCode": "18966",
+        "addressCountry": "US"
+      },
+      "areaServed": [
+        "Southampton PA",
+        "Richboro PA",
+        "Warminster PA",
+        "Newtown PA",
+        "Holland PA",
+        "Feasterville PA",
+        "Huntingdon Valley PA"
+      ]
+    }
+  };
+
+  const faqPageSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much does a dental checkup cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most dental insurance plans cover routine checkups and X-rays at 100%, so many patients pay nothing. New patients without insurance can use our $149 Welcome Special, which includes a comprehensive exam and X-rays, and our membership plan covers exams and routine X-rays for a low yearly fee."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens during a dental checkup?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We examine every tooth for decay, cracks, and worn fillings, check your gums and bite, screen for oral cancer, and take digital X-rays to see between teeth and below the gumline. Then we review everything with you and build a personalized care plan."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are digital dental X-rays safe?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Digital X-rays expose you to negligible levels of radiation - up to 80% lower than traditional film X-rays - and are completely safe. We also provide protective lead aprons for additional comfort."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How often do I need dental X-rays?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For healthy adult patients, we typically capture a basic set of bite-wing X-rays once a year. A full-mouth scan or panoramic X-ray is generally recommended every 3 to 5 years."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How often should I get a dental checkup?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For most patients, a checkup and cleaning every six months is ideal. If you have gum disease, frequent cavities, or other risk factors, we may recommend more frequent visits."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are dental X-rays safe during pregnancy?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Routine X-rays are usually postponed during pregnancy unless needed to diagnose a problem, and when necessary we use a lead apron and thyroid collar for protection. Always let us know if you're pregnant so we can tailor your care."
+        }
+      }
+    ]
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": `${SITE_URL}`
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "General Dentistry",
+        "item": `${SITE_URL}/general-dentistry`
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Dental Checkups & X-Rays",
+        "item": `${SITE_URL}/general-dentistry/checkups-and-x-rays`
+      }
+    ]
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(medicalProcedureSchema).replace(/</g, "\\u003c"),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqPageSchema).replace(/</g, "\\u003c"),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema).replace(/</g, "\\u003c"),
+        }}
+      />
+      <CheckupsAndXRaysClient />
+    </>
+  );
 }
