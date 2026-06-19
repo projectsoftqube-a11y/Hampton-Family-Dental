@@ -1,78 +1,176 @@
-import ServicePageTemplate from "@/components/service-page/ServicePageTemplate";
-import { buildServicePageMetadata } from "@/components/service-page/servicePageMetadata";
+import type { Metadata } from "next";
+import { SITE_URL } from "@/lib/site";
+import PerioProtectClient from "./PerioProtectClient";
 
-
-const data = {
-    eyebrow: "General Dentistry",
-    title: "Perio Protect Gum Therapy in Southampton, PA",
-    intro: "Fight gum disease and chronic bad breath at home. Perio Protect uses custom-fitted dental trays to deliver antibiotic gel deep beneath the gumline, targeting bacteria that regular brushing and flossing cannot reach.",
-    duration: "Varies (10–15 mins daily)",
-    visits: "2 visits to start",
-    image: "/images/about_storytelling_1779858491119.webp",
-    whatIs: {
-      title: "What is Perio Protect?",
-      text: "Perio Protect is a non-invasive, doctor-prescribed treatment for gum disease (periodontitis). Conventional cleanings scale tartar from the surface, but bacteria quickly return to deep gum pockets. Perio Protect uses customized trays with a special seal that pushes a low-concentration hydrogen peroxide gel deep into these pockets. The gel kills bacteria, oxygenates the tissue, and helps gums heal naturally.",
-    },
-    benefits: [
-      "Non-invasive treatment that reduces bleeding & inflammation",
-      "Delivers antibiotics deep into pockets that scaling can&apos;t reach",
-      "Naturally freshens breath and whitens teeth during treatment",
-      "Short, convenient daily sessions in the comfort of your home",
-    ],
-    processSteps: [
-      {
-        title: "Digital Gum Pocket Measurement",
-        text: "We evaluate your gums and measure your pocket depths. We then capture digital impressions to mold your custom trays.",
-      },
-      {
-        title: "Fitting Your Custom Perio Trays",
-        text: "Once the lab delivers your trays, we check the seal, demonstrate how to apply the peroxide gel, and define your daily schedule.",
-      },
-      {
-        title: "Daily Home Treatment",
-        text: "You wear the comfortable trays for just 10 to 15 minutes a day, letting the oxygenating gel clean and disinfect beneath the gums.",
-      },
-      {
-        title: "Progress Evaluation",
-        text: "We schedule follow-up checks to measure your pocket depths, verifying bleeding has resolved and gum tissue is healing.",
-      },
-    ],
-    candidacy: {
-      text: "Perio Protect is highly recommended for patients experiencing bleeding gums, early to advanced gum disease, or chronic bad breath.",
-      checks: [
-        "Bleeding gums when brushing or flossing",
-        "Deep periodontal pockets (4mm or deeper)",
-        "Chronic bad breath (halitosis) from bacteria",
-        "Looking for a non-surgical gum disease treatment",
-      ],
-    },
-    costInfo: {
-      text: "The cost includes custom laboratory trays and prescription gel. While some dental insurance plans cover a portion of the trays, the treatment prevents major gum surgery costs.",
-      financingNote: "Hampton Dental Wellness members get 15% off. CareCredit monthly payment options are accepted.",
-    },
-    faqs: [
-      {
-        q: "How does the gel work?",
-        a: "The Perio Gel contains 1.7% hydrogen peroxide. When pushed into gum pockets by the custom trays, the peroxide releases oxygen. This kills the anaerobic bacteria responsible for gum disease, which cannot survive in oxygen-rich environments.",
-      },
-      {
-        q: "Will this replace scaling and root planing?",
-        a: "Perio Protect is often used alongside scaling and root planing (deep cleanings) to enhance healing. By keeping bacteria levels low at home, it ensures your gums heal faster and stay healthy.",
-      },
-    ],
-    relatedServices: [
-      { label: "Oral Hygiene", href: "/general-dentistry/oral-hygiene" },
-      { label: "Dental Checkups", href: "/general-dentistry/checkups-and-x-rays" },
-      { label: "Tooth Extraction", href: "/general-dentistry/tooth-extraction" },
-    ],
-    breadcrumbs: [
-      { label: "General Dentistry", href: "/general-dentistry" },
-      { label: "Perio Protect" },
-    ],
+export const metadata: Metadata = {
+  title: "Gum Disease Treatment in Southampton, PA | Hampton",
+  description:
+    "Non-surgical gum disease treatment in Southampton, PA — stop bleeding gums & bad breath with Perio Protect tray therapy. Call (215) 357-2224.",
+  keywords: [
+    "gum disease treatment southampton pa",
+    "periodontal treatment southampton",
+    "bleeding gums southampton",
+    "perio protect southampton",
+    "gingivitis treatment",
+  ],
+  alternates: {
+    canonical: `${SITE_URL}/general-dentistry/perio-protect`,
+  },
+  openGraph: {
+    title: "Gum Disease Treatment in Southampton, PA | Hampton",
+    description:
+      "Non-surgical gum disease treatment in Southampton, PA — stop bleeding gums & bad breath with Perio Protect tray therapy. Call (215) 357-2224.",
+    url: `${SITE_URL}/general-dentistry/perio-protect`,
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Gum Disease Treatment in Southampton, PA | Hampton",
+    description:
+      "Non-surgical gum disease treatment in Southampton, PA — stop bleeding gums & bad breath with Perio Protect tray therapy. Call (215) 357-2224.",
+  },
 };
 
-export const metadata = buildServicePageMetadata(data);
-
 export default function PerioProtectPage() {
-  return <ServicePageTemplate {...data} />;
+  const medicalProcedureSchema = {
+    "@context": "https://schema.org",
+    "@type": "MedicalProcedure",
+    "name": "Gum Disease Treatment (Perio Protect)",
+    "description": "Non-surgical periodontal treatment for gum disease, including deep cleaning and Perio Protect custom-tray therapy, for patients in Southampton, PA.",
+    "procedureType": "https://schema.org/TherapeuticProcedure",
+    "provider": {
+      "@type": "Dentist",
+      "name": "Hampton Family Dental",
+      "telephone": "+12153572224",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "283 Second Street Pike, Suite 140",
+        "addressLocality": "Southampton",
+        "addressRegion": "PA",
+        "postalCode": "18966",
+        "addressCountry": "US"
+      },
+      "areaServed": [
+        "Southampton PA",
+        "Richboro PA",
+        "Warminster PA",
+        "Newtown PA",
+        "Holland PA",
+        "Feasterville PA",
+        "Huntingdon Valley PA"
+      ]
+    }
+  };
+
+  const faqPageSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What are the signs of gum disease?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The most common early sign is gums that bleed when you brush or floss. Others include red, swollen, or receding gums, persistent bad breath, loose teeth, or a change in your bite. Early gum disease is often painless, so these signs matter."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can gum disease be reversed?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The earliest stage - gingivitis - can usually be reversed with professional cleaning and good home care. More advanced periodontitis can't be fully reversed, but it can be controlled with deep cleaning and therapies like Perio Protect."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you treat gum disease without surgery?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Many cases are managed without surgery. We start with a deep cleaning (scaling and root planing) and often add Perio Protect - custom trays that deliver medication beneath the gumline at home. Together these control the infection and help gums heal."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why do my gums bleed when I brush?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Bleeding gums are usually the first sign of gum inflammation (gingivitis) from plaque along the gumline. With a professional cleaning, better home care, and treatment if needed, healthy gums shouldn't bleed."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is gum disease treatment covered by insurance?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Many dental plans cover periodontal treatment such as deep cleanings, and some cover part of Perio Protect trays. We'll review your benefits. Members of our in-house plan receive 15% off, and we accept CareCredit."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does the Perio Protect gel work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Perio Gel contains 1.7% hydrogen peroxide. When pushed into gum pockets by the custom trays, the peroxide releases oxygen, killing the anaerobic bacteria responsible for gum disease, which cannot survive in oxygen-rich environments."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will Perio Protect replace scaling and root planing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Perio Protect is often used alongside scaling and root planing (deep cleanings) to enhance healing. By keeping bacteria levels low at home, it ensures your gums heal faster and stay healthy."
+        }
+      }
+    ]
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": `${SITE_URL}`
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "General Dentistry",
+        "item": `${SITE_URL}/general-dentistry`
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Perio Protect",
+        "item": `${SITE_URL}/general-dentistry/perio-protect`
+      }
+    ]
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(medicalProcedureSchema).replace(/</g, "\\u003c"),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqPageSchema).replace(/</g, "\\u003c"),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema).replace(/</g, "\\u003c"),
+        }}
+      />
+      <PerioProtectClient />
+    </>
+  );
 }
