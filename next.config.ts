@@ -11,6 +11,16 @@ const nextConfig: NextConfig = {
         destination: "/restorative-dentistry/dental-implants",
         permanent: true,
       },
+      {
+        source: "/dental-crowns",
+        destination: "/restorative-dentistry/dental-crowns",
+        permanent: true,
+      },
+      {
+        source: "/crowns",
+        destination: "/restorative-dentistry/dental-crowns",
+        permanent: true,
+      },
     ];
   },
 };

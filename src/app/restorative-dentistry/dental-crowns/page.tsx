@@ -1,74 +1,168 @@
-import ServicePageTemplate from "@/components/service-page/ServicePageTemplate";
-import { buildServicePageMetadata } from "@/components/service-page/servicePageMetadata";
+import type { Metadata } from "next";
+import { SITE_URL } from "@/lib/site";
+import DentalCrownsClient from "./DentalCrownsClient";
 
-
-const data = {
-    eyebrow: "Restorative Dentistry",
-    title: "Dental Crowns in Southampton, PA",
-    intro: "Protect, strengthen, and restore teeth damaged by severe decay, cracks, or wear. Our custom dental crowns are crafted from premium dental ceramics to blend seamlessly with your smile and restore full biting strength.",
-    duration: "1–2 weeks",
-    visits: "2 visits",
-    image: "/images/service_veneers_1779858461216.webp",
-    whatIs: {
-      title: "What is a Dental Crown?",
-      text: "A dental crown (often called a cap) is a custom-fitted restoration that covers the entire visible portion of a damaged tooth. It reinforces the remaining tooth structure, prevents further fractures, and restores a natural, healthy appearance. Crowns are also used to top dental implants and protect teeth that have undergone root canal treatment.",
-    },
-    benefits: [
-      "Restores structural strength & function",
-      "Matches the exact color & contour of your teeth",
-      "Protects weakened teeth from fracturing",
-      "Stain-resistant and durable porcelain",
-    ],
-    processSteps: [
-      {
-        title: "Tooth Preparation & Digital Impressions",
-        text: "The tooth is gently reshaped to accommodate the crown. We capture highly accurate digital impressions—no messy molds required.",
-      },
-      {
-        title: "Temporary Crown Fitting",
-        text: "A comfortable temporary crown is placed to protect the prepared tooth while our laboratory custom-crafts your permanent restoration.",
-      },
-      {
-        title: "Final Crown Placement",
-        text: "At your second visit, we remove the temporary, test the fit and color of your custom ceramic crown, and bond it securely in place.",
-      },
-    ],
-    candidacy: {
-      text: "Dental crowns are recommended for patients who have advanced decay, large cracked fillings, broken teeth, or who have recently received root canals.",
-      checks: [
-        "Severe tooth decay or fractures",
-        "Large, failing silver fillings",
-        "Post-root canal protection",
-        "Aesthetic improvements for misshapen teeth",
-      ],
-    },
-    costInfo: {
-      text: "The cost of a crown depends on the materials selected. Most dental insurance policies cover up to 50% to 80% of dental crown treatments when medically necessary.",
-      financingNote: "Hampton Dental Wellness members get 15% off. CareCredit financing can cover out-of-pocket costs.",
-    },
-    faqs: [
-      {
-        q: "What is the difference between a filling and a crown?",
-        a: "A filling is used to repair small cavities by packing material directly into the tooth. A crown is required when the damage is too extensive for a filling, wrapping around the entire tooth to hold it together.",
-      },
-      {
-        q: "How long do dental crowns last?",
-        a: "With good oral hygiene (regular brushing and flossing) and professional checkups, a high-quality ceramic crown can last between 10 and 15 years, and often much longer.",
-      },
-    ],
-    relatedServices: [
-      { label: "Dental Implants", href: "/restorative-dentistry/dental-implants" },
-      { label: "Dental Bridges", href: "/restorative-dentistry/dental-bridges" },
-      { label: "Dental Fillings", href: "/restorative-dentistry/dental-fillings" },
-    ],
-    breadcrumbs: [
-      { label: "Restorative Dentistry", href: "/restorative-dentistry" },
-      { label: "Dental Crowns" },
-    ],
+export const metadata: Metadata = {
+  title: "Dental Crowns in Southampton, PA | Same-Day Options | Hampton",
+  description:
+    "Custom porcelain dental crowns in Southampton, PA — restore cracked, decayed, or weak teeth. Natural-looking, durable. (215) 357-2224.",
+  keywords: [
+    "dental crowns southampton pa",
+    "dental crown cost southampton",
+    "same day crowns southampton",
+    "porcelain crown southampton",
+    "tooth crown 18966",
+  ],
+  alternates: {
+    canonical: `${SITE_URL}/restorative-dentistry/dental-crowns`,
+  },
+  openGraph: {
+    title: "Dental Crowns in Southampton, PA | Same-Day Options | Hampton",
+    description:
+      "Custom porcelain dental crowns in Southampton, PA — restore cracked, decayed, or weak teeth. Natural-looking, durable. (215) 357-2224.",
+    url: `${SITE_URL}/restorative-dentistry/dental-crowns`,
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Dental Crowns in Southampton, PA | Same-Day Options | Hampton",
+    description:
+      "Custom porcelain dental crowns in Southampton, PA — restore cracked, decayed, or weak teeth. Natural-looking, durable. (215) 357-2224.",
+  },
 };
 
-export const metadata = buildServicePageMetadata(data);
-
 export default function DentalCrownsPage() {
-  return <ServicePageTemplate {...data} />;
+  const medicalProcedureSchema = {
+    "@context": "https://schema.org",
+    "@type": "MedicalProcedure",
+    "name": "Dental Crown",
+    "description": "Custom porcelain and zirconia dental crowns that restore cracked, decayed, or weakened teeth, for patients in Southampton, PA.",
+    "procedureType": "https://schema.org/TherapeuticProcedure",
+    "provider": {
+      "@type": "Dentist",
+      "name": "Hampton Family Dental",
+      "telephone": "+12153572224",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "283 Second Street Pike, Suite 140",
+        "addressLocality": "Southampton",
+        "addressRegion": "PA",
+        "postalCode": "18966",
+        "addressCountry": "US"
+      },
+      "areaServed": [
+        "Southampton PA",
+        "Richboro PA",
+        "Warminster PA",
+        "Newtown PA",
+        "Holland PA",
+        "Feasterville PA",
+        "Huntingdon Valley PA"
+      ]
+    }
+  };
+
+  const faqPageSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much does a dental crown cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It depends on the material and the tooth. We give you a clear estimate first. Most insurance covers a portion, we accept CareCredit, and members get 15% off."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I get a crown in one day?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In many cases, yes - same-day crowns are designed and milled in our office so you can finish in a single visit, with no temporary crown and no second appointment."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What's the difference between a crown and a filling?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A filling repairs a small cavity; a crown caps the entire tooth when it's cracked, heavily decayed, root-canal-treated, or too weak for a filling."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long do dental crowns last?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "With good care, crowns typically last 10 to 15 years or longer. Brushing, flossing, and regular checkups help them last."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does getting a crown hurt?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No - the tooth is fully numbed during preparation, so you'll feel pressure but not pain. Mild sensitivity afterward is normal and short-lived."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will insurance cover my crown?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Many dental plans cover part of a crown, especially when medically necessary. We'll check your benefits and explain your options, including financing and membership savings."
+        }
+      }
+    ]
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": `${SITE_URL}`
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Restorative Dentistry",
+        "item": `${SITE_URL}/restorative-dentistry`
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Dental Crowns",
+        "item": `${SITE_URL}/restorative-dentistry/dental-crowns`
+      }
+    ]
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(medicalProcedureSchema).replace(/</g, "\\u003c"),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqPageSchema).replace(/</g, "\\u003c"),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema).replace(/</g, "\\u003c"),
+        }}
+      />
+      <DentalCrownsClient />
+    </>
+  );
 }
