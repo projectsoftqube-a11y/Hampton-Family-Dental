@@ -32,8 +32,6 @@ export default function Hero() {
     offset: ["start start", "end start"],
   });
 
-  const videoY = useTransform(scrollYProgress, [0, 1], [0, 180]);
-  const videoScale = useTransform(scrollYProgress, [0, 1], [1, 1.12]);
   const contentY = useTransform(scrollYProgress, [0, 1], [0, -100]);
   const contentOpacity = useTransform(scrollYProgress, [0, 0.7], [1, 0]);
   const overlayOpacity = useTransform(scrollYProgress, [0, 1], [0.6, 0.9]);
@@ -83,10 +81,7 @@ export default function Hero() {
       className="relative h-[100svh] min-h-[680px] w-full overflow-hidden bg-navy-dark"
     >
       {/* ───────── Video Layer ───────── */}
-      <motion.div
-        style={{ y: videoY, scale: videoScale }}
-        className="absolute inset-0 z-0 will-change-transform"
-      >
+      <div className="absolute inset-0 z-0">
         <video
           ref={videoRef}
           className="h-full w-full object-cover"
@@ -112,7 +107,7 @@ export default function Hero() {
             }}
           />
         )}
-      </motion.div>
+      </div>
 
       {/* ───────── Overlays ───────── */}
       <motion.div
