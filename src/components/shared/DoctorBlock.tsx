@@ -52,7 +52,7 @@ export default function DoctorBlock() {
           <div className="flex flex-col items-center text-center bg-white rounded-3xl p-6 border border-navy/5 shadow-md hover:shadow-lg transition-all duration-300">
             <div className="relative w-36 h-36 rounded-full overflow-hidden mb-4 border-2 border-beige shadow-md">
               <Image
-                src="/images/cosmetic_smile_1779858128482.webp"
+                src="/images/dr_keyur_dudhat_portrait.png"
                 alt="Dr. Keyur Dudhat, DMD"
                 fill
                 className="object-cover"
