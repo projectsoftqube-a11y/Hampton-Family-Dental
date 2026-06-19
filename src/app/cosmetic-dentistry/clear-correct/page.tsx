@@ -1,78 +1,167 @@
-import ServicePageTemplate from "@/components/service-page/ServicePageTemplate";
-import { buildServicePageMetadata } from "@/components/service-page/servicePageMetadata";
+import type { Metadata } from "next";
+import { SITE_URL } from "@/lib/site";
+import ClearCorrectClient from "./ClearCorrectClient";
 
-
-const data = {
-    eyebrow: "Cosmetic Dentistry",
-    title: "Clear Correct Orthodontic Aligners in Southampton, PA",
-    intro: "Achieve a straight, aligned smile with Clear Correct. This advanced clear aligner system offers a comfortable, discreet, and cost-effective alternative to traditional braces and Invisalign.",
-    duration: "6–18 months",
-    visits: "Every 4–6 weeks",
-    image: "/images/about_storytelling_1779858491119.webp",
-    whatIs: {
-      title: "What is Clear Correct?",
-      text: "Clear Correct is an FDA-cleared clear aligner system used to straighten teeth. Made of a proprietary, highly stain-resistant plastic that is thinner and slightly firmer than other brands, Clear Correct aligners fit snugly and comfortably over your teeth. By wearing each custom-molded tray in sequence, your teeth are guided into alignment. They are fully removable for eating, brushing, and flossing.",
-    },
-    benefits: [
-      "Ultra-thin, clear material is virtually invisible",
-      "Removable to maintain optimal oral hygiene",
-      "Cost-effective alternative for aligner treatment",
-      "Highly stain-resistant and durable medical-grade plastic",
-    ],
-    processSteps: [
-      {
-        title: "3D Smile Scan & Planning",
-        text: "We capture digital impressions and structural measurements of your teeth, planning the exact movements with Clear Correct mapping software.",
-      },
-      {
-        title: "Fitting Your First Aligners",
-        text: "We fit your initial Clear Correct aligners, place any necessary tiny attachments on your teeth to guide movement, and provide home instructions.",
-      },
-      {
-        title: "Ongoing Swaps & Checkups",
-        text: "You switch to a new set of aligner trays every 1 to 2 weeks, visiting us every 4 to 6 weeks for quick progress checks and new aligner trays.",
-      },
-      {
-        title: "Retention Phase",
-        text: "After alignment is complete, we supply custom clear retainers to preserve your straight teeth and prevent shifting.",
-      },
-    ],
-    candidacy: {
-      text: "Clear Correct is suitable for treating spacing issues, minor crowding, overbites, or crooked teeth in both teenagers and adults.",
-      checks: [
-        "Minor to moderate teeth crowding",
-        "Spacing issues or gaps between teeth",
-        "Discreet, wireless orthodontic option preferred",
-        "Looking for a budget-friendly aligner alternative",
-      ],
-    },
-    costInfo: {
-      text: "Clear Correct is often more affordable than other aligner options. Many dental insurance plans with orthodontic benefits cover Clear Correct treatment.",
-      financingNote: "We offer monthly payment plans and accept CareCredit to make clear aligner therapy accessible.",
-    },
-    faqs: [
-      {
-        q: "What is the difference between Clear Correct and Invisalign?",
-        a: "Both systems use clear aligners to move teeth. Clear Correct aligners are slightly thinner and firmer, which some patients find more discrete. Clear Correct is also often more cost-effective.",
-      },
-      {
-        q: "Can I drink coffee with my aligners in?",
-        a: "No. You should always remove your aligners before drinking hot liquids (which can warp the plastic) or colored beverages (which can stain the aligners or trap sugars against your teeth). Only drink water with aligners in.",
-      },
-    ],
-    relatedServices: [
-      { label: "Invisalign", href: "/cosmetic-dentistry/invisalign" },
-      { label: "Porcelain Veneers", href: "/cosmetic-dentistry/porcelain-veneers" },
-      { label: "Dental Bonding", href: "/cosmetic-dentistry/dental-bonding" },
-    ],
-    breadcrumbs: [
-      { label: "Cosmetic Dentistry", href: "/cosmetic-dentistry" },
-      { label: "Clear Correct" },
-    ],
+export const metadata: Metadata = {
+  title: "Clear Aligners (ClearCorrect) in Southampton, PA | Hampton",
+  description:
+    "ClearCorrect clear aligners in Southampton, PA — straighten teeth discreetly, a comfortable alternative to braces. Free consultation + financing. (215) 357-2224.",
+  keywords: [
+    "clear aligners southampton pa",
+    "clearcorrect southampton",
+    "invisible braces southampton",
+    "teeth straightening southampton",
+    "clear aligners cost 18966",
+  ],
+  alternates: {
+    canonical: `${SITE_URL}/cosmetic-dentistry/clear-correct`,
+  },
+  openGraph: {
+    title: "Clear Aligners (ClearCorrect) in Southampton, PA | Hampton",
+    description:
+      "ClearCorrect clear aligners in Southampton, PA — straighten teeth discreetly, a comfortable alternative to braces. Free consultation + financing. (215) 357-2224.",
+    url: `${SITE_URL}/cosmetic-dentistry/clear-correct`,
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Clear Aligners (ClearCorrect) in Southampton, PA | Hampton",
+    description:
+      "ClearCorrect clear aligners in Southampton, PA — straighten teeth discreetly, a comfortable alternative to braces. Free consultation + financing. (215) 357-2224.",
+  },
 };
 
-export const metadata = buildServicePageMetadata(data);
-
 export default function ClearCorrectPage() {
-  return <ServicePageTemplate {...data} />;
+  const medicalProcedureSchema = {
+    "@context": "https://schema.org",
+    "@type": "MedicalProcedure",
+    "name": "ClearCorrect Clear Aligners",
+    "description": "ClearCorrect clear aligners that straighten teeth discreetly, a comfortable removable alternative to braces, for patients in Southampton, PA.",
+    "provider": {
+      "@type": "Dentist",
+      "name": "Hampton Family Dental",
+      "telephone": "+12153572224",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "283 Second Street Pike, Suite 140",
+        "addressLocality": "Southampton",
+        "addressRegion": "PA",
+        "postalCode": "18966",
+        "addressCountry": "US"
+      },
+      "areaServed": [
+        "Southampton PA",
+        "Richboro PA",
+        "Warminster PA",
+        "Newtown PA",
+        "Holland PA",
+        "Feasterville PA",
+        "Huntingdon Valley PA"
+      ]
+    }
+  };
+
+  const faqPageSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much do clear aligners cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It depends on how much movement is needed and the treatment length. ClearCorrect is often cost-effective. We give you a clear quote, check orthodontic insurance, and offer CareCredit financing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What's the difference between ClearCorrect and Invisalign?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Both use clear, removable aligners to straighten teeth discreetly. ClearCorrect is often more budget-friendly; Invisalign has a longer track record. We'll recommend the best fit."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does clear aligner treatment take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most treatments take about 6 to 18 months depending on your case. We'll give you a personalized timeline after scanning your teeth."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are clear aligners as effective as braces?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For mild to moderate cases, yes - clear aligners straighten teeth effectively while being removable and nearly invisible. Complex cases may do better with braces."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How many hours a day do I wear them?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For best results, wear your aligners 20 to 22 hours a day, removing them only to eat, drink anything but water, and brush your teeth."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do clear aligners hurt?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You may feel mild pressure for a day or two when switching trays - a sign they're working. It's much gentler than tightening metal braces, with no sharp brackets or wires."
+        }
+      }
+    ]
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": `${SITE_URL}`
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Cosmetic Dentistry",
+        "item": `${SITE_URL}/cosmetic-dentistry`
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Clear Correct",
+        "item": `${SITE_URL}/cosmetic-dentistry/clear-correct`
+      }
+    ]
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(medicalProcedureSchema).replace(/</g, "\\u003c"),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqPageSchema).replace(/</g, "\\u003c"),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema).replace(/</g, "\\u003c"),
+        }}
+      />
+      <ClearCorrectClient />
+    </>
+  );
 }

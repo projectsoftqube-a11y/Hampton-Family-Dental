@@ -61,6 +61,16 @@ const nextConfig: NextConfig = {
         destination: "/cosmetic-dentistry/porcelain-veneers",
         permanent: true,
       },
+      {
+        source: "/clearcorrect",
+        destination: "/cosmetic-dentistry/clear-correct",
+        permanent: true,
+      },
+      {
+        source: "/clear-correct",
+        destination: "/cosmetic-dentistry/clear-correct",
+        permanent: true,
+      },
     ];
   },
 };
