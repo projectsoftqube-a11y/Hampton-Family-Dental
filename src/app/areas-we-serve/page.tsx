@@ -92,7 +92,7 @@ export default function AreasWeServePage() {
                     Dentist in {area.city}, PA
                   </h2>
                   <p className="text-sm leading-relaxed text-navy/60">
-                    {area.intro}
+                    {area.localNote}
                   </p>
                 </div>
 

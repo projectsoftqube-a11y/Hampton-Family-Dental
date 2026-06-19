@@ -125,6 +125,22 @@ export const mainNav: NavItem[] = [
     ],
   },
   {
+    label: "Areas We Serve",
+    href: "/areas-we-serve",
+    children: [
+      { label: "Southampton", href: "/areas-we-serve/dentist-southampton-pa" },
+      { label: "Richboro", href: "/areas-we-serve/dentist-richboro-pa" },
+      { label: "Warminster", href: "/areas-we-serve/dentist-warminster-pa" },
+      { label: "Newtown", href: "/areas-we-serve/dentist-newtown-pa" },
+      { label: "Holland", href: "/areas-we-serve/dentist-holland-pa" },
+      { label: "Feasterville", href: "/areas-we-serve/dentist-feasterville-pa" },
+      {
+        label: "Huntingdon Valley",
+        href: "/areas-we-serve/dentist-huntingdon-valley-pa",
+      },
+    ],
+  },
+  {
     label: "Specials",
     href: "/specials",
   },
