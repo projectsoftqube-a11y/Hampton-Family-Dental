@@ -71,6 +71,16 @@ const nextConfig: NextConfig = {
         destination: "/cosmetic-dentistry/clear-correct",
         permanent: true,
       },
+      {
+        source: "/whitening",
+        destination: "/cosmetic-dentistry/teeth-whitening",
+        permanent: true,
+      },
+      {
+        source: "/teeth-whitening",
+        destination: "/cosmetic-dentistry/teeth-whitening",
+        permanent: true,
+      },
     ];
   },
 };
