@@ -171,53 +171,59 @@ export const serviceAreas: ServiceArea[] = [
     driveTime: "About 15 minutes from Warminster",
     title: "Dentist in Warminster, PA | Hampton Family Dental",
     description:
-      "Warminster patients can visit Hampton Family Dental in Southampton for gentle family, cosmetic, restorative, and emergency dentistry. New patients welcome.",
+      "Looking for a dentist minutes from Warminster? Hampton Family Dental offers family, cosmetic & emergency dentistry minutes away in Southampton. New patients welcome. (215) 357-2224.",
     keywords: [
       "dentist warminster pa",
       "warminster dentist",
       "family dentist warminster",
-      "emergency dentist warminster",
+      "dental office near warminster",
     ],
     heroSubline:
-      "Need a dentist near Warminster with practical scheduling and a calm, friendly team? Hampton Family Dental is a short drive away in Southampton for complete dental care.",
+      "Looking for a trusted dentist minutes from Warminster? Hampton Family Dental - formerly Brenner Dental Group - welcomes Warminster families for gentle general, cosmetic, restorative, and emergency dentistry. Call (215) 357-2224 to schedule.",
     intro:
-      "Warminster patients visit Hampton Family Dental for everything from preventive cleanings and digital exams to crowns, dental implants, whitening, Invisalign, dentures, and emergency dental care. Our team helps patients from neighborhoods near Street Road, York Road, and Warminster Community Park feel informed and comfortable at each visit.",
+      "For Warminster residents, quality dental care is just minutes away. At Hampton Family Dental, Dr. Jeffrey Brenner and Dr. Keyur Dudhat provide comprehensive care for the whole family - from children's first checkups to dental implants and smile makeovers - in a comfortable, modern office serving Warminster, Hartsville, and the surrounding Bucks County neighborhoods.",
     servicesCopy:
-      "Our services for Warminster patients include general dentistry, restorative dentistry, dental implants, cosmetic dentistry, Invisalign, emergency dentistry, and specials for new and returning patients. We help you understand what is urgent, what can wait, and what options best fit your goals.",
-    whyHeading: "Why Warminster Patients Choose Hampton Family Dental",
+      "We offer everything Warminster families need in one place: general and preventive dentistry (cleanings, checkups, emergency care), restorative dentistry (dental implants, crowns, bridges, dentures, root canals), and cosmetic dentistry (veneers, teeth whitening, Invisalign, smile makeovers). New patients without insurance can start with our membership plan.",
+    whyHeading: "Why Warminster Families Choose Hampton Family Dental",
     whyCopy: [
-      "Warminster families often juggle full calendars, school schedules, and work commutes, so dental care needs to be organized and easy to act on. We focus on clear treatment plans, helpful appointment guidance, and a comfortable setting that removes as much stress as possible from the visit.",
-      "Patients also appreciate that our Southampton practice combines preventive, cosmetic, and restorative services under one roof. If a routine visit reveals a cracked tooth, gum concern, missing tooth, or cosmetic opportunity, our team can explain the next step without sending you on a long search.",
+      "Warminster patients choose Hampton Family Dental for a more personal, less corporate experience than the big chains - with everything from cleanings to implants under one roof and two experienced dentists who know them by name.",
+      "That personal approach matters when a patient is comparing options for dental implants, cosmetic dentistry, emergency care, or a long-term family dental home. Our team takes time to explain what we see, answer questions clearly, and help Warminster families choose care that fits their health, goals, and budget.",
     ],
     directionsHeading: "Getting to Our Office from Warminster",
     directionsCopy: [
-      "From Warminster, patients commonly travel south toward Southampton using Street Road, York Road, or nearby connecting routes. Our office is located at 283 Second Street Pike, Suite 140, with convenient parking.",
-      "The drive is usually around 15 minutes, making Hampton Family Dental a practical option for Warminster patients who want nearby care without switching between multiple dental offices.",
+      "From Warminster, we're a short drive east via Street Road and Second Street Pike - roughly 10-12 minutes. Find us at 283 Second Street Pike, Suite 140, Southampton, PA 18966.",
+      "Most Warminster patients reach us in well under 20 minutes, which makes it easier to keep up with preventive care or get help quickly when a dental emergency interrupts the day.",
     ],
     localNote:
       "For Warminster families, our practice offers a close-by dental home with a full range of services and a team that explains care in everyday language.",
     membershipLine:
-      "If you do not have dental insurance, our in-house membership plan can help make preventive visits and additional treatment more manageable.",
+      "No insurance? No problem - our in-house membership plan covers cleanings, checkups, and X-rays for a low yearly fee, with discounts on other treatments. Call (215) 357-2224 or request an appointment online.",
     faqs: [
       {
-        question: "Are you accepting new patients from Warminster?",
+        question: "Do you accept new patients from Warminster?",
         answer:
-          "Yes. Hampton Family Dental welcomes new patients from Warminster for cleanings, exams, cosmetic consultations, restorative care, and urgent dental needs.",
+          "Yes! We happily welcome new patients from Warminster and the surrounding area. New patients without insurance can take advantage of our membership plan and welcome offers - call (215) 357-2224 to get started.",
+        schemaAnswer:
+          "Yes! We happily welcome new patients from Warminster and the surrounding area. New patients without insurance can use our membership plan and welcome offers - call (215) 357-2224.",
       },
       {
-        question: "How long does it take to get to your office from Warminster?",
+        question: "How far is Hampton Family Dental from Warminster?",
         answer:
-          "Most Warminster patients reach our Southampton office in about 15 minutes, depending on traffic and the route they take.",
+          "We're minutes from Warminster. From Warminster, we're a short drive east via Street Road and Second Street Pike - roughly 10-12 minutes. Most Warminster patients reach us in well under 20 minutes.",
       },
       {
-        question: "Do you provide dental implants near Warminster?",
+        question: "Do you offer emergency dental care?",
         answer:
-          "Yes. We offer dental implant consultations and restorative options for Warminster patients who are missing one tooth, several teeth, or need a more secure tooth replacement plan.",
+          "Yes - we reserve same-day appointments for dental emergencies for Warminster patients. If you have severe pain, swelling, or a broken or knocked-out tooth, call (215) 357-2224 right away.",
+        schemaAnswer:
+          "Yes - we reserve same-day appointments for dental emergencies. If you have severe pain, swelling, or a broken or knocked-out tooth, call (215) 357-2224 right away.",
       },
       {
-        question: "What should Warminster patients do for a dental emergency?",
+        question: "What if I don't have dental insurance?",
         answer:
-          "Call (215) 357-2224 right away. Our team can help triage tooth pain, swelling, broken teeth, knocked-out teeth, and other urgent dental concerns.",
+          "No problem - our in-house membership plan covers cleanings, checkups, and X-rays for a low yearly fee, plus discounts on other treatments. It's a simple, affordable option for Warminster families without insurance.",
+        schemaAnswer:
+          "No problem - our in-house membership plan covers cleanings, checkups, and X-rays for a low yearly fee, plus discounts. A simple, affordable option for Warminster families.",
       },
     ],
   },
