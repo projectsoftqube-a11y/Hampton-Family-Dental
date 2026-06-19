@@ -77,7 +77,6 @@ export default function NotFound() {
               hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 group"
           >
             <span className="relative z-10 flex items-center gap-1.5">
-              <ArrowLeft className="w-3.5 h-3.5" />
               Return Home
             </span>
             <span className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center">
