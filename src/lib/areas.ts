@@ -231,56 +231,62 @@ export const serviceAreas: ServiceArea[] = [
     city: "Newtown",
     slug: "dentist-newtown-pa",
     zipCodes: "18940",
-    driveTime: "About 20 minutes from Newtown",
+    driveTime: "About 15 minutes from Newtown",
     title: "Dentist in Newtown, PA | Hampton Family Dental",
     description:
-      "Newtown patients can visit Hampton Family Dental in Southampton for family dentistry, cosmetic care, Invisalign, implants, and emergency dental visits.",
+      "Looking for a dentist a short drive from Newtown? Hampton Family Dental offers family, cosmetic & emergency dentistry minutes away in Southampton. New patients welcome. (215) 357-2224.",
     keywords: [
       "dentist newtown pa",
       "newtown dentist",
       "family dentist newtown",
-      "cosmetic dentist newtown",
+      "dental office near newtown",
     ],
     heroSubline:
-      "Searching for a dentist near Newtown who blends modern treatment with a personal, relationship-first approach? Hampton Family Dental welcomes Newtown patients to our Southampton office.",
+      "Looking for a trusted dentist a short drive from Newtown? Hampton Family Dental - formerly Brenner Dental Group - welcomes Newtown families for gentle general, cosmetic, restorative, and emergency dentistry. Call (215) 357-2224 to schedule.",
     intro:
-      "Newtown patients choose Hampton Family Dental for careful exams, preventive dentistry, cosmetic smile improvements, dental implants, crowns, Invisalign, and emergency care. We are close enough for regular visits and thorough enough for patients who want a long-term dental home beyond a quick cleaning.",
+      "For Newtown residents, quality dental care is just minutes away. At Hampton Family Dental, Dr. Jeffrey Brenner and Dr. Keyur Dudhat provide comprehensive care for the whole family - from children's first checkups to dental implants and smile makeovers - in a comfortable, modern office serving Newtown, Newtown Borough, and the surrounding Council Rock area.",
     servicesCopy:
-      "For Newtown patients, we provide general dentistry, restorative dentistry, dental implants, cosmetic dentistry, Invisalign, emergency dentistry, and patient specials. Each service is designed around clear recommendations, natural-looking results, and a visit experience that feels calm rather than rushed.",
-    whyHeading: "Why Newtown Patients Choose Hampton Family Dental",
+      "We offer everything Newtown families need in one place: general and preventive dentistry (cleanings, checkups, emergency care), restorative dentistry (dental implants, crowns, bridges, dentures, root canals), and cosmetic dentistry (veneers, teeth whitening, Invisalign, smile makeovers). New patients without insurance can start with our membership plan.",
+    whyHeading: "Why Newtown Families Choose Hampton Family Dental",
     whyCopy: [
-      "Newtown patients often come to us because they want care that is both technically strong and easy to understand. We take a careful look at your health, listen to what you want, and then map out options in a way that respects your time, comfort, and budget.",
-      "Our office is especially helpful for families with different dental needs under one roof. One family member may need routine cleanings, another may be considering Invisalign, and another may need a crown or implant consultation. We keep those conversations coordinated and personal.",
+      "Newtown patients value our advanced technology and cosmetic and implant expertise - including dental implants, Invisalign, and full smile makeovers - delivered with a warm, personal touch close to home.",
+      "For families across Newtown, Newtown Borough, and the Council Rock area, that mix of high-end treatment and genuine, unhurried care is what sets us apart from larger corporate offices. Whether you are planning implants, refining your smile, or simply keeping up with routine checkups, our team explains every option clearly so you can decide with confidence.",
     ],
     directionsHeading: "Getting to Our Office from Newtown",
     directionsCopy: [
-      "From Newtown, patients commonly drive through the Richboro or Holland area toward Second Street Pike in Southampton. Hampton Family Dental is located at 283 Second Street Pike, Suite 140.",
-      "The trip is usually about 20 minutes, making our office a convenient option for Newtown patients who want comprehensive care close to Bucks County daily routes.",
+      "From Newtown, we're an easy drive via the Newtown Bypass and Second Street Pike - about 15 minutes. Find us at 283 Second Street Pike, Suite 140, Southampton, PA 18966.",
+      "Most Newtown patients reach us in well under 20 minutes, making it simple to schedule cosmetic consultations, implant planning visits, or family checkups around busy Council Rock-area routines.",
     ],
     localNote:
-      "For Newtown patients, our practice offers a nearby alternative to large, impersonal dental offices while still providing a broad range of treatment options.",
+      "For Newtown families, our office pairs advanced cosmetic and implant dentistry with a personal, relationship-first approach just a short drive from home.",
     membershipLine:
-      "Patients without dental insurance can ask about our in-house membership plan for preventive visits and savings on additional care.",
+      "No insurance? No problem - our in-house membership plan covers cleanings, checkups, and X-rays for a low yearly fee, with discounts on other treatments. Call (215) 357-2224 or request an appointment online.",
     faqs: [
       {
-        question: "Do Newtown patients visit Hampton Family Dental?",
+        question: "Do you accept new patients from Newtown?",
         answer:
-          "Yes. We welcome patients from Newtown who want nearby family, cosmetic, restorative, and emergency dental care in Southampton.",
+          "Yes! We happily welcome new patients from Newtown and the surrounding area. New patients without insurance can take advantage of our membership plan and welcome offers - call (215) 357-2224 to get started.",
+        schemaAnswer:
+          "Yes! We happily welcome new patients from Newtown and the surrounding area. New patients without insurance can use our membership plan and welcome offers - call (215) 357-2224.",
       },
       {
-        question: "How far is your office from Newtown, PA?",
+        question: "How far is Hampton Family Dental from Newtown?",
         answer:
-          "Our Southampton office is generally about 20 minutes from Newtown, depending on your route and traffic conditions.",
+          "We're a short drive from Newtown. From Newtown, we're an easy drive via the Newtown Bypass and Second Street Pike - about 15 minutes. Most Newtown patients reach us in well under 20 minutes.",
       },
       {
-        question: "Can Newtown patients get Invisalign at your office?",
+        question: "Do you offer emergency dental care?",
         answer:
-          "Yes. We offer Invisalign and clear aligner consultations for teens and adults from Newtown who want a straighter smile without traditional braces.",
+          "Yes - we reserve same-day appointments for dental emergencies for Newtown patients. If you have severe pain, swelling, or a broken or knocked-out tooth, call (215) 357-2224 right away.",
+        schemaAnswer:
+          "Yes - we reserve same-day appointments for dental emergencies. If you have severe pain, swelling, or a broken or knocked-out tooth, call (215) 357-2224 right away.",
       },
       {
-        question: "Do you offer family dentistry for Newtown households?",
+        question: "What if I don't have dental insurance?",
         answer:
-          "Yes. We care for children, adults, and seniors, making it easier for Newtown families to coordinate preventive and restorative dental visits.",
+          "No problem - our in-house membership plan covers cleanings, checkups, and X-rays for a low yearly fee, plus discounts on other treatments. It's a simple, affordable option for Newtown families without insurance.",
+        schemaAnswer:
+          "No problem - our in-house membership plan covers cleanings, checkups, and X-rays for a low yearly fee, plus discounts. A simple, affordable option for Newtown families.",
       },
     ],
   },
@@ -288,56 +294,62 @@ export const serviceAreas: ServiceArea[] = [
     city: "Holland",
     slug: "dentist-holland-pa",
     zipCodes: "18966",
-    driveTime: "About 10 minutes from Holland",
+    driveTime: "About 5 minutes from Holland",
     title: "Dentist in Holland, PA | Hampton Family Dental",
     description:
-      "Holland patients can visit Hampton Family Dental in nearby Southampton for preventive, cosmetic, restorative, Invisalign, and emergency dentistry.",
+      "Looking for a dentist right next door in Holland? Hampton Family Dental offers family, cosmetic & emergency dentistry minutes away in Southampton. New patients welcome. (215) 357-2224.",
     keywords: [
       "dentist holland pa",
       "holland dentist",
       "family dentist holland",
-      "dental office near holland pa",
+      "dental office near holland",
     ],
     heroSubline:
-      "For Holland families looking for a nearby dentist, Hampton Family Dental offers complete care just minutes away in Southampton.",
+      "Looking for a trusted dentist right next door in Holland? Hampton Family Dental - formerly Brenner Dental Group - welcomes Holland families for gentle general, cosmetic, restorative, and emergency dentistry. Call (215) 357-2224 to schedule.",
     intro:
-      "Holland patients visit our Southampton office for regular cleanings, checkups, dental emergencies, cosmetic dentistry, Invisalign, crowns, bridges, dentures, and implant consultations. Our location makes it simple to keep up with care without traveling far from the Holland and Northampton Township area.",
+      "For Holland residents, quality dental care is just minutes away. At Hampton Family Dental, Dr. Jeffrey Brenner and Dr. Keyur Dudhat provide comprehensive care for the whole family - from children's first checkups to dental implants and smile makeovers - in a comfortable, modern office serving Holland, Northampton Township, and the surrounding community.",
     servicesCopy:
-      "Our dental services for Holland patients include general dentistry, restorative dentistry, dental implants, cosmetic dentistry, Invisalign, emergency dentistry, and specials. The goal is to help patients protect their oral health, solve dental problems early, and feel confident about their smiles.",
+      "We offer everything Holland families need in one place: general and preventive dentistry (cleanings, checkups, emergency care), restorative dentistry (dental implants, crowns, bridges, dentures, root canals), and cosmetic dentistry (veneers, teeth whitening, Invisalign, smile makeovers). New patients without insurance can start with our membership plan.",
     whyHeading: "Why Holland Families Choose Hampton Family Dental",
     whyCopy: [
-      "Holland patients often want care that is close, friendly, and consistent. At Hampton Family Dental, you see a team that values long-term relationships and explains treatment in a way that feels manageable, whether you need a routine exam or a larger restorative plan.",
-      "Because our office is nearby, it is easier to stay current with preventive visits and easier to call quickly when something feels wrong. That convenience matters when a filling chips, a child has tooth pain, or you finally decide to talk about whitening or Invisalign.",
+      "As one of our closest neighboring communities, Holland families enjoy the convenience of quality dental care just minutes away - close enough to pop in on a lunch break.",
+      "Because we're practically around the corner, Holland and Northampton Township patients find it easy to keep up with routine cleanings, bring the kids in after school, or call for same-day help when a tooth suddenly starts to ache. That nearness means less time in the car and more flexibility to fit dental care into a busy week.",
     ],
     directionsHeading: "Getting to Our Office from Holland",
     directionsCopy: [
-      "From Holland, most patients can reach us in about 10 minutes by heading toward Second Street Pike in Southampton. Our office is at 283 Second Street Pike, Suite 140.",
-      "The short drive makes appointments easier to schedule around school, work, and errands throughout Holland, Churchville, and central Southampton.",
+      "From Holland, we're only a few minutes away via Buck Road and Second Street Pike. Find us at 283 Second Street Pike, Suite 140, Southampton, PA 18966.",
+      "The short hop down Buck Road makes Hampton Family Dental one of the most convenient choices for Holland residents, whether you're stopping in before work, over a lunch break, or on the way home from errands around Northampton Township.",
     ],
     localNote:
-      "Holland patients get the benefit of a close-by dental office with the service range needed for routine care, urgent issues, and smile improvements.",
+      "For Holland families, we're the neighborhood dental home next door - close enough for lunch-break visits, with the full range of services you'd expect from a modern practice.",
     membershipLine:
-      "No insurance? Our in-house membership plan gives Holland patients a straightforward way to keep up with cleanings, checkups, and X-rays.",
+      "No insurance? No problem - our in-house membership plan covers cleanings, checkups, and X-rays for a low yearly fee, with discounts on other treatments. Call (215) 357-2224 or request an appointment online.",
     faqs: [
       {
-        question: "Do you accept new patients from Holland, PA?",
+        question: "Do you accept new patients from Holland?",
         answer:
-          "Yes. Hampton Family Dental welcomes new patients from Holland for preventive visits, cosmetic care, restorative dentistry, and dental emergencies.",
+          "Yes! We happily welcome new patients from Holland and the surrounding area. New patients without insurance can take advantage of our membership plan and welcome offers - call (215) 357-2224 to get started.",
+        schemaAnswer:
+          "Yes! We happily welcome new patients from Holland and the surrounding area. New patients without insurance can use our membership plan and welcome offers - call (215) 357-2224.",
       },
       {
-        question: "How close is Hampton Family Dental to Holland?",
+        question: "How far is Hampton Family Dental from Holland?",
         answer:
-          "Our Southampton office is usually about 10 minutes from Holland, depending on your starting point and traffic.",
+          "We're right next door in Holland. From Holland, we're only a few minutes away via Buck Road and Second Street Pike. Most Holland patients reach us in well under 20 minutes.",
       },
       {
-        question: "Do you offer emergency dentistry for Holland patients?",
+        question: "Do you offer emergency dental care?",
         answer:
-          "Yes. Holland patients should call (215) 357-2224 for urgent dental pain, swelling, broken teeth, lost restorations, or knocked-out teeth.",
+          "Yes - we reserve same-day appointments for dental emergencies for Holland patients. If you have severe pain, swelling, or a broken or knocked-out tooth, call (215) 357-2224 right away.",
+        schemaAnswer:
+          "Yes - we reserve same-day appointments for dental emergencies. If you have severe pain, swelling, or a broken or knocked-out tooth, call (215) 357-2224 right away.",
       },
       {
-        question: "Can Holland patients join the membership plan?",
+        question: "What if I don't have dental insurance?",
         answer:
-          "Yes. Patients without dental insurance can ask about our in-house membership plan, which helps cover preventive care and discounts other treatment.",
+          "No problem - our in-house membership plan covers cleanings, checkups, and X-rays for a low yearly fee, plus discounts on other treatments. It's a simple, affordable option for Holland families without insurance.",
+        schemaAnswer:
+          "No problem - our in-house membership plan covers cleanings, checkups, and X-rays for a low yearly fee, plus discounts. A simple, affordable option for Holland families.",
       },
     ],
   },
@@ -345,56 +357,62 @@ export const serviceAreas: ServiceArea[] = [
     city: "Feasterville",
     slug: "dentist-feasterville-pa",
     zipCodes: "19053",
-    driveTime: "About 15 minutes from Feasterville",
+    driveTime: "About 10 minutes from Feasterville",
     title: "Dentist in Feasterville, PA | Hampton Family Dental",
     description:
-      "Feasterville patients can visit Hampton Family Dental in Southampton for family, cosmetic, restorative, Invisalign, implant, and emergency dentistry.",
+      "Looking for a dentist a short drive from Feasterville? Hampton Family Dental offers family, cosmetic & emergency dentistry minutes away in Southampton. New patients welcome. (215) 357-2224.",
     keywords: [
       "dentist feasterville pa",
       "feasterville dentist",
       "family dentist feasterville",
-      "emergency dentist feasterville",
+      "dental office near feasterville",
     ],
     heroSubline:
-      "Looking for a dentist near Feasterville with a welcoming team and a full menu of services? Hampton Family Dental is nearby in Southampton.",
+      "Looking for a trusted dentist a short drive from Feasterville? Hampton Family Dental - formerly Brenner Dental Group - welcomes Feasterville families for gentle general, cosmetic, restorative, and emergency dentistry. Call (215) 357-2224 to schedule.",
     intro:
-      "Patients from Feasterville choose Hampton Family Dental for family checkups, cleanings, tooth-colored fillings, crowns, dental implants, Invisalign, whitening, dentures, and emergency dental care. Our team helps make the visit feel organized from the first phone call through the final follow-up.",
+      "For Feasterville residents, quality dental care is just minutes away. At Hampton Family Dental, Dr. Jeffrey Brenner and Dr. Keyur Dudhat provide comprehensive care for the whole family - from children's first checkups to dental implants and smile makeovers - in a comfortable, modern office serving Feasterville, Trevose, and the Lower Southampton area.",
     servicesCopy:
-      "Feasterville patients can access general dentistry, restorative dentistry, dental implants, cosmetic dentistry, Invisalign, emergency dentistry, and patient specials at one nearby office. We focus on useful recommendations, comfortable visits, and care that supports long-term health.",
-    whyHeading: "Why Feasterville Patients Choose Hampton Family Dental",
+      "We offer everything Feasterville families need in one place: general and preventive dentistry (cleanings, checkups, emergency care), restorative dentistry (dental implants, crowns, bridges, dentures, root canals), and cosmetic dentistry (veneers, teeth whitening, Invisalign, smile makeovers). New patients without insurance can start with our membership plan.",
+    whyHeading: "Why Feasterville Families Choose Hampton Family Dental",
     whyCopy: [
-      "Feasterville patients often come to us when they want more than a quick appointment. They want a team that remembers them, explains treatment clearly, and offers solutions for both everyday dental care and more complex concerns such as missing teeth, worn restorations, or cosmetic changes.",
-      "Our Southampton office gives Feasterville families a practical nearby option with modern technology and a compassionate approach. We help you understand what we see, why it matters, and how to choose the treatment path that best fits your goals.",
+      "Feasterville patients appreciate a welcoming, judgment-free practice for the whole family - from a child's first checkup to a parent's smile makeover - close to home.",
+      "For households across Feasterville, Trevose, and Lower Southampton, that comfortable, all-ages approach makes dental visits easier to keep up with. Parents can book back-to-back family appointments, ask about whitening or Invisalign, and plan restorative care with a team that takes the time to explain every step in plain language.",
     ],
     directionsHeading: "Getting to Our Office from Feasterville",
     directionsCopy: [
-      "From Feasterville, patients can usually reach our office in about 15 minutes by heading toward Southampton and Second Street Pike. Find Hampton Family Dental at 283 Second Street Pike, Suite 140.",
-      "The location is convenient for patients traveling from Feasterville, Trevose, and Lower Southampton neighborhoods who want a nearby dental home with comprehensive care.",
+      "From Feasterville, we're a quick drive north on Second Street Pike - about 10 minutes. Find us at 283 Second Street Pike, Suite 140, Southampton, PA 18966.",
+      "Most Feasterville patients reach us in well under 20 minutes, which makes it easy to fit cleanings, emergency visits, or cosmetic consultations around work and errands throughout Trevose and Lower Southampton.",
     ],
     localNote:
-      "Feasterville patients can use our office for routine maintenance, urgent concerns, and elective smile upgrades without a long drive.",
+      "For Feasterville families, our office is a welcoming, all-ages dental home just up Second Street Pike - with everything from preventive care to smile makeovers under one roof.",
     membershipLine:
-      "If insurance is a concern, ask about our in-house membership plan and flexible payment options for Feasterville patients.",
+      "No insurance? No problem - our in-house membership plan covers cleanings, checkups, and X-rays for a low yearly fee, with discounts on other treatments. Call (215) 357-2224 or request an appointment online.",
     faqs: [
       {
-        question: "Are Feasterville patients welcome at Hampton Family Dental?",
+        question: "Do you accept new patients from Feasterville?",
         answer:
-          "Yes. We welcome new and returning patients from Feasterville for family dental care, cosmetic dentistry, restorative treatment, and emergencies.",
+          "Yes! We happily welcome new patients from Feasterville and the surrounding area. New patients without insurance can take advantage of our membership plan and welcome offers - call (215) 357-2224 to get started.",
+        schemaAnswer:
+          "Yes! We happily welcome new patients from Feasterville and the surrounding area. New patients without insurance can use our membership plan and welcome offers - call (215) 357-2224.",
       },
       {
-        question: "How far is your office from Feasterville?",
+        question: "How far is Hampton Family Dental from Feasterville?",
         answer:
-          "Most Feasterville patients reach our Southampton office in about 15 minutes, depending on traffic and the route they choose.",
+          "We're a short drive from Feasterville. From Feasterville, we're a quick drive north on Second Street Pike - about 10 minutes. Most Feasterville patients reach us in well under 20 minutes.",
       },
       {
-        question: "Do you offer restorative dentistry near Feasterville?",
+        question: "Do you offer emergency dental care?",
         answer:
-          "Yes. We offer fillings, crowns, bridges, dentures, root canal treatment, and dental implant options for Feasterville patients.",
+          "Yes - we reserve same-day appointments for dental emergencies for Feasterville patients. If you have severe pain, swelling, or a broken or knocked-out tooth, call (215) 357-2224 right away.",
+        schemaAnswer:
+          "Yes - we reserve same-day appointments for dental emergencies. If you have severe pain, swelling, or a broken or knocked-out tooth, call (215) 357-2224 right away.",
       },
       {
-        question: "What if I have a dental emergency in Feasterville?",
+        question: "What if I don't have dental insurance?",
         answer:
-          "Call (215) 357-2224 as soon as possible. Our team can help with severe pain, swelling, broken teeth, knocked-out teeth, and other urgent concerns.",
+          "No problem - our in-house membership plan covers cleanings, checkups, and X-rays for a low yearly fee, plus discounts on other treatments. It's a simple, affordable option for Feasterville families without insurance.",
+        schemaAnswer:
+          "No problem - our in-house membership plan covers cleanings, checkups, and X-rays for a low yearly fee, plus discounts. A simple, affordable option for Feasterville families.",
       },
     ],
   },
@@ -402,56 +420,62 @@ export const serviceAreas: ServiceArea[] = [
     city: "Huntingdon Valley",
     slug: "dentist-huntingdon-valley-pa",
     zipCodes: "19006",
-    driveTime: "About 20 minutes from Huntingdon Valley",
+    driveTime: "About 12-15 minutes from Huntingdon Valley",
     title: "Dentist in Huntingdon Valley, PA | Hampton Family Dental",
     description:
-      "Huntingdon Valley patients can visit Hampton Family Dental in Southampton for family, cosmetic, restorative, implant, and emergency dentistry.",
+      "Looking for a dentist a short drive from Huntingdon Valley? Hampton Family Dental offers family, cosmetic & emergency dentistry minutes away in Southampton. New patients welcome. (215) 357-2224.",
     keywords: [
       "dentist huntingdon valley pa",
       "huntingdon valley dentist",
       "family dentist huntingdon valley",
-      "cosmetic dentist huntingdon valley",
+      "dental office near huntingdon valley",
     ],
     heroSubline:
-      "For Huntingdon Valley patients who want a trusted dental office nearby, Hampton Family Dental provides comprehensive care in Southampton.",
+      "Looking for a trusted dentist a short drive from Huntingdon Valley? Hampton Family Dental - formerly Brenner Dental Group - welcomes Huntingdon Valley families for gentle general, cosmetic, restorative, and emergency dentistry. Call (215) 357-2224 to schedule.",
     intro:
-      "Huntingdon Valley patients visit Hampton Family Dental for preventive dentistry, cosmetic treatment, dental implants, crowns, bridges, dentures, Invisalign, and emergency care. Our team combines modern options with a calm, personal approach that helps patients feel comfortable asking questions.",
+      "For Huntingdon Valley residents, quality dental care is just minutes away. At Hampton Family Dental, Dr. Jeffrey Brenner and Dr. Keyur Dudhat provide comprehensive care for the whole family - from children's first checkups to dental implants and smile makeovers - in a comfortable, modern office serving Huntingdon Valley, Lower Moreland, and the surrounding area.",
     servicesCopy:
-      "Our services for Huntingdon Valley patients include general dentistry, restorative dentistry, dental implants, cosmetic dentistry, Invisalign, emergency dentistry, and specials. We can help with routine maintenance, sudden tooth pain, missing teeth, bite concerns, and smile goals.",
-    whyHeading: "Why Huntingdon Valley Patients Choose Hampton Family Dental",
+      "We offer everything Huntingdon Valley families need in one place: general and preventive dentistry (cleanings, checkups, emergency care), restorative dentistry (dental implants, crowns, bridges, dentures, root canals), and cosmetic dentistry (veneers, teeth whitening, Invisalign, smile makeovers). New patients without insurance can start with our membership plan.",
+    whyHeading: "Why Huntingdon Valley Families Choose Hampton Family Dental",
     whyCopy: [
-      "Huntingdon Valley patients often value a dental office that is thorough without feeling overwhelming. We take time to review your health history, discuss concerns, and explain treatment options so decisions feel informed instead of pressured.",
-      "Our Southampton office is a strong fit for patients who want continuity. You can bring your family for cleanings, ask about cosmetic improvements, restore damaged teeth, and get urgent help when dental pain interrupts your week.",
+      "Huntingdon Valley families choose Hampton Family Dental for comprehensive care - from preventive cleanings to cosmetic and restorative dentistry - delivered with a personal touch they can't get at a chain.",
+      "For patients across Huntingdon Valley and Lower Moreland, having general, cosmetic, restorative, and emergency dentistry under one roof means fewer referrals and a team that already knows your history. We take time to explain what we see and map out options that fit your health, schedule, and budget.",
     ],
     directionsHeading: "Getting to Our Office from Huntingdon Valley",
     directionsCopy: [
-      "From Huntingdon Valley, patients typically travel north or east toward Southampton using County Line Road, Street Road, or nearby connecting routes. Our office is located at 283 Second Street Pike, Suite 140.",
-      "The drive is often about 20 minutes, making Hampton Family Dental a convenient nearby option for patients who want a full-service office outside the busiest corridors.",
+      "From Huntingdon Valley, we're an easy drive via Huntingdon Pike and Second Street Pike - roughly 12-15 minutes. Find us at 283 Second Street Pike, Suite 140, Southampton, PA 18966.",
+      "Most Huntingdon Valley patients reach us in well under 20 minutes, making it convenient to keep up with routine visits or get seen quickly when a dental emergency comes up.",
     ],
     localNote:
-      "Huntingdon Valley patients can rely on our team for preventive care, urgent support, and long-term treatment planning in a nearby Southampton setting.",
+      "For Huntingdon Valley families, our office offers full-service care with a personal, non-corporate feel just a short drive up Huntingdon Pike.",
     membershipLine:
-      "Patients without insurance can ask about our in-house membership plan for cleanings, checkups, X-rays, and savings on additional treatment.",
+      "No insurance? No problem - our in-house membership plan covers cleanings, checkups, and X-rays for a low yearly fee, with discounts on other treatments. Call (215) 357-2224 or request an appointment online.",
     faqs: [
       {
-        question: "Do you see patients from Huntingdon Valley?",
+        question: "Do you accept new patients from Huntingdon Valley?",
         answer:
-          "Yes. Hampton Family Dental welcomes Huntingdon Valley patients for family, cosmetic, restorative, implant, Invisalign, and emergency dental care.",
+          "Yes! We happily welcome new patients from Huntingdon Valley and the surrounding area. New patients without insurance can take advantage of our membership plan and welcome offers - call (215) 357-2224 to get started.",
+        schemaAnswer:
+          "Yes! We happily welcome new patients from Huntingdon Valley and the surrounding area. New patients without insurance can use our membership plan and welcome offers - call (215) 357-2224.",
       },
       {
         question: "How far is Hampton Family Dental from Huntingdon Valley?",
         answer:
-          "Our Southampton office is generally about 20 minutes from Huntingdon Valley, depending on traffic and your exact starting point.",
+          "We're a short drive from Huntingdon Valley. From Huntingdon Valley, we're an easy drive via Huntingdon Pike and Second Street Pike - roughly 12-15 minutes. Most Huntingdon Valley patients reach us in well under 20 minutes.",
       },
       {
-        question: "Can Huntingdon Valley patients get cosmetic dentistry?",
+        question: "Do you offer emergency dental care?",
         answer:
-          "Yes. We offer whitening, veneers, bonding, Invisalign, and smile makeover planning for Huntingdon Valley patients.",
+          "Yes - we reserve same-day appointments for dental emergencies for Huntingdon Valley patients. If you have severe pain, swelling, or a broken or knocked-out tooth, call (215) 357-2224 right away.",
+        schemaAnswer:
+          "Yes - we reserve same-day appointments for dental emergencies. If you have severe pain, swelling, or a broken or knocked-out tooth, call (215) 357-2224 right away.",
       },
       {
-        question: "Do you have options for patients without insurance?",
+        question: "What if I don't have dental insurance?",
         answer:
-          "Yes. Our in-house membership plan helps patients without insurance stay current with preventive care and save on additional treatment.",
+          "No problem - our in-house membership plan covers cleanings, checkups, and X-rays for a low yearly fee, plus discounts on other treatments. It's a simple, affordable option for Huntingdon Valley families without insurance.",
+        schemaAnswer:
+          "No problem - our in-house membership plan covers cleanings, checkups, and X-rays for a low yearly fee, plus discounts. A simple, affordable option for Huntingdon Valley families.",
       },
     ],
   },
