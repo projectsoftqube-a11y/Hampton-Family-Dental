@@ -414,24 +414,86 @@ export default function EmergencyDentistryClient() {
         </div>
       </section>
 
-      {/* ─── Same-Day & After-Hours Care Section ─── */}
-      <section className="py-16 md:py-20 bg-beige-light/20 border-y border-navy/[0.04]">
-        <div className="max-w-[1300px] mx-auto px-5 md:px-10">
-          <div className="max-w-3xl mx-auto text-center space-y-6">
-            <h2 className="font-heading text-navy text-2xl md:text-3xl lg:text-4xl font-bold leading-tight">
-              Same-Day Emergency Appointments in Southampton
-            </h2>
-            <p className="text-navy/70 text-sm md:text-base leading-relaxed">
-              We keep room in our daily schedule for dental emergencies, so when you call with severe pain, swelling, or a broken or knocked-out tooth, we do everything we can to see you the same day. Our team will also walk you through first-aid over the phone so you’re not handling it alone.
-            </p>
-            <div className="p-6 rounded-2xl bg-white border border-navy/[0.06] text-xs md:text-sm text-left max-w-2xl mx-auto space-y-2">
-              <span className="text-[10px] tracking-wider uppercase font-bold text-amber-600 bg-amber-50 border border-amber-200 px-2 py-0.5 rounded-md">
-                After-Hours Process
-              </span>
-              <p className="text-navy/85 font-medium leading-relaxed">
-                [CONFIRM WITH CLIENT] If you have a dental emergency after hours, call (215) 357-2224 and follow the prompts to reach our on-call line for guidance. We serve emergency patients from Southampton, Richboro, Warminster, Newtown, Holland, Feasterville, and Huntingdon Valley.
-              </p>
+      {/* ─── Same-Day & After-Hours Care Section (Redesigned Grid Layout) ─── */}
+      <section className="py-16 md:py-24 bg-beige-light/25 border-y border-navy/[0.04] relative">
+        {/* Soft gradient background glow */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] rounded-full bg-primary/5 blur-[120px] pointer-events-none" />
+        
+        <div className="relative z-10 max-w-[1200px] mx-auto px-5 md:px-10">
+          <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">
+            
+            {/* Left Card: Same-Day Care */}
+            <div className="lg:col-span-6 bg-white border border-navy/[0.06] rounded-[2.5rem] p-8 md:p-10 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between relative overflow-hidden group">
+              <div className="absolute top-0 left-0 right-0 h-[4px] bg-primary" />
+              <div className="space-y-6">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20">
+                  <Clock className="w-3.5 h-3.5 text-primary" />
+                  <span className="text-primary text-[10px] tracking-wider uppercase font-bold">
+                    Office Hours
+                  </span>
+                </div>
+                
+                <h2 className="font-heading text-navy text-2xl md:text-3xl font-bold leading-tight">
+                  Same-Day Emergency Appointments
+                </h2>
+                
+                <p className="text-navy/70 text-sm md:text-base leading-relaxed">
+                  We reserve dedicated slots in our daily schedule exclusively for dental emergencies. If you are experiencing severe pain, swelling, or have a broken or knocked-out tooth, we do everything possible to see you the same day. 
+                </p>
+                <p className="text-navy/70 text-sm md:text-base leading-relaxed">
+                  Our experienced clinical team will also guide you through immediate first-aid instructions over the phone, ensuring you are supported from the moment you call.
+                </p>
+              </div>
+              
+              <div className="pt-8 border-t border-navy/[0.06] mt-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                <span className="text-xs font-semibold text-navy/55 uppercase tracking-wider">
+                  Southampton, PA Office Care
+                </span>
+                <a
+                  href="tel:+12153572224"
+                  className="inline-flex items-center justify-center gap-2 bg-navy hover:bg-primary hover:text-white text-white font-bold text-xs px-5 py-3 rounded-full transition-all duration-300 shadow-sm"
+                >
+                  Request Same-Day Visit
+                  <ArrowUpRight className="w-3.5 h-3.5" />
+                </a>
+              </div>
             </div>
+
+            {/* Right Card: After-Hours Process */}
+            <div className="lg:col-span-6 bg-gradient-to-b from-navy-dark to-navy rounded-[2.5rem] p-8 md:p-10 shadow-lg text-white flex flex-col justify-between relative overflow-hidden group">
+              <div className="absolute top-0 left-0 right-0 h-[4px] bg-primary-light" />
+              <div className="space-y-6">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/15">
+                  <AlertTriangle className="w-3.5 h-3.5 text-primary-light" />
+                  <span className="text-primary-light text-[10px] tracking-wider uppercase font-bold">
+                    After-Hours Guidance
+                  </span>
+                </div>
+                
+                <h3 className="font-heading text-white text-2xl md:text-3xl font-bold leading-tight">
+                  After-Hours Support Process
+                </h3>
+                
+                <div className="space-y-4 pt-2">
+                  <p className="text-white/70 text-xs md:text-sm italic uppercase tracking-wider font-bold">
+                    CONFIRM WITH CLIENT
+                  </p>
+                  <p className="text-white/80 text-sm md:text-base leading-relaxed">
+                    If you experience a dental emergency outside our normal clinical hours, call <a href="tel:+12153572224" className="font-bold text-primary-light underline hover:text-white">(215) 357-2224</a> and follow the phone prompts to route to our dedicated on-call service.
+                  </p>
+                  <p className="text-white/80 text-sm md:text-base leading-relaxed">
+                    Our team provides triage and critical advice for patients from Southampton, Richboro, Warminster, Newtown, Holland, Feasterville, and Huntingdon Valley, PA.
+                  </p>
+                </div>
+              </div>
+              
+              <div className="pt-8 border-t border-white/10 mt-8">
+                <p className="text-[10px] uppercase font-bold text-white/40 tracking-wider">
+                  Emergency Line Available 24/7
+                </p>
+              </div>
+            </div>
+            
           </div>
         </div>
       </section>
