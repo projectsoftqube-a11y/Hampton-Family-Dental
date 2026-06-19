@@ -51,6 +51,16 @@ const nextConfig: NextConfig = {
         destination: "/restorative-dentistry/dentures",
         permanent: true,
       },
+      {
+        source: "/veneers",
+        destination: "/cosmetic-dentistry/porcelain-veneers",
+        permanent: true,
+      },
+      {
+        source: "/porcelain-veneers",
+        destination: "/cosmetic-dentistry/porcelain-veneers",
+        permanent: true,
+      },
     ];
   },
 };
