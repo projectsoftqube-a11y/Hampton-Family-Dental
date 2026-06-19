@@ -140,7 +140,7 @@ export default function Hero() {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 1.6, duration: 0.8 }}
+        transition={{ delay: 0.6, duration: 0.4 }}
         className="hidden lg:flex absolute left-6 top-1/2 -translate-y-1/2 z-10 flex-col items-center gap-4 pointer-events-none"
       >
         <div className="h-16 w-px bg-gradient-to-b from-transparent to-white/30" />
@@ -160,7 +160,7 @@ export default function Hero() {
       <motion.div
         initial={{ opacity: 0, scale: 0.7 }}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ delay: 1.3, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+        transition={{ delay: 0.5, duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
         className="hidden md:flex absolute top-44 lg:top-48 right-4 lg:right-10 z-20
           w-32 lg:w-40 h-32 lg:h-40
           items-center justify-center pointer-events-none"
@@ -218,9 +218,9 @@ export default function Hero() {
       >
         {/* Eyebrow */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.4 }}
+          transition={{ duration: 0.4, delay: 0.05 }}
           className="flex items-center gap-3 mb-4 md:mb-6 lg:mb-8"
         >
           <div className="h-px w-10 bg-gradient-to-r from-transparent to-primary-light" />
@@ -234,12 +234,12 @@ export default function Hero() {
 
         {/* MASSIVE Headline */}
         <motion.h1
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
-            duration: 1.1,
-            delay: 0.55,
-            ease: [0.25, 0.1, 0.25, 1],
+            duration: 0.6,
+            delay: 0.15,
+            ease: [0.16, 1, 0.3, 1],
           }}
           className="font-heading text-white mb-4 md:mb-6 lg:mb-8"
           style={{
@@ -258,7 +258,7 @@ export default function Hero() {
               <motion.span
                 initial={{ scaleX: 0 }}
                 animate={{ scaleX: 1 }}
-                transition={{ delay: 1.6, duration: 0.9, ease: "easeOut" }}
+                transition={{ delay: 0.4, duration: 0.6, ease: "easeOut" }}
                 className="absolute -bottom-1 md:-bottom-2 left-0 right-0 h-[2px] md:h-[3px]
                   bg-gradient-to-r from-transparent via-primary-light to-transparent origin-left"
               />
@@ -270,9 +270,9 @@ export default function Hero() {
         <div className="grid md:grid-cols-[1.4fr_1fr] gap-4 md:gap-16 items-end mb-6 md:mb-8 lg:mb-10">
           {/* Subheadline */}
           <motion.p
-            initial={{ opacity: 0, y: 25 }}
+            initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.85 }}
+            transition={{ duration: 0.5, delay: 0.25 }}
             className="text-white/70 max-w-xl leading-relaxed text-sm md:text-base lg:text-[1.2rem]"
           >
             Gentle, modern dental care for every age — from routine cleanings
@@ -285,7 +285,7 @@ export default function Hero() {
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 1 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
             className="text-primary-light/70 text-[11px] md:text-xs lg:text-[13px] mt-1.5 md:mt-3 italic tracking-wide"
           >
             Formerly Brenner Dental Group — same trusted team, same Southampton
@@ -295,9 +295,9 @@ export default function Hero() {
 
         {/* CTAs */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 1.2 }}
+          transition={{ duration: 0.5, delay: 0.35 }}
           className="flex flex-wrap items-center gap-3 md:gap-4"
         >
           <Link
@@ -339,9 +339,9 @@ export default function Hero() {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, y: 16 }}
+          initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 1.35 }}
+          transition={{ duration: 0.5, delay: 0.45 }}
           className="mt-6 flex flex-wrap items-center gap-2.5"
         >
           {["4.9★ Google reviews", "New patients welcome", "Most insurance accepted"].map(
@@ -360,9 +360,9 @@ export default function Hero() {
 
       {/* ───────── Bottom Service Marquee ───────── */}
       <motion.div
-        initial={{ opacity: 0, y: 30 }}
+        initial={{ opacity: 0, y: 15 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 1.4 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
         className="absolute left-0 right-0 bottom-0 z-10"
       >
         <div className="relative border-t border-white/10 backdrop-blur-xl bg-navy-dark/50 overflow-hidden">
@@ -400,7 +400,7 @@ export default function Hero() {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 1.9 }}
+        transition={{ delay: 0.7 }}
         className="absolute bottom-24 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 pointer-events-none hidden md:flex"
       >
         <span className="text-white/40 text-[9px] tracking-[0.35em] uppercase">
