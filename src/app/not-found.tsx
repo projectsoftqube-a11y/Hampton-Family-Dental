@@ -109,7 +109,7 @@ export default function NotFound() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="w-full border-t border-white/10 pt-8"
         >
-          <p className="text-[10px] tracking-[0.25em] uppercase font-bold mb-4 text-white/40">
+          <p className="text-[18px] tracking-[0.10em] uppercase font-bold mb-4 text-white/90">
             Quick Navigation
           </p>
           <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-white/60">
