@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SITE_URL } from "@/lib/site";
 import Hero from "@/components/sections/Hero";
 import TrustBar from "@/components/sections/TrustBar";
 import TrustStats from "@/components/sections/TrustStats";
@@ -72,7 +73,8 @@ const jsonLd = [
     "@type": ["LocalBusiness", "Dentist"],
     name: "Hampton Family Dental",
     alternateName: "Brenner Dental Group",
-    telephone: "+1-215-357-2224",
+    telephone: "+12153572224",
+    url: SITE_URL,
     priceRange: "$$",
     address: {
       "@type": "PostalAddress",
@@ -82,11 +84,11 @@ const jsonLd = [
       postalCode: "18966",
       addressCountry: "US",
     },
-    openingHoursSpecification: [
-      { "@type": "OpeningHoursSpecification", dayOfWeek: "Monday", opens: "08:00", closes: "18:00" },
-      { "@type": "OpeningHoursSpecification", dayOfWeek: "Tuesday", opens: "08:00", closes: "16:00" },
-      { "@type": "OpeningHoursSpecification", dayOfWeek: "Wednesday", opens: "09:00", closes: "13:00" },
-      { "@type": "OpeningHoursSpecification", dayOfWeek: "Thursday", opens: "08:00", closes: "16:00" },
+    openingHours: [
+      "Mo 08:00-18:00",
+      "Tu 08:00-16:00",
+      "We 09:00-13:00",
+      "Th 08:00-16:00"
     ],
     areaServed: [
       "Southampton",
@@ -101,8 +103,9 @@ const jsonLd = [
   },
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": "WebSite",
     name: "Hampton Family Dental",
+    url: SITE_URL,
     alternateName: "Brenner Dental Group",
   },
   {

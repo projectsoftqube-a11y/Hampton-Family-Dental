@@ -28,29 +28,8 @@ export default function FAQBlock({
     setOpenIdx((prev) => (prev === idx ? null : idx));
   };
 
-  // Construct FAQPage JSON-LD Schema
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": (schemaFaqs || faqs).map((faq) => ({
-      "@type": "Question",
-      "name": faq.q,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": faq.a,
-      },
-    })),
-  };
-
   return (
     <div className="py-14 md:py-16 bg-white">
-      {/* Schema Injection */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(schema).replace(/</g, "\\u003c"),
-        }}
-      />
 
       <div className="max-w-[850px] mx-auto px-5">
         <div className="text-center mb-9 md:mb-10 max-w-xl mx-auto">

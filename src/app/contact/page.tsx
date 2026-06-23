@@ -1,239 +1,90 @@
-"use client";
+import type { Metadata } from "next";
+import { SITE_URL } from "@/lib/site";
+import ContactClient from "./ContactClient";
 
-import { motion } from "framer-motion";
-import { Sparkles, Phone, Mail, Clock, MapPin, Calendar, Heart } from "lucide-react";
-import Breadcrumbs from "@/components/shared/Breadcrumbs";
-import { practiceInfo } from "@/lib/navigation";
-import { useState } from "react";
+export const metadata: Metadata = {
+  title: "Contact Us | Hampton Family Dental in Southampton, PA",
+  description:
+    "Get in touch with Hampton Family Dental. Call (215) 357-2224 to schedule your visit. We're located at 283 Second Street Pike, Suite 140, Southampton, PA.",
+  alternates: {
+    canonical: `${SITE_URL}/contact`,
+  },
+  openGraph: {
+    title: "Contact Us | Hampton Family Dental in Southampton, PA",
+    description:
+      "Get in touch with Hampton Family Dental. Call (215) 357-2224 to schedule your visit. We're located at 283 Second Street Pike, Suite 140, Southampton, PA.",
+    url: `${SITE_URL}/contact`,
+    type: "website",
+  },
+};
 
 export default function ContactPage() {
-  const breadcrumbs = [{ label: "Contact Us" }];
-  const [submitted, setSubmitted] = useState(false);
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    message: "",
-  });
+  const localBusinessSchema = {
+    "@context": "https://schema.org",
+    "@type": ["LocalBusiness", "Dentist"],
+    "name": "Hampton Family Dental",
+    "alternateName": "Brenner Dental Group",
+    "telephone": "+12153572224",
+    "url": `${SITE_URL}/contact`,
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "283 Second Street Pike, Suite 140",
+      "addressLocality": "Southampton",
+      "addressRegion": "PA",
+      "postalCode": "18966",
+      "addressCountry": "US"
+    },
+    "openingHours": [
+      "Mo 08:00-18:00",
+      "Tu 08:00-16:00",
+      "We 09:00-13:00",
+      "Th 08:00-16:00"
+    ],
+    "areaServed": [
+      "Southampton PA",
+      "Richboro PA",
+      "Warminster PA",
+      "Newtown PA",
+      "Holland PA",
+      "Feasterville PA",
+      "Huntingdon Valley PA"
+    ]
+  };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setSubmitted(true);
-    setTimeout(() => {
-      setSubmitted(false);
-      setFormData({ name: "", email: "", phone: "", message: "" });
-    }, 4000);
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": `${SITE_URL}`
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Contact Us",
+        "item": `${SITE_URL}/contact`
+      }
+    ]
   };
 
   return (
-    <main className="bg-white overflow-hidden font-body text-navy">
-      {/* ─── Hero Section ─── */}
-      <section className="relative pt-36 pb-20 md:pt-44 md:pb-24 bg-navy-dark text-white">
-        <div className="absolute top-[20%] right-[-10%] w-[500px] h-[500px] rounded-full bg-primary/10 blur-[140px] pointer-events-none" />
-        <div className="absolute bottom-[10%] left-[-10%] w-[400px] h-[400px] rounded-full bg-primary/5 blur-[120px] pointer-events-none" />
-        
-        <div className="relative z-10 max-w-[1300px] mx-auto px-5 md:px-10">
-          <Breadcrumbs items={breadcrumbs} />
-          
-          <div className="max-w-3xl mt-6">
-            <motion.div
-              initial={{ opacity: 0, y: 15 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="inline-flex items-center gap-3 mb-5"
-            >
-              <div className="h-px w-8 bg-primary-light" />
-              <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-white/8 border border-white/15">
-                <Sparkles className="w-3.5 h-3.5 text-primary-light" />
-                <span className="text-white/95 text-[10px] tracking-[0.25em] uppercase font-semibold">
-                  Get in Touch
-                </span>
-              </div>
-            </motion.div>
-
-            <motion.h1
-              initial={{ opacity: 0, y: 25 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.15 }}
-              className="font-heading text-white mb-6"
-              style={{
-                fontSize: "clamp(2.5rem, 5vw, 4.5rem)",
-                lineHeight: 1.05,
-                letterSpacing: "-0.02em",
-              }}
-            >
-              Contact Us
-            </motion.h1>
-            
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="text-white/75 text-base md:text-lg leading-relaxed max-w-2xl"
-            >
-              We are here to help. Reach out directly by phone, visit our clinic in Southampton, or submit a message below.
-            </motion.p>
-          </div>
-        </div>
-      </section>
-
-      {/* ─── Contact details & Form ─── */}
-      <section className="py-20 bg-beige-light/20">
-        <div className="max-w-[1200px] mx-auto px-5 md:px-10">
-          <div className="grid lg:grid-cols-12 gap-12 items-stretch">
-            
-            {/* Left: Contact Info */}
-            <div className="lg:col-span-5 flex flex-col justify-between space-y-8">
-              <div className="space-y-6">
-                <h2 className="font-heading text-navy text-2xl font-bold">Hampton Family Dental</h2>
-                <p className="text-navy/60 text-xs md:text-sm leading-relaxed">
-                  Located in the heart of Southampton, PA. Formerly Brenner Dental Group—same team, same location, continuing our commitment to clinical excellence.
-                </p>
-              </div>
-
-              <div className="space-y-4 pt-4 border-t border-navy/10">
-                <a
-                  href={practiceInfo.phoneTel}
-                  className="flex items-center gap-4 group p-3 rounded-2xl bg-white border border-navy/5 shadow-sm hover:shadow-md transition-all duration-300"
-                >
-                  <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center shrink-0">
-                    <Phone className="w-4 h-4 text-primary" />
-                  </div>
-                  <div>
-                    <p className="text-[9px] text-navy/40 uppercase font-semibold">Direct Office Line</p>
-                    <p className="text-sm font-bold">{practiceInfo.phone}</p>
-                  </div>
-                </a>
-
-                <a
-                  href={practiceInfo.address.mapsUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-4 group p-3 rounded-2xl bg-white border border-navy/5 shadow-sm hover:shadow-md transition-all duration-300"
-                >
-                  <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center shrink-0">
-                    <MapPin className="w-4 h-4 text-primary" />
-                  </div>
-                  <div>
-                    <p className="text-[9px] text-navy/40 uppercase font-semibold">Our Address</p>
-                    <p className="text-xs font-bold leading-tight">
-                      {practiceInfo.address.full}
-                    </p>
-                  </div>
-                </a>
-
-                <div className="flex items-center gap-4 p-3 rounded-2xl bg-white border border-navy/5 shadow-sm">
-                  <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center shrink-0">
-                    <Clock className="w-4 h-4 text-primary" />
-                  </div>
-                  <div>
-                    <p className="text-[9px] text-navy/40 uppercase font-semibold">Practice Hours</p>
-                    <p className="text-xs font-bold leading-tight">
-                      Mon: 8am–6pm | Wed: 9am–1pm
-                      <br />
-                      Tue & Thu: 8am–4pm | Fri–Sun Closed
-                    </p>
-                  </div>
-                </div>
-
-                <a
-                  href={`mailto:${practiceInfo.email}`}
-                  className="flex items-center gap-4 group p-3 rounded-2xl bg-white border border-navy/5 shadow-sm hover:shadow-md transition-all duration-300"
-                >
-                  <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center shrink-0">
-                    <Mail className="w-4 h-4 text-primary" />
-                  </div>
-                  <div>
-                    <p className="text-[9px] text-navy/40 uppercase font-semibold">Support Email</p>
-                    <p className="text-xs font-bold">{practiceInfo.email}</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            {/* Right: Contact Form */}
-            <div className="lg:col-span-7">
-              <div className="bg-white border border-navy/5 p-6 md:p-8 rounded-3xl shadow-xl h-full flex flex-col justify-center relative">
-                {submitted ? (
-                  <div className="flex flex-col items-center justify-center text-center p-8 space-y-4 animate-fade-in">
-                    <div className="w-16 h-16 rounded-full bg-primary/10 border border-primary flex items-center justify-center">
-                      <Sparkles className="w-8 h-8 text-primary animate-pulse" />
-                    </div>
-                    <h4 className="font-heading text-navy text-xl font-bold">Message Sent!</h4>
-                    <p className="text-navy/60 text-xs max-w-sm leading-relaxed">
-                      Thank you, **{formData.name}**. Your message has been received. Our team will get back to you within a few business hours.
-                    </p>
-                  </div>
-                ) : (
-                  <form onSubmit={handleSubmit} className="space-y-4">
-                    <h3 className="font-heading text-navy text-lg font-bold flex items-center gap-2 mb-2">
-                      <Calendar className="w-5 h-5 text-primary" />
-                      Send Us a Message
-                    </h3>
-
-                    <div className="space-y-1">
-                      <label className="text-[9px] font-bold uppercase tracking-wider text-navy/45">Full Name</label>
-                      <input
-                        type="text"
-                        required
-                        value={formData.name}
-                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        className="w-full bg-beige-light/20 border border-navy/10 rounded-xl px-4 py-2.5 text-xs text-navy focus:outline-none focus:border-primary transition-colors"
-                        placeholder="Your Name"
-                      />
-                    </div>
-
-                    <div className="grid md:grid-cols-2 gap-4">
-                      <div className="space-y-1">
-                        <label className="text-[9px] font-bold uppercase tracking-wider text-navy/45">Phone Number</label>
-                        <input
-                          type="tel"
-                          required
-                          value={formData.phone}
-                          onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                          className="w-full bg-beige-light/20 border border-navy/10 rounded-xl px-4 py-2.5 text-xs text-navy focus:outline-none focus:border-primary transition-colors"
-                          placeholder="(215) 555-1234"
-                        />
-                      </div>
-                      <div className="space-y-1">
-                        <label className="text-[9px] font-bold uppercase tracking-wider text-navy/45">Email Address</label>
-                        <input
-                          type="email"
-                          required
-                          value={formData.email}
-                          onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                          className="w-full bg-beige-light/20 border border-navy/10 rounded-xl px-4 py-2.5 text-xs text-navy focus:outline-none focus:border-primary transition-colors"
-                          placeholder="you@example.com"
-                        />
-                      </div>
-                    </div>
-
-                    <div className="space-y-1">
-                      <label className="text-[9px] font-bold uppercase tracking-wider text-navy/45">Message</label>
-                      <textarea
-                        rows={4}
-                        required
-                        value={formData.message}
-                        onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                        className="w-full bg-beige-light/20 border border-navy/10 rounded-xl px-4 py-2.5 text-xs text-navy focus:outline-none focus:border-primary transition-colors resize-none"
-                        placeholder="Ask a question or request detail info..."
-                      />
-                    </div>
-
-                    <button
-                      type="submit"
-                      className="w-full py-3.5 rounded-full bg-navy text-white text-xs font-semibold tracking-widest uppercase hover:bg-primary shadow-md transition-all duration-300"
-                    >
-                      Send Message
-                    </button>
-                  </form>
-                )}
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-    </main>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(localBusinessSchema).replace(/</g, "\\u003c"),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema).replace(/</g, "\\u003c"),
+        }}
+      />
+      <ContactClient />
+    </>
   );
 }

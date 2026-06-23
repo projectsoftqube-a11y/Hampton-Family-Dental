@@ -124,8 +124,8 @@ export default function OurStoryClient() {
                 <p className="text-navy text-lg md:text-xl font-medium leading-relaxed border-l-4 border-primary pl-4">
                   For decades, Southampton families have trusted Brenner Dental Group. Today that same practice continues as Hampton Family Dental — same caring team, same convenient location, with exciting new additions.
                 </p>
-                <p className="text-navy/70 text-sm md:text-base leading-relaxed">
-                  We know that consistency matters when it comes to your health. When you walk through our doors, you will see the exact same friendly faces at reception, the same highly trained dental hygienists, and the same compassionate clinical assistants who have cared for your family for years. We have simply updated our name and added new diagnostic capabilities to serve you even better.
+                <p className="text-navy/80 text-sm md:text-base leading-relaxed">
+                  We know that consistency matters profoundly when it comes to your health. When you walk through our doors, you will see the exact same friendly faces at reception, the same highly trained dental hygienists, and the same compassionate clinical assistants who have cared for your family for years. We have simply updated our name and added new diagnostic capabilities to serve you even better. Our commitment to gentle, personalized dentistry remains at the absolute core of everything we do.
                 </p>
               </div>
 
@@ -134,36 +134,45 @@ export default function OurStoryClient() {
                 <h2 className="font-heading text-navy text-2xl md:text-3xl font-bold leading-tight">
                   A Trusted Local History
                 </h2>
-                <p className="text-navy/70 text-sm md:text-base leading-relaxed">
-                  Dr. Jeffrey Brenner founded the practice and has cared for Southampton families since the 1990s. [CLIENT INPUT: confirm founding year + history]. Operating under the name Brenner Dental Group, Dr. Brenner built a reputation on honest advice, conservative care, and patient relationships that spanned generations. From basic checkups to complex restorations, he made sure every patient felt heard and respected.
+                <p className="text-navy/80 text-sm md:text-base leading-relaxed">
+                  Dr. Jeffrey Brenner founded the practice in the 1990s with a singular vision: to create a dental office where patients felt like extended family rather than a number on a chart. Operating under the name Brenner Dental Group, Dr. Brenner built a reputation on honest advice, conservative care, and patient relationships that spanned multiple generations. He prioritized taking the time to listen to each patient, understanding their unique concerns, and explaining treatments thoroughly without ever applying pressure.
                 </p>
-                <p className="text-navy/70 text-sm md:text-base leading-relaxed">
-                  Over thirty years, Southampton evolved, and so did our practice. In 2008, we relocated to our current state-of-the-art office suite at 283 Second Street Pike, Suite 140, allowing us to serve more families in Bucks County while maintaining the cozy, community feel we are known for.
+                <p className="text-navy/80 text-sm md:text-base leading-relaxed">
+                  Over thirty years, Southampton evolved, and so did our practice. We consistently integrated modern techniques while preserving our warm, community-focused atmosphere. In 2008, we relocated to our current state-of-the-art office suite at 283 Second Street Pike, Suite 140. This move allowed us to incorporate digital x-rays, ergonomic patient chairs, and a larger hygiene department to better accommodate the growing number of Bucks County families who trusted us with their smiles.
+                </p>
+                <p className="text-navy/80 text-sm md:text-base leading-relaxed">
+                  Through the years, one thing never changed: our dedication to preserving natural teeth and emphasizing preventive care. By focusing on educating our patients about oral hygiene and catching small issues before they turned into major problems, we helped thousands of Southampton residents maintain healthy, beautiful smiles for life.
                 </p>
               </div>
 
               {/* H2: A New Chapter */}
               <div className="space-y-4">
                 <h2 className="font-heading text-navy text-2xl md:text-3xl font-bold leading-tight">
-                  A New Chapter
+                  A New Chapter: Becoming Hampton Family Dental
                 </h2>
-                <p className="text-navy/70 text-sm md:text-base leading-relaxed">
-                  Dr. Keyur Dudhat joins as partner with advanced cosmetic + implant expertise; the practice rebrands to Hampton Family Dental, same location (283 Second Street Pike, Suite 140), same team, expanded services. Dr. Dudhat brings clinical training in dental implantology, modern smile design, and advanced diagnostics like 3D CBCT scanning.
+                <p className="text-navy/80 text-sm md:text-base leading-relaxed">
+                  As our practice looked to the future of dentistry, Dr. Brenner sought a partner who shared his conservative clinical philosophy and deep respect for patient comfort. Dr. Keyur Dudhat joins as partner with advanced expertise in cosmetic and implant dentistry. With this partnership, the practice transitions to Hampton Family Dental — remaining in the exact same location (283 Second Street Pike, Suite 140) and retaining the complete clinical team you already know and trust.
                 </p>
-                <p className="text-navy/70 text-sm md:text-base leading-relaxed">
-                  This partnership allows us to offer comprehensive treatment pathways completely under one roof. Longtime patients can now receive advanced treatments — such as <Link href="/cosmetic-dentistry/porcelain-veneers" className="font-semibold text-primary underline decoration-primary/20 hover:text-primary-dark">porcelain veneers</Link> or permanent <Link href="/restorative-dentistry/dental-implants" className="font-semibold text-primary underline decoration-primary/20 hover:text-primary-dark">dental implants</Link> — from the clinical team they already know and trust.
+                <p className="text-navy/80 text-sm md:text-base leading-relaxed">
+                  This evolution brings exciting new capabilities to our Southampton office. Dr. Dudhat brings extensive clinical training in dental implantology, modern smile design, and the latest digital diagnostics. We have introduced 3D CBCT scanning technology, allowing us to plan implant placements and complex root canals with pinpoint, three-dimensional accuracy. We have also expanded our cosmetic offerings, providing more efficient clear aligner therapy and minimally invasive porcelain veneers.
+                </p>
+                <p className="text-navy/80 text-sm md:text-base leading-relaxed">
+                  Most importantly, this partnership allows us to offer comprehensive, specialized treatment pathways completely under one roof. Longtime patients can now receive advanced treatments — such as surgical implant placement or complete full-mouth restorations — right here in the office they are comfortable in, from the clinical team they already trust. You no longer need to be referred out to unfamiliar specialists across town.
                 </p>
               </div>
 
-              {/* H2: Our Commitment */}
+              {/* H2: Our Ongoing Commitment */}
               <div className="space-y-4">
                 <h2 className="font-heading text-navy text-2xl md:text-3xl font-bold leading-tight">
-                  Our Commitment
+                  Our Unwavering Commitment to You
                 </h2>
-                <p className="text-navy/70 text-sm md:text-base leading-relaxed">
-                  Our promise to you is gentle, judgment-free, family-first care. We understand that visiting the dentist can bring anxiety, and our clinical team is trained to deliver comfortable treatments in a calm environment. We never recommend unnecessary procedures, and we explain all options upfront with clear, honest pricing.
+                <p className="text-navy/80 text-sm md:text-base leading-relaxed">
+                  The name on our door may say Hampton Family Dental, but our core promise remains the same as it was thirty years ago: gentle, judgment-free, family-first care. We deeply understand that visiting the dentist can bring anxiety, and our entire clinical team is specifically trained to deliver comfortable treatments in a calm, supportive environment. 
                 </p>
-                <div className="flex flex-wrap gap-4 pt-4">
+                <p className="text-navy/80 text-sm md:text-base leading-relaxed">
+                  We stand by the principle of conservative dentistry. We never recommend unnecessary procedures. We believe in providing you with all the information you need, explaining your options with absolute clarity, and presenting honest, upfront pricing so you can make empowered decisions about your oral health. Whether you are bringing your toddler in for their very first checkup, or you are seeking a complete cosmetic transformation, we are here to walk alongside you every step of the way.
+                </p>
+                <div className="flex flex-wrap gap-4 pt-6">
                   <Link
                     href="/about/our-team"
                     className="group inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-white text-xs font-semibold tracking-widest uppercase hover:bg-primary-dark transition-all duration-300 shadow-md"
@@ -182,7 +191,7 @@ export default function OurStoryClient() {
             </div>
 
             {/* Right Media/Image Column */}
-            <div className="lg:col-span-5 relative aspect-[4/3] md:aspect-[16/10] lg:aspect-square rounded-3xl overflow-hidden shadow-2xl border border-navy/5 bg-beige-light/30 lg:sticky lg:top-28">
+            <div className="lg:col-span-5 relative aspect-[4/3] md:aspect-[16/10] lg:aspect-square rounded-3xl overflow-hidden shadow-2xl border border-navy/5 bg-beige-light/30 lg:sticky lg:top-28 mt-8 lg:mt-0">
               <Image
                 src="/images/about_storytelling_1779858491119.webp"
                 alt="Hampton Family Dental team transition"

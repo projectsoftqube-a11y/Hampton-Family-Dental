@@ -1,6 +1,6 @@
 export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ||
-  "https://hampton-family-dental.com";
+  "https://hampton-family-dental.vercel.app";
 
 export function absoluteUrl(path = "") {
   if (!path) return SITE_URL;

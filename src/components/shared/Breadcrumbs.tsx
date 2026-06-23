@@ -12,35 +12,9 @@ interface BreadcrumbsProps {
 }
 
 export default function Breadcrumbs({ items }: BreadcrumbsProps) {
-  // Construct schema JSON-LD
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": absoluteUrl()
-      },
-      ...items.map((item, idx) => ({
-        "@type": "ListItem",
-        "position": idx + 2,
-        "name": item.label,
-        ...(item.href ? { "item": absoluteUrl(item.href) } : {})
-      }))
-    ]
-  };
-
   return (
     <nav aria-label="Breadcrumb" className="relative z-10 mb-6">
       {/* Schema JSON-LD */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(schema).replace(/</g, "\\u003c"),
-        }}
-      />
       <ol className="flex flex-wrap items-center gap-2 text-xs font-medium text-white/50 tracking-wider uppercase font-body">
         <li className="flex items-center">
           <Link
