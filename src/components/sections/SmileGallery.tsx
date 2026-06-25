@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import {
@@ -54,9 +54,7 @@ const transformations = [
 
 export default function SmileGallery() {
   const [activeIndex, setActiveIndex] = useState(0);
-  const [isVisible, setIsVisible] = useState(false);
   const active = transformations[activeIndex];
-  const sectionRef = useRef<HTMLElement | null>(null);
 
   const next = () =>
     setActiveIndex((p) => (p + 1) % transformations.length);
@@ -65,32 +63,8 @@ export default function SmileGallery() {
       (p) => (p - 1 + transformations.length) % transformations.length
     );
 
-  // Track visibility — only auto-rotate when the section is in view.
-  useEffect(() => {
-    const el = sectionRef.current;
-    if (!el) return;
-    const observer = new IntersectionObserver(
-      ([entry]) => setIsVisible(entry.isIntersecting),
-      { threshold: 0.25 }
-    );
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, []);
-
-  // Auto-rotate every 3s while visible. The `activeIndex` dep restarts the
-  // timer whenever the user manually picks a case so the next case won't
-  // appear immediately after a manual click.
-  useEffect(() => {
-    if (!isVisible) return;
-    const id = setInterval(() => {
-      setActiveIndex((p) => (p + 1) % transformations.length);
-    }, 3000);
-    return () => clearInterval(id);
-  }, [isVisible, activeIndex]);
-
   return (
     <section
-      ref={sectionRef}
       id="gallery"
       className="relative py-16 md:py-20 lg:py-24 bg-white overflow-hidden"
     >

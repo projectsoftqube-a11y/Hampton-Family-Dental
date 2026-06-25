@@ -164,10 +164,8 @@ export default function Hero() {
           w-32 lg:w-40 h-32 lg:h-40
           items-center justify-center pointer-events-none"
       >
-        <motion.div
-          animate={{ rotate: 360 }}
-          transition={{ duration: 28, repeat: Infinity, ease: "linear" }}
-          className="absolute inset-0 rounded-full will-change-transform"
+        <div
+          className="absolute inset-0 rounded-full"
         >
           <svg
             viewBox="0 0 200 200"
@@ -193,7 +191,7 @@ export default function Hero() {
               </textPath>
             </text>
           </svg>
-        </motion.div>
+        </div>
         <div className="absolute inset-3 rounded-full border border-primary-light/25" />
         <div className="relative flex flex-col items-center justify-center w-16 lg:w-20 h-16 lg:h-20 rounded-full bg-primary/20 border border-primary/40 shadow-[0_0_30px_rgba(11,179,182,0.4)]">
           <Award
@@ -369,17 +367,11 @@ export default function Hero() {
           <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-20 z-10 bg-gradient-to-r from-navy-dark to-transparent" />
           <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-20 z-10 bg-gradient-to-l from-navy-dark to-transparent" />
 
-          <div className="flex overflow-hidden py-5">
-            <motion.div
-              animate={{ x: ["0%", "-50%"] }}
-              transition={{
-                duration: 38,
-                repeat: Infinity,
-                ease: "linear",
-              }}
-              className="flex items-center gap-12 whitespace-nowrap shrink-0 pr-12"
+          <div className="flex overflow-x-auto py-5 [&::-webkit-scrollbar]:hidden" style={{ scrollbarWidth: "none" }}>
+            <div
+              className="flex items-center justify-center gap-12 whitespace-nowrap shrink-0 px-6 md:px-12 w-max mx-auto min-w-full"
             >
-              {[...services, ...services].map((service, i) => (
+              {services.map((service, i) => (
                 <div key={i} className="flex items-center gap-12">
                   <span
                     className="font-heading italic text-white/80 text-xl md:text-2xl"
@@ -387,10 +379,12 @@ export default function Hero() {
                   >
                     {service}
                   </span>
-                  <span className="w-1.5 h-1.5 rounded-full bg-primary-light/70" />
+                  {i < services.length - 1 && (
+                    <span className="w-1.5 h-1.5 rounded-full bg-primary-light/70" />
+                  )}
                 </div>
               ))}
-            </motion.div>
+            </div>
           </div>
         </div>
       </motion.div>
