@@ -107,22 +107,8 @@ export default function DentalCrownsClient() {
           </div>
 
           {/* Quick Stats Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mt-12 pt-8 border-t border-white/10">
-            <div className="p-3 bg-white/5 rounded-2xl border border-white/10">
-              <p className="text-[9px] uppercase font-bold text-white/40 tracking-wider">Typical Duration</p>
-              <p className="text-sm font-semibold text-primary-light mt-1 flex items-center gap-1.5">
-                <Clock className="w-3.5 h-3.5" />
-                1–2 weeks
-              </p>
-            </div>
-            <div className="p-3 bg-white/5 rounded-2xl border border-white/10">
-              <p className="text-[9px] uppercase font-bold text-white/40 tracking-wider">Typical Visits</p>
-              <p className="text-sm font-semibold text-primary-light mt-1 flex items-center gap-1.5">
-                <Calendar className="w-3.5 h-3.5" />
-                2 visits
-              </p>
-            </div>
-            <div className="p-3 bg-white/5 rounded-2xl border border-white/10 col-span-2 md:col-span-2">
+          <div className="flex flex-wrap gap-4 max-w-4xl mt-12 pt-8 border-t border-white/10">
+            <div className="p-3 bg-white/5 rounded-2xl border border-white/10 min-w-[200px]">
               <p className="text-[9px] uppercase font-bold text-white/40 tracking-wider">Clinical Provider</p>
               <p className="text-xs text-white/90 mt-1 font-semibold">
                 Southampton, PA Licensed Dentist
