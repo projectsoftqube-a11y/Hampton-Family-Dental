@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Sparkles, Check, ShieldCheck } from "lucide-react";
+import { Sparkles, Check, ShieldCheck, Activity } from "lucide-react";
 import Link from "next/link";
 
 export default function TrustStats() {
@@ -211,6 +211,45 @@ export default function TrustStats() {
             </motion.div>
           ))}
         </div>
+
+        {/* Emergency Visit Banner */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="mt-12 max-w-4xl mx-auto bg-white rounded-3xl p-6 md:p-8 flex flex-col md:flex-row items-center justify-between border border-primary/20 shadow-xl shadow-primary/5 relative overflow-hidden"
+        >
+          {/* subtle background accent */}
+          <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 pointer-events-none" />
+          
+          <div className="flex flex-col md:flex-row items-center md:items-start gap-6 text-center md:text-left relative z-10">
+            <div className="w-16 h-16 rounded-2xl bg-red-50 flex items-center justify-center shrink-0 border border-red-100">
+               <Activity className="w-8 h-8 text-red-500" />
+            </div>
+            <div>
+              <div className="inline-block px-3 py-1 bg-red-50 text-red-600 text-[10px] font-bold tracking-widest uppercase rounded-full border border-red-100 mb-2">
+                Urgent Care
+              </div>
+              <h3 className="font-heading font-bold text-2xl text-navy mb-2">Emergency Dental Visit</h3>
+              <p className="text-navy/70 text-sm max-w-md leading-relaxed">
+                Experiencing tooth pain or a dental emergency? Get a focused emergency exam and necessary x-rays to diagnose the problem quickly.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-6 md:mt-0 flex flex-col items-center md:items-end relative z-10 shrink-0 border-t md:border-t-0 md:border-l border-navy/5 pt-6 md:pt-0 md:pl-8 md:ml-4 w-full md:w-auto">
+            <div className="flex items-baseline gap-1 mb-4">
+              <span className="font-heading text-4xl md:text-5xl font-bold text-navy">$69</span>
+            </div>
+            <Link
+              href="/contact"
+              className="bg-red-500 text-white px-8 py-3.5 rounded-full text-xs font-semibold tracking-widest uppercase shadow-lg shadow-red-500/25 hover:bg-red-600 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 w-full text-center"
+            >
+              Book Now
+            </Link>
+          </div>
+        </motion.div>
 
         {/* Extra Discounts Strip */}
         <motion.div

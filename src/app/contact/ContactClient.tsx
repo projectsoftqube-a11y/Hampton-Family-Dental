@@ -260,28 +260,40 @@ export default function ContactClient() {
                       </div>
                     </div>
 
-                    <div className="space-y-2">
-                      <label className="text-[9px] font-bold uppercase tracking-wider text-navy/45">Reason for Visit (Select all that apply)</label>
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                        {["New Patient Exam", "Routine Cleaning", "Emergency Exam", "Consultation"].map((type) => (
-                          <label key={type} className="flex items-center gap-2 text-xs text-navy/80 cursor-pointer group">
-                            <div className="relative flex items-center justify-center w-4 h-4 rounded border border-navy/20 bg-beige-light/20 group-hover:border-primary transition-colors">
+                    <div className="space-y-3">
+                      <label className="text-[9px] font-bold uppercase tracking-wider text-navy/45">I am interested in (Select all that apply)</label>
+                      <div className="flex flex-col gap-3">
+                        {[
+                          { title: "New Patient Exam & Cleaning", desc: "(For first-time patients—includes exam, X-rays, and cleaning if applicable)" },
+                          { title: "Routine Cleaning & Checkup", desc: "(For existing patients coming in for recall/maintenance)" },
+                          { title: "Emergency Visit", desc: "(Pain, swelling, broken tooth, infection, etc.)" },
+                          { title: "Treatment Visit", desc: "(Fillings, crowns, root canals, extractions, or scheduled procedures)" },
+                          { title: "Consultation / Second Opinion", desc: "(Implants, Veneer, Invisalign)" },
+                          { title: "Other / Not Sure", desc: "" }
+                        ].map((option) => (
+                          <label key={option.title} className="flex items-start gap-3 text-navy/80 cursor-pointer group">
+                            <div className="relative flex items-center justify-center w-5 h-5 rounded border border-navy/20 bg-beige-light/20 group-hover:border-primary transition-colors shrink-0 mt-0.5">
                               <input
                                 type="checkbox"
                                 className="absolute opacity-0 cursor-pointer h-0 w-0"
-                                checked={formData.visitTypes.includes(type)}
+                                checked={formData.visitTypes.includes(option.title)}
                                 onChange={(e) => {
                                   const newTypes = e.target.checked
-                                    ? [...formData.visitTypes, type]
-                                    : formData.visitTypes.filter((t) => t !== type);
+                                    ? [...formData.visitTypes, option.title]
+                                    : formData.visitTypes.filter((t) => t !== option.title);
                                   setFormData({ ...formData, visitTypes: newTypes });
                                 }}
                               />
-                              {formData.visitTypes.includes(type) && (
-                                <Sparkles className="w-3 h-3 text-primary" />
+                              {formData.visitTypes.includes(option.title) && (
+                                <Sparkles className="w-3.5 h-3.5 text-primary" />
                               )}
                             </div>
-                            {type}
+                            <div className="flex flex-col">
+                              <span className="text-xs font-semibold text-navy">{option.title}</span>
+                              {option.desc && (
+                                <span className="text-[10px] text-navy/60 leading-snug mt-0.5">{option.desc}</span>
+                              )}
+                            </div>
                           </label>
                         ))}
                       </div>

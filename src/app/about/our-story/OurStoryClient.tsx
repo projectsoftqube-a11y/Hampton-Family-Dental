@@ -176,7 +176,7 @@ export default function OurStoryClient() {
             {/* Right Media/Image Column */}
             <div className="lg:col-span-5 relative aspect-[4/3] md:aspect-[16/10] lg:aspect-square rounded-3xl overflow-hidden shadow-2xl border border-navy/5 bg-beige-light/30 lg:sticky lg:top-28 mt-8 lg:mt-0">
               <Image
-                src="/placeholder.svg"
+                src="/doctor-avatar.png"
                 alt="Hampton Family Dental team transition"
                 fill
                 className="object-cover"
@@ -189,48 +189,7 @@ export default function OurStoryClient() {
         </div>
       </section>
 
-      {/* ─── Timeline Section ─── */}
-      <section className="py-20 md:py-24 bg-beige-light/30 relative border-t border-navy/[0.04]">
-        <div className="max-w-[1000px] mx-auto px-5 md:px-10">
-          <div className="text-center mb-16">
-            <span className="text-primary text-[10px] tracking-[0.25em] uppercase font-bold">Historical Milestones</span>
-            <h2 className="font-heading text-navy text-3xl font-bold mt-2">Our Journey Together</h2>
-          </div>
 
-          <div className="relative border-l-2 border-primary/20 pl-8 ml-4 md:ml-8 space-y-12">
-            {timeline.map((item, idx) => {
-              const Icon = item.icon;
-              return (
-                <motion.div
-                  key={item.year}
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: idx * 0.15 }}
-                  className="relative space-y-2"
-                >
-                  {/* Circle Pin */}
-                  <div className="absolute -left-[43px] top-1.5 w-6 h-6 rounded-full bg-white border-2 border-primary flex items-center justify-center shadow-md">
-                    <Icon className="w-3 h-3 text-primary" />
-                  </div>
-
-                  <span className="inline-block text-primary font-heading text-xl font-bold leading-none bg-white border border-primary/15 px-3 py-1 rounded-full shadow-sm">
-                    {item.year}
-                  </span>
-
-                  <h3 className="font-heading text-navy text-lg font-bold">
-                    {item.title}
-                  </h3>
-
-                  <p className="text-navy/60 text-xs md:text-sm leading-relaxed max-w-2xl">
-                    {item.desc}
-                  </p>
-                </motion.div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
 
       {/* ─── Contact & Scheduling CTA Block ─── */}
       <section className="py-16 md:py-20 bg-navy-dark text-white relative">

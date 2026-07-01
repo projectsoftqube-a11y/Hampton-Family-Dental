@@ -200,7 +200,7 @@ export default function AboutHubPage() {
             >
               <div className="relative w-48 h-48 rounded-full overflow-hidden mb-6 border-4 border-white shadow-lg">
                 <Image
-                  src="/placeholder.svg"
+                  src="/doctor-avatar.png"
                   alt="Dr. Keyur Dudhat"
                   fill
                   className="object-cover"

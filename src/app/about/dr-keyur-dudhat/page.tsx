@@ -52,7 +52,7 @@ export default function DrDudhatBioPage() {
       "Clear Correct",
       "Advanced Imaging"
     ],
-    "image": `${SITE_URL}/images/dr_keyur_dudhat_portrait.png`,
+    "image": `${SITE_URL}/doctor-avatar.png`,
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "283 Second Street Pike, Suite 140",

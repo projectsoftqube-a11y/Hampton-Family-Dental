@@ -29,14 +29,25 @@ export default function InsuranceAndPaymentClient() {
   ];
 
   const placeholderPlans = [
-    "Delta Dental PPO (In-Network)",
-    "Aetna PPO Dental (In-Network)",
-    "Cigna PPO Dental (In-Network)",
-    "MetLife PPO Dental (In-Network)",
-    "Guardian PPO Dental (In-Network)",
-    "United Healthcare PPO (In-Network)",
-    "Principal Financial PPO (In-Network)",
-    "Blue Cross Blue Shield PPO (In-Network)"
+    "Aetna",
+    "Delta Dental",
+    "MetLife",
+    "Cigna",
+    "UnitedHealthcare",
+    "Guardian",
+    "Humana",
+    "BlueCross BlueShield",
+    "Principal",
+    "GEHA",
+    "Connection Dental",
+    "Ameritas",
+    "Careington",
+    "Sunlife",
+    "United Concordia",
+    "Dominion Dental",
+    "Teamsters",
+    "LEHB",
+    "Fidelio"
   ];
 
   const faqs = [
@@ -164,12 +175,7 @@ export default function InsuranceAndPaymentClient() {
               <h2 className="font-heading text-navy text-3xl font-bold">
                 Insurance We Accept
               </h2>
-              
-              <div className="bg-yellow-50 border border-yellow-200 text-yellow-900 rounded-2xl p-5 text-xs md:text-sm leading-relaxed">
-                <strong>[CLIENT INPUT: accepted insurance plans]</strong> (Handoff open item #10)
-                <br />
-                The digital marketing team is pending confirmation of the official participating list of insurance networks from the office administration. The current draft includes the following plans.
-              </div>
+
 
               <div className="grid sm:grid-cols-2 gap-4 pt-4">
                 {placeholderPlans.map((plan, idx) => (

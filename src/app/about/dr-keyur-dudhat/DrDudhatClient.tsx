@@ -82,7 +82,7 @@ export default function DrDudhatClient() {
                 className="relative aspect-square md:aspect-[4/5] lg:aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl border border-navy/5 bg-beige-light/30"
               >
                 <Image
-                  src="/placeholder.svg"
+                  src="/doctor-avatar.png"
                   alt="Dr. Keyur Dudhat, DMD"
                   fill
                   className="object-cover"
