@@ -6,6 +6,14 @@ import Breadcrumbs from "@/components/shared/Breadcrumbs";
 import { practiceInfo } from "@/lib/navigation";
 import { useState } from "react";
 import Link from "next/link";
+import {
+  validateName,
+  validateEmail,
+  validatePhone,
+  validateRequired,
+  isValid,
+} from "@/lib/validation";
+import { sendEnquiry } from "@/lib/sendEnquiry";
 
 export default function ContactClient() {
   const breadcrumbs = [{ label: "Contact Us" }];
@@ -17,9 +25,38 @@ export default function ContactClient() {
     message: "",
     visitTypes: [] as string[],
   });
+  const [errors, setErrors] = useState<Record<string, string>>({});
+  const [sending, setSending] = useState(false);
+  const [submitError, setSubmitError] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const validate = () => ({
+    name: validateName(formData.name),
+    phone: validatePhone(formData.phone),
+    email: validateEmail(formData.email),
+    message: validateRequired(formData.message, "Message"),
+  });
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    const nextErrors = validate();
+    setErrors(nextErrors);
+    if (!isValid(nextErrors)) return;
+    setErrors({});
+    setSending(true);
+    setSubmitError("");
+    const err = await sendEnquiry({
+      formType: "Contact Enquiry",
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      visitTypes: formData.visitTypes,
+      message: formData.message,
+    });
+    setSending(false);
+    if (err) {
+      setSubmitError(err);
+      return;
+    }
     setSubmitted(true);
     setTimeout(() => {
       setSubmitted(false);
@@ -174,7 +211,7 @@ export default function ContactClient() {
                     </p>
                   </div>
                 ) : (
-                  <form onSubmit={handleSubmit} className="space-y-4">
+                  <form onSubmit={handleSubmit} noValidate className="space-y-4">
                     <h3 className="font-heading text-navy text-lg font-bold flex items-center gap-2 mb-2">
                       <Calendar className="w-5 h-5 text-primary" />
                       Send Us a Message
@@ -184,12 +221,14 @@ export default function ContactClient() {
                       <label className="text-[9px] font-bold uppercase tracking-wider text-navy/45">Full Name</label>
                       <input
                         type="text"
-                        required
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        className="w-full bg-beige-light/20 border border-navy/10 rounded-xl px-4 py-2.5 text-xs text-navy focus:outline-none focus:border-primary transition-colors"
+                        className={`w-full bg-beige-light/20 border rounded-xl px-4 py-2.5 text-xs text-navy focus:outline-none transition-colors ${
+                          errors.name ? "border-red-500 focus:border-red-500" : "border-navy/10 focus:border-primary"
+                        }`}
                         placeholder="Your Name"
                       />
+                      {errors.name && <p className="text-red-600 text-[10px] font-semibold mt-1">{errors.name}</p>}
                     </div>
 
                     <div className="grid md:grid-cols-2 gap-4">
@@ -197,23 +236,27 @@ export default function ContactClient() {
                         <label className="text-[9px] font-bold uppercase tracking-wider text-navy/45">Phone Number</label>
                         <input
                           type="tel"
-                          required
                           value={formData.phone}
                           onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                          className="w-full bg-beige-light/20 border border-navy/10 rounded-xl px-4 py-2.5 text-xs text-navy focus:outline-none focus:border-primary transition-colors"
+                          className={`w-full bg-beige-light/20 border rounded-xl px-4 py-2.5 text-xs text-navy focus:outline-none transition-colors ${
+                            errors.phone ? "border-red-500 focus:border-red-500" : "border-navy/10 focus:border-primary"
+                          }`}
                           placeholder="(215) 555-1234"
                         />
+                        {errors.phone && <p className="text-red-600 text-[10px] font-semibold mt-1">{errors.phone}</p>}
                       </div>
                       <div className="space-y-1">
                         <label className="text-[9px] font-bold uppercase tracking-wider text-navy/45">Email Address</label>
                         <input
                           type="email"
-                          required
                           value={formData.email}
                           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                          className="w-full bg-beige-light/20 border border-navy/10 rounded-xl px-4 py-2.5 text-xs text-navy focus:outline-none focus:border-primary transition-colors"
+                          className={`w-full bg-beige-light/20 border rounded-xl px-4 py-2.5 text-xs text-navy focus:outline-none transition-colors ${
+                            errors.email ? "border-red-500 focus:border-red-500" : "border-navy/10 focus:border-primary"
+                          }`}
                           placeholder="you@example.com"
                         />
+                        {errors.email && <p className="text-red-600 text-[10px] font-semibold mt-1">{errors.email}</p>}
                       </div>
                     </div>
 
@@ -248,19 +291,28 @@ export default function ContactClient() {
                       <label className="text-[9px] font-bold uppercase tracking-wider text-navy/45">Message</label>
                       <textarea
                         rows={4}
-                        required
                         value={formData.message}
                         onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                        className="w-full bg-beige-light/20 border border-navy/10 rounded-xl px-4 py-2.5 text-xs text-navy focus:outline-none focus:border-primary transition-colors resize-none"
+                        className={`w-full bg-beige-light/20 border rounded-xl px-4 py-2.5 text-xs text-navy focus:outline-none transition-colors resize-none ${
+                          errors.message ? "border-red-500 focus:border-red-500" : "border-navy/10 focus:border-primary"
+                        }`}
                         placeholder="Ask a question or request detail info..."
                       />
+                      {errors.message && <p className="text-red-600 text-[10px] font-semibold mt-1">{errors.message}</p>}
                     </div>
+
+                    {submitError && (
+                      <p className="text-red-600 text-xs font-semibold text-center bg-red-50 border border-red-200 rounded-xl py-2 px-3">
+                        {submitError}
+                      </p>
+                    )}
 
                     <button
                       type="submit"
-                      className="w-full py-3.5 rounded-full bg-navy text-white text-xs font-semibold tracking-widest uppercase hover:bg-primary shadow-md transition-all duration-300"
+                      disabled={sending}
+                      className="w-full py-3.5 rounded-full bg-navy text-white text-xs font-semibold tracking-widest uppercase hover:bg-primary shadow-md transition-all duration-300 disabled:opacity-60 disabled:cursor-not-allowed"
                     >
-                      Send Message
+                      {sending ? "Sending..." : "Send Message"}
                     </button>
                   </form>
                 )}

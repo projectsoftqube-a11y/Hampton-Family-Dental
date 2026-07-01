@@ -4,6 +4,14 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Calendar, Phone, Clock, MapPin, Mail, Sparkles, CheckCircle } from "lucide-react";
 import { practiceInfo } from "@/lib/navigation";
+import {
+  validateName,
+  validateEmail,
+  validatePhone,
+  validateSelect,
+  isValid,
+} from "@/lib/validation";
+import { sendEnquiry } from "@/lib/sendEnquiry";
 
 export default function CTABlock() {
   const [submitted, setSubmitted] = useState(false);
@@ -15,9 +23,39 @@ export default function CTABlock() {
     message: "",
     visitTypes: [] as string[],
   });
+  const [errors, setErrors] = useState<Record<string, string>>({});
+  const [sending, setSending] = useState(false);
+  const [submitError, setSubmitError] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const validate = () => ({
+    name: validateName(formData.name),
+    phone: validatePhone(formData.phone),
+    email: validateEmail(formData.email),
+    timeOfDay: validateSelect(formData.timeOfDay, "a preferred time"),
+  });
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    const nextErrors = validate();
+    setErrors(nextErrors);
+    if (!isValid(nextErrors)) return;
+    setErrors({});
+    setSending(true);
+    setSubmitError("");
+    const err = await sendEnquiry({
+      formType: "Appointment Request",
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      timeOfDay: formData.timeOfDay,
+      visitTypes: formData.visitTypes,
+      message: formData.message,
+    });
+    setSending(false);
+    if (err) {
+      setSubmitError(err);
+      return;
+    }
     setSubmitted(true);
     setTimeout(() => {
       setSubmitted(false);
@@ -111,6 +149,7 @@ export default function CTABlock() {
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                     onSubmit={handleSubmit}
+                    noValidate
                     className="space-y-4"
                   >
                     <h4 className="font-heading text-lg font-bold flex items-center gap-2 mb-2">
@@ -123,23 +162,27 @@ export default function CTABlock() {
                         <label className="text-[9px] font-bold uppercase tracking-wider text-white/45">Full Name</label>
                         <input
                           type="text"
-                          required
                           value={formData.name}
                           onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                          className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-2.5 text-xs text-white placeholder-white/30 focus:outline-none focus:border-primary-light transition-colors"
+                          className={`w-full bg-white/5 border rounded-xl px-4 py-2.5 text-xs text-white placeholder-white/30 focus:outline-none transition-colors ${
+                            errors.name ? "border-red-500 focus:border-red-500" : "border-white/10 focus:border-primary-light"
+                          }`}
                           placeholder="Your Name"
                         />
+                        {errors.name && <p className="text-red-400 text-[10px] font-semibold mt-1">{errors.name}</p>}
                       </div>
                       <div className="space-y-1">
                         <label className="text-[9px] font-bold uppercase tracking-wider text-white/45">Phone Number</label>
                         <input
                           type="tel"
-                          required
                           value={formData.phone}
                           onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                          className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-2.5 text-xs text-white placeholder-white/30 focus:outline-none focus:border-primary-light transition-colors"
+                          className={`w-full bg-white/5 border rounded-xl px-4 py-2.5 text-xs text-white placeholder-white/30 focus:outline-none transition-colors ${
+                            errors.phone ? "border-red-500 focus:border-red-500" : "border-white/10 focus:border-primary-light"
+                          }`}
                           placeholder="(555) 123-4567"
                         />
+                        {errors.phone && <p className="text-red-400 text-[10px] font-semibold mt-1">{errors.phone}</p>}
                       </div>
                     </div>
 
@@ -148,26 +191,30 @@ export default function CTABlock() {
                         <label className="text-[9px] font-bold uppercase tracking-wider text-white/45">Email Address</label>
                         <input
                           type="email"
-                          required
                           value={formData.email}
                           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                          className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-2.5 text-xs text-white placeholder-white/30 focus:outline-none focus:border-primary-light transition-colors"
+                          className={`w-full bg-white/5 border rounded-xl px-4 py-2.5 text-xs text-white placeholder-white/30 focus:outline-none transition-colors ${
+                            errors.email ? "border-red-500 focus:border-red-500" : "border-white/10 focus:border-primary-light"
+                          }`}
                           placeholder="you@example.com"
                         />
+                        {errors.email && <p className="text-red-400 text-[10px] font-semibold mt-1">{errors.email}</p>}
                       </div>
                       <div className="space-y-1">
                         <label className="text-[9px] font-bold uppercase tracking-wider text-white/45">Preferred Time</label>
                         <select
-                          required
                           value={formData.timeOfDay}
                           onChange={(e) => setFormData({ ...formData, timeOfDay: e.target.value })}
-                          className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-2.5 text-xs text-white/80 focus:outline-none focus:border-primary-light transition-colors select-dark-arrow"
+                          className={`w-full bg-white/5 border rounded-xl px-4 py-2.5 text-xs text-white/80 focus:outline-none transition-colors select-dark-arrow ${
+                            errors.timeOfDay ? "border-red-500 focus:border-red-500" : "border-white/10 focus:border-primary-light"
+                          }`}
                         >
                           <option value="" className="bg-navy-dark">Select Preferred Time</option>
                           <option value="morning" className="bg-navy-dark">Morning (8am – 12pm)</option>
                           <option value="afternoon" className="bg-navy-dark">Afternoon (12pm – 4pm)</option>
                           <option value="late-afternoon" className="bg-navy-dark">Late Afternoon (4pm – 6pm)</option>
                         </select>
+                        {errors.timeOfDay && <p className="text-red-400 text-[10px] font-semibold mt-1">{errors.timeOfDay}</p>}
                       </div>
                     </div>
 
@@ -209,11 +256,18 @@ export default function CTABlock() {
                       />
                     </div>
 
+                    {submitError && (
+                      <p className="text-red-400 text-xs font-semibold text-center bg-red-500/10 border border-red-500/30 rounded-xl py-2 px-3">
+                        {submitError}
+                      </p>
+                    )}
+
                     <button
                       type="submit"
-                      className="w-full py-3.5 rounded-full bg-primary text-white text-xs font-semibold tracking-widest uppercase hover:bg-primary-light hover:scale-[1.01] active:scale-[0.99] transition-all duration-300 shadow-md shadow-primary/20"
+                      disabled={sending}
+                      className="w-full py-3.5 rounded-full bg-primary text-white text-xs font-semibold tracking-widest uppercase hover:bg-primary-light hover:scale-[1.01] active:scale-[0.99] transition-all duration-300 shadow-md shadow-primary/20 disabled:opacity-60 disabled:cursor-not-allowed"
                     >
-                      Submit Booking Request
+                      {sending ? "Sending..." : "Submit Booking Request"}
                     </button>
                   </motion.form>
                 ) : (

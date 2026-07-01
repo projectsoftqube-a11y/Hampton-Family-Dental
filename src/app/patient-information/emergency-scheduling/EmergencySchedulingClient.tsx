@@ -17,6 +17,8 @@ import {
 } from "lucide-react";
 import Breadcrumbs from "@/components/shared/Breadcrumbs";
 import { practiceInfo } from "@/lib/navigation";
+import { validateName, validatePhone, validateSelect, isValid } from "@/lib/validation";
+import { sendEnquiry } from "@/lib/sendEnquiry";
 
 export default function EmergencySchedulingClient() {
   const breadcrumbs = [
@@ -31,9 +33,36 @@ export default function EmergencySchedulingClient() {
     symptom: "",
     notes: "",
   });
+  const [errors, setErrors] = useState<Record<string, string>>({});
+  const [sending, setSending] = useState(false);
+  const [submitError, setSubmitError] = useState("");
 
-  const handleEmergencySubmit = (e: React.FormEvent) => {
+  const validate = () => ({
+    name: validateName(formData.name),
+    phone: validatePhone(formData.phone),
+    symptom: validateSelect(formData.symptom, "a primary symptom"),
+  });
+
+  const handleEmergencySubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    const nextErrors = validate();
+    setErrors(nextErrors);
+    if (!isValid(nextErrors)) return;
+    setErrors({});
+    setSending(true);
+    setSubmitError("");
+    const err = await sendEnquiry({
+      formType: "Emergency Appointment Request",
+      name: formData.name,
+      phone: formData.phone,
+      symptom: formData.symptom,
+      notes: formData.notes,
+    });
+    setSending(false);
+    if (err) {
+      setSubmitError(err);
+      return;
+    }
     setSubmitted(true);
     setTimeout(() => {
       setSubmitted(false);
@@ -240,6 +269,7 @@ export default function EmergencySchedulingClient() {
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
                   onSubmit={handleEmergencySubmit}
+                  noValidate
                   className="space-y-6"
                 >
                   <div className="grid md:grid-cols-2 gap-6">
@@ -247,33 +277,38 @@ export default function EmergencySchedulingClient() {
                       <label className="text-[10px] font-bold uppercase tracking-wider text-navy/60">Full Name</label>
                       <input
                         type="text"
-                        required
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        className="w-full bg-beige-light/10 border border-navy/10 rounded-xl px-4 py-3 text-xs md:text-sm text-navy focus:outline-none focus:border-primary focus:bg-white transition-all duration-300"
+                        className={`w-full bg-beige-light/10 border rounded-xl px-4 py-3 text-xs md:text-sm text-navy focus:outline-none focus:bg-white transition-all duration-300 ${
+                          errors.name ? "border-red-500 focus:border-red-500" : "border-navy/10 focus:border-primary"
+                        }`}
                         placeholder="Jane Smith"
                       />
+                      {errors.name && <p className="text-red-600 text-[11px] font-semibold mt-1">{errors.name}</p>}
                     </div>
                     <div className="space-y-2">
                       <label className="text-[10px] font-bold uppercase tracking-wider text-navy/60">Phone Number</label>
                       <input
                         type="tel"
-                        required
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                        className="w-full bg-beige-light/10 border border-navy/10 rounded-xl px-4 py-3 text-xs md:text-sm text-navy focus:outline-none focus:border-primary focus:bg-white transition-all duration-300"
+                        className={`w-full bg-beige-light/10 border rounded-xl px-4 py-3 text-xs md:text-sm text-navy focus:outline-none focus:bg-white transition-all duration-300 ${
+                          errors.phone ? "border-red-500 focus:border-red-500" : "border-navy/10 focus:border-primary"
+                        }`}
                         placeholder="(215) 357-2224"
                       />
+                      {errors.phone && <p className="text-red-600 text-[11px] font-semibold mt-1">{errors.phone}</p>}
                     </div>
                   </div>
 
                   <div className="space-y-2">
                     <label className="text-[10px] font-bold uppercase tracking-wider text-navy/60">Primary Emergency Symptom</label>
                     <select
-                      required
                       value={formData.symptom}
                       onChange={(e) => setFormData({ ...formData, symptom: e.target.value })}
-                      className="w-full bg-beige-light/10 border border-navy/10 rounded-xl px-4 py-3 text-xs md:text-sm text-navy focus:outline-none focus:border-primary focus:bg-white transition-all duration-300"
+                      className={`w-full bg-beige-light/10 border rounded-xl px-4 py-3 text-xs md:text-sm text-navy focus:outline-none focus:bg-white transition-all duration-300 ${
+                        errors.symptom ? "border-red-500 focus:border-red-500" : "border-navy/10 focus:border-primary"
+                      }`}
                     >
                       <option value="">Select Primary Symptom</option>
                       <option value="severe-pain">Severe/Throbbing Tooth Pain</option>
@@ -283,6 +318,7 @@ export default function EmergencySchedulingClient() {
                       <option value="broken-crown">Lost Crown or Filling</option>
                       <option value="other">Other Dental Emergency</option>
                     </select>
+                    {errors.symptom && <p className="text-red-600 text-[11px] font-semibold mt-1">{errors.symptom}</p>}
                   </div>
 
                   <div className="space-y-2">
@@ -296,11 +332,18 @@ export default function EmergencySchedulingClient() {
                     />
                   </div>
 
+                  {submitError && (
+                    <p className="text-red-600 text-xs font-semibold text-center bg-red-50 border border-red-200 rounded-xl py-2 px-3">
+                      {submitError}
+                    </p>
+                  )}
+
                   <button
                     type="submit"
-                    className="w-full py-4 rounded-full bg-red-600 hover:bg-red-700 text-white text-xs font-semibold tracking-widest uppercase hover:scale-[1.01] shadow-md hover:shadow-lg transition-all duration-300 font-heading"
+                    disabled={sending}
+                    className="w-full py-4 rounded-full bg-red-600 hover:bg-red-700 text-white text-xs font-semibold tracking-widest uppercase hover:scale-[1.01] shadow-md hover:shadow-lg transition-all duration-300 font-heading disabled:opacity-60 disabled:cursor-not-allowed"
                   >
-                    Request Same-Day Emergency Slot
+                    {sending ? "Sending..." : "Request Same-Day Emergency Slot"}
                   </button>
                 </motion.form>
               ) : (

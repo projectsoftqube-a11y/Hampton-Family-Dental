@@ -3,6 +3,8 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { validateName, validateEmail, validatePhone, isValid } from "@/lib/validation";
+import { sendEnquiry } from "@/lib/sendEnquiry";
 import {
   MapPin,
   Phone,
@@ -73,9 +75,38 @@ export default function Contact() {
     message: "",
     visitTypes: [] as string[],
   });
+  const [errors, setErrors] = useState<Record<string, string>>({});
+  const [sending, setSending] = useState(false);
+  const [submitError, setSubmitError] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const validate = () => ({
+    name: validateName(formData.name),
+    email: validateEmail(formData.email),
+    phone: formData.phone.trim() ? validatePhone(formData.phone) : "",
+  });
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    const nextErrors = validate();
+    setErrors(nextErrors);
+    if (!isValid(nextErrors)) return;
+    setErrors({});
+    setSending(true);
+    setSubmitError("");
+    const err = await sendEnquiry({
+      formType: "Appointment Enquiry",
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      service: formData.service,
+      visitTypes: formData.visitTypes,
+      message: formData.message,
+    });
+    setSending(false);
+    if (err) {
+      setSubmitError(err);
+      return;
+    }
     setSubmitted(true);
     setTimeout(() => setSubmitted(false), 3000);
     setFormData({ name: "", email: "", phone: "", service: "", message: "", visitTypes: [] });
@@ -182,6 +213,7 @@ export default function Contact() {
           >
             <form
               onSubmit={handleSubmit}
+              noValidate
               className="relative rounded-[24px] overflow-hidden
                 bg-white/[0.04] backdrop-blur-xl border border-white/10
                 p-6 md:p-8 lg:p-10 shadow-[0_30px_80px_-30px_rgba(0,0,0,0.5)]"
@@ -219,15 +251,16 @@ export default function Contact() {
                     <input
                       type="text"
                       id="contact-name"
-                      required
                       value={formData.name}
                       onChange={(e) =>
                         setFormData({ ...formData, name: e.target.value })
                       }
                       placeholder=" "
-                      className="peer w-full px-4 pt-6 pb-2 rounded-xl bg-white/[0.05] border border-white/10
-                        text-white text-sm outline-none focus:border-primary/50 focus:bg-white/[0.08]
-                        transition-all duration-300 placeholder-transparent"
+                      className={`peer w-full px-4 pt-6 pb-2 rounded-xl bg-white/[0.05] border
+                        text-white text-sm outline-none focus:bg-white/[0.08]
+                        transition-all duration-300 placeholder-transparent ${
+                          errors.name ? "border-red-500 focus:border-red-500" : "border-white/10 focus:border-primary/50"
+                        }`}
                     />
                     <label
                       htmlFor="contact-name"
@@ -241,6 +274,7 @@ export default function Contact() {
                     >
                       Full Name
                     </label>
+                    {errors.name && <p className="text-red-400 text-[10px] font-semibold mt-1 pl-1">{errors.name}</p>}
                   </div>
 
                   {/* Email */}
@@ -248,15 +282,16 @@ export default function Contact() {
                     <input
                       type="email"
                       id="contact-email"
-                      required
                       value={formData.email}
                       onChange={(e) =>
                         setFormData({ ...formData, email: e.target.value })
                       }
                       placeholder=" "
-                      className="peer w-full px-4 pt-6 pb-2 rounded-xl bg-white/[0.05] border border-white/10
-                        text-white text-sm outline-none focus:border-primary/50 focus:bg-white/[0.08]
-                        transition-all duration-300 placeholder-transparent"
+                      className={`peer w-full px-4 pt-6 pb-2 rounded-xl bg-white/[0.05] border
+                        text-white text-sm outline-none focus:bg-white/[0.08]
+                        transition-all duration-300 placeholder-transparent ${
+                          errors.email ? "border-red-500 focus:border-red-500" : "border-white/10 focus:border-primary/50"
+                        }`}
                     />
                     <label
                       htmlFor="contact-email"
@@ -270,6 +305,7 @@ export default function Contact() {
                     >
                       Email Address
                     </label>
+                    {errors.email && <p className="text-red-400 text-[10px] font-semibold mt-1 pl-1">{errors.email}</p>}
                   </div>
 
                   {/* Phone */}
@@ -282,9 +318,11 @@ export default function Contact() {
                         setFormData({ ...formData, phone: e.target.value })
                       }
                       placeholder=" "
-                      className="peer w-full px-4 pt-6 pb-2 rounded-xl bg-white/[0.05] border border-white/10
-                        text-white text-sm outline-none focus:border-primary/50 focus:bg-white/[0.08]
-                        transition-all duration-300 placeholder-transparent"
+                      className={`peer w-full px-4 pt-6 pb-2 rounded-xl bg-white/[0.05] border
+                        text-white text-sm outline-none focus:bg-white/[0.08]
+                        transition-all duration-300 placeholder-transparent ${
+                          errors.phone ? "border-red-500 focus:border-red-500" : "border-white/10 focus:border-primary/50"
+                        }`}
                     />
                     <label
                       htmlFor="contact-phone"
@@ -298,6 +336,7 @@ export default function Contact() {
                     >
                       Phone Number
                     </label>
+                    {errors.phone && <p className="text-red-400 text-[10px] font-semibold mt-1 pl-1">{errors.phone}</p>}
                   </div>
 
                   {/* Service */}
@@ -396,11 +435,17 @@ export default function Contact() {
                   </label>
                 </div>
 
+                {submitError && (
+                  <p className="text-red-400 text-xs font-semibold text-center bg-red-500/10 border border-red-500/30 rounded-xl py-2 px-3 mb-4">
+                    {submitError}
+                  </p>
+                )}
+
                 {/* Submit row */}
                 <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
                   <button
                     type="submit"
-                    disabled={submitted}
+                    disabled={submitted || sending}
                     className="group flex-1 relative inline-flex items-center justify-center gap-3
                       px-6 py-3.5 rounded-full
                       bg-gradient-to-r from-primary to-primary-dark text-white font-semibold
@@ -421,7 +466,7 @@ export default function Contact() {
                       <>
                         <Send className="relative z-10 w-4 h-4" />
                         <span className="relative z-10 text-sm tracking-wide">
-                          Send Message
+                          {sending ? "Sending..." : "Send Message"}
                         </span>
                       </>
                     )}
