@@ -380,28 +380,38 @@ export default function Contact() {
                 {/* Visit Types Checkboxes */}
                 <div className="relative mb-6 p-4 rounded-xl bg-white/[0.05] border border-white/10">
                   <label className="block text-[10px] text-primary-light font-semibold tracking-[0.15em] uppercase mb-3">
-                    Reason for Visit (Select all that apply)
+                    I am interested in (select all that apply)
                   </label>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                    {["New Patient Exam", "Routine Cleaning", "Emergency Exam", "Consultation"].map((type) => (
-                      <label key={type} className="flex items-center gap-2 text-xs text-white/80 cursor-pointer group">
-                        <div className="relative flex items-center justify-center w-4 h-4 rounded border border-white/20 bg-white/5 group-hover:border-primary-light transition-colors">
+                  <div className="grid grid-cols-1 gap-3">
+                    {[
+                      { label: "New Patient Exam & Cleaning", desc: "(For first-time patients—includes exam, X-rays, and cleaning if applicable)" },
+                      { label: "Routine Cleaning & Checkup", desc: "(For existing patients coming in for recall/maintenance)" },
+                      { label: "Emergency Visit", desc: "(Pain, swelling, broken tooth, infection, etc.)" },
+                      { label: "Treatment Visit", desc: "(Fillings, crowns, root canals, extractions, or scheduled procedures)" },
+                      { label: "Consultation / Second Opinion", desc: "(Implants, Veneer, Invisalign)" },
+                      { label: "Other / Not Sure", desc: "" }
+                    ].map((type) => (
+                      <label key={type.label} className="flex items-start gap-3 cursor-pointer group">
+                        <div className="relative flex items-center justify-center w-5 h-5 rounded border border-white/20 bg-white/5 group-hover:border-primary-light transition-colors flex-shrink-0 mt-0.5">
                           <input
                             type="checkbox"
                             className="absolute opacity-0 cursor-pointer h-0 w-0"
-                            checked={formData.visitTypes.includes(type)}
+                            checked={formData.visitTypes.includes(type.label)}
                             onChange={(e) => {
                               const newTypes = e.target.checked
-                                ? [...formData.visitTypes, type]
-                                : formData.visitTypes.filter((t) => t !== type);
+                                ? [...formData.visitTypes, type.label]
+                                : formData.visitTypes.filter((t) => t !== type.label);
                               setFormData({ ...formData, visitTypes: newTypes });
                             }}
                           />
-                          {formData.visitTypes.includes(type) && (
-                            <CheckCircle2 className="w-3 h-3 text-primary-light" />
+                          {formData.visitTypes.includes(type.label) && (
+                            <CheckCircle2 className="w-3.5 h-3.5 text-primary-light" />
                           )}
                         </div>
-                        {type}
+                        <div className="flex flex-col">
+                          <span className="text-sm font-semibold text-white/90 leading-none">{type.label}</span>
+                          {type.desc && <span className="text-[11px] text-white/50 mt-1 leading-tight">{type.desc}</span>}
+                        </div>
                       </label>
                     ))}
                   </div>
