@@ -122,7 +122,7 @@ export default function DesktopDropdown({
             <div
               className="min-w-[250px] rounded-2xl overflow-hidden
               bg-white border border-navy/[0.06]
-              shadow-[0_25px_60px_-15px_rgba(40,47,90,0.2),0_10px_25px_-10px_rgba(40,47,90,0.08)]"
+              shadow-[0_25px_60px_-15px_rgba(20,60,80,0.2),0_10px_25px_-10px_rgba(20,60,80,0.08)]"
             >
               {/* Top accent line */}
               <div className="h-[2px] bg-gradient-to-r from-primary via-primary-light to-primary" />

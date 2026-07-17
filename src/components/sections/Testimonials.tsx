@@ -266,8 +266,8 @@ export default function Testimonials() {
             transition={{ duration: 0.55, delay: 0.1 }}
             className="group relative rounded-[20px] overflow-hidden p-5 lg:p-6 min-h-[230px]
               bg-white border border-navy/[0.06]
-              shadow-[0_15px_50px_-25px_rgba(40,47,90,0.1)]
-              hover:shadow-[0_25px_60px_-25px_rgba(11,179,182,0.2)]
+              shadow-[0_15px_50px_-25px_rgba(20,60,80,0.1)]
+              hover:shadow-[0_25px_60px_-25px_rgba(30,96,118,0.2)]
               hover:-translate-y-1 transition-all duration-500 cursor-default flex flex-col"
           >
             <Quote className="absolute top-4 right-4 w-8 h-8 text-primary/8 -rotate-180" strokeWidth={1} />
@@ -304,8 +304,8 @@ export default function Testimonials() {
             transition={{ duration: 0.55, delay: 0.15 }}
             className="group relative rounded-[20px] overflow-hidden p-5 lg:p-6 min-h-[230px]
               bg-gradient-to-br from-beige to-beige-light border border-navy/[0.06]
-              shadow-[0_15px_50px_-25px_rgba(40,47,90,0.08)]
-              hover:shadow-[0_25px_60px_-25px_rgba(11,179,182,0.18)]
+              shadow-[0_15px_50px_-25px_rgba(20,60,80,0.08)]
+              hover:shadow-[0_25px_60px_-25px_rgba(30,96,118,0.18)]
               hover:-translate-y-1 transition-all duration-500 cursor-default flex flex-col"
           >
             <Quote className="absolute top-4 right-4 w-8 h-8 text-primary/12 -rotate-180" strokeWidth={1} />
@@ -342,8 +342,8 @@ export default function Testimonials() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="group relative md:col-span-2 rounded-[20px] overflow-hidden p-6 lg:p-7 min-h-[230px]
               bg-gradient-to-br from-primary via-primary to-primary-dark
-              shadow-[0_15px_50px_-15px_rgba(11,179,182,0.4)]
-              hover:shadow-[0_25px_70px_-15px_rgba(11,179,182,0.55)]
+              shadow-[0_15px_50px_-15px_rgba(30,96,118,0.4)]
+              hover:shadow-[0_25px_70px_-15px_rgba(30,96,118,0.55)]
               hover:-translate-y-1 transition-all duration-500 cursor-default flex flex-col justify-between"
           >
             {/* Dot pattern */}
@@ -406,8 +406,8 @@ export default function Testimonials() {
             transition={{ duration: 0.6, delay: 0.25 }}
             className="group relative md:col-span-2 rounded-[20px] overflow-hidden min-h-[200px]
               bg-gradient-to-br from-beige to-beige-light border border-navy/[0.06]
-              shadow-[0_15px_50px_-25px_rgba(40,47,90,0.08)]
-              hover:shadow-[0_25px_60px_-25px_rgba(11,179,182,0.18)]
+              shadow-[0_15px_50px_-25px_rgba(20,60,80,0.08)]
+              hover:shadow-[0_25px_60px_-25px_rgba(30,96,118,0.18)]
               hover:-translate-y-1 transition-all duration-500 cursor-default flex"
           >
             {/* Photo side */}
@@ -464,8 +464,8 @@ export default function Testimonials() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="group relative md:col-span-2 rounded-[20px] overflow-hidden p-5 lg:p-7 min-h-[200px]
               bg-white border border-navy/[0.06]
-              shadow-[0_15px_50px_-25px_rgba(40,47,90,0.1)]
-              hover:shadow-[0_25px_60px_-25px_rgba(11,179,182,0.18)]
+              shadow-[0_15px_50px_-25px_rgba(20,60,80,0.1)]
+              hover:shadow-[0_25px_60px_-25px_rgba(30,96,118,0.18)]
               hover:-translate-y-1 transition-all duration-500 cursor-default flex flex-col justify-between"
           >
             <Quote className="absolute top-4 right-5 w-10 h-10 text-primary/10 -rotate-180" strokeWidth={1} />
@@ -519,7 +519,7 @@ export default function Testimonials() {
             className="group inline-flex items-center gap-2 pl-5 pr-2 py-2 rounded-full
               bg-navy text-white text-xs font-semibold tracking-[0.18em] uppercase
               hover:bg-primary hover:scale-105 active:scale-95
-              shadow-[0_8px_25px_-10px_rgba(40,47,90,0.4)]
+              shadow-[0_8px_25px_-10px_rgba(20,60,80,0.4)]
               transition-all duration-300"
           >
             <span>Write Your Story</span>

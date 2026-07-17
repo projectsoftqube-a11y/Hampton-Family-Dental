@@ -176,7 +176,7 @@ export default function Contact() {
           >
             Book Your{" "}
             <span className="relative inline-block">
-              <span className="bg-gradient-to-r from-primary-light via-primary to-primary-light bg-clip-text text-transparent italic font-normal">
+              <span className="bg-gradient-to-r from-steel-light via-steel to-steel-light bg-clip-text text-transparent italic font-normal">
                 Appointment
               </span>
               <motion.span
@@ -459,8 +459,8 @@ export default function Contact() {
                     className="group flex-1 relative inline-flex items-center justify-center gap-3
                       px-6 py-3.5 rounded-full
                       bg-gradient-to-r from-primary to-primary-dark text-white font-semibold
-                      shadow-[0_10px_40px_rgba(11,179,182,0.4)]
-                      hover:shadow-[0_15px_50px_rgba(11,179,182,0.55)]
+                      shadow-[0_10px_40px_rgba(30,96,118,0.4)]
+                      hover:shadow-[0_15px_50px_rgba(30,96,118,0.55)]
                       hover:scale-[1.02] active:scale-[0.98]
                       transition-all duration-300 overflow-hidden disabled:opacity-90"
                   >
@@ -553,7 +553,7 @@ export default function Contact() {
               transition={{ delay: 0.7 }}
               className="relative overflow-hidden rounded-2xl p-5
                 bg-gradient-to-br from-primary via-primary to-primary-dark
-                shadow-[0_15px_40px_-15px_rgba(11,179,182,0.5)]"
+                shadow-[0_15px_40px_-15px_rgba(30,96,118,0.5)]"
             >
               {/* Decorative orb */}
               <div className="absolute -top-16 -right-16 w-40 h-40 rounded-full bg-white/15 blur-3xl pointer-events-none" />

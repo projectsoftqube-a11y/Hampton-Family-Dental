@@ -279,8 +279,8 @@ export default function Services() {
                       h-[440px]
                       bg-beige-light rounded-[28px] overflow-hidden
                       border border-navy/[0.06]
-                      shadow-[0_20px_60px_-25px_rgba(40,47,90,0.18)]
-                      hover:shadow-[0_35px_100px_-25px_rgba(11,179,182,0.25)]
+                      shadow-[0_20px_60px_-25px_rgba(20,60,80,0.18)]
+                      hover:shadow-[0_35px_100px_-25px_rgba(30,96,118,0.25)]
                       hover:-translate-y-1.5
                       transition-all duration-500 ease-out cursor-pointer"
                   >
@@ -326,7 +326,7 @@ export default function Services() {
                     {/* ── Floating icon badge ── */}
                     <div className="relative px-6">
                       <div className="absolute -top-7 right-6 w-14 h-14 rounded-2xl
-                        bg-white shadow-[0_10px_30px_-10px_rgba(11,179,182,0.4)]
+                        bg-white shadow-[0_10px_30px_-10px_rgba(30,96,118,0.4)]
                         border border-primary/15
                         flex items-center justify-center
                         group-hover:bg-primary group-hover:border-primary
@@ -398,7 +398,7 @@ export default function Services() {
                       h-[440px] rounded-[28px] overflow-hidden
                       bg-gradient-to-br from-navy via-navy-dark to-navy
                       relative flex flex-col items-center justify-center p-8 text-center group cursor-pointer
-                      shadow-[0_15px_50px_-20px_rgba(40,47,90,0.3)]"
+                      shadow-[0_15px_50px_-20px_rgba(20,60,80,0.3)]"
                   >
                     <div className="absolute -top-20 -right-20 w-60 h-60 rounded-full bg-primary/20 blur-3xl" />
                     <div className="absolute -bottom-10 -left-10 w-40 h-40 rounded-full bg-primary/15 blur-2xl" />
@@ -406,7 +406,7 @@ export default function Services() {
                     <Sparkles className="w-8 h-8 text-primary-light mb-5 relative" />
                     <h3 className="font-heading text-white text-2xl md:text-3xl font-bold mb-3 relative">
                       Need something{" "}
-                      <span className="italic bg-gradient-to-r from-primary-light to-primary bg-clip-text text-transparent">
+                      <span className="italic bg-gradient-to-r from-steel-light to-steel bg-clip-text text-transparent">
                         custom?
                       </span>
                     </h3>

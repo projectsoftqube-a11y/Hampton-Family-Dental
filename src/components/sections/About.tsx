@@ -213,7 +213,7 @@ export default function About() {
                   <div className="absolute left-0 top-0 bottom-0 w-[2px] rounded-full bg-primary/15 group-hover:bg-primary transition-colors duration-500" />
 
                   <div className="flex items-start gap-5 p-5 rounded-2xl bg-white/60 backdrop-blur-sm border border-navy/[0.04]
-                    hover:bg-white hover:border-primary/15 hover:shadow-[0_10px_40px_-10px_rgba(40,47,90,0.15)]
+                    hover:bg-white hover:border-primary/15 hover:shadow-[0_10px_40px_-10px_rgba(20,60,80,0.15)]
                     hover:translate-x-1 transition-all duration-500">
 
                     {/* Index number */}

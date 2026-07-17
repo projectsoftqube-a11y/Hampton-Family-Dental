@@ -199,7 +199,7 @@ export default function Technology() {
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.6 }}
           className="relative bg-white rounded-[24px] overflow-hidden border border-navy/[0.06]
-            shadow-[0_25px_60px_-25px_rgba(40,47,90,0.15)]"
+            shadow-[0_25px_60px_-25px_rgba(20,60,80,0.15)]"
         >
           {/* ─── Horizontal Tab Chips ─── */}
           <div className="relative border-b border-navy/8 bg-beige-light/40 overflow-x-auto no-scrollbar">
@@ -365,7 +365,7 @@ export default function Technology() {
           className="mt-6 flex flex-col md:flex-row items-stretch gap-3"
         >
           {/* Trust badges */}
-          <div className="flex-1 grid grid-cols-2 sm:grid-cols-4 gap-3 md:gap-4 bg-white rounded-2xl border border-navy/[0.06] p-4 shadow-[0_10px_30px_-15px_rgba(40,47,90,0.1)]">
+          <div className="flex-1 grid grid-cols-2 sm:grid-cols-4 gap-3 md:gap-4 bg-white rounded-2xl border border-navy/[0.06] p-4 shadow-[0_10px_30px_-15px_rgba(20,60,80,0.1)]">
             {trustBadges.map((b) => (
               <div
                 key={b.label}
@@ -393,8 +393,8 @@ export default function Technology() {
             href="#contact"
             className="group shrink-0 flex items-center justify-between gap-3 px-5 py-4 rounded-2xl
               bg-gradient-to-r from-primary to-primary-dark text-white
-              shadow-[0_10px_30px_rgba(11,179,182,0.35)]
-              hover:shadow-[0_15px_40px_rgba(11,179,182,0.5)]
+              shadow-[0_10px_30px_rgba(30,96,118,0.35)]
+              hover:shadow-[0_15px_40px_rgba(30,96,118,0.5)]
               hover:scale-[1.02] active:scale-[0.98] transition-all duration-300"
           >
             <div className="text-left">

@@ -90,7 +90,7 @@ export default function PatientInformationHub() {
               }}
             >
               Patient Information &{" "}
-              <span className="italic font-normal bg-gradient-to-r from-primary-light via-primary to-primary-light bg-clip-text text-transparent">
+              <span className="italic font-normal bg-gradient-to-r from-steel-light via-steel to-steel-light bg-clip-text text-transparent">
                 Resources.
               </span>
             </motion.h1>

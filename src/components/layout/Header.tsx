@@ -93,7 +93,7 @@ export default function Header() {
           className={`border-b backdrop-blur-xl transition-[background-color,border-color,box-shadow] duration-500 ease-out
             ${
               isScrolled
-                ? "bg-white/[0.95] border-navy/[0.06] shadow-[0_2px_30px_rgba(40,47,90,0.06)]"
+                ? "bg-white/[0.95] border-navy/[0.06] shadow-[0_2px_30px_rgba(20,60,80,0.06)]"
                 : "bg-navy-dark/20 border-white/[0.08] shadow-none"
             }`}
         >
@@ -110,9 +110,9 @@ export default function Header() {
                 className="relative"
               >
                 <Image
-                  src="/logo.svg"
+                  src="/logo.png"
                   alt="Hampton Family Dental"
-                  width={220}
+                  width={229}
                   height={55}
                   priority
                   className={`h-8 sm:h-9 xl:h-[32px] 2xl:h-10 w-auto object-contain transition-all duration-500
@@ -159,8 +159,8 @@ export default function Header() {
                 href="/patient-information/scheduling"
                 className={`hidden sm:flex items-center gap-2 pl-4 pr-1.5 py-1.5 rounded-full
                   text-[11px] font-bold tracking-[0.1em] uppercase
-                  shadow-[0_4px_20px_rgba(11,179,182,0.25)]
-                  hover:shadow-[0_8px_30px_rgba(11,179,182,0.4)]
+                  shadow-[0_4px_20px_rgba(30,96,118,0.25)]
+                  hover:shadow-[0_8px_30px_rgba(30,96,118,0.4)]
                   hover:scale-[1.03] active:scale-[0.98]
                   transition-all duration-300 group overflow-hidden relative
                   ${

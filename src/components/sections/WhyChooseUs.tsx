@@ -149,7 +149,7 @@ export default function WhyChooseUs() {
                 <h3 className="font-heading text-white text-3xl lg:text-4xl font-bold mb-4 leading-[1.05]"
                     style={{ letterSpacing: "-0.02em" }}>
                   Two Trusted{" "}
-                  <span className="italic font-normal bg-gradient-to-r from-primary-light to-primary bg-clip-text text-transparent">
+                  <span className="italic font-normal bg-gradient-to-r from-steel-light to-steel bg-clip-text text-transparent">
                     Dentists
                   </span>{" "}
                   in Southampton.
@@ -191,8 +191,8 @@ export default function WhyChooseUs() {
             transition={{ duration: 0.55, delay: 0.1 }}
             className="group relative rounded-[24px] overflow-hidden p-6 lg:p-7 min-h-[240px]
               bg-white border border-navy/[0.06]
-              shadow-[0_15px_50px_-25px_rgba(40,47,90,0.12)]
-              hover:shadow-[0_25px_60px_-25px_rgba(11,179,182,0.25)]
+              shadow-[0_15px_50px_-25px_rgba(20,60,80,0.12)]
+              hover:shadow-[0_25px_60px_-25px_rgba(30,96,118,0.25)]
               hover:-translate-y-1
               transition-all duration-500 cursor-pointer flex flex-col justify-between"
           >
@@ -229,8 +229,8 @@ export default function WhyChooseUs() {
             transition={{ duration: 0.55, delay: 0.15 }}
             className="group relative rounded-[24px] overflow-hidden p-6 lg:p-7 min-h-[240px]
               bg-gradient-to-br from-beige to-beige-light border border-navy/[0.06]
-              shadow-[0_15px_50px_-25px_rgba(40,47,90,0.1)]
-              hover:shadow-[0_25px_60px_-25px_rgba(11,179,182,0.2)]
+              shadow-[0_15px_50px_-25px_rgba(20,60,80,0.1)]
+              hover:shadow-[0_25px_60px_-25px_rgba(30,96,118,0.2)]
               hover:-translate-y-1
               transition-all duration-500 cursor-pointer flex flex-col justify-between"
           >
@@ -267,8 +267,8 @@ export default function WhyChooseUs() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="group relative md:col-span-2 rounded-[24px] overflow-hidden p-7 lg:p-8 min-h-[240px]
               bg-gradient-to-br from-primary via-primary to-primary-dark
-              shadow-[0_15px_50px_-15px_rgba(11,179,182,0.4)]
-              hover:shadow-[0_25px_70px_-15px_rgba(11,179,182,0.55)]
+              shadow-[0_15px_50px_-15px_rgba(30,96,118,0.4)]
+              hover:shadow-[0_25px_70px_-15px_rgba(30,96,118,0.55)]
               hover:-translate-y-1 transition-all duration-500 cursor-pointer"
           >
             {/* Dot pattern overlay */}
@@ -331,8 +331,8 @@ export default function WhyChooseUs() {
             transition={{ duration: 0.6, delay: 0.25 }}
             className="group relative md:col-span-2 rounded-[24px] overflow-hidden p-7 lg:p-8 min-h-[220px]
               bg-white border border-navy/[0.06]
-              shadow-[0_15px_50px_-25px_rgba(40,47,90,0.12)]
-              hover:shadow-[0_25px_60px_-25px_rgba(11,179,182,0.2)]
+              shadow-[0_15px_50px_-25px_rgba(20,60,80,0.12)]
+              hover:shadow-[0_25px_60px_-25px_rgba(30,96,118,0.2)]
               hover:-translate-y-1 transition-all duration-500 cursor-pointer"
           >
             <div className="absolute top-6 right-7 font-mono text-navy/15 text-[16px] tabular-nums">
@@ -385,8 +385,8 @@ export default function WhyChooseUs() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="group relative md:col-span-2 rounded-[24px] overflow-hidden min-h-[220px]
               bg-gradient-to-br from-beige to-beige-light border border-navy/[0.06]
-              shadow-[0_15px_50px_-25px_rgba(40,47,90,0.1)]
-              hover:shadow-[0_25px_60px_-25px_rgba(11,179,182,0.2)]
+              shadow-[0_15px_50px_-25px_rgba(20,60,80,0.1)]
+              hover:shadow-[0_25px_60px_-25px_rgba(30,96,118,0.2)]
               hover:-translate-y-1 transition-all duration-500 cursor-pointer flex"
           >
             {/* Image side */}

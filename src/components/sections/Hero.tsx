@@ -114,7 +114,7 @@ export default function Hero() {
         className="absolute inset-0 z-[1] bg-gradient-to-br from-navy-dark via-navy/65 to-navy-dark"
       />
       <div className="absolute inset-0 z-[1] bg-gradient-to-t from-navy-dark via-navy-dark/40 to-transparent" />
-      <div className="absolute inset-0 z-[1] bg-[radial-gradient(ellipse_at_50%_40%,transparent_20%,rgba(26,31,61,0.85)_100%)]" />
+      <div className="absolute inset-0 z-[1] bg-[radial-gradient(ellipse_at_50%_40%,transparent_20%,rgba(13,42,56,0.85)_100%)]" />
 
       {/* Editorial grid lines */}
       <div className="absolute inset-0 z-[2] pointer-events-none opacity-[0.06] hidden md:block">
@@ -193,7 +193,7 @@ export default function Hero() {
           </svg>
         </div>
         <div className="absolute inset-3 rounded-full border border-primary-light/25" />
-        <div className="relative flex flex-col items-center justify-center w-16 lg:w-20 h-16 lg:h-20 rounded-full bg-primary/20 border border-primary/40 shadow-[0_0_30px_rgba(11,179,182,0.4)]">
+        <div className="relative flex flex-col items-center justify-center w-16 lg:w-20 h-16 lg:h-20 rounded-full bg-primary/20 border border-primary/40 shadow-[0_0_30px_rgba(30,96,118,0.4)]">
           <Award
             className="w-5 lg:w-6 h-5 lg:h-6 text-primary-light mb-0.5 lg:mb-1"
             strokeWidth={2.2}
@@ -249,7 +249,7 @@ export default function Hero() {
           <span className="block">
             Dentist in{" "}
             <span className="relative inline-block">
-              <span className="bg-gradient-to-br from-primary-light via-primary to-primary-light bg-clip-text text-transparent italic font-normal">
+              <span className="bg-gradient-to-br from-steel-light via-steel to-steel-light bg-clip-text text-transparent italic font-normal">
                 Southampton, PA
               </span>
               <motion.span
@@ -302,8 +302,8 @@ export default function Hero() {
             className="group relative inline-flex items-center gap-3
               pl-7 pr-2 py-2 rounded-full
               bg-gradient-to-r from-primary to-primary-dark text-white font-semibold
-              shadow-[0_10px_40px_rgba(11,179,182,0.4)]
-              hover:shadow-[0_15px_60px_rgba(11,179,182,0.6)]
+              shadow-[0_10px_40px_rgba(30,96,118,0.4)]
+              hover:shadow-[0_15px_60px_rgba(30,96,118,0.6)]
               hover:scale-[1.03] active:scale-[0.98]
               transition-all duration-500 overflow-hidden"
           >

@@ -150,7 +150,7 @@ export default function SpecialsClient() {
                 style={{ fontSize: "clamp(2.5rem, 5.5vw, 5rem)", lineHeight: 1.05, letterSpacing: "-0.03em" }}
               >
                 No Insurance?{" "}
-                <span className="italic font-normal bg-gradient-to-r from-primary-light via-primary to-primary-light bg-clip-text text-transparent">
+                <span className="italic font-normal bg-gradient-to-r from-steel-light via-steel to-steel-light bg-clip-text text-transparent">
                   No Problem.
                 </span>
               </motion.h1>

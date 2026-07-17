@@ -82,7 +82,7 @@ export default function CTABanner() {
             >
               New to Hampton{" "}
               <span className="relative inline-block">
-                <span className="bg-gradient-to-r from-primary-light via-primary to-primary-light bg-clip-text text-transparent italic font-normal">
+                <span className="bg-gradient-to-r from-steel-light via-steel to-steel-light bg-clip-text text-transparent italic font-normal">
                   Family Dental?
                 </span>
                 <motion.span
@@ -128,8 +128,8 @@ export default function CTABanner() {
                 href="/patient-information/new-patients"
                 className="group relative inline-flex items-center gap-3 pl-6 pr-2 py-2
                   rounded-full bg-gradient-to-r from-primary to-primary-dark text-white font-semibold
-                  shadow-[0_10px_40px_rgba(11,179,182,0.4)]
-                  hover:shadow-[0_15px_60px_rgba(11,179,182,0.6)]
+                  shadow-[0_10px_40px_rgba(30,96,118,0.4)]
+                  hover:shadow-[0_15px_60px_rgba(30,96,118,0.6)]
                   hover:scale-[1.03] active:scale-[0.98]
                   transition-all duration-500 overflow-hidden"
               >
@@ -288,7 +288,7 @@ export default function CTABanner() {
             {/* Floating "NEW" stamp */}
             <div className="absolute -top-3 -right-3 w-16 h-16 z-10 pointer-events-none">
               <div className="relative w-full h-full rounded-full bg-primary
-                shadow-[0_10px_30px_rgba(11,179,182,0.5)]
+                shadow-[0_10px_30px_rgba(30,96,118,0.5)]
                 flex flex-col items-center justify-center text-white
                 rotate-12">
                 <span className="font-mono text-[8px] tracking-widest leading-none">2026</span>

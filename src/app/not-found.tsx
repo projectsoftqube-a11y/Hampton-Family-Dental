@@ -73,7 +73,7 @@ export default function NotFound() {
             href="/"
             className="inline-flex items-center justify-center gap-2 pl-6 pr-2 py-2 rounded-full w-full sm:w-auto
               bg-primary text-white text-[11px] font-bold tracking-[0.1em] uppercase
-              shadow-[0_4px_20px_rgba(11,179,182,0.2)] hover:shadow-[0_8px_30px_rgba(11,179,182,0.35)]
+              shadow-[0_4px_20px_rgba(30,96,118,0.2)] hover:shadow-[0_8px_30px_rgba(30,96,118,0.35)]
               hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 group"
           >
             <span className="relative z-10 flex items-center gap-1.5">

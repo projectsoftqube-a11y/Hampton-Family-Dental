@@ -130,9 +130,9 @@ export default function MobileMenu({ onClose }: MobileMenuProps) {
           className="relative z-10 flex items-center justify-between px-6 pt-6 pb-4"
         >
           <Image
-            src="/logo.svg"
+            src="/logo.png"
             alt="Hampton Family Dental"
-            width={220}
+            width={229}
             height={55}
             priority
             className="h-9 w-auto object-contain brightness-0 invert"
@@ -385,8 +385,8 @@ export default function MobileMenu({ onClose }: MobileMenuProps) {
               className="group relative flex items-center justify-between gap-2 w-full
                 pl-5 pr-2 py-3 rounded-full
                 bg-gradient-to-r from-primary to-primary-dark text-white
-                shadow-[0_10px_40px_rgba(11,179,182,0.4)]
-                hover:shadow-[0_15px_50px_rgba(11,179,182,0.55)]
+                shadow-[0_10px_40px_rgba(30,96,118,0.4)]
+                hover:shadow-[0_15px_50px_rgba(30,96,118,0.55)]
                 active:scale-[0.98] transition-all duration-300 overflow-hidden"
             >
               <span className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/25 to-white/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />

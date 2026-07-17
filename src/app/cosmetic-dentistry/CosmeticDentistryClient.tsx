@@ -119,7 +119,7 @@ export default function CosmeticDentistryClient() {
               }}
             >
               Cosmetic Dentistry in{" "}
-              <span className="italic font-normal bg-gradient-to-r from-primary-light via-primary to-primary-light bg-clip-text text-transparent">
+              <span className="italic font-normal bg-gradient-to-r from-steel-light via-steel to-steel-light bg-clip-text text-transparent">
                 Southampton, PA
               </span>
             </motion.h1>

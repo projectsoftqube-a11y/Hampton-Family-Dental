@@ -131,7 +131,7 @@ export default function Footer() {
                 }}
               >
                 Your smile is{" "}
-                <span className="italic font-normal bg-gradient-to-r from-primary-light via-primary to-primary-light bg-clip-text text-transparent">
+                <span className="italic font-normal bg-gradient-to-r from-steel-light via-steel to-steel-light bg-clip-text text-transparent">
                   worth it.
                 </span>
               </h2>
@@ -146,8 +146,8 @@ export default function Footer() {
                 href="/patient-information/scheduling"
                 className="group inline-flex justify-between items-center gap-3 pl-6 pr-2 py-2.5 rounded-full
                   bg-gradient-to-r from-primary to-primary-dark text-white font-semibold
-                  shadow-[0_10px_40px_rgba(11,179,182,0.4)]
-                  hover:shadow-[0_15px_55px_rgba(11,179,182,0.55)]
+                  shadow-[0_10px_40px_rgba(30,96,118,0.4)]
+                  hover:shadow-[0_15px_55px_rgba(30,96,118,0.55)]
                   hover:scale-[1.03] active:scale-[0.98]
                   transition-all duration-300 overflow-hidden relative"
               >
@@ -179,9 +179,9 @@ export default function Footer() {
           <div className="lg:col-span-4">
             <Link href="/" className="inline-flex items-center mb-5 group">
               <Image
-                src="/logo.svg"
+                src="/logo.png"
                 alt="Hampton Family Dental"
-                width={200}
+                width={208}
                 height={50}
                 className="h-10 w-auto object-contain brightness-0 invert transition-transform duration-500 group-hover:scale-[1.02]"
               />
@@ -323,7 +323,7 @@ export default function Footer() {
                 className="group absolute right-1.5 top-1/2 -translate-y-1/2
                   w-10 h-10 rounded-full bg-gradient-to-br from-primary to-primary-dark
                   flex items-center justify-center
-                  shadow-[0_4px_15px_rgba(11,179,182,0.4)]
+                  shadow-[0_4px_15px_rgba(30,96,118,0.4)]
                   hover:scale-105 active:scale-95 transition-all duration-300
                   disabled:opacity-60 disabled:cursor-not-allowed"
               >
@@ -477,8 +477,8 @@ export default function Footer() {
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         aria-label="Back to top"
         className="group hidden sm:flex fixed bottom-6 right-6 z-40 w-11 h-11 rounded-full
-          bg-[#0bb3b6] backdrop-blur-md border border-white/15 text-white
-          hover:bg-primary hover:border-primary
+          bg-primary backdrop-blur-md border border-white/15 text-white
+          hover:bg-primary-dark hover:border-primary-dark
           items-center justify-center
           shadow-[0_10px_30px_rgba(0,0,0,0.3)]
           hover:scale-105 active:scale-95 transition-all duration-300

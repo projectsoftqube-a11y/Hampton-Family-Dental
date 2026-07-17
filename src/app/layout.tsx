@@ -61,7 +61,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${playfair.variable} ${poppins.variable}`}>
-      <body>
+      <body suppressHydrationWarning>
         <SmoothScrollProvider>
           <Header />
           {children}

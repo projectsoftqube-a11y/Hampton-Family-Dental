@@ -82,7 +82,7 @@ export default async function AreaDetailPage({ params }: AreaPageProps) {
     "@context": "https://schema.org",
     "@type": "Dentist",
     name: "Hampton Family Dental",
-    image: `${SITE_URL}/logo.svg`,
+    image: `${SITE_URL}/logo.png`,
     telephone: "+12153572224",
     address: {
       "@type": "PostalAddress",

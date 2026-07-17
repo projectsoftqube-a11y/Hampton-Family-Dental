@@ -139,13 +139,13 @@ export default function SmileGallery() {
           className="relative bg-gradient-to-br from-beige-light via-white to-beige-light
             rounded-[24px] md:rounded-[28px] p-3 md:p-4 lg:p-5
             border border-navy/[0.06]
-            shadow-[0_30px_80px_-30px_rgba(40,47,90,0.2)]"
+            shadow-[0_30px_80px_-30px_rgba(20,60,80,0.2)]"
         >
           <div className="grid lg:grid-cols-12 gap-3 md:gap-4 lg:gap-5">
             {/* ─── LEFT — Patient Portrait (7 cols) ─── */}
             <div className="lg:col-span-7 relative">
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden
-                shadow-[inset_0_0_0_1px_rgba(40,47,90,0.06)]">
+                shadow-[inset_0_0_0_1px_rgba(20,60,80,0.06)]">
                 <AnimatePresence mode="wait">
                   <motion.div
                     key={activeIndex}
@@ -256,7 +256,7 @@ export default function SmileGallery() {
             {/* ─── RIGHT — Story Panel (5 cols) ─── */}
             <div className="lg:col-span-5 relative flex flex-col">
               <div className="relative h-full rounded-2xl bg-white border border-navy/[0.05]
-                shadow-[0_15px_40px_-20px_rgba(40,47,90,0.1)] p-5 md:p-6 lg:p-7 overflow-hidden flex flex-col">
+                shadow-[0_15px_40px_-20px_rgba(20,60,80,0.1)] p-5 md:p-6 lg:p-7 overflow-hidden flex flex-col">
 
                 {/* Decorative giant quote */}
                 <Quote
@@ -376,7 +376,7 @@ export default function SmileGallery() {
                     className={`group relative h-12 md:h-14 rounded-xl overflow-hidden
                       transition-all duration-500 ${
                         isActive
-                          ? "ring-2 ring-primary shadow-[0_10px_30px_-10px_rgba(11,179,182,0.4)]"
+                          ? "ring-2 ring-primary shadow-[0_10px_30px_-10px_rgba(30,96,118,0.4)]"
                           : "ring-1 ring-navy/10 hover:ring-primary/40 opacity-65 hover:opacity-100"
                       }`}
                   >
@@ -413,7 +413,7 @@ export default function SmileGallery() {
               onClick={next}
               className="shrink-0 w-11 md:w-14 rounded-xl bg-navy text-white
                 flex items-center justify-center
-                hover:bg-primary hover:scale-105 shadow-[0_8px_25px_-10px_rgba(11,179,182,0.4)]
+                hover:bg-primary hover:scale-105 shadow-[0_8px_25px_-10px_rgba(30,96,118,0.4)]
                 transition-all duration-300"
               aria-label="Next"
             >
@@ -437,8 +437,8 @@ export default function SmileGallery() {
             href="#contact"
             className="group inline-flex items-center gap-2 pl-5 pr-2 py-2 rounded-full
               bg-gradient-to-r from-primary to-primary-dark text-white text-xs font-semibold tracking-[0.18em] uppercase
-              shadow-[0_8px_25px_rgba(11,179,182,0.35)]
-              hover:shadow-[0_12px_35px_rgba(11,179,182,0.5)]
+              shadow-[0_8px_25px_rgba(30,96,118,0.35)]
+              hover:shadow-[0_12px_35px_rgba(30,96,118,0.5)]
               hover:scale-105 active:scale-95 transition-all duration-300"
           >
             <span>Book Consultation</span>

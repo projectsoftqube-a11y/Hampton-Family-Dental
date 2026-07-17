@@ -68,17 +68,17 @@ export async function POST(request: NextRequest) {
 
   const textBody = rows.map((r) => `${r.label}: ${r.value}`).join("\n");
   const htmlBody = `
-    <div style="font-family:Arial,Helvetica,sans-serif;color:#1a2b3b;max-width:600px">
-      <h2 style="color:#0bb3b6;margin-bottom:4px">New ${escapeHtml(formType)}</h2>
-      <p style="color:#66788a;font-size:13px;margin-top:0">Submitted via the Hampton Family Dental website.</p>
+    <div style="font-family:Arial,Helvetica,sans-serif;color:#143C50;max-width:600px">
+      <h2 style="color:#1E6076;margin-bottom:4px">New ${escapeHtml(formType)}</h2>
+      <p style="color:#5C7098;font-size:13px;margin-top:0">Submitted via the Hampton Family Dental website.</p>
       <table style="border-collapse:collapse;width:100%;margin-top:12px">
         ${rows
           .map(
             (r) => `<tr>
-              <td style="padding:8px 12px;border:1px solid #e2e8f0;background:#f8fafc;font-weight:bold;width:180px">${escapeHtml(
+              <td style="padding:8px 12px;border:1px solid #DDE4EC;background:#F2F5F9;font-weight:bold;width:180px">${escapeHtml(
                 r.label
               )}</td>
-              <td style="padding:8px 12px;border:1px solid #e2e8f0">${escapeHtml(
+              <td style="padding:8px 12px;border:1px solid #DDE4EC">${escapeHtml(
                 r.value
               ).replace(/\n/g, "<br>")}</td>
             </tr>`

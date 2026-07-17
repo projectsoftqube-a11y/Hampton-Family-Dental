@@ -165,7 +165,7 @@ export default function FAQ() {
                 {isActive && (
                   <motion.span
                     layoutId="activeFaqCat"
-                    className="absolute inset-0 rounded-full bg-navy shadow-[0_8px_25px_-10px_rgba(40,47,90,0.4)]"
+                    className="absolute inset-0 rounded-full bg-navy shadow-[0_8px_25px_-10px_rgba(20,60,80,0.4)]"
                     style={{ zIndex: -1 }}
                   />
                 )}
@@ -197,8 +197,8 @@ export default function FAQ() {
                   className={`relative rounded-2xl overflow-hidden border transition-all duration-500
                     ${
                       isOpen
-                        ? "bg-white border-primary/25 shadow-[0_20px_50px_-25px_rgba(11,179,182,0.3)]"
-                        : "bg-white/70 border-navy/[0.06] hover:bg-white hover:border-primary/15 hover:shadow-[0_10px_30px_-15px_rgba(40,47,90,0.1)]"
+                        ? "bg-white border-primary/25 shadow-[0_20px_50px_-25px_rgba(30,96,118,0.3)]"
+                        : "bg-white/70 border-navy/[0.06] hover:bg-white hover:border-primary/15 hover:shadow-[0_10px_30px_-15px_rgba(20,60,80,0.1)]"
                     }
                   `}
                 >
@@ -221,7 +221,7 @@ export default function FAQ() {
                         className={`shrink-0 w-10 h-10 rounded-xl flex items-center justify-center transition-all duration-500
                           ${
                             isOpen
-                              ? "bg-primary border border-primary shadow-[0_4px_15px_rgba(11,179,182,0.35)]"
+                              ? "bg-primary border border-primary shadow-[0_4px_15px_rgba(30,96,118,0.35)]"
                               : "bg-beige-light border border-navy/8 group-hover:bg-white group-hover:border-primary/25"
                           }
                         `}

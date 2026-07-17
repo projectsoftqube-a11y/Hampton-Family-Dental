@@ -1,16 +1,31 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #0bb3b6;
-  --color-primary-dark: #099a9d;
-  --color-primary-light: #3dc4c7;
-  --color-primary-glow: rgba(11, 179, 182, 0.3);
-  --color-navy: #282f5a;
-  --color-navy-dark: #1a1f3d;
-  --color-navy-light: #3a4270;
-  --color-beige: #ded8d5;
-  --color-beige-light: #f5f0ed;
-  --color-beige-dark: #c5bfbc;
+  /* ─── Brand system — Hampton Family Dental ───
+     Derived from the new logo: deep petrol #143C50 (wordmark) and soft
+     steel-blue #788CB4 (tooth mark). A restrained, premium two-tone
+     identity — petrol carries interaction, steel carries decoration. */
+
+  /* Primary — petrol/teal: buttons, links, active states, accents */
+  --color-primary: #1E6076;        /* mid petrol — AA on white (~6.4:1) */
+  --color-primary-dark: #143C50;   /* logo deep petrol — hover / pressed */
+  --color-primary-light: #3B8299;  /* lighter petrol — subtle fills, focus rings */
+  --color-primary-glow: rgba(30, 96, 118, 0.3);
+
+  /* Navy / ink — headings, body copy, dark surfaces (petrol family) */
+  --color-navy: #143C50;
+  --color-navy-dark: #0D2A38;      /* deepest petrol — footer / dark sections */
+  --color-navy-light: #2B586C;
+
+  /* Steel — secondary & decorative (the logo's tooth blue) */
+  --color-steel: #788CB4;
+  --color-steel-light: #A9B7D2;
+  --color-steel-dark: #5C7098;
+
+  /* Neutrals — cool mist (replaces the old warm greige) */
+  --color-beige: #DDE4EC;          /* soft cool surface / divider */
+  --color-beige-light: #F2F5F9;    /* near-white cool wash — section backgrounds */
+  --color-beige-dark: #C4CDDA;     /* deeper cool neutral / borders */
   --color-white: #ffffff;
 
   --font-heading: var(--font-playfair), Georgia, serif;
@@ -96,7 +111,7 @@
   }
 
   .luxury-border {
-    border: 1px solid rgba(40, 47, 90, 0.08);
+    border: 1px solid rgba(20, 60, 80, 0.08);
   }
 
   .section-padding {
@@ -143,17 +158,17 @@
   }
 
   .glow-effect {
-    box-shadow: 0 0 40px var(--color-primary-glow), 0 0 80px rgba(11, 179, 182, 0.15);
+    box-shadow: 0 0 40px var(--color-primary-glow), 0 0 80px rgba(30, 96, 118, 0.15);
   }
 
   .premium-shadow {
-    box-shadow: 0 25px 60px -12px rgba(40, 47, 90, 0.12),
-                0 10px 20px -5px rgba(40, 47, 90, 0.08);
+    box-shadow: 0 25px 60px -12px rgba(20, 60, 80, 0.12),
+                0 10px 20px -5px rgba(20, 60, 80, 0.08);
   }
 
   .premium-shadow-lg {
-    box-shadow: 0 40px 80px -20px rgba(40, 47, 90, 0.18),
-                0 20px 40px -10px rgba(40, 47, 90, 0.1);
+    box-shadow: 0 40px 80px -20px rgba(20, 60, 80, 0.18),
+                0 20px 40px -10px rgba(20, 60, 80, 0.1);
   }
 }
 
@@ -194,7 +209,7 @@
 /* Firefox */
 html {
   scrollbar-width: thin;
-  scrollbar-color: rgba(40, 47, 90, 0.35) transparent;
+  scrollbar-color: rgba(20, 60, 80, 0.35) transparent;
 }
 
 /* Webkit (Chrome, Safari, Edge) */
@@ -208,7 +223,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(40, 47, 90, 0.25);
+  background: rgba(20, 60, 80, 0.25);
   border-radius: 999px;
   transition: background 0.2s ease;
 }
@@ -235,18 +250,18 @@ html {
 /* Utility: thin scrollbar that fades in on hover */
 .scrollbar-soft {
   scrollbar-width: thin;
-  scrollbar-color: rgba(40, 47, 90, 0.15) transparent;
+  scrollbar-color: rgba(20, 60, 80, 0.15) transparent;
 }
 .scrollbar-soft::-webkit-scrollbar {
   width: 4px;
   height: 4px;
 }
 .scrollbar-soft::-webkit-scrollbar-thumb {
-  background: rgba(40, 47, 90, 0.15);
+  background: rgba(20, 60, 80, 0.15);
   border-radius: 999px;
 }
 .scrollbar-soft:hover::-webkit-scrollbar-thumb {
-  background: rgba(40, 47, 90, 0.4);
+  background: rgba(20, 60, 80, 0.4);
 }
 
 /* ─── Services pinned carousel — short-viewport fit ───
