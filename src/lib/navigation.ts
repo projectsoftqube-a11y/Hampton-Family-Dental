@@ -140,8 +140,8 @@ export const mainNav: NavItem[] = [
   //   ],
   // },
   {
-    label: "Specials",
-    href: "/specials",
+    label: "Blog",
+    href: "/blog",
   },
   {
     label: "Contact Us",

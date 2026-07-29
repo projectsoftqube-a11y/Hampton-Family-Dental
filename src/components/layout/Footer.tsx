@@ -31,6 +31,7 @@ const quickLinks = [
   { label: "Dr. Jeffrey Brenner", href: "/about/dr-jeffrey-brenner" },
   { label: "Dr. Keyur Dudhat", href: "/about/dr-keyur-dudhat" },
   { label: "Patient Reviews", href: "/about/patient-reviews" },
+  { label: "Blog", href: "/blog" },
   { label: "Specials", href: "/specials" },
   { label: "Contact Us", href: "/contact" },
   { label: "Scheduling", href: "/patient-information/scheduling" },
