@@ -105,6 +105,9 @@ export default function BlogPostClient({ post }: { post: BlogPost }) {
               <ShieldCheck className="w-3 h-3 text-primary-light" />
               <span className="text-white/95 text-[9px] tracking-[0.22em] uppercase font-semibold">
                 Medically reviewed by {post.reviewedBy}
+                {post.lastReviewedLabel && (
+                  <span className="text-white/55"> · {post.lastReviewedLabel}</span>
+                )}
               </span>
             </motion.div>
 
@@ -284,6 +287,57 @@ export default function BlogPostClient({ post }: { post: BlogPost }) {
                               className="w-full h-auto object-contain"
                               sizes="(max-width: 1024px) 100vw, 700px"
                             />
+                          </div>
+                          {section.caption && (
+                            <figcaption className="text-navy/45 text-xs text-center mt-3 italic">
+                              {section.caption}
+                            </figcaption>
+                          )}
+                        </figure>
+                      );
+
+                    case "table":
+                      return (
+                        <figure key={idx} className="pt-2">
+                          <div className="overflow-hidden rounded-3xl border border-navy/[0.06] shadow-sm">
+                            <div className="overflow-x-auto">
+                              <table className="w-full min-w-[480px] border-collapse bg-white text-sm">
+                                <thead className="bg-navy text-white">
+                                  <tr>
+                                    {section.columns.map((column) => (
+                                      <th
+                                        key={column}
+                                        scope="col"
+                                        className="px-5 py-4 text-left text-[11px] font-bold uppercase tracking-[0.18em]"
+                                      >
+                                        {column}
+                                      </th>
+                                    ))}
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  {section.rows.map((row) => (
+                                    <tr
+                                      key={row[0]}
+                                      className="border-t border-navy/[0.06] odd:bg-beige-light/20"
+                                    >
+                                      {row.map((cell, cellIdx) => (
+                                        <td
+                                          key={`${row[0]}-${cellIdx}`}
+                                          className={`px-5 py-4 align-middle leading-relaxed ${
+                                            cellIdx === 0
+                                              ? "font-heading font-bold text-navy"
+                                              : "text-navy/70"
+                                          }`}
+                                        >
+                                          {cell}
+                                        </td>
+                                      ))}
+                                    </tr>
+                                  ))}
+                                </tbody>
+                              </table>
+                            </div>
                           </div>
                           {section.caption && (
                             <figcaption className="text-navy/45 text-xs text-center mt-3 italic">

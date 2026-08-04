@@ -30,6 +30,13 @@ export type BlogSection =
       width: number;
       height: number;
     }
+  /** Semantic <table> — cost data stays machine-extractable for AI surfaces. */
+  | {
+      type: "table";
+      columns: string[];
+      rows: string[][];
+      caption?: string;
+    }
   | { type: "cta"; heading: string; text: string };
 
 export interface BlogFAQ {
@@ -51,6 +58,8 @@ export interface BlogPost {
   publishedAt: string;
   readTime: string;
   reviewedBy: string;
+  /** Shown beside the reviewer on YMYL posts whose figures can go stale. */
+  lastReviewedLabel?: string;
   hero: { src: string; alt: string; width: number; height: number };
   /** 40–70 word answer-first block rendered above the first H2. */
   answerBox: BlogRichText;
@@ -326,6 +335,329 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     extraSchema: [dentistSchema],
+  },
+
+  {
+    slug: "how-much-do-dental-implants-cost",
+    title:
+      "How Much Do Dental Implants Cost in 2026? A Southampton, PA Guide",
+    metaTitle: "How Much Do Dental Implants Cost in 2026? | Southampton PA",
+    metaDescription:
+      "A single dental implant costs $3,000–$6,000 in 2026. See the full breakdown — what's included, add-ons, insurance, and financing — from Hampton Family Dental in Southampton, PA.",
+    excerpt:
+      "Most local practices won't put a number on it. Here are real 2026 ranges — what's included, what add-ons cost, what insurance covers, and how to make implants affordable in Bucks County.",
+    category: "Costs & Financing",
+    publishedAt: "2026-08-04",
+    readTime: "9 min read",
+    reviewedBy: "Dr. Keyur Dudhat, DMD",
+    lastReviewedLabel: "Last reviewed August 2026",
+    hero: {
+      src: "/images/blog/how-much-do-dental-implants-cost.png",
+      alt: "Dentist explaining dental implant costs to a patient at Hampton Family Dental in Southampton PA",
+      width: 1536,
+      height: 1024,
+    },
+    answerBox: {
+      text: "In 2026, a single dental implant typically costs $3,000 to $6,000, including the implant post, abutment, and crown. Full-arch options like All-on-4 run about $15,000 to $38,000 per arch. Your exact cost depends on your exam — bone grafts, sedation, and materials all affect the total. At Hampton Family Dental in Southampton, PA, Dr. Dudhat gives you a clear written estimate before any treatment begins.",
+    },
+    keyTakeaways: [
+      {
+        text: "A single implant usually runs $3,000–$6,000 all-in (post + abutment + crown), per 2026 U.S. data.",
+      },
+      {
+        text: "That price bundles three billed parts — which is why an implant costs more than a filling.",
+      },
+      {
+        text: "Add-ons drive the biggest swings: a bone graft adds $500–$3,000; a sinus lift $1,500–$5,000.",
+      },
+      {
+        text: "Over 15–20 years, implants are often the lowest-cost choice because bridges and dentures wear out.",
+      },
+      {
+        text: "Insurance rarely covers the whole implant, but our membership plan and financing can lower what you pay.",
+      },
+    ],
+    sections: [
+      {
+        type: "heading",
+        level: 2,
+        text: "How much does a single dental implant cost?",
+      },
+      {
+        type: "paragraph",
+        text: "A single dental implant costs $3,000 to $6,000 in 2026, including the post, abutment, and crown. That range comes from independent 2026 cost analyses based on ADA fee data and national studies — not from one clinic's price list. Where you land in that range depends on the tooth, the materials, and whether you need any groundwork first. You can see our full dental implants at Hampton Family Dental for how we plan each case.",
+        links: [
+          {
+            text: "dental implants at Hampton Family Dental",
+            href: "/restorative-dentistry/dental-implants",
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Prices also vary by region. Pennsylvania sits in the middle of the national range — higher than states like Alabama, lower than New York or Massachusetts.",
+      },
+
+      { type: "heading", level: 2, text: "What's included in that price?" },
+      {
+        type: "paragraph",
+        text: "The price covers three separate parts, and it helps to see them broken out:",
+      },
+      {
+        type: "table",
+        columns: ["Component", "What it is", "Typical 2026 cost"],
+        rows: [
+          [
+            "Implant post",
+            "The titanium screw placed in your jaw",
+            "$1,000 – $3,000",
+          ],
+          [
+            "Abutment",
+            "The connector that links the post to the crown",
+            "$400 – $1,000",
+          ],
+          [
+            "Crown",
+            "The custom, natural-looking tooth on top",
+            "$800 – $3,000",
+          ],
+        ],
+        caption: "What makes up the price of one dental implant.",
+      },
+      {
+        type: "image",
+        src: "/images/blog/what-makes-up-the-price-of-one-dental-implant.png",
+        alt: "Bar chart breaking a single dental implant into its three billed parts — implant post $1,000–$3,000, abutment $400–$1,000, and crown $800–$3,000 (2026 U.S. ranges).",
+        width: 1063,
+        height: 554,
+      },
+      {
+        type: "paragraph",
+        text: "So when you see a single price, you're really paying for three lab-made components plus the surgery to place them. You can see our implant options and process for how each step works.",
+        links: [
+          {
+            text: "our implant options and process",
+            href: "/restorative-dentistry/dental-implants",
+          },
+        ],
+      },
+      {
+        type: "image",
+        src: "/images/blog/the-4-steps-of-a-dental-implant.png",
+        alt: "Infographic of the four steps of a dental implant — consultation and 3D scan, implant placement, healing and osseointegration, and custom crown placement — each tagged with the cost it drives.",
+        caption: "The 4 steps of a dental implant — and where the cost comes from.",
+        width: 1999,
+        height: 1084,
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "Why are dental implants so expensive?",
+      },
+      {
+        type: "paragraph",
+        text: "Implants cost more because you're paying for oral surgery, three custom parts, and months of careful planning — not a single quick procedure. According to the American Dental Association, an implant replaces both the root and the crown of a tooth, which is why it's a bigger investment than a filling or a standard crown.",
+        links: [
+          {
+            text: "American Dental Association",
+            href: "https://www.mouthhealthy.org/all-topics-a-z/implants",
+            external: true,
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "You're also paying for 3D imaging that maps your jaw before surgery, and for a material — medical-grade titanium — that fuses with living bone. That precision is what lets a well-placed implant last for decades.",
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "What add-ons can change your cost?",
+      },
+      {
+        type: "paragraph",
+        text: "Add-ons are the single biggest reason two people get very different quotes. The most common ones:",
+      },
+      { type: "heading", level: 3, text: "Bone grafting and sinus lifts" },
+      {
+        type: "paragraph",
+        text: "If your jaw has lost bone where the tooth is missing, you may need a graft before an implant can hold — that adds roughly $500 to $3,000 per site. An upper-back implant sometimes needs a sinus lift, adding about $1,500 to $5,000. About half of implant patients need some grafting, per oral surgeons (AAOMS). Sedation, extractions, and a temporary tooth can also add to the total.",
+        links: [
+          {
+            text: "oral surgeons (AAOMS)",
+            href: "https://www.aaoms.org/procedures/dental-implant-surgery",
+            external: true,
+          },
+        ],
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "How much do full-mouth and All-on-4 implants cost?",
+      },
+      {
+        type: "paragraph",
+        text: "If you're replacing a whole arch rather than one tooth, the math changes. All-on-4 — a full set of teeth on four implants — typically runs $15,000 to $38,000 per arch, depending on whether you choose an acrylic or a more durable zirconia arch. Restoring both arches commonly totals $30,000 to $50,000. Per tooth, that's far cheaper than placing individual implants across a whole mouth.",
+      },
+      {
+        type: "table",
+        columns: ["Implant type", "Typical 2026 U.S. range"],
+        rows: [
+          ["Single tooth (post + abutment + crown)", "$3,000 – $6,000"],
+          ["Implant bridge (3 teeth)", "$8,000 – $11,000"],
+          ["All-on-4 (per arch)", "$15,000 – $38,000"],
+          ["Full mouth (both arches)", "$30,000 – $50,000"],
+        ],
+        caption: "2026 U.S. dental implant cost ranges by type.",
+      },
+      {
+        type: "image",
+        src: "/images/blog/2026-dental-implant-cost-ranges-by-type.png",
+        alt: "Chart of 2026 U.S. dental implant cost ranges — single tooth $3,000–$6,000, three-tooth implant bridge $8,000–$11,000, All-on-4 $15,000–$38,000 per arch, full mouth $30,000–$50,000.",
+        width: 1066,
+        height: 585,
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "Does dental insurance cover implants?",
+      },
+      {
+        type: "paragraph",
+        text: "Most dental plans cover part of the crown but not the surgical implant itself — many classify the implant as a major or elective procedure. Some plans have come to cover more of the abutment and crown in recent years. The honest answer is that it varies a lot by plan, so we verify your insurance benefits before any treatment and tell you your real out-of-pocket cost in writing.",
+        links: [
+          {
+            text: "verify your insurance benefits",
+            href: "/patient-information/insurance-and-payment",
+          },
+        ],
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "Are implants worth it compared to a bridge or dentures?",
+      },
+      {
+        type: "paragraph",
+        text: "Over a 15–20 year horizon, implants are often the lowest-cost option because a dental bridge or dentures usually need replacing every 10 to 15 years, while a well-cared-for implant can last decades. An implant also preserves the jawbone, which bridges and dentures don't. The chart below shows how the numbers can cross over time.",
+        links: [
+          {
+            text: "a dental bridge",
+            href: "/restorative-dentistry/dental-bridges",
+          },
+          { text: "dentures", href: "/restorative-dentistry/dentures" },
+        ],
+      },
+      {
+        type: "image",
+        src: "/images/blog/20-year-cost-implant-vs-bridge-vs-denture.png",
+        alt: "Line chart estimating 20-year cumulative cost, showing implants often become the lowest-cost option over time because bridges and dentures need periodic replacement. Illustrative estimate.",
+        caption:
+          "Estimated 20-year cost: implant vs. bridge vs. denture. Illustrative estimate only.",
+        width: 1065,
+        height: 554,
+      },
+      {
+        type: "paragraph",
+        text: "(This is a general estimate — your real comparison depends on your mouth and is something Dr. Dudhat can map out at a consult.)",
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "How can I make implants more affordable in Southampton?",
+      },
+      {
+        type: "paragraph",
+        text: "There are three practical ways patients lower the cost with us:",
+      },
+      {
+        type: "list",
+        variant: "check",
+        items: [
+          {
+            text: "Our in-office membership plan (from $288/year) includes cleanings, exams, and X-rays plus 15% off other procedures — no deductible, no annual maximum.",
+          },
+          {
+            text: "Financing through CareCredit and similar plans spreads the cost into monthly payments, often with 0% promotional periods.",
+          },
+          {
+            text: "An FSA or HSA lets you pay with pre-tax dollars, effectively discounting the total.",
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "See our membership plan and current offers for the details.",
+        links: [
+          { text: "membership plan and current offers", href: "/specials" },
+        ],
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "What affects your final cost at Hampton Family Dental?",
+      },
+      {
+        type: "paragraph",
+        text: "Your final number comes down to the exam: how many teeth, the condition of your jawbone, the materials you choose, and any add-ons. Dr. Keyur Dudhat plans every implant with 3D imaging, so the estimate you get is based on your actual anatomy — not a generic price. You'll get it in writing before anything begins.",
+        links: [
+          { text: "Dr. Keyur Dudhat", href: "/about/dr-keyur-dudhat" },
+        ],
+      },
+      {
+        type: "cta",
+        heading: "Get a clear, written implant estimate.",
+        text: "Call us or book an implant consultation — you'll know your real out-of-pocket cost before any treatment begins.",
+      },
+    ],
+    faqs: [
+      {
+        q: "How much does a single dental implant cost in 2026?",
+        a: "A single dental implant typically costs $3,000 to $6,000 in 2026, including the implant post, abutment, and crown. Your exact cost depends on your exam and whether add-ons like a bone graft are needed.",
+      },
+      {
+        q: "Does dental insurance cover implants?",
+        a: "Many plans cover part of the crown or abutment but not the surgical implant itself. We verify your benefits before treatment so you know your out-of-pocket cost in advance.",
+      },
+      {
+        q: "Why are dental implants so expensive?",
+        a: "An implant bundles three billed parts — the post, abutment, and crown — plus oral surgery, 3D imaging, and a multi-month treatment plan, which is why it costs more than a simple filling or crown.",
+      },
+      {
+        q: "Are implants cheaper than a bridge over time?",
+        a: "Often, yes. Implants cost more upfront, but bridges and dentures usually need replacing every 10 to 15 years, so implants can be the lower-cost option over a 20-year horizon.",
+      },
+    ],
+    extraSchema: [
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalWebPage",
+        name: "How Much Do Dental Implants Cost in 2026? A Southampton, PA Guide",
+        url: "https://www.hamptonfamilydentist.com/blog/how-much-do-dental-implants-cost",
+        about: { "@type": "MedicalProcedure", name: "Dental Implant" },
+        lastReviewed: "2026-08-04",
+        reviewedBy: {
+          "@type": "Person",
+          name: "Dr. Keyur Dudhat, DMD",
+          jobTitle: "Dentist",
+          medicalSpecialty: "Dentistry",
+          worksFor: "Hampton Family Dental",
+        },
+        publisher: {
+          "@type": "Organization",
+          name: "Hampton Family Dental",
+        },
+      },
+      { ...dentistSchema, medicalSpecialty: "Dentistry" },
+    ],
   },
 ];
 
