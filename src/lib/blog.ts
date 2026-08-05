@@ -448,7 +448,7 @@ export const blogPosts: BlogPost[] = [
         alt: "Infographic of the four steps of a dental implant — consultation and 3D scan, implant placement, healing and osseointegration, and custom crown placement — each tagged with the cost it drives.",
         caption: "The 4 steps of a dental implant — and where the cost comes from.",
         width: 1999,
-        height: 1084,
+        height: 790,
       },
 
       {

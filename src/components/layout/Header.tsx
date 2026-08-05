@@ -26,6 +26,11 @@ export default function Header() {
     setIsScrolled((prev) => (prev === scrolled ? prev : scrolled));
   });
 
+  // The homepage hero is a light panel, so the white-on-transparent treatment
+  // would be invisible over it. Render the light-surface styling from the top
+  // there; every other page still opens over a dark hero.
+  const lightSurface = isScrolled || pathname === "/";
+
   return (
     <>
       <header className="fixed top-0 left-0 right-0 z-50 w-full">
@@ -92,7 +97,7 @@ export default function Header() {
         <div
           className={`border-b backdrop-blur-xl transition-[background-color,border-color,box-shadow] duration-500 ease-out
             ${
-              isScrolled
+              lightSurface
                 ? "bg-white/[0.95] border-navy/[0.06] shadow-[0_2px_30px_rgba(20,60,80,0.06)]"
                 : "bg-navy-dark/20 border-white/[0.08] shadow-none"
             }`}
@@ -116,10 +121,10 @@ export default function Header() {
                   height={55}
                   priority
                   className={`h-8 sm:h-9 xl:h-[32px] 2xl:h-10 w-auto object-contain transition-all duration-500
-                    ${isScrolled ? "" : "brightness-0 invert"}
+                    ${lightSurface ? "" : "brightness-0 invert"}
                   `}
                 />
-                {!isScrolled && (
+                {!lightSurface && (
                   <div className="absolute -inset-2 bg-primary/10 blur-xl rounded-full -z-10" />
                 )}
               </motion.div>
@@ -131,7 +136,7 @@ export default function Header() {
                 <DesktopDropdown
                   key={item.href}
                   item={item}
-                  isScrolled={isScrolled}
+                  lightSurface={lightSurface}
                   pathname={pathname}
                 />
               ))}
@@ -143,7 +148,7 @@ export default function Header() {
               <a
                 href={practiceInfo.phoneTel}
                 className={`hidden xl:flex items-center justify-center w-9 h-9 rounded-full transition-colors duration-300 ${
-                  isScrolled
+                  lightSurface
                     ? "text-navy/60 hover:text-primary hover:bg-primary/5"
                     : "text-white/70 hover:text-white hover:bg-white/10"
                 }`}
@@ -164,7 +169,7 @@ export default function Header() {
                   hover:scale-[1.03] active:scale-[0.98]
                   transition-all duration-300 group overflow-hidden relative
                   ${
-                    isScrolled
+                    lightSurface
                       ? "bg-primary text-white hover:bg-primary-dark"
                       : "bg-white text-navy hover:bg-primary hover:text-white"
                   }
@@ -174,7 +179,7 @@ export default function Header() {
                 <span className="relative z-10">Schedule Now</span>
                 <span
                   className={`relative z-10 w-7 h-7 rounded-full flex items-center justify-center transition-colors ${
-                    isScrolled
+                    lightSurface
                       ? "bg-white/20 group-hover:bg-white/30"
                       : "bg-primary text-white"
                   }`}
@@ -188,7 +193,7 @@ export default function Header() {
                 onClick={() => setMobileOpen(true)}
                 aria-label="Open menu"
                 className={`xl:hidden relative w-11 h-11 flex items-center justify-center rounded-full border transition-all duration-300 ${
-                  isScrolled
+                  lightSurface
                     ? "bg-navy/5 border-navy/10 text-navy hover:bg-navy/10"
                     : "bg-white/10 border-white/20 text-white hover:bg-white/20 backdrop-blur-md"
                 }`}

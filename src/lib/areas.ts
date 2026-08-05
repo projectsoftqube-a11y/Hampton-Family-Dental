@@ -186,7 +186,7 @@ export const serviceAreas: ServiceArea[] = [
       "We offer everything Warminster families need in one place: general and preventive dentistry (cleanings, checkups, emergency care), restorative dentistry (dental implants, crowns, bridges, dentures, root canals), and cosmetic dentistry (veneers, teeth whitening, Invisalign, smile makeovers). New patients without insurance can start with our membership plan.",
     whyHeading: "Why Warminster Families Choose Hampton Family Dental",
     whyCopy: [
-      "Warminster patients choose Hampton Family Dental for a more personal, less corporate experience than the big chains - with everything from cleanings to implants under one roof and two experienced dentists who know them by name.",
+      "Warminster patients choose Hampton Family Dental for a more personal, less corporate experience than the big chains - with everything from cleanings to implants under one roof and a trusted dental team that knows them by name.",
       "That personal approach matters when a patient is comparing options for dental implants, cosmetic dentistry, emergency care, or a long-term family dental home. Our team takes time to explain what we see, answer questions clearly, and help Warminster families choose care that fits their health, goals, and budget.",
     ],
     directionsHeading: "Getting to Our Office from Warminster",

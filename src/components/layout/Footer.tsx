@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
@@ -10,7 +9,6 @@ import {
   MapPin,
   Mail,
   ArrowUp,
-  Send,
   Sparkles,
   Clock,
 } from "lucide-react";
@@ -22,8 +20,6 @@ import {
   YouTubeIcon,
 } from "@/components/icons/SocialIcons";
 import { practiceInfo } from "@/lib/navigation";
-import { validateEmail } from "@/lib/validation";
-import { sendEnquiry } from "@/lib/sendEnquiry";
 
 const quickLinks = [
   { label: "About Us", href: "/about" },
@@ -66,28 +62,6 @@ const socials = [
 ];
 
 export default function Footer() {
-  const [email, setEmail] = useState("");
-  const [emailError, setEmailError] = useState("");
-  const [subscribed, setSubscribed] = useState(false);
-  const [sending, setSending] = useState(false);
-
-  const handleSubscribe = async (e: React.FormEvent) => {
-    e.preventDefault();
-    const err = validateEmail(email);
-    setEmailError(err);
-    if (err) return;
-    setSending(true);
-    const sendErr = await sendEnquiry({ formType: "Newsletter Signup", email });
-    setSending(false);
-    if (sendErr) {
-      setEmailError(sendErr);
-      return;
-    }
-    setSubscribed(true);
-    setEmail("");
-    setTimeout(() => setSubscribed(false), 4000);
-  };
-
   return (
     <footer className="relative bg-navy-dark overflow-hidden">
       {/* Top accent gradient */}
@@ -285,61 +259,8 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Newsletter + Hours (3 cols) */}
+          {/* Office Hours (3 cols) */}
           <div className="lg:col-span-3">
-            <h4 className="font-heading text-white font-bold text-base mb-3 flex items-center gap-2">
-              <span className="w-1 h-1 rounded-full bg-primary-light" />
-              Stay in Touch
-            </h4>
-            <p className="text-white/45 text-sm leading-relaxed mb-4">
-              Get monthly dental wellness tips and exclusive offers — no spam,
-              ever.
-            </p>
-
-            <form
-              className="relative mb-2"
-              onSubmit={handleSubscribe}
-              noValidate
-            >
-              <input
-                type="email"
-                placeholder="your@email.com"
-                value={email}
-                onChange={(e) => {
-                  setEmail(e.target.value);
-                  if (emailError) setEmailError("");
-                }}
-                className={`w-full pl-4 pr-14 py-3 rounded-full bg-white/[0.05] border
-                  text-white text-sm placeholder:text-white/30 outline-none
-                  focus:bg-white/[0.08] transition-all duration-300 ${
-                    emailError
-                      ? "border-red-500 focus:border-red-500"
-                      : "border-white/10 focus:border-primary/40"
-                  }`}
-              />
-              <button
-                type="submit"
-                disabled={sending}
-                aria-label="Subscribe"
-                className="group absolute right-1.5 top-1/2 -translate-y-1/2
-                  w-10 h-10 rounded-full bg-gradient-to-br from-primary to-primary-dark
-                  flex items-center justify-center
-                  shadow-[0_4px_15px_rgba(30,96,118,0.4)]
-                  hover:scale-105 active:scale-95 transition-all duration-300
-                  disabled:opacity-60 disabled:cursor-not-allowed"
-              >
-                <Send className="w-4 h-4 text-white group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-              </button>
-            </form>
-            {emailError && (
-              <p className="text-red-400 text-xs font-semibold mb-4 pl-1">{emailError}</p>
-            )}
-            {subscribed && !emailError && (
-              <p className="text-primary-light text-xs font-semibold mb-4 pl-1">
-                Thanks for subscribing!
-              </p>
-            )}
-
             {/* Hours card */}
             <div className="rounded-2xl bg-white/[0.04] border border-white/10 p-4">
               <div className="flex items-center justify-between mb-3 pb-3 border-b border-white/8">

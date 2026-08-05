@@ -34,7 +34,7 @@ export default function WhyChooseUsClient() {
     },
     {
       icon: Heart,
-      title: "Two Experienced Dentists Under One Roof",
+      title: "Trusted Dental Experience Under One Roof",
       desc: "With Dr. Jeffrey Brenner and Dr. Keyur Dudhat practicing together, you benefit from a collaborative clinical environment. Our dentists combine decades of experience with advanced training, working together to develop comprehensive, precise treatment plans."
     },
     {

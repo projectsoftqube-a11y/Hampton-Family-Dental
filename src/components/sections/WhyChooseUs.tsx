@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import {
   Heart,
   Cpu,
@@ -165,7 +166,7 @@ export default function WhyChooseUs() {
                 {[
                   { num: "4.9", lbl: "Rating" },
                   { num: "5K+", lbl: "Smiles" },
-                  { num: "20+", lbl: "Years" },
+                  { num: "30+", lbl: "Years" },
                 ].map((s) => (
                   <div key={s.lbl}>
                     <p className="font-heading text-white text-2xl font-bold leading-none tabular-nums">
@@ -445,8 +446,10 @@ export default function WhyChooseUs() {
           <p className="text-navy/55 text-sm">
             Ready to experience the Hampton difference?
           </p>
-          <a
-            href="#contact"
+          {/* Routes to the scheduling page — this section is no longer on the
+              homepage, so the old "#contact" anchor had no target here. */}
+          <Link
+            href="/patient-information/scheduling"
             className="group inline-flex items-center gap-2 pl-5 pr-2 py-2 rounded-full
               bg-navy text-white text-xs font-semibold tracking-[0.18em] uppercase
               hover:bg-primary hover:scale-105 active:scale-95
@@ -456,7 +459,7 @@ export default function WhyChooseUs() {
             <span className="w-7 h-7 rounded-full bg-white/15 flex items-center justify-center">
               <ArrowUpRight className="w-3.5 h-3.5 text-white group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
             </span>
-          </a>
+          </Link>
         </motion.div>
       </div>
     </section>

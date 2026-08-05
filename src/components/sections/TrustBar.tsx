@@ -10,7 +10,7 @@ const items = [
   { icon: CalendarCheck, label: "Same-Day Emergencies" },
   { icon: ShieldCheck, label: "Most Insurance Accepted" },
   { icon: CreditCard, label: "In-Office Membership Plans" },
-  { icon: Stethoscope, label: "Two Experienced Dentists" },
+  { icon: Stethoscope, label: "Trusted Dental Experience" },
   { icon: HeartHandshake, label: "Serving Southampton, Richboro, Warminster & Newtown" },
 ];
 

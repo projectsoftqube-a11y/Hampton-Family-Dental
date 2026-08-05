@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Sparkles, ArrowRight, Heart, Users, Star, ArrowUpRight, Award, ShieldCheck } from "lucide-react";
 import Breadcrumbs from "@/components/shared/Breadcrumbs";
+import WhyChooseUs from "@/components/sections/WhyChooseUs";
 
 export default function AboutHubPage() {
   const cards = [
@@ -229,6 +230,9 @@ export default function AboutHubPage() {
           </div>
         </div>
       </section>
+
+      {/* ─── Why Southampton Families Choose Us (moved here from the homepage) ─── */}
+      <WhyChooseUs />
 
       {/* ─── Grid Cards Section (Story, Team, Reviews) ─── */}
       <section className="py-20 bg-beige-light/30">

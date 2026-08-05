@@ -8,13 +8,13 @@ import type { NavItem } from "@/lib/navigation";
 
 interface DesktopDropdownProps {
   item: NavItem;
-  isScrolled: boolean;
+  lightSurface: boolean;
   pathname: string;
 }
 
 export default function DesktopDropdown({
   item,
-  isScrolled,
+  lightSurface,
   pathname,
 }: DesktopDropdownProps) {
   const [open, setOpen] = useState(false);
@@ -47,10 +47,10 @@ export default function DesktopDropdown({
         href={item.href}
         className={`relative px-2 xl:px-1.5 2xl:px-3 py-2 text-[10px] xl:text-[9.5px] 2xl:text-[11px] font-semibold tracking-[0.05em] 2xl:tracking-[0.12em] uppercase whitespace-nowrap transition-colors duration-300 ${
           pathname === item.href
-            ? isScrolled
+            ? lightSurface
               ? "text-primary"
               : "text-primary-light"
-            : isScrolled
+            : lightSurface
               ? "text-navy/65 hover:text-primary"
               : "text-white/75 hover:text-white"
         }`}
@@ -60,7 +60,7 @@ export default function DesktopDropdown({
           <motion.span
             layoutId="navActive"
             className={`absolute bottom-0 left-1/2 -translate-x-1/2 h-[2px] w-5 rounded-full ${
-              isScrolled ? "bg-primary" : "bg-primary-light"
+              lightSurface ? "bg-primary" : "bg-primary-light"
             }`}
             transition={{ type: "spring", stiffness: 380, damping: 30 }}
           />
@@ -81,10 +81,10 @@ export default function DesktopDropdown({
         href={item.href}
         className={`group relative flex items-center gap-0.5 px-2 xl:px-1.5 2xl:px-3 py-2 text-[10px] xl:text-[9.5px] 2xl:text-[11px] font-semibold tracking-[0.05em] 2xl:tracking-[0.12em] uppercase whitespace-nowrap transition-colors duration-300 ${
           isActive
-            ? isScrolled
+            ? lightSurface
               ? "text-primary"
               : "text-primary-light"
-            : isScrolled
+            : lightSurface
               ? "text-navy/65 hover:text-primary"
               : "text-white/75 hover:text-white"
         }`}
@@ -99,7 +99,7 @@ export default function DesktopDropdown({
           <motion.span
             layoutId="navActive"
             className={`absolute bottom-0 left-1/2 -translate-x-1/2 h-[2px] w-5 rounded-full ${
-              isScrolled ? "bg-primary" : "bg-primary-light"
+              lightSurface ? "bg-primary" : "bg-primary-light"
             }`}
             transition={{ type: "spring", stiffness: 380, damping: 30 }}
           />

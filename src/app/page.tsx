@@ -6,7 +6,6 @@ import TrustStats from "@/components/sections/TrustStats";
 import WelcomeIntro from "@/components/sections/WelcomeIntro";
 import About from "@/components/sections/About";
 import Services from "@/components/sections/Services";
-import WhyChooseUs from "@/components/sections/WhyChooseUs";
 import SmileGallery from "@/components/sections/SmileGallery";
 import Testimonials from "@/components/sections/Testimonials";
 import FAQ from "@/components/sections/FAQ";
@@ -149,7 +148,7 @@ export default function Home() {
       <TrustStats />
       <Services />
       <About />
-      <WhyChooseUs />
+      {/* WhyChooseUs now lives on /about */}
       {/* <Technology /> */}
       <SmileGallery />
       <Testimonials />

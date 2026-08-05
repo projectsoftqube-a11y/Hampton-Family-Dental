@@ -35,7 +35,7 @@ const services = [
     icon: AlertCircle,
     title: "Emergency Dentistry",
     desc: "Same-day relief when you need it most.",
-    image: "/images/reception_area_1779858343255.webp",
+    image: "/images/service_emergency.webp",
     tag: "Urgent",
     duration: "Same day",
     benefits: ["Urgent appointments", "Pain relief", "Trauma care"],
@@ -154,8 +154,6 @@ export default function Services() {
     ...services.map((s, idx) => ({ ...s, id: `svc-${idx}`, isCustom: false as const })),
     { id: "custom", isCustom: true as const },
   ];
-  const originalCount = originalItems.length; // 9
-
   return (
     <section
       id="services"
@@ -268,7 +266,7 @@ export default function Services() {
           className="flex overflow-x-auto py-4 px-5 md:px-10 gap-5 md:gap-6 [&::-webkit-scrollbar]:hidden scroll-smooth"
           style={{ scrollbarWidth: "none" }}
         >
-            {originalItems.map((item, i) => {
+            {originalItems.map((item) => {
               if (!item.isCustom) {
                 const service = item;
                 return (
@@ -304,16 +302,6 @@ export default function Services() {
                       {/* Bottom shadow gradient */}
                       <div className="absolute inset-0 bg-gradient-to-t from-navy/40 via-transparent to-transparent" />
 
-                      {/* Big serif number top-left */}
-                      <div className="absolute top-4 left-5 flex items-baseline gap-1">
-                        <span className="font-heading italic text-white text-4xl font-bold leading-none drop-shadow-lg">
-                          {String(i + 1).padStart(2, "0")}
-                        </span>
-                        <span className="font-mono text-white/70 text-[10px] tracking-widest">
-                          / {String(originalCount - 1).padStart(2, "0")}
-                        </span>
-                      </div>
-
                       {/* Category tag top-right */}
                       <div className="absolute top-4 right-4 px-3 py-1.5 rounded-full
                         backdrop-blur-xl bg-white/15 border border-white/30">
@@ -338,14 +326,6 @@ export default function Services() {
 
                     {/* ── Content ── */}
                     <div className="px-5 md:px-6 pt-5 pb-5">
-                      {/* Tiny eyebrow */}
-                      <div className="flex items-center gap-2 mb-2">
-                        <div className="h-px w-5 bg-primary" />
-                        <span className="text-primary text-[9px] tracking-[0.25em] uppercase font-semibold">
-                          Service · 0{i + 1}
-                        </span>
-                      </div>
-
                       {/* Title */}
                       <h3 className="font-heading text-navy text-xl md:text-[1.5rem] font-bold mb-2 leading-[1.1]
                         group-hover:text-primary-dark transition-colors duration-500">

@@ -173,7 +173,7 @@ export default function About() {
               />
             </motion.div>
 
-            {/* 20+ Years badge — repositioned, with rings */}
+            {/* 30+ Years badge — repositioned, with rings */}
             <motion.div
               style={{ y: badgeY }}
               initial={{ opacity: 0, scale: 0.7 }}
@@ -187,7 +187,7 @@ export default function About() {
                 <div className="absolute inset-2 rounded-full border border-white/40" />
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
                   <span className="font-heading text-3xl md:text-4xl font-bold leading-none">
-                    20+
+                    30+
                   </span>
                   <span className="text-[9px] tracking-[0.25em] uppercase mt-1 text-white/90 font-semibold">
                     Years

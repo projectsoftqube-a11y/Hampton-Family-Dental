@@ -203,8 +203,8 @@ export default function EmergencyDentistryClient() {
             <div className="lg:col-span-5">
               <div className="relative aspect-[4/3] rounded-[2rem] overflow-hidden shadow-xl border border-navy/5 bg-beige-light/30">
                 <Image
-                  src="/images/reception_area_1779858343255.webp"
-                  alt="Emergency Dentistry"
+                  src="/images/service_emergency.webp"
+                  alt="Woman holding her jaw in pain while seated in the dental chair at Hampton Family Dental in Southampton, PA"
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 500px"
