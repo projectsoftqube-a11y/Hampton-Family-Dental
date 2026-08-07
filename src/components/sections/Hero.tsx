@@ -196,7 +196,7 @@ export default function Hero() {
               className="mt-7 flex flex-wrap items-center gap-2.5"
             >
               {[
-                "4.9★ Google reviews",
+                "5.0★ on Google · 119 reviews",
                 "New patients welcome",
                 "Most insurance accepted",
               ].map((badge) => (

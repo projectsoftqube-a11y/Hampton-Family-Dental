@@ -164,7 +164,7 @@ export default function WhyChooseUs() {
               {/* Footer mini-stats */}
               <div className="grid grid-cols-3 gap-4 pt-6 border-t border-white/10">
                 {[
-                  { num: "4.9", lbl: "Rating" },
+                  { num: "5.0", lbl: "Rating" },
                   { num: "5K+", lbl: "Smiles" },
                   { num: "30+", lbl: "Years" },
                 ].map((s) => (

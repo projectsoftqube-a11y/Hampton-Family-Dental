@@ -6,7 +6,6 @@ import TrustStats from "@/components/sections/TrustStats";
 import WelcomeIntro from "@/components/sections/WelcomeIntro";
 import About from "@/components/sections/About";
 import Services from "@/components/sections/Services";
-import SmileGallery from "@/components/sections/SmileGallery";
 import Testimonials from "@/components/sections/Testimonials";
 import FAQ from "@/components/sections/FAQ";
 import Contact from "@/components/sections/Contact";
@@ -150,7 +149,9 @@ export default function Home() {
       <About />
       {/* WhyChooseUs now lives on /about */}
       {/* <Technology /> */}
-      <SmileGallery />
+      {/* SmileGallery removed — its cases were invented patients (name, age,
+          treatment, quote) over stock imagery. The component is kept for when
+          real, consent-signed before/after cases are available. */}
       <Testimonials />
       <CTABanner />
       <FAQ />
