@@ -1,6 +1,9 @@
 import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/site";
-import { blogPosts } from "@/lib/blog";
+import { getPublishedPosts } from "@/lib/blog";
+
+/** Keeps scheduled posts out of the sitemap until they are actually live. */
+export const revalidate = 300;
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
@@ -8,7 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/contact",
     "/specials",
     "/blog",
-    ...blogPosts.map((post) => `/blog/${post.slug}`),
+    ...getPublishedPosts().map((post) => `/blog/${post.slug}`),
     "/general-dentistry",
     "/restorative-dentistry",
     "/cosmetic-dentistry",

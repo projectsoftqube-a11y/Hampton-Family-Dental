@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import {
+  AlertTriangle,
   ArrowLeft,
   ArrowUpRight,
   Calendar,
@@ -345,6 +346,54 @@ export default function BlogPostClient({ post }: { post: BlogPost }) {
                             </figcaption>
                           )}
                         </figure>
+                      );
+
+                    case "callout":
+                      return (
+                        <aside
+                          key={idx}
+                          role={section.variant === "danger" ? "alert" : undefined}
+                          className={`rounded-3xl border-l-4 p-6 md:p-7 ${
+                            section.variant === "danger"
+                              ? "bg-red-50 border-red-500"
+                              : "bg-amber-50 border-amber-500"
+                          }`}
+                        >
+                          <div className="flex items-start gap-3">
+                            <AlertTriangle
+                              className={`w-5 h-5 shrink-0 mt-0.5 ${
+                                section.variant === "danger"
+                                  ? "text-red-600"
+                                  : "text-amber-600"
+                              }`}
+                            />
+                            <div>
+                              {section.heading && (
+                                <h3
+                                  className={`font-heading font-bold text-base mb-1.5 ${
+                                    section.variant === "danger"
+                                      ? "text-red-900"
+                                      : "text-amber-900"
+                                  }`}
+                                >
+                                  {section.heading}
+                                </h3>
+                              )}
+                              <p
+                                className={`text-sm md:text-[15px] leading-relaxed ${
+                                  section.variant === "danger"
+                                    ? "text-red-900/85"
+                                    : "text-amber-900/85"
+                                }`}
+                              >
+                                <LinkedText
+                                  text={section.text}
+                                  links={section.links}
+                                />
+                              </p>
+                            </div>
+                          </div>
+                        </aside>
                       );
 
                     case "cta":

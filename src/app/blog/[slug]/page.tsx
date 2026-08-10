@@ -2,15 +2,22 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import { absoluteUrl, SITE_URL } from "@/lib/site";
-import { blogPosts, getBlogPost } from "@/lib/blog";
+import { getBlogPost, getPublishedPosts, isPublished } from "@/lib/blog";
 import BlogPostClient from "./BlogPostClient";
+
+/** Matches the listing — a scheduled post goes live without a deploy. */
+export const revalidate = 300;
 
 type BlogPostPageProps = {
   params: Promise<{ slug: string }>;
 };
 
+/**
+ * Only live posts are prerendered. A scheduled slug is left out, so it renders
+ * on demand — 404 before its publish time, then the real page once passed.
+ */
 export function generateStaticParams() {
-  return blogPosts.map((post) => ({ slug: post.slug }));
+  return getPublishedPosts().map((post) => ({ slug: post.slug }));
 }
 
 export async function generateMetadata({
@@ -19,7 +26,8 @@ export async function generateMetadata({
   const { slug } = await params;
   const post = getBlogPost(slug);
 
-  if (!post) return {};
+  // Scheduled posts must not leak a title or description into search.
+  if (!post || !isPublished(post)) return {};
 
   const url = absoluteUrl(`/blog/${post.slug}`);
 
@@ -59,7 +67,8 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const { slug } = await params;
   const post = getBlogPost(slug);
 
-  if (!post) notFound();
+  // A scheduled post is a 404 until its publish time passes.
+  if (!post || !isPublished(post)) notFound();
 
   const url = absoluteUrl(`/blog/${post.slug}`);
 

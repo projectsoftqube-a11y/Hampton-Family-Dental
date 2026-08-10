@@ -37,6 +37,14 @@ export type BlogSection =
       rows: string[][];
       caption?: string;
     }
+  /** Boxed safety notice. "danger" is for escalate-to-911 content. */
+  | {
+      type: "callout";
+      variant: "danger" | "warning";
+      heading?: string;
+      text: string;
+      links?: BlogLink[];
+    }
   | { type: "cta"; heading: string; text: string };
 
 export interface BlogFAQ {
@@ -54,7 +62,14 @@ export interface BlogPost {
   /** Listing-card summary. */
   excerpt: string;
   category: string;
-  /** ISO date — drives <time> and schema datePublished. */
+  /**
+   * When the post goes live. Accepts either a plain date ("2026-07-29",
+   * treated as midnight UTC) or a full ISO timestamp with an offset
+   * ("2026-08-11T08:00:00+05:30") to schedule a precise moment.
+   *
+   * A post whose publishedAt is in the future is hidden from the listing,
+   * the sitemap and search, and its URL 404s until the time passes.
+   */
   publishedAt: string;
   readTime: string;
   reviewedBy: string;
@@ -659,13 +674,254 @@ export const blogPosts: BlogPost[] = [
       { ...dentistSchema, medicalSpecialty: "Dentistry" },
     ],
   },
+
+  {
+    slug: "dental-emergency-what-to-do",
+    title: "Dental Emergency? What to Do Before You Reach the Dentist",
+    metaTitle: "Dental Emergency? What to Do Now | Southampton PA",
+    metaDescription:
+      "Tooth pain or a dental emergency in Southampton, PA? Call (215) 357-2224 for same-day care. Safe first-aid steps for pain, knocked-out teeth, and when to call 911.",
+    excerpt:
+      "In pain right now? Safe first-aid you can start in the next two minutes — plus how to tell a toothache that can wait from one that can't, and when to skip the dentist and call 911.",
+    category: "Emergency Care",
+    // Scheduled: 11 Aug 2026, 08:00 IST (= 02:30 UTC).
+    publishedAt: "2026-08-11T08:00:00+05:30",
+    readTime: "4 min read",
+    reviewedBy: "Dr. Jeffrey Brenner, DMD",
+    lastReviewedLabel: "Last reviewed August 2026",
+    hero: {
+      src: "/images/blog/dental-emergency-what-to-do.png",
+      alt: "Person with tooth pain calling Hampton Family Dental for same-day emergency care in Southampton PA",
+      width: 1536,
+      height: 1024,
+    },
+    answerBox: {
+      text: "If you have a dental emergency in Southampton, PA, call Hampton Family Dental now at (215) 357-2224 — we reserve time every day for same-day emergencies. While you wait: rinse with warm salt water, hold a cold compress to your cheek, and take ibuprofen or acetaminophen as directed. If you have trouble breathing or swallowing, or bleeding that won't stop, call 911 or go to the emergency room.",
+      links: [{ text: "(215) 357-2224", href: "tel:+12153572224" }],
+    },
+    keyTakeaways: [
+      {
+        text: "Call your dentist first for most dental emergencies — that's faster than the ER.",
+      },
+      {
+        text: "Knocked-out tooth? Keep it moist in milk and call within the hour — time matters.",
+      },
+      {
+        text: "A warm salt-water rinse, a cold compress, and OTC pain relief can safely hold you over.",
+      },
+      {
+        text: "Never put aspirin directly on the gum or tooth — it can burn the tissue.",
+      },
+      {
+        text: "Call 911 for trouble breathing or swallowing, spreading swelling, or uncontrolled bleeding.",
+      },
+    ],
+    sections: [
+      { type: "heading", level: 2, text: "First: is this a dental emergency?" },
+      {
+        type: "paragraph",
+        text: "A mild ache can usually wait for a regular appointment, but severe or worsening pain, swelling, fever, or a knocked-out tooth should be seen right away. According to the American Dental Association, a good rule of thumb is simple: if it hurts badly, bleeds, or moves when it shouldn't, call a dentist. The guide below can help you decide fast.",
+        links: [
+          {
+            text: "American Dental Association",
+            href: "https://www.mouthhealthy.org/all-topics-a-z/dental-emergencies",
+            external: true,
+          },
+        ],
+      },
+      {
+        type: "image",
+        src: "/images/blog/is-your-dental-problem-an-emergency.png",
+        alt: "Dental emergency triage guide — call 911 for trouble breathing or swallowing, spreading swelling, or uncontrolled bleeding; call (215) 357-2224 for a knocked-out tooth, severe pain, swelling or fever; while waiting, use a warm salt-water rinse, cold compress, and OTC pain relief, and never put aspirin on the gum.",
+        caption: "Is your dental problem an emergency?",
+        width: 1065,
+        height: 674,
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "How to relieve tooth pain right now",
+      },
+      {
+        type: "paragraph",
+        text: "To ease tooth pain fast while you arrange a visit, the Cleveland Clinic recommends a few safe steps:",
+        links: [
+          {
+            text: "Cleveland Clinic",
+            href: "https://my.clevelandclinic.org/health/symptoms/10957-toothache",
+            external: true,
+          },
+        ],
+      },
+      {
+        type: "list",
+        variant: "check",
+        items: [
+          {
+            text: "Rinse gently with warm salt water to clean the area and calm the tissue.",
+          },
+          {
+            text: "Hold a cold compress to the outside of your cheek to bring down swelling.",
+          },
+          {
+            text: "Take an over-the-counter pain reliever — ibuprofen or acetaminophen — as directed on the label.",
+          },
+          {
+            text: "Floss gently once to remove any food trapped between teeth.",
+          },
+        ],
+      },
+      {
+        type: "callout",
+        variant: "warning",
+        heading: "One important safety note",
+        text: "Never place aspirin or another painkiller directly against your gum or tooth — it can burn the tissue. Always take pain relievers by mouth.",
+      },
+      {
+        type: "paragraph",
+        text: "These steps ease the pain; they don't fix the cause. A toothache that lasts more than a day or two usually means something a dentist needs to treat.",
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "What to do for a knocked-out or broken tooth",
+      },
+      {
+        type: "paragraph",
+        text: "For a knocked-out tooth, act within the hour: pick it up by the crown (never the root), rinse it gently if it's dirty without scrubbing, and keep it moist in a cup of milk or tucked inside your cheek until you can be seen. Then call us. For a broken tooth, save any pieces, rinse with warm water, and use gauze if there's bleeding. Sometimes a badly damaged tooth can't be saved, but calling quickly gives the best chance of keeping it.",
+        links: [
+          {
+            text: "a badly damaged tooth can't be saved",
+            href: "/general-dentistry/tooth-extraction",
+          },
+        ],
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "When to skip the dentist and call 911",
+      },
+      {
+        type: "callout",
+        variant: "danger",
+        heading: "Call 911 or go straight to the emergency room",
+        text: "If you have swelling that affects your breathing or swallowing, swelling spreading to your eye or neck, or bleeding that won't stop. These can be signs of a serious infection or injury that needs a hospital, not a dental office.",
+      },
+
+      { type: "heading", level: 2, text: "Get seen today in Southampton" },
+      {
+        type: "paragraph",
+        text: "You don't have to wait in pain. Emergency dental care at Hampton Family Dental means same-day appointments with Dr. Brenner, who has handled Southampton dental emergencies for more than 20 years — same team, same trusted care. New patients can start with our $69 emergency exam offer (a focused exam plus any necessary X-rays). Just call and tell us what's happening.",
+        links: [
+          {
+            text: "Emergency dental care at Hampton Family Dental",
+            href: "/general-dentistry/emergency-dentistry",
+          },
+          { text: "$69 emergency exam offer", href: "/specials" },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "In pain right now? Call (215) 357-2224 to book a same-day emergency visit, or request an appointment online and tell us what's happening.",
+        links: [
+          { text: "(215) 357-2224", href: "tel:+12153572224" },
+          {
+            text: "book a same-day emergency visit",
+            href: "/general-dentistry/emergency-dentistry",
+          },
+          {
+            text: "request an appointment",
+            href: "/patient-information/scheduling",
+          },
+        ],
+      },
+      {
+        type: "cta",
+        heading: "In pain now? We keep time open every day.",
+        text: "Call and tell us what's happening — we reserve room in the schedule for same-day emergencies.",
+      },
+    ],
+    faqs: [
+      {
+        q: "How do I stop tooth pain fast?",
+        a: "Rinse with warm salt water, hold a cold compress to your cheek, and take an over-the-counter pain reliever like ibuprofen or acetaminophen as directed. These ease pain temporarily — call a dentist to treat the cause.",
+      },
+      {
+        q: "Is a toothache a dental emergency?",
+        a: "A mild ache may not be, but severe or worsening pain, swelling, fever, or a toothache that keeps you up at night should be seen by a dentist as soon as possible.",
+      },
+      {
+        q: "What do I do if my tooth gets knocked out?",
+        a: "Pick it up by the crown, not the root, keep it moist in milk or inside your cheek, and call a dentist within the hour. Fast action gives the best chance of saving it.",
+      },
+      {
+        q: "Can I put aspirin on my tooth?",
+        a: "No. Placing aspirin directly on the gum or tooth can burn the tissue. Take pain relievers by mouth as directed on the label instead.",
+      },
+    ],
+    extraSchema: [
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalWebPage",
+        name: "Dental Emergency? What to Do Before You Reach the Dentist",
+        url: "https://www.hamptonfamilydentist.com/blog/dental-emergency-what-to-do",
+        about: {
+          "@type": "MedicalCondition",
+          name: "Dental emergency / toothache",
+        },
+        lastReviewed: "2026-08-10",
+        reviewedBy: {
+          "@type": "Person",
+          name: "Dr. Jeffrey Brenner, DMD",
+          jobTitle: "Dentist",
+          medicalSpecialty: "Dentistry",
+          worksFor: "Hampton Family Dental",
+        },
+        publisher: { "@type": "Organization", name: "Hampton Family Dental" },
+      },
+      {
+        ...dentistSchema,
+        medicalSpecialty: "Dentistry",
+        availableService: {
+          "@type": "MedicalProcedure",
+          name: "Emergency dental care",
+        },
+      },
+    ],
+  },
 ];
 
-/** Newest first — the order the listing page renders in. */
-export const sortedBlogPosts = [...blogPosts].sort((a, b) =>
-  b.publishedAt.localeCompare(a.publishedAt),
-);
+/** Parses either a plain date or a full ISO timestamp with offset. */
+export function publishDate(post: BlogPost): Date {
+  return new Date(
+    post.publishedAt.includes("T")
+      ? post.publishedAt
+      : `${post.publishedAt}T00:00:00Z`,
+  );
+}
 
+export function isPublished(post: BlogPost, now: Date = new Date()): boolean {
+  return publishDate(post).getTime() <= now.getTime();
+}
+
+/**
+ * Live posts, newest first.
+ *
+ * Deliberately a function, not a module-level constant: a constant would be
+ * evaluated once when the module is first loaded and a scheduled post would
+ * stay hidden until the next deploy. Called per render, it goes live on its
+ * own — see the `revalidate` exports on the blog routes.
+ */
+export function getPublishedPosts(now: Date = new Date()): BlogPost[] {
+  return blogPosts
+    .filter((post) => isPublished(post, now))
+    .sort((a, b) => publishDate(b).getTime() - publishDate(a).getTime());
+}
+
+/** Includes scheduled posts — callers must check isPublished() themselves. */
 export function getBlogPost(slug: string): BlogPost | undefined {
   return blogPosts.find((post) => post.slug === slug);
 }
@@ -705,7 +961,8 @@ export function getTableOfContents(post: BlogPost): TocItem[] {
 }
 
 export function formatBlogDate(iso: string): string {
-  return new Date(`${iso}T00:00:00Z`).toLocaleDateString("en-US", {
+  const d = new Date(iso.includes("T") ? iso : `${iso}T00:00:00Z`);
+  return d.toLocaleDateString("en-US", {
     month: "long",
     day: "numeric",
     year: "numeric",

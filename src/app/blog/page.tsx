@@ -1,8 +1,15 @@
 import type { Metadata } from "next";
 
 import { absoluteUrl, SITE_URL } from "@/lib/site";
-import { sortedBlogPosts } from "@/lib/blog";
+import { getPublishedPosts } from "@/lib/blog";
 import BlogClient from "./BlogClient";
+
+/**
+ * Re-render every 5 minutes so a scheduled post appears without a deploy.
+ * Without this the page is built once and a future-dated post would stay
+ * hidden until someone happened to redeploy.
+ */
+export const revalidate = 300;
 
 const title = "Dental Blog & Practice News | Hampton Family Dental";
 const description =
@@ -23,6 +30,8 @@ export const metadata: Metadata = {
 };
 
 export default function BlogPage() {
+  const posts = getPublishedPosts();
+
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -51,7 +60,7 @@ export default function BlogPage() {
       "@type": "Organization",
       name: "Hampton Family Dental",
     },
-    blogPost: sortedBlogPosts.map((post) => ({
+    blogPost: posts.map((post) => ({
       "@type": "BlogPosting",
       headline: post.title,
       url: absoluteUrl(`/blog/${post.slug}`),
@@ -74,7 +83,7 @@ export default function BlogPage() {
           __html: JSON.stringify(blogSchema).replace(/</g, "\\u003c"),
         }}
       />
-      <BlogClient posts={sortedBlogPosts} />
+      <BlogClient posts={posts} />
     </>
   );
 }
