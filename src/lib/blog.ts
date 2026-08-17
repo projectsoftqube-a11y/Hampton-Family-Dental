@@ -1142,6 +1142,222 @@ export const blogPosts: BlogPost[] = [
       { ...dentistSchema, medicalSpecialty: "Dentistry" },
     ],
   },
+
+  {
+    slug: "dental-membership-plan-no-insurance",
+    title: "No Dental Insurance? How Our Membership Plan Saves You Money",
+    metaTitle: "No Dental Insurance? Our Membership Plan | Southampton PA",
+    metaDescription:
+      "No dental insurance? Hampton Family Dental's membership plan is $288/year — cleanings, exams, and X-rays included, plus 15% off other care. No deductibles or waiting periods. Southampton, PA.",
+    excerpt:
+      "A membership plan is not insurance — it's a flat yearly fee paid straight to the dentist. Here's what our $288 plan covers, how it compares with insurance, and when you should keep the insurance you already have.",
+    category: "Costs & Financing",
+    publishedAt: "2026-08-17",
+    readTime: "6 min read",
+    reviewedBy: "Dr. Jeffrey Brenner, DMD",
+    lastReviewedLabel: "Last reviewed August 2026",
+    hero: {
+      src: "/images/blog/dental-membership-plan-no-insurance.png",
+      alt: "Hampton Family Dental membership plan for patients without dental insurance in Southampton, PA",
+      width: 1536,
+      height: 1024,
+    },
+    answerBox: {
+      text: "If you don't have dental insurance, a dental membership plan is usually the simplest way to save. At Hampton Family Dental in Southampton, PA, our plan is $288 a year and includes your cleanings, exams, and routine X-rays, plus 15% off other treatment — with no deductibles, no annual maximum, no waiting periods, and no claims. It's not insurance; it's a direct plan with our office.",
+    },
+    keyTakeaways: [
+      {
+        text: "A membership plan is a flat yearly fee paid to the dentist — not insurance, and no claims or paperwork.",
+      },
+      {
+        text: "Hampton's plan is $288/year: cleanings, exams, and routine X-rays included, plus 15% off other treatment.",
+      },
+      {
+        text: "No deductibles, no annual maximums, and no waiting periods — your benefits start right away.",
+      },
+      {
+        text: "Honest rule: if your employer pays for insurance, keep it; if you pay yourself or have none, a plan usually wins.",
+      },
+      {
+        text: "For most people, the plan pays for itself in two cleanings and an exam — the rest is savings.",
+      },
+    ],
+    sections: [
+      { type: "heading", level: 2, text: "What is a dental membership plan?" },
+      {
+        type: "paragraph",
+        text: "A dental membership plan is a flat yearly fee you pay directly to the dentist for included care plus discounts — and it's not insurance. There's no insurance company in the middle, no monthly premium, and no claims to file. You join, and your benefits start right away. Think of it as a simple, transparent deal between you and your dentist: a set price for routine care, and a set discount on everything else.",
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "What's included in the Hampton Family Dental plan?",
+      },
+      {
+        type: "paragraph",
+        text: "Our Hampton Family Dental membership plan is $288 a year for an adult. Here's what you get:",
+        links: [
+          {
+            text: "Hampton Family Dental membership plan",
+            href: "/specials",
+          },
+        ],
+      },
+      {
+        type: "list",
+        variant: "check",
+        items: [
+          { text: "Your routine cleanings for the year." },
+          { text: "Your exams." },
+          { text: "Your routine X-rays." },
+          { text: "15% off other treatment — fillings, crowns, and more." },
+          {
+            text: "No deductibles, no annual maximum, no waiting periods, and no claim forms.",
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Because there's no annual cap, the plan never “runs out” the way insurance does — the 15% savings keeps working no matter how much care you need. See routine cleanings for what preventive visits cover.",
+        links: [
+          {
+            text: "routine cleanings",
+            href: "/general-dentistry/oral-hygiene",
+          },
+        ],
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "Membership plan vs. dental insurance: which saves you more?",
+      },
+      {
+        type: "paragraph",
+        text: "The difference is simple: insurance is a third-party product with premiums, a deductible, and an annual cap; a membership plan is a direct deal with your dentist. Here's how they compare:",
+      },
+      {
+        type: "table",
+        columns: ["", "Membership plan", "Dental insurance"],
+        rows: [
+          ["Cost", "One yearly fee ($288)", "Monthly premiums"],
+          ["Deductible", "None", "Usually yes"],
+          ["Annual maximum", "None", "Often $1,000 – $1,500"],
+          ["Waiting periods", "None", "Often on major work"],
+          ["Claims / paperwork", "None", "Yes"],
+          [
+            "Starts working",
+            "Right away",
+            "After enrollment / waiting periods",
+          ],
+        ],
+        caption: "Membership plan vs. dental insurance, side by side.",
+      },
+      {
+        type: "image",
+        src: "/images/blog/membership-plan-vs-dental-insurance.png",
+        alt: "Comparison graphic — the membership plan has one yearly fee, no deductible, no maximums, no waiting periods and no claims, while dental insurance has monthly premiums, a deductible, an annual maximum, possible waiting periods and claim forms.",
+        caption: "Membership plan vs. insurance in one glance.",
+        width: 1536,
+        height: 1024,
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "When to keep your insurance instead",
+      },
+      {
+        type: "paragraph",
+        text: "We'll be straight with you: if your employer pays for your dental insurance, keep it and use it — coverage someone else pays for is hard to beat. A membership plan makes the most sense if you have no insurance, or if you're paying for an individual plan yourself and feel like the premiums and caps aren't worth it. If you're not sure, we're happy to look at your insurance and tell you honestly which way comes out ahead.",
+        links: [
+          {
+            text: "look at your insurance",
+            href: "/patient-information/insurance-and-payment",
+          },
+        ],
+      },
+
+      { type: "heading", level: 2, text: "How much can you actually save?" },
+      {
+        type: "paragraph",
+        text: "For most healthy adults, the plan pays for itself in two cleanings and an exam — and everything after that is savings. If you need a filling or a crown during the year, the 15% discount adds up quickly. The chart below shows a typical year of routine care compared with paying per visit.",
+      },
+      {
+        type: "image",
+        src: "/images/blog/a-year-of-routine-care-membership-vs-per-visit.png",
+        alt: "Bar chart comparing a year of routine dental care paying per visit without insurance (about $770) versus the $288 Hampton Family Dental membership plan, which includes cleanings, exams, and routine X-rays. Illustrative estimate; per-visit costs vary.",
+        caption:
+          "A year of routine care: membership vs. paying per visit. Illustrative estimate — per-visit costs vary.",
+        width: 1065,
+        height: 570,
+      },
+
+      { type: "heading", level: 2, text: "Who is the plan best for?" },
+      {
+        type: "paragraph",
+        text: "The plan is a great fit if you're uninsured, between jobs, self-employed, retired without dental benefits, or you've simply been putting off the dentist because of cost. The American Dental Association recommends keeping up with regular dental visits — and catching a problem early is far cheaper than treating one that was left to grow. A predictable yearly cost makes it easier to actually come in. If you're in pain right now and uninsured, our $69 emergency exam offer is an easy way to get seen without a big bill.",
+        links: [
+          {
+            text: "American Dental Association",
+            href: "https://www.mouthhealthy.org/all-topics-a-z/oral-health",
+            external: true,
+          },
+          { text: "$69 emergency exam offer", href: "/specials" },
+        ],
+      },
+
+      { type: "heading", level: 2, text: "How to join in Southampton" },
+      {
+        type: "paragraph",
+        text: "Joining takes one phone call. Call us at (215) 357-2224 or see full plan details and join. If you're not a patient yet, that's no problem — new patients are welcome, and we'll get you set up the same day you come in.",
+        links: [
+          { text: "(215) 357-2224", href: "tel:+12153572224" },
+          { text: "see full plan details and join", href: "/specials" },
+          {
+            text: "new patients are welcome",
+            href: "/patient-information/new-patients",
+          },
+        ],
+      },
+      {
+        type: "cta",
+        heading: "Ready to save on dental care?",
+        text: "Call us or join the plan online — your benefits start the same day, with no waiting periods.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Is a dental membership plan the same as insurance?",
+        a: "No. A dental membership plan is not insurance. It's a direct agreement with the dental office: you pay one annual fee, get included preventive care, and receive a discount on other treatment, with no claims or paperwork.",
+      },
+      {
+        q: "How much is the Hampton Family Dental membership plan?",
+        a: "The plan is $288 a year and includes your cleanings, exams, and routine X-rays, plus 15% off other treatment, with no deductibles, annual maximums, or waiting periods.",
+      },
+      {
+        q: "Is a membership plan worth it if I have no insurance?",
+        a: "For most uninsured patients, yes. You get predictable yearly costs for routine care and savings on other treatment. For most healthy adults, the plan pays for itself in two cleanings and an exam.",
+      },
+      {
+        q: "Can I use the membership plan with my dental insurance?",
+        a: "The membership plan is designed for patients without insurance at our office. If you have dental insurance, we bill your insurance and you pay any remaining balance.",
+      },
+    ],
+    extraSchema: [
+      {
+        ...dentistSchema,
+        makesOffer: {
+          "@type": "Offer",
+          name: "Dental Membership Plan (in-house savings plan — not insurance)",
+          price: "288.00",
+          priceCurrency: "USD",
+          description:
+            "Annual in-house plan: cleanings, exams, and routine X-rays included, plus 15% off other treatment. No deductibles, annual maximums, waiting periods, or claims.",
+        },
+      },
+    ],
+  },
 ];
 
 /** Parses either a plain date or a full ISO timestamp with offset. */
