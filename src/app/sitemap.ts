@@ -2,8 +2,19 @@ import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/site";
 import { getPublishedPosts } from "@/lib/blog";
 
-/** Keeps scheduled posts out of the sitemap until they are actually live. */
-export const revalidate = 300;
+/**
+ * Computed per request, not at build time.
+ *
+ * `export const revalidate` does not opt a metadata route into ISR the way it
+ * does a page: sitemap.xml was still emitted as a build-time static file, so a
+ * post scheduled after the last deploy never reached the sitemap. Confirmed in
+ * production — /blog carried X-Nextjs-Stale-Time and picked the post up, while
+ * /sitemap.xml had no such header and kept serving the build-time snapshot.
+ *
+ * A sitemap is cheap to render and is only fetched by crawlers, so computing
+ * it on demand costs nothing and is always correct.
+ */
+export const dynamic = "force-dynamic";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [

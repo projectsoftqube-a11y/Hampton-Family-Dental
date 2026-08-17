@@ -131,7 +131,7 @@ export default function OurStoryClient() {
                   NEW CHAPTER
                 </h2>
                 <p className="text-navy/80 text-sm md:text-base leading-relaxed">
-                  As our practice looks toward the future of dentistry, we are excited to welcome Dr. Keyur Dudhat to our team. Dr. Dudhat shares Dr. Brenner's patient-first philosophy, emphasizing conservative, compassionate care and building lasting relationships with every patient.
+                  As our practice looks toward the future of dentistry, we are excited to welcome Dr. Keyur Dudhat to our team. Dr. Dudhat shares Dr. Brenner&apos;s patient-first philosophy, emphasizing conservative, compassionate care and building lasting relationships with every patient.
                 </p>
                 <p className="text-navy/80 text-sm md:text-base leading-relaxed">
                   As Dr. Dudhat joins the practice, we are also introducing our new name, Hampton Family Dental. While our name is changing, everything you know and trust remains the same—including our convenient location at 283 Second Street Pike, Suite 140, and the dedicated clinical team that has cared for generations of local families.

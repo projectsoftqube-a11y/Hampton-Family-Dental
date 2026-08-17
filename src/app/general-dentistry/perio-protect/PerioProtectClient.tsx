@@ -178,7 +178,7 @@ export default function PerioProtectClient() {
                 <thead>
                   <tr className="bg-navy text-white text-[11px] font-bold uppercase tracking-wider">
                     <th className="px-6 py-4 w-1/4">Stage</th>
-                    <th className="px-6 py-4 w-5/12">What's happening</th>
+                    <th className="px-6 py-4 w-5/12">What&apos;s happening</th>
                     <th className="px-6 py-4 w-1/3">Signs</th>
                   </tr>
                 </thead>

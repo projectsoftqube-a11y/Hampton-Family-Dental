@@ -426,7 +426,7 @@ export default function ToothExtractionClient() {
             <div className="bg-red-50/20 border border-red-500/10 p-6 md:p-8 rounded-[2rem] space-y-4 shadow-sm">
               <h4 className="font-heading text-red-900 text-lg font-bold flex items-center gap-2">
                 <AlertTriangle className="w-5 h-5 text-red-600" />
-                Don't (First 48 Hours)
+                Don&apos;t (First 48 Hours)
               </h4>
               <ul className="space-y-3 text-xs md:text-sm text-red-950 font-medium">
                 {donts.map((item, idx) => (

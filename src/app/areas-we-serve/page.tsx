@@ -7,11 +7,24 @@ import Breadcrumbs from "@/components/shared/Breadcrumbs";
 import CTABlock from "@/components/shared/CTABlock";
 import { serviceAreas } from "@/lib/areas";
 import { practiceInfo } from "@/lib/navigation";
+import { absoluteUrl } from "@/lib/site";
+
+const title = "Areas We Serve | Hampton Family Dental";
+const description =
+  "Hampton Family Dental serves patients from Southampton, Richboro, Warminster, Newtown, Holland, Feasterville, and Huntingdon Valley, PA.";
 
 export const metadata: Metadata = {
-  title: "Areas We Serve | Hampton Family Dental",
-  description:
-    "Hampton Family Dental serves patients from Southampton, Richboro, Warminster, Newtown, Holland, Feasterville, and Huntingdon Valley, PA.",
+  title,
+  description,
+  alternates: {
+    canonical: absoluteUrl("/areas-we-serve"),
+  },
+  openGraph: {
+    title,
+    description,
+    url: absoluteUrl("/areas-we-serve"),
+    type: "website",
+  },
 };
 
 export default function AreasWeServePage() {

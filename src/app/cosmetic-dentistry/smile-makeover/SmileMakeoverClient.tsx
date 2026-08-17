@@ -136,7 +136,7 @@ export default function SmileMakeoverClient() {
                 A smile makeover is not a single treatment; it is a customized dental treatment plan designed to address all your cosmetic goals. Dr. Brenner and Dr. Dudhat evaluate your teeth alignment, spacing, color, shape, and gumline symmetry. Your plan may combine teeth whitening, porcelain veneers, dental implants, Invisalign, and bonding. Using advanced digital diagnostics, we plan the timeline and map out your transformation.
               </p>
               <p className="text-navy/70 text-sm md:text-base leading-relaxed">
-                We believe that cosmetic dentistry is a blend of science and art. A smile makeover doesn't just improve how your teeth look — it is structured to support your overall oral health, correct bite misalignments, and prevent future dental wear. We match the proportions of your teeth to your lip line and facial shape, giving you a beautiful, balanced, and premium result.
+                We believe that cosmetic dentistry is a blend of science and art. A smile makeover doesn&apos;t just improve how your teeth look — it is structured to support your overall oral health, correct bite misalignments, and prevent future dental wear. We match the proportions of your teeth to your lip line and facial shape, giving you a beautiful, balanced, and premium result.
               </p>
               <p className="text-navy/70 text-sm md:text-base leading-relaxed">
                 Whether you want to fix minor chips or undergo a full cosmetic rehabilitation, we design a path forward that matches your goals and budget. We use state-of-the-art materials that mimic natural light reflection, so your new smile looks radiant, healthy, and authentic to you.
@@ -170,7 +170,7 @@ export default function SmileMakeoverClient() {
               <span className="text-primary text-[10px] tracking-wider uppercase font-bold">Custom Combinations</span>
             </div>
             <h2 className="font-heading text-navy text-2xl md:text-3xl font-bold leading-tight">
-              What's Included in a Smile Makeover
+              What&apos;s Included in a Smile Makeover
             </h2>
             <p className="text-navy/70 text-sm md:text-base leading-relaxed">
               No two smile makeovers are the same. After listening to your goals, we design a personalized plan that may combine any of these treatments:
@@ -250,7 +250,7 @@ export default function SmileMakeoverClient() {
               It starts with a consultation where we listen to what you want to change and examine your teeth, gums, and bite. We then design your custom plan — often with a digital preview so you can see the result before we begin — and walk you through the timeline and cost. From there, we complete your treatments in a comfortable, coordinated sequence and reveal your new smile.
             </p>
             <p className="text-navy/70 text-sm md:text-base leading-relaxed">
-              We understand that choosing a smile makeover is a big decision. That's why we utilize advanced digital imaging and dental mock-ups to let you preview and participate in your smile design. You can select your preferred shade, test your bite alignment, and coordinate treatment phases around your calendar.
+              We understand that choosing a smile makeover is a big decision. That&apos;s why we utilize advanced digital imaging and dental mock-ups to let you preview and participate in your smile design. You can select your preferred shade, test your bite alignment, and coordinate treatment phases around your calendar.
             </p>
           </div>
         </div>
@@ -374,7 +374,7 @@ export default function SmileMakeoverClient() {
                 How Much Does a Smile Makeover Cost in Southampton?
               </h2>
               <p className="text-white/70 text-sm md:text-base leading-relaxed">
-                A smile makeover is fully customized, so cost depends on which treatments your plan includes — anything from a simple whitening-and-bonding refresh to a full veneer transformation. At your consultation we design your plan and give you a clear, itemized estimate. We offer CareCredit financing and flexible options so you can phase treatment over time if you'd like.
+                A smile makeover is fully customized, so cost depends on which treatments your plan includes — anything from a simple whitening-and-bonding refresh to a full veneer transformation. At your consultation we design your plan and give you a clear, itemized estimate. We offer CareCredit financing and flexible options so you can phase treatment over time if you&apos;d like.
               </p>
               <p className="text-white/70 text-sm md:text-base leading-relaxed">
                 We believe that financing should never stand between you and your dream smile. To help make your transformation manageable, we accept low-interest payments through leading third-party lenders. For more details on monthly payments, visit our <Link href="/patient-information/financing-options" className="font-semibold text-primary-light underline decoration-primary/30 underline-offset-4 hover:text-white">financing options page</Link>.

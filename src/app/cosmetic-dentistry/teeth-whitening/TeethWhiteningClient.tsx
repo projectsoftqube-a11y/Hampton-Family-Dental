@@ -134,7 +134,7 @@ export default function TeethWhiteningClient() {
                 Over-the-counter whitening strips and toothpastes can take weeks to show results and often cause severe tooth sensitivity. Our professional teeth whitening treatments utilize a concentrated, clinically safe bleaching gel activated by a specialized curing light. This process penetrates deep into enamel to break up stains instantly, while our custom barrier gels protect your gums from irritation.
               </p>
               <p className="text-navy/70 text-sm md:text-base leading-relaxed">
-                As we age, our teeth naturally darken and pick up stains from our favorite foods and beverages. A dull or discolored smile can make you look older and feel hesitant to smile openly. Professional teeth whitening is one of the fastest, most effective ways to restore your teeth's natural luster and inject a massive dose of confidence back into your daily interactions.
+                As we age, our teeth naturally darken and pick up stains from our favorite foods and beverages. A dull or discolored smile can make you look older and feel hesitant to smile openly. Professional teeth whitening is one of the fastest, most effective ways to restore your teeth&apos;s natural luster and inject a massive dose of confidence back into your daily interactions.
               </p>
               <p className="text-navy/70 text-sm md:text-base leading-relaxed">
                 At Hampton Family Dental, we offer both in-office whitening and custom take-home whitening trays. If you have permanent restorations like <Link href="/cosmetic-dentistry/porcelain-veneers" className="font-semibold text-primary underline decoration-primary/30 underline-offset-4 hover:text-primary-dark">porcelain veneers</Link> or dental crowns, we will customize your treatment plan so that your natural teeth blend seamlessly with your existing dental work.
@@ -192,7 +192,7 @@ export default function TeethWhiteningClient() {
               In-Office vs. Take-Home Whitening
             </h2>
             <p className="text-navy/70 text-sm md:text-base leading-relaxed">
-              We offer two professional options. In-office whitening brightens your smile several shades in about an hour — perfect before an event. Custom take-home trays let you whiten gradually at home on your schedule with professional-strength gel. Many patients combine both for the best, longest-lasting result. We'll help you pick based on your timeline and goals.
+              We offer two professional options. In-office whitening brightens your smile several shades in about an hour — perfect before an event. Custom take-home trays let you whiten gradually at home on your schedule with professional-strength gel. Many patients combine both for the best, longest-lasting result. We&apos;ll help you pick based on your timeline and goals.
             </p>
 
             <div className="grid md:grid-cols-2 gap-6 pt-6 text-left">
@@ -331,7 +331,7 @@ export default function TeethWhiteningClient() {
                 How Much Does Professional Teeth Whitening Cost in Southampton?
               </h2>
               <p className="text-white/70 text-sm md:text-base leading-relaxed">
-                Professional whitening costs more than a drugstore kit but delivers dramatically better, longer-lasting, and safer results. Cost depends on whether you choose in-office or custom take-home trays. We give you a clear price upfront, it's one of our most affordable cosmetic options, and we accept CareCredit.
+                Professional whitening costs more than a drugstore kit but delivers dramatically better, longer-lasting, and safer results. Cost depends on whether you choose in-office or custom take-home trays. We give you a clear price upfront, it&apos;s one of our most affordable cosmetic options, and we accept CareCredit.
               </p>
               <p className="text-white/70 text-sm md:text-base leading-relaxed">
                 Because whitening is an elective cosmetic service, it is not covered by insurance. However, we keep our prices competitive and offer periodic seasonal discounts. We also accept monthly financing through CareCredit, making it easy to fit into your budget. Learn more about our cosmetic payment options on our <Link href="/patient-information/financing-options" className="font-semibold text-primary-light underline decoration-primary/30 underline-offset-4 hover:text-white">financing page</Link> or visit our <Link href="/specials" className="font-semibold text-primary-light underline decoration-primary/30 underline-offset-4 hover:text-white">specials page</Link> for current deals.

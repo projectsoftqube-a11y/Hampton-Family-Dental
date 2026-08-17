@@ -334,7 +334,7 @@ export default function OralHygieneClient() {
         <div className="max-w-[1300px] mx-auto px-5 md:px-10">
           <div className="max-w-3xl mx-auto text-center mb-10 md:mb-12">
             <h2 className="font-heading text-navy text-2xl md:text-3xl lg:text-4xl font-bold leading-tight">
-              Regular Cleaning vs. Deep Cleaning — What's the Difference?
+              Regular Cleaning vs. Deep Cleaning — What&apos;s the Difference?
             </h2>
             <p className="text-navy/70 text-sm md:text-base leading-relaxed mt-4">
               Not every cleaning is the same. A{" "}

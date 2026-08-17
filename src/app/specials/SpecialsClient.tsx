@@ -160,7 +160,7 @@ export default function SpecialsClient() {
                 transition={{ duration: 0.7, delay: 0.35 }}
                 className="text-white/80 text-base md:text-lg leading-relaxed max-w-2xl"
               >
-                We believe that premium, stress-free dental care should be accessible to everyone in Southampton. Our custom-designed in-house membership plans and special introductory packages ensure your family stays healthy without the hassle, waiting periods, or limits of traditional insurance. Whether you're looking for a simple new-patient cleaning or comprehensive family coverage, we have an affordable solution.
+                We believe that premium, stress-free dental care should be accessible to everyone in Southampton. Our custom-designed in-house membership plans and special introductory packages ensure your family stays healthy without the hassle, waiting periods, or limits of traditional insurance. Whether you&apos;re looking for a simple new-patient cleaning or comprehensive family coverage, we have an affordable solution.
               </motion.p>
             </div>
           </div>
@@ -292,7 +292,7 @@ export default function SpecialsClient() {
                 In-House Dental Membership
               </h2>
               <p className="text-navy/70 text-sm leading-relaxed">
-                By becoming a member of Hampton Family Dental, you receive world-class preventive care without the headache of insurance companies. We've structured three robust plans tailored to exactly what our patients need most: Child Complete, Adult Complete, and Perio Maintenance. Every plan includes routine cleanings, comprehensive exams, x-rays, and significant discounts on all other procedures we provide. It's affordable peace of mind for your whole family's dental health.
+                By becoming a member of Hampton Family Dental, you receive world-class preventive care without the headache of insurance companies. We&apos;ve structured three robust plans tailored to exactly what our patients need most: Child Complete, Adult Complete, and Perio Maintenance. Every plan includes routine cleanings, comprehensive exams, x-rays, and significant discounts on all other procedures we provide. It&apos;s affordable peace of mind for your whole family&apos;s dental health.
               </p>
             </div>
 
@@ -374,7 +374,7 @@ export default function SpecialsClient() {
           <div className="max-w-[1000px] mx-auto px-5 md:px-10 text-center">
             <h2 className="font-heading text-2xl md:text-3xl font-bold text-navy mb-4">Flexible Financing with CareCredit</h2>
             <p className="text-navy/70 leading-relaxed mb-6 max-w-2xl mx-auto">
-              We want nothing to stand between you and a healthy, confident smile. That's why we partner with CareCredit to offer flexible financing options. CareCredit allows you to pay for your dental care over time, often with 0% interest for up to 12 months. It's easy to apply, and you'll get an immediate decision so you can start treatment without delay.
+              We want nothing to stand between you and a healthy, confident smile. That&apos;s why we partner with CareCredit to offer flexible financing options. CareCredit allows you to pay for your dental care over time, often with 0% interest for up to 12 months. It&apos;s easy to apply, and you&apos;ll get an immediate decision so you can start treatment without delay.
             </p>
             <div className="flex justify-center">
               <a href="https://www.carecredit.com" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-navy text-white text-xs font-semibold uppercase tracking-wider hover:bg-primary transition-colors">

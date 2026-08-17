@@ -213,7 +213,7 @@ export default function PorcelainVeneersClient() {
               Veneers vs. Crowns vs. Bonding
             </h2>
             <p className="text-navy/70 text-sm md:text-base leading-relaxed">
-              All three improve how teeth look, but they're different. Veneers cover the front of the tooth for a dramatic, durable smile change. Crowns cap the whole tooth when it's also damaged or weak. Bonding is the quickest, most affordable fix for small chips. We'll recommend the best option for your goals and budget.
+              All three improve how teeth look, but they&apos;re different. Veneers cover the front of the tooth for a dramatic, durable smile change. Crowns cap the whole tooth when it&apos;s also damaged or weak. Bonding is the quickest, most affordable fix for small chips. We&apos;ll recommend the best option for your goals and budget.
             </p>
 
             <div className="grid md:grid-cols-3 gap-6 pt-6 text-left">
@@ -392,7 +392,7 @@ export default function PorcelainVeneersClient() {
                 How Much Do Porcelain Veneers Cost in Southampton?
               </h2>
               <p className="text-white/70 text-sm md:text-base leading-relaxed">
-                Veneer cost depends on how many teeth you're treating and the material. Because a veneer smile is custom-designed, we give you a clear quote at your consultation. Veneers are typically a cosmetic investment not covered by insurance, but we offer low-interest financing through CareCredit to make your dream smile affordable.
+                Veneer cost depends on how many teeth you&apos;re treating and the material. Because a veneer smile is custom-designed, we give you a clear quote at your consultation. Veneers are typically a cosmetic investment not covered by insurance, but we offer low-interest financing through CareCredit to make your dream smile affordable.
               </p>
               <p className="text-white/70 text-sm md:text-base leading-relaxed">
                 At Hampton Family Dental, we want to make sure your cosmetic investments deliver maximum, long-lasting value. To help manage the cost of veneers, our patient coordinator can help set up flexible monthly payments. Be sure to check our <Link href="/patient-information/financing-options" className="font-semibold text-primary-light underline decoration-primary/30 underline-offset-4 hover:text-white">financing options page</Link> to learn how you can break your treatment down into comfortable payments.

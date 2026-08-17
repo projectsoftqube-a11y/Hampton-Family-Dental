@@ -171,7 +171,7 @@ export default function ClearCorrectClient() {
               What Clear Aligners Can Correct
             </h2>
             <p className="text-navy/70 text-sm md:text-base leading-relaxed">
-              Clear aligners gently move teeth into place over a series of custom trays. They're a great fit for crowded or overlapping teeth, gaps and spacing, and mild to moderate bite issues like overbite, underbite, and crossbite — for teens and adults who want a discreet, removable option.
+              Clear aligners gently move teeth into place over a series of custom trays. They&apos;re a great fit for crowded or overlapping teeth, gaps and spacing, and mild to moderate bite issues like overbite, underbite, and crossbite — for teens and adults who want a discreet, removable option.
             </p>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 pt-4 text-left">
@@ -213,7 +213,7 @@ export default function ClearCorrectClient() {
               ClearCorrect vs. Invisalign
             </h2>
             <p className="text-navy/70 text-sm md:text-base leading-relaxed">
-              Both ClearCorrect and Invisalign use clear, removable aligners to straighten teeth discreetly — they're more alike than different. ClearCorrect is frequently more budget-friendly, while Invisalign has a longer track record and some advanced features for complex cases. At your consultation we'll look at your smile and recommend the option that gives you the best result for your goals and budget.
+              Both ClearCorrect and Invisalign use clear, removable aligners to straighten teeth discreetly — they&apos;re more alike than different. ClearCorrect is frequently more budget-friendly, while Invisalign has a longer track record and some advanced features for complex cases. At your consultation we&apos;ll look at your smile and recommend the option that gives you the best result for your goals and budget.
             </p>
             <p className="text-navy/70 text-sm md:text-base leading-relaxed">
               ClearCorrect uses a high-performance polyurethane material that offers excellent stain resistance and clarity, often remaining clearer than other aligner brands. If you are specifically interested in Invisalign, you can read more about it on our dedicated <Link href="/cosmetic-dentistry/invisalign" className="font-semibold text-primary underline decoration-primary/30 underline-offset-4 hover:text-primary-dark">Invisalign aligners page</Link>.

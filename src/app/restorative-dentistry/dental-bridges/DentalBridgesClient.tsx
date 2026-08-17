@@ -271,7 +271,7 @@ export default function DentalBridgesClient() {
               Dental Bridge vs. Implant — Which Is Right for You?
             </h2>
             <p className="text-navy/70 text-sm md:text-base leading-relaxed">
-              Both replace missing teeth. A bridge is faster and doesn't require surgery, but relies on grinding down the neighboring teeth and doesn't prevent jawbone loss. An implant replaces the root, protects the bone, and stands alone — but takes longer and costs more upfront. We'll help you weigh speed, budget, and long-term health.
+              Both replace missing teeth. A bridge is faster and doesn&apos;t require surgery, but relies on grinding down the neighboring teeth and doesn&apos;t prevent jawbone loss. An implant replaces the root, protects the bone, and stands alone — but takes longer and costs more upfront. We&apos;ll help you weigh speed, budget, and long-term health.
             </p>
             <p className="text-navy/70 text-sm md:text-base leading-relaxed">
               For patients looking for a non-surgical option that can be completed in a few weeks, a fixed bridge is often preferred. However, if preserving the natural structure of adjacent teeth and preventing bone shrinkage is a priority, a <Link href="/restorative-dentistry/dental-implants" className="font-semibold text-primary-dark underline decoration-primary/30 underline-offset-4 hover:text-primary">dental implant</Link> represents the modern gold standard. If you have extensive tooth loss throughout the arch, you may also consider partial or full <Link href="/restorative-dentistry/dentures" className="font-semibold text-primary-dark underline decoration-primary/30 underline-offset-4 hover:text-primary">dentures</Link> as an alternative.

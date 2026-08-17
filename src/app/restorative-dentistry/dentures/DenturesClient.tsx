@@ -137,7 +137,7 @@ export default function DenturesClient() {
                 Losing teeth affects far more than your smile — it changes how you eat, speak, and even how your face looks over time. Without teeth to support your lips and cheeks, facial muscles sag and the jawbone gradually shrinks. Dentures restore all of this: natural chewing function, clear speech, a full smile, and the facial support that keeps you looking like yourself.
               </p>
               <p className="text-navy/70 text-sm md:text-base leading-relaxed">
-                At Hampton Family Dental, we craft each set of dentures from premium acrylic and porcelain materials, custom-shaded to match your natural gum color and tooth tones. Whether you need a full set, a partial, or are interested in the stability of <Link href="/restorative-dentistry/dental-implants" className="font-semibold text-primary underline decoration-primary/30 underline-offset-4 hover:text-primary-dark">implant-supported dentures</Link>, we'll design a solution that fits your lifestyle and budget.
+                At Hampton Family Dental, we craft each set of dentures from premium acrylic and porcelain materials, custom-shaded to match your natural gum color and tooth tones. Whether you need a full set, a partial, or are interested in the stability of <Link href="/restorative-dentistry/dental-implants" className="font-semibold text-primary underline decoration-primary/30 underline-offset-4 hover:text-primary-dark">implant-supported dentures</Link>, we&apos;ll design a solution that fits your lifestyle and budget.
               </p>
             </div>
 
@@ -171,7 +171,7 @@ export default function DenturesClient() {
               Types of Dentures We Offer
             </h2>
             <p className="text-navy/70 text-sm md:text-base leading-relaxed">
-              Whether you're missing a few teeth or a full arch, we'll fit you with dentures designed to look natural and feel comfortable.
+              Whether you&apos;re missing a few teeth or a full arch, we&apos;ll fit you with dentures designed to look natural and feel comfortable.
             </p>
 
             <div className="grid md:grid-cols-2 gap-6 pt-6 text-left">
@@ -184,19 +184,19 @@ export default function DenturesClient() {
               <div className="bg-white border border-navy/[0.04] p-5 rounded-2xl shadow-sm">
                 <h4 className="font-heading font-bold text-navy text-base mb-2">Partial Dentures</h4>
                 <p className="text-navy/60 text-xs md:text-sm leading-relaxed">
-                  Fill in gaps when several teeth are missing but healthy natural teeth remain. A metal or flexible framework clasps onto your existing teeth for stability, while pontics fill the spaces. A good alternative when a <Link href="/restorative-dentistry/dental-bridges" className="font-semibold text-primary underline decoration-primary/20 underline-offset-4 hover:text-primary-dark">dental bridge</Link> isn't feasible.
+                  Fill in gaps when several teeth are missing but healthy natural teeth remain. A metal or flexible framework clasps onto your existing teeth for stability, while pontics fill the spaces. A good alternative when a <Link href="/restorative-dentistry/dental-bridges" className="font-semibold text-primary underline decoration-primary/20 underline-offset-4 hover:text-primary-dark">dental bridge</Link> isn&apos;t feasible.
                 </p>
               </div>
               <div className="bg-white border border-navy/[0.04] p-5 rounded-2xl shadow-sm">
                 <h4 className="font-heading font-bold text-navy text-base mb-2">Implant-Supported Dentures</h4>
                 <p className="text-navy/60 text-xs md:text-sm leading-relaxed">
-                  Snap securely onto 2 to 4 <Link href="/restorative-dentistry/dental-implants" className="font-semibold text-primary underline decoration-primary/20 underline-offset-4 hover:text-primary-dark">dental implants</Link> placed in the jawbone — no slipping, no adhesives, much more stable, and they help preserve jawbone density. Often called "permanent dentures."
+                  Snap securely onto 2 to 4 <Link href="/restorative-dentistry/dental-implants" className="font-semibold text-primary underline decoration-primary/20 underline-offset-4 hover:text-primary-dark">dental implants</Link> placed in the jawbone — no slipping, no adhesives, much more stable, and they help preserve jawbone density. Often called &quot;permanent dentures.&quot;
                 </p>
               </div>
               <div className="bg-white border border-navy/[0.04] p-5 rounded-2xl shadow-sm">
                 <h4 className="font-heading font-bold text-navy text-base mb-2">Immediate Dentures</h4>
                 <p className="text-navy/60 text-xs md:text-sm leading-relaxed">
-                  Placed the same day your teeth are <Link href="/general-dentistry/tooth-extraction" className="font-semibold text-primary underline decoration-primary/20 underline-offset-4 hover:text-primary-dark">extracted</Link>, so you're never without teeth. They serve as a temporary solution while your gums heal, then are relined or replaced with a permanent set for the best long-term fit.
+                  Placed the same day your teeth are <Link href="/general-dentistry/tooth-extraction" className="font-semibold text-primary underline decoration-primary/20 underline-offset-4 hover:text-primary-dark">extracted</Link>, so you&apos;re never without teeth. They serve as a temporary solution while your gums heal, then are relined or replaced with a permanent set for the best long-term fit.
                 </p>
               </div>
             </div>
@@ -343,7 +343,7 @@ export default function DenturesClient() {
                 How Much Do Dentures Cost in Southampton?
               </h2>
               <p className="text-white/70 text-sm md:text-base leading-relaxed">
-                Denture cost depends on the type — full vs partial, standard vs premium materials, and whether they're implant-supported. We give you a clear estimate first. Many dental plans cover a portion of dentures, we accept CareCredit, and Hampton Dental Wellness members get 15% off.
+                Denture cost depends on the type — full vs partial, standard vs premium materials, and whether they&apos;re implant-supported. We give you a clear estimate first. Many dental plans cover a portion of dentures, we accept CareCredit, and Hampton Dental Wellness members get 15% off.
               </p>
               <p className="text-white/70 text-sm md:text-base leading-relaxed">
                 Dentures are one of the most cost-effective ways to replace multiple missing teeth. Compared to individual implants for every tooth, a well-fitting denture restores your entire arch at a fraction of the cost. We work closely with insurance providers to maximize your benefits, and offer flexible payment plans for patients without coverage. Visit our <Link href="/specials" className="font-semibold text-primary-light underline decoration-primary/30 underline-offset-4 hover:text-white">specials and in-house plans</Link> for current savings.

@@ -171,7 +171,7 @@ export default function DentalBondingClient() {
               What Dental Bonding Can Fix
             </h2>
             <p className="text-navy/70 text-sm md:text-base leading-relaxed">
-              Bonding uses tooth-colored composite resin, shaped and polished to blend right in — a fast, conservative way to improve your smile. It's ideal for:
+              Bonding uses tooth-colored composite resin, shaped and polished to blend right in — a fast, conservative way to improve your smile. It&apos;s ideal for:
             </p>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 pt-4 text-left">
@@ -213,7 +213,7 @@ export default function DentalBondingClient() {
               Dental Bonding vs. Veneers
             </h2>
             <p className="text-navy/70 text-sm md:text-base leading-relaxed">
-              Both improve your smile, but they suit different goals. Bonding is faster, more affordable, and reversible — perfect for small fixes in one visit. Veneers cost more and are permanent but offer a more dramatic, longer-lasting transformation for a full smile makeover. We'll recommend the best fit for what you want to change and your budget.
+              Both improve your smile, but they suit different goals. Bonding is faster, more affordable, and reversible — perfect for small fixes in one visit. Veneers cost more and are permanent but offer a more dramatic, longer-lasting transformation for a full smile makeover. We&apos;ll recommend the best fit for what you want to change and your budget.
             </p>
             <p className="text-navy/70 text-sm md:text-base leading-relaxed">
               If you have multiple teeth that are heavily stained, crooked, or worn down, porcelain veneers will provide a stronger, highly stain-resistant, and more uniform appearance that lasts up to 15 years. For isolated repairs or minor adjustments on a budget, dental bonding is the ideal starting choice. Let us help you map out your goals with a comprehensive <Link href="/cosmetic-dentistry/smile-makeover" className="font-semibold text-primary underline decoration-primary/30 underline-offset-4 hover:text-primary-dark">smile makeover consultation</Link>.

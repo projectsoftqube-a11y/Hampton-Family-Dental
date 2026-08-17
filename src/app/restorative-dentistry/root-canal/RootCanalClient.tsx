@@ -191,7 +191,7 @@ export default function RootCanalClient() {
               ))}
               <div className="bg-primary/5 border border-primary/15 p-5 rounded-2xl flex flex-col justify-between">
                 <div className="space-y-2">
-                  <h4 className="font-heading font-bold text-primary-dark text-base">Don't Wait — Act Early</h4>
+                  <h4 className="font-heading font-bold text-primary-dark text-base">Don&apos;t Wait — Act Early</h4>
                   <p className="text-navy/75 text-xs md:text-sm leading-relaxed">
                     The sooner you treat a tooth infection, the simpler and less expensive the solution. A small infection caught early may only need a root canal, but left untreated it can lead to an abscess requiring <Link href="/general-dentistry/tooth-extraction" className="font-semibold text-primary underline decoration-primary/20 underline-offset-4 hover:text-primary-dark">tooth extraction</Link>.
                   </p>
@@ -214,7 +214,7 @@ export default function RootCanalClient() {
               Does a Root Canal Hurt? What to Expect
             </h2>
             <p className="text-navy/70 text-sm md:text-base leading-relaxed">
-              Modern root canals have a bad reputation they no longer deserve. The procedure relieves the pain of an infected tooth — it doesn't cause it. We fully numb the tooth, so the treatment feels about like getting a filling. Afterward you may have mild soreness for a day or two, easily managed with over-the-counter pain relievers. Most teeth are then protected with a crown to restore full strength.
+              Modern root canals have a bad reputation they no longer deserve. The procedure relieves the pain of an infected tooth — it doesn&apos;t cause it. We fully numb the tooth, so the treatment feels about like getting a filling. Afterward you may have mild soreness for a day or two, easily managed with over-the-counter pain relievers. Most teeth are then protected with a crown to restore full strength.
             </p>
             <p className="text-navy/70 text-sm md:text-base leading-relaxed">
               Our team uses advanced rotary instruments and electronic apex locators to clean and shape the canals with extreme precision, reducing treatment time and post-operative discomfort. If you experience dental anxiety, we offer a calm, supportive environment and will explain every step before we begin.

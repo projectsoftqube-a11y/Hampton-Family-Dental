@@ -23,6 +23,9 @@ export const metadata: Metadata = {
     "emergency dentist southampton",
     "invisalign southampton",
   ],
+  alternates: {
+    canonical: SITE_URL,
+  },
   openGraph: {
     title: "Family Dentist in Southampton, PA | Hampton Family Dental",
     description:
