@@ -230,7 +230,7 @@ export default function CTABanner() {
                     letterSpacing: "-0.02em",
                   }}
                 >
-                  $69 Emergency{" "}
+                  $59 Emergency{" "}
                   <span className="italic font-normal bg-gradient-to-r from-primary to-primary-dark bg-clip-text text-transparent">
                     Visit
                   </span>
@@ -255,7 +255,7 @@ export default function CTABanner() {
                       Your Price
                     </p>
                     <p className="font-heading text-primary-dark text-lg font-bold leading-none mt-0.5">
-                      $69
+                      $59
                     </p>
                   </div>
                 </div>

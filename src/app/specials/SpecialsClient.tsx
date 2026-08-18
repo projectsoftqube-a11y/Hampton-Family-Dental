@@ -17,11 +17,11 @@ export default function SpecialsClient() {
   const specials = [
     {
       code: "SPECIAL-001",
-      title: "$69 Emergency Visit",
+      title: "$59 Emergency Visit",
       subtitle: "Relief when you need it",
       desc: "Don't let dental pain wait. Our emergency promotion includes a focused exam and necessary X-rays to diagnose the issue quickly.",
       value: "$150",
-      price: "$69",
+      price: "$59",
       features: [
         "Limited Emergency Exam",
         "Diagnostic X-Rays",

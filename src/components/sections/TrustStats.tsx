@@ -240,7 +240,7 @@ export default function TrustStats() {
 
           <div className="mt-6 md:mt-0 flex flex-col items-center md:items-end relative z-10 shrink-0 border-t md:border-t-0 md:border-l border-navy/5 pt-6 md:pt-0 md:pl-8 md:ml-4 w-full md:w-auto">
             <div className="flex items-baseline gap-1 mb-4">
-              <span className="font-heading text-4xl md:text-5xl font-bold text-navy">$69</span>
+              <span className="font-heading text-4xl md:text-5xl font-bold text-navy">$59</span>
             </div>
             <Link
               href="/contact"

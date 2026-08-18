@@ -62,8 +62,44 @@ export default function SmoothScrollProvider({ children }: { children: ReactNode
       "(prefers-reduced-motion: reduce)"
     ).matches;
 
-    if (prefersReduced) {
-      return () => document.removeEventListener("click", handleAnchorClick);
+    /*
+      ─── Skip Lenis on Apple devices ───
+      Lenis replaces native scrolling with a JS rAF loop that eases each
+      gesture over ~1.2s. On a mouse wheel that smooths out notchy jumps and
+      feels good. On Apple hardware it is a downgrade: macOS and iOS already
+      do inertial scrolling in the compositor — off the main thread, at up to
+      120Hz on ProMotion. Re-driving that from JS adds easing lag on top of
+      the trackpad's own momentum, so the page keeps drifting after the
+      fingers lift and any main-thread work shows up as scroll stutter. That
+      is the "heavy / slow" feel Mac users report.
+
+      Detection prefers userAgentData.platform (navigator.platform is
+      deprecated) and falls back to the UA string. Matching "Macintosh" covers
+      both real Macs and iPadOS 13+, which impersonates one with a desktop UA.
+
+      Falls through to the same native-scroll path as prefers-reduced-motion,
+      so hash anchors keep working via scrollIntoView + the CSS
+      scroll-padding-top offset.
+    */
+    const uaPlatform =
+      (navigator as Navigator & { userAgentData?: { platform?: string } })
+        .userAgentData?.platform ?? "";
+    const isApple =
+      /mac|ios/i.test(uaPlatform) ||
+      /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+      /Macintosh/.test(navigator.userAgent);
+
+    if (prefersReduced || isApple) {
+      // Hand anchor scrolling to the browser's own smooth scroll. Only for the
+      // Apple path — reduced-motion users asked for less movement, so they
+      // keep the instant jump.
+      if (isApple && !prefersReduced) {
+        document.documentElement.classList.add("native-smooth-scroll");
+      }
+      return () => {
+        document.removeEventListener("click", handleAnchorClick);
+        document.documentElement.classList.remove("native-smooth-scroll");
+      };
     }
 
     const lenis = new Lenis({

@@ -158,7 +158,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "5 min read",
     reviewedBy: "Dr. Jeffrey Brenner, DMD",
     hero: {
-      src: "/images/blog/brenner-dental-group-is-now-hampton-family-dental.png",
+      src: "/images/blog/brenner-dental-group-is-now-hampton-family-dental.webp",
       alt: "Hampton Family Dental office exterior in Southampton PA with formerly Brenner Dental Group ribbon",
       width: 1536,
       height: 1024,
@@ -181,8 +181,8 @@ export const blogPosts: BlogPost[] = [
         text: "The new website is hamptonfamilydentist.com — update your bookmark.",
       },
       {
-        text: "You don't need to do anything. New patients are welcome, and there's a $69 emergency exam offer.",
-        links: [{ text: "$69 emergency exam offer", href: "/specials" }],
+        text: "You don't need to do anything. New patients are welcome, and there's a $59 emergency exam offer.",
+        links: [{ text: "$59 emergency exam offer", href: "/specials" }],
       },
     ],
     sections: [
@@ -244,7 +244,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "image",
-        src: "/images/blog/what-stays-the-same-vs-whats-new.png",
+        src: "/images/blog/what-stays-the-same-vs-whats-new.webp",
         alt: "Chart showing that location, phone, Dr. Brenner, and patient records stay the same at Hampton Family Dental, while the name, website, a second dentist, and expanded services are new.",
         caption: "What stays exactly the same vs. what's new.",
         width: 1065,
@@ -302,7 +302,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "image",
-        src: "/images/blog/the-rebrand-timeline.png",
+        src: "/images/blog/the-rebrand-timeline.webp",
         alt: "Timeline from Brenner Dental Group founded 1995, to the 2026 rename, to the new Hampton Family Dental website, to the same team with expanded care.",
         caption: "The rebrand timeline.",
         width: 1059,
@@ -367,7 +367,7 @@ export const blogPosts: BlogPost[] = [
     reviewedBy: "Dr. Keyur Dudhat, DMD",
     lastReviewedLabel: "Last reviewed August 2026",
     hero: {
-      src: "/images/blog/how-much-do-dental-implants-cost.png",
+      src: "/images/blog/how-much-do-dental-implants-cost.webp",
       alt: "Dentist explaining dental implant costs to a patient at Hampton Family Dental in Southampton PA",
       width: 1536,
       height: 1024,
@@ -442,7 +442,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "image",
-        src: "/images/blog/what-makes-up-the-price-of-one-dental-implant.png",
+        src: "/images/blog/what-makes-up-the-price-of-one-dental-implant.webp",
         alt: "Bar chart breaking a single dental implant into its three billed parts — implant post $1,000–$3,000, abutment $400–$1,000, and crown $800–$3,000 (2026 U.S. ranges).",
         width: 1063,
         height: 554,
@@ -459,7 +459,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "image",
-        src: "/images/blog/the-4-steps-of-a-dental-implant.png",
+        src: "/images/blog/the-4-steps-of-a-dental-implant.webp",
         alt: "Infographic of the four steps of a dental implant — consultation and 3D scan, implant placement, healing and osseointegration, and custom crown placement — each tagged with the cost it drives.",
         caption: "The 4 steps of a dental implant — and where the cost comes from.",
         width: 1999,
@@ -531,7 +531,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "image",
-        src: "/images/blog/2026-dental-implant-cost-ranges-by-type.png",
+        src: "/images/blog/2026-dental-implant-cost-ranges-by-type.webp",
         alt: "Chart of 2026 U.S. dental implant cost ranges — single tooth $3,000–$6,000, three-tooth implant bridge $8,000–$11,000, All-on-4 $15,000–$38,000 per arch, full mouth $30,000–$50,000.",
         width: 1066,
         height: 585,
@@ -571,7 +571,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "image",
-        src: "/images/blog/20-year-cost-implant-vs-bridge-vs-denture.png",
+        src: "/images/blog/20-year-cost-implant-vs-bridge-vs-denture.webp",
         alt: "Line chart estimating 20-year cumulative cost, showing implants often become the lowest-cost option over time because bridges and dentures need periodic replacement. Illustrative estimate.",
         caption:
           "Estimated 20-year cost: implant vs. bridge vs. denture. Illustrative estimate only.",
@@ -690,7 +690,7 @@ export const blogPosts: BlogPost[] = [
     reviewedBy: "Dr. Jeffrey Brenner, DMD",
     lastReviewedLabel: "Last reviewed August 2026",
     hero: {
-      src: "/images/blog/dental-emergency-what-to-do.png",
+      src: "/images/blog/dental-emergency-what-to-do.webp",
       alt: "Person with tooth pain calling Hampton Family Dental for same-day emergency care in Southampton PA",
       width: 1536,
       height: 1024,
@@ -731,7 +731,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "image",
-        src: "/images/blog/is-your-dental-problem-an-emergency.png",
+        src: "/images/blog/is-your-dental-problem-an-emergency.webp",
         alt: "Dental emergency triage guide — call 911 for trouble breathing or swallowing, spreading swelling, or uncontrolled bleeding; call (215) 357-2224 for a knocked-out tooth, severe pain, swelling or fever; while waiting, use a warm salt-water rinse, cold compress, and OTC pain relief, and never put aspirin on the gum.",
         caption: "Is your dental problem an emergency?",
         width: 1065,
@@ -814,13 +814,13 @@ export const blogPosts: BlogPost[] = [
       { type: "heading", level: 2, text: "Get seen today in Southampton" },
       {
         type: "paragraph",
-        text: "You don't have to wait in pain. Emergency dental care at Hampton Family Dental means same-day appointments with Dr. Brenner, who has handled Southampton dental emergencies for more than 20 years — same team, same trusted care. New patients can start with our $69 emergency exam offer (a focused exam plus any necessary X-rays). Just call and tell us what's happening.",
+        text: "You don't have to wait in pain. Emergency dental care at Hampton Family Dental means same-day appointments with Dr. Brenner, who has handled Southampton dental emergencies for more than 20 years — same team, same trusted care. New patients can start with our $59 emergency exam offer (a focused exam plus any necessary X-rays). Just call and tell us what's happening.",
         links: [
           {
             text: "Emergency dental care at Hampton Family Dental",
             href: "/general-dentistry/emergency-dentistry",
           },
-          { text: "$69 emergency exam offer", href: "/specials" },
+          { text: "$59 emergency exam offer", href: "/specials" },
         ],
       },
       {
@@ -907,7 +907,7 @@ export const blogPosts: BlogPost[] = [
     reviewedBy: "Dr. Keyur Dudhat, DMD",
     lastReviewedLabel: "Last reviewed August 2026",
     hero: {
-      src: "/images/blog/invisalign-vs-braces.png",
+      src: "/images/blog/invisalign-vs-braces.webp",
       alt: "Clear Invisalign aligner beside a model with traditional metal braces outside Hampton Family Dental in Southampton, PA",
       width: 1536,
       height: 1024,
@@ -977,7 +977,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "image",
-        src: "/images/blog/invisalign-vs-braces-cost-2026.png",
+        src: "/images/blog/invisalign-vs-braces-cost-2026.webp",
         alt: "Bar chart comparing typical 2026 U.S. costs before insurance — Invisalign $3,500–$8,000 and traditional braces $3,000–$7,000.",
         width: 1065,
         height: 495,
@@ -1000,7 +1000,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "image",
-        src: "/images/blog/invisalign-vs-braces-treatment-time.png",
+        src: "/images/blog/invisalign-vs-braces-treatment-time.webp",
         alt: "Bar chart comparing typical treatment time — Invisalign about 8–12 months and traditional braces about 18–24 months, varying by case.",
         width: 1065,
         height: 435,
@@ -1072,7 +1072,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "image",
-        src: "/images/blog/invisalign-vs-braces-which-fits-your-life.png",
+        src: "/images/blog/invisalign-vs-braces-which-fits-your-life.webp",
         alt: "Decision infographic — choose Invisalign for a mild-to-moderate case, a discreet look, 20–22 hours a day of wear and removable treatment; braces may be better for a complex bite, fixed set-and-forget treatment, more controlled tooth movement, or a child who may lose aligners.",
         caption: "Invisalign vs. braces: which fits your life?",
         width: 1672,
@@ -1157,7 +1157,7 @@ export const blogPosts: BlogPost[] = [
     reviewedBy: "Dr. Jeffrey Brenner, DMD",
     lastReviewedLabel: "Last reviewed August 2026",
     hero: {
-      src: "/images/blog/dental-membership-plan-no-insurance.png",
+      src: "/images/blog/dental-membership-plan-no-insurance.webp",
       alt: "Hampton Family Dental membership plan for patients without dental insurance in Southampton, PA",
       width: 1536,
       height: 1024,
@@ -1256,7 +1256,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "image",
-        src: "/images/blog/membership-plan-vs-dental-insurance.png",
+        src: "/images/blog/membership-plan-vs-dental-insurance.webp",
         alt: "Comparison graphic — the membership plan has one yearly fee, no deductible, no maximums, no waiting periods and no claims, while dental insurance has monthly premiums, a deductible, an annual maximum, possible waiting periods and claim forms.",
         caption: "Membership plan vs. insurance in one glance.",
         width: 1536,
@@ -1285,7 +1285,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "image",
-        src: "/images/blog/a-year-of-routine-care-membership-vs-per-visit.png",
+        src: "/images/blog/a-year-of-routine-care-membership-vs-per-visit.webp",
         alt: "Bar chart comparing a year of routine dental care paying per visit without insurance (about $770) versus the $288 Hampton Family Dental membership plan, which includes cleanings, exams, and routine X-rays. Illustrative estimate; per-visit costs vary.",
         caption:
           "A year of routine care: membership vs. paying per visit. Illustrative estimate — per-visit costs vary.",
@@ -1296,14 +1296,14 @@ export const blogPosts: BlogPost[] = [
       { type: "heading", level: 2, text: "Who is the plan best for?" },
       {
         type: "paragraph",
-        text: "The plan is a great fit if you're uninsured, between jobs, self-employed, retired without dental benefits, or you've simply been putting off the dentist because of cost. The American Dental Association recommends keeping up with regular dental visits — and catching a problem early is far cheaper than treating one that was left to grow. A predictable yearly cost makes it easier to actually come in. If you're in pain right now and uninsured, our $69 emergency exam offer is an easy way to get seen without a big bill.",
+        text: "The plan is a great fit if you're uninsured, between jobs, self-employed, retired without dental benefits, or you've simply been putting off the dentist because of cost. The American Dental Association recommends keeping up with regular dental visits — and catching a problem early is far cheaper than treating one that was left to grow. A predictable yearly cost makes it easier to actually come in. If you're in pain right now and uninsured, our $59 emergency exam offer is an easy way to get seen without a big bill.",
         links: [
           {
             text: "American Dental Association",
             href: "https://www.mouthhealthy.org/all-topics-a-z/oral-health",
             external: true,
           },
-          { text: "$69 emergency exam offer", href: "/specials" },
+          { text: "$59 emergency exam offer", href: "/specials" },
         ],
       },
 

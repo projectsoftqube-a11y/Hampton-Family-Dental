@@ -40,14 +40,26 @@
   }
 
   html {
-    /* Smooth scrolling is owned by Lenis (SmoothScrollProvider). Keeping the
-       native `scroll-behavior: smooth` here made the browser and Lenis fight
-       over the same scroll target, causing micro-stutter. `scroll-padding-top`
-       keeps anchor targets clear of the fixed header on the native fallback
-       path (reduced-motion users). */
+    /* Smooth scrolling is owned by Lenis (SmoothScrollProvider) where Lenis
+       actually runs. Setting native `scroll-behavior: smooth` globally made
+       the browser and Lenis fight over the same scroll target, causing
+       micro-stutter. `scroll-padding-top` keeps anchor targets clear of the
+       fixed header on every path. */
     scroll-padding-top: 80px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Apple devices opt out of Lenis and scroll natively (see
+     SmoothScrollProvider), so anchor scrolling is handed back to the browser
+     there. That is applied from JS via the `native-smooth-scroll` class on
+     <html> rather than a CSS media query, because the opt-out targets the
+     platform (all macOS/iOS browsers) and CSS has no way to ask that — the
+     usual @supports sniff would only catch Safari, missing Chrome and Firefox
+     on macOS, which is where Lenis hurt most. Reduced-motion users never get
+     the class. */
+  html.native-smooth-scroll {
+    scroll-behavior: smooth;
   }
 
   body {

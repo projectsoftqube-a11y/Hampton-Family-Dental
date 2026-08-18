@@ -58,18 +58,24 @@ export default function Hero() {
           part of the ramp, so contrast stays a flat, known quantity. */}
       <div className="hidden lg:block absolute inset-y-0 right-0 w-[77%] z-0">
         <Image
-          src="/images/clinic_interior_1779858062605.webp"
-          alt="Modern treatment room at Hampton Family Dental in Southampton, PA"
+          src="/images/hero-family.png"
+          alt="A multi-generational family smiling together — patients of Hampton Family Dental in Southampton, PA"
           fill
           priority
           sizes="80vw"
-          className="object-cover object-center"
+          className="object-cover object-right"
         />
+        {/* The family is grouped in the right half of the photograph and its
+            left half is already near-white window light, so this ramp is
+            shorter and lighter than the one the old clinic interior needed —
+            it only has to close the last of the tonal gap into the panel, not
+            mask a busy image. object-right keeps the group anchored so a
+            narrower viewport crops the empty left side, never their faces. */}
         <div
-          className="absolute inset-y-0 left-0 w-[62%]"
+          className="absolute inset-y-0 left-0 w-[46%]"
           style={{
             background:
-              "linear-gradient(90deg, #F2F5F9 0%, #F2F5F9 37%, rgba(242,245,249,0.84) 55%, rgba(242,245,249,0.50) 73%, rgba(242,245,249,0.15) 89%, rgba(242,245,249,0) 100%)",
+              "linear-gradient(90deg, #F2F5F9 0%, #F2F5F9 30%, rgba(242,245,249,0.80) 52%, rgba(242,245,249,0.45) 72%, rgba(242,245,249,0.12) 89%, rgba(242,245,249,0) 100%)",
           }}
         />
         {/* Soften the top and bottom edges into the panel as well, so the
@@ -216,12 +222,14 @@ export default function Hero() {
             Top edge feathers into the panel so it reads as one surface. ───────── */}
         <div className="lg:hidden relative w-full aspect-[16/10] sm:aspect-[2/1]">
           <Image
-            src="/images/clinic_interior_1779858062605.webp"
-            alt="Modern treatment room at Hampton Family Dental in Southampton, PA"
+            src="/images/hero-family.png"
+            alt="A multi-generational family smiling together — patients of Hampton Family Dental in Southampton, PA"
             fill
             priority
             sizes="100vw"
-            className="object-cover object-center"
+            /* Right-anchored here too: at these short aspect ratios a centred
+               crop would slice the grandmother out of the group. */
+            className="object-cover object-right"
           />
           <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-beige-light via-beige-light/60 to-transparent" />
         </div>
