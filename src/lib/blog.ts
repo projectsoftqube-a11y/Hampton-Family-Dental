@@ -1358,6 +1358,1542 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+
+  {
+    slug: "what-is-dry-socket",
+    title: "What Is Dry Socket, and How Do You Avoid It After an Extraction?",
+    metaTitle: "What Is Dry Socket & How to Avoid It | Southampton PA",
+    metaDescription:
+      "Dry socket explained: what it feels like, when it happens, and how to prevent it after a tooth extraction. Reviewed by Dr. Jeffrey Brenner, DMD, Southampton PA.",
+    excerpt:
+      "Severe pain a few days after a tooth extraction is the classic sign of dry socket. Here's what it is, why it happens, and the simple aftercare habits that prevent most cases.",
+    category: "General Dentistry",
+    publishedAt: "2026-08-19",
+    readTime: "7 min read",
+    reviewedBy: "Dr. Jeffrey Brenner, DMD",
+    lastReviewedLabel: "Last reviewed August 2026",
+    hero: {
+      src: "/images/blog/what-is-dry-socket.webp",
+      alt: "Extracted molar held in forceps above a dental tray — a guide to understanding and preventing dry socket at Hampton Family Dental in Southampton PA",
+      width: 1536,
+      height: 1024,
+    },
+    answerBox: {
+      text: "Dry socket happens when the blood clot that forms after a tooth extraction is lost or dislodged too early, leaving bone and nerves exposed and causing intense, throbbing pain a few days later. It affects about 2–5% of extractions (higher for wisdom teeth). You can lower your risk by avoiding straws, smoking, and forceful spitting while the site heals. If pain worsens around day 3, call your dentist.",
+    },
+    keyTakeaways: [
+      {
+        text: "Dry socket (alveolar osteitis) is when the protective blood clot after an extraction is lost too early.",
+      },
+      {
+        text: "It affects roughly 2–5% of extractions — and up to about 20% of impacted wisdom-tooth removals.",
+      },
+      {
+        text: "The tell-tale sign is severe, throbbing pain that starts 1–3 days after the tooth is pulled, often with a bad taste.",
+      },
+      {
+        text: "The biggest preventable causes are suction (straws, smoking) and forceful spitting — protect the clot.",
+      },
+      {
+        text: "It's treatable and not dangerous, but see your dentist quickly for relief; don't tough it out.",
+      },
+    ],
+    sections: [
+      { type: "heading", level: 2, text: "What is dry socket?" },
+      {
+        type: "paragraph",
+        text: "Dry socket is when the blood clot after a tooth extraction is lost too early, exposing the bone and nerves underneath. Normally, after a tooth extraction at Hampton Family Dental or any dental office, a clot forms over the socket like a natural bandage, protecting the area while it heals. Its clinical name is alveolar osteitis. When that clot dissolves or gets dislodged before the gum has healed, the exposed nerves cause the sharp pain dry socket is known for.",
+        links: [
+          {
+            text: "tooth extraction at Hampton Family Dental",
+            href: "/general-dentistry/tooth-extraction",
+          },
+        ],
+      },
+      {
+        type: "image",
+        src: "/images/blog/normal-healing-vs-dry-socket.webp",
+        alt: "Cross-section comparison of normal healing versus dry socket — in normal healing a blood clot protects the bone and nerves and pain gradually improves, while in dry socket no clot is present, bone and nerves are exposed, healing is delayed and pain can be severe and persistent.",
+        caption: "Normal healing vs. dry socket",
+        width: 1536,
+        height: 1024,
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "What does dry socket feel and look like?",
+      },
+      {
+        type: "paragraph",
+        text: "You'll often see an empty-looking socket instead of a dark clot, and you may notice a bad taste or smell. According to the Cleveland Clinic, the classic signs are:",
+        links: [
+          {
+            text: "Cleveland Clinic",
+            href: "https://my.clevelandclinic.org/health/diseases/21221-dry-socket",
+            external: true,
+          },
+        ],
+      },
+      {
+        type: "list",
+        variant: "check",
+        items: [
+          {
+            text: "Severe, throbbing pain that can radiate to your ear, eye, or jaw on that side.",
+          },
+          {
+            text: "Pain that starts a few days after the extraction — just when you'd expect to feel better.",
+          },
+          {
+            text: "An empty-looking socket where you can see bone instead of a clot.",
+          },
+          { text: "A bad taste in your mouth or noticeably bad breath." },
+        ],
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "When does dry socket usually happen?",
+      },
+      {
+        type: "paragraph",
+        text: "Dry socket almost always shows up in the first three to five days after an extraction. As the Harvard Health team explains, the giveaway is pain that gets worse around day three, when it should be getting better. If you reach about day five with no unusual pain, your risk drops sharply. Knowing what to expect from an extraction makes that timeline easier to read.",
+        links: [
+          {
+            text: "Harvard Health",
+            href: "https://www.health.harvard.edu/diseases-and-conditions/what-to-do-about-dry-socket",
+            external: true,
+          },
+          {
+            text: "what to expect from an extraction",
+            href: "/general-dentistry/tooth-extraction",
+          },
+        ],
+      },
+      {
+        type: "image",
+        src: "/images/blog/when-dry-socket-is-most-likely.webp",
+        alt: "Line chart of dry socket risk by day after extraction — risk climbs from day 0, peaks across the highest-risk window of days 1 to 3, then falls steadily and drops off after day 5.",
+        caption: "When dry socket is most likely to develop",
+        width: 1065,
+        height: 465,
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "What causes dry socket — and who's most at risk?",
+      },
+      {
+        type: "paragraph",
+        text: "Dry socket affects about 2–5% of all extractions, but that jumps to around 20% for impacted wisdom teeth, per oral surgeons (AAOMS). The clot gets disturbed by suction and pressure in the mouth. You're at higher risk if you:",
+        links: [
+          {
+            text: "oral surgeons (AAOMS)",
+            href: "https://www.aaoms.org/",
+            external: true,
+          },
+        ],
+      },
+      {
+        type: "list",
+        variant: "check",
+        items: [
+          {
+            text: "Smoke or use tobacco — the suction and chemicals both work against healing.",
+          },
+          { text: "Use straws or spit forcefully in the first few days." },
+          {
+            text: "Are having a lower-jaw or wisdom-tooth (molar) extraction.",
+          },
+          {
+            text: "Take certain medications, or have had dry socket before.",
+          },
+        ],
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "How to prevent dry socket after an extraction",
+      },
+      {
+        type: "paragraph",
+        text: "To prevent dry socket, protect the clot. The American Dental Association and your dentist's aftercare instructions come down to a simple do-and-don't list:",
+        links: [
+          {
+            text: "American Dental Association",
+            href: "https://www.mouthhealthy.org/all-topics-a-z/tooth-extraction",
+            external: true,
+          },
+        ],
+      },
+      {
+        type: "image",
+        src: "/images/blog/dry-socket-do-and-dont.webp",
+        alt: "Do and don't card for protecting the blood clot after an extraction — do rest the first 24 hours, eat soft cool foods, sip water and stay hydrated, use a cold compress, take pain relief as directed, and gently rinse with salt water after 24 hours; don't use a straw, smoke or vape, spit forcefully, drink alcohol, eat crunchy or sticky food, or brush the site for 24 hours.",
+        caption: "The goal: protect the blood clot for the first few days.",
+        width: 1065,
+        height: 555,
+      },
+      { type: "heading", level: 3, text: "The first 24 hours matter most" },
+      {
+        type: "paragraph",
+        text: "The clot is most fragile on day one. Rest, skip the straw and the cigarette, avoid alcohol and fizzy or hot drinks, and stick to soft, cool foods like yogurt, applesauce, and smoothies (no seeds). After the first 24 hours, you can gently rinse with warm salt water — gently is the key word. A little care in the first day or two prevents most dry sockets.",
+      },
+
+      { type: "heading", level: 2, text: "How is dry socket treated?" },
+      {
+        type: "paragraph",
+        text: "The good news: dry socket is very treatable, and relief is usually fast. Your dentist will gently clean the socket and often place a medicated dressing that soothes the exposed nerves almost immediately. You may get a fresh dressing changed over a few days, plus guidance on pain relief. Most people go from significant pain to real comfort within a day or two of being seen — which is exactly why it's worth coming in rather than waiting it out. If you think something's wrong, book a follow-up visit.",
+        links: [
+          {
+            text: "book a follow-up visit",
+            href: "/patient-information/scheduling",
+          },
+        ],
+      },
+
+      { type: "heading", level: 2, text: "When to call your dentist" },
+      {
+        type: "callout",
+        variant: "warning",
+        heading: "When to call",
+        text: "Call your dentist if pain gets worse around day 2–3 instead of better, if over-the-counter pain relief isn't touching it, or if you notice a fever, swelling, or a bad taste that won't go away. Dry socket itself isn't dangerous, but a spreading infection needs prompt care — and if you ever have trouble breathing or swallowing or fast-spreading facial swelling, call 911 or go to the emergency room.",
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "Recovering from an extraction in Southampton",
+      },
+      {
+        type: "paragraph",
+        text: "If you've had a tooth pulled and something doesn't feel right, don't sit at home worrying — call us right away. Dr. Jeffrey Brenner and the team have guided Southampton patients through extractions and recoveries for over 20 years, and getting seen quickly is the fastest way back to comfort. Still deciding about the procedure itself? You can talk to us about your extraction first. When you're healed and ready, we can also talk about replacing the tooth later if that's the plan.",
+        links: [
+          {
+            text: "call us right away",
+            href: "/general-dentistry/emergency-dentistry",
+          },
+          {
+            text: "Dr. Jeffrey Brenner",
+            href: "/about/dr-jeffrey-brenner",
+          },
+          {
+            text: "talk to us about your extraction",
+            href: "/general-dentistry/tooth-extraction",
+          },
+          {
+            text: "replacing the tooth later",
+            href: "/restorative-dentistry/dental-implants",
+          },
+        ],
+      },
+      {
+        type: "cta",
+        heading: "Worried about healing after an extraction?",
+        text: "Call (215) 357-2224 or book a visit — we'll take a look and get you comfortable again.",
+      },
+    ],
+    faqs: [
+      {
+        q: "How do I know if I have dry socket?",
+        a: "The main sign is severe, throbbing pain that starts one to three days after an extraction, when you'd expect to be feeling better. You may also notice a bad taste or odor and see that the socket looks empty rather than filled with a clot.",
+      },
+      {
+        q: "How long does dry socket last?",
+        a: "Untreated, dry socket can last 7 to 10 days. With treatment from a dentist, most people feel much better within 24 to 48 hours.",
+      },
+      {
+        q: "How can I prevent dry socket?",
+        a: "Protect the blood clot: avoid straws, smoking, and forceful spitting for several days, eat soft foods, and follow your dentist's aftercare instructions. The first 24 hours matter most.",
+      },
+      {
+        q: "When can I stop worrying about dry socket?",
+        a: "Dry socket almost always develops within the first three to five days. If you have no symptoms by about day five, your risk drops significantly.",
+      },
+    ],
+    extraSchema: [
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalWebPage",
+        name: "What Is Dry Socket, and How Do You Avoid It After an Extraction?",
+        url: "https://www.hamptonfamilydentist.com/blog/what-is-dry-socket",
+        about: {
+          "@type": "MedicalCondition",
+          name: "Dry socket (alveolar osteitis)",
+        },
+        lastReviewed: "2026-08-19",
+        reviewedBy: {
+          "@type": "Person",
+          name: "Dr. Jeffrey Brenner, DMD",
+          jobTitle: "Dentist",
+          medicalSpecialty: "Dentistry",
+          worksFor: "Hampton Family Dental",
+        },
+        publisher: { "@type": "Organization", name: "Hampton Family Dental" },
+      },
+      {
+        ...dentistSchema,
+        medicalSpecialty: "Dentistry",
+        availableService: {
+          "@type": "MedicalProcedure",
+          name: "Tooth extraction",
+        },
+      },
+    ],
+  },
+
+  {
+    slug: "dentures-vs-implant-supported-dentures",
+    title: "Dentures vs. Implant-Supported Dentures: An Honest Comparison",
+    metaTitle: "Dentures vs. Implant-Supported Dentures | Southampton PA",
+    metaDescription:
+      "Traditional dentures cost $1,000–$3,000 per arch; implant-supported run $7,000–$15,000. An honest comparison of cost, stability, bone loss, and lifespan.",
+    excerpt:
+      "One rests on your gums, the other snaps onto implants — and the price gap is large. A straight comparison of cost, comfort, jawbone health, and how long each really lasts.",
+    category: "Restorative Dentistry",
+    publishedAt: "2026-08-21",
+    readTime: "8 min read",
+    reviewedBy: "Dr. Keyur Dudhat, DMD",
+    lastReviewedLabel: "Last reviewed August 2026",
+    hero: {
+      src: "/images/blog/dentures-vs-implant-supported-dentures.webp",
+      alt: "A traditional full denture beside an implant-supported denture on implants at Hampton Family Dental in Southampton PA",
+      width: 1536,
+      height: 1024,
+    },
+    answerBox: {
+      text: "Traditional dentures rest on your gums and cost about $1,000–$3,000 per arch; implant-supported dentures snap onto a few implants for a far more stable fit at roughly $7,000–$15,000 per arch. Traditional dentures cost less upfront and suit many people; implant-supported ones hold firmer, protect the jawbone, and last longer. At Hampton Family Dental in Southampton, PA, Dr. Dudhat helps you choose what fits your mouth and budget.",
+    },
+    keyTakeaways: [
+      {
+        text: "Traditional dentures rest on the gums; implant-supported dentures anchor to a few implants for a firmer fit.",
+      },
+      {
+        text: "Upfront cost differs a lot: about $1,000–$3,000 per arch for traditional vs $7,000–$15,000 for implant-supported.",
+      },
+      {
+        text: "Implant-supported dentures hold better, let you eat more normally, and help slow the jawbone loss dentures don't.",
+      },
+      {
+        text: "Traditional dentures last about 5–8 years; implant-supported options often last 15–20 years with care.",
+      },
+      {
+        text: "Neither is 'better' for everyone — the right choice depends on your budget, jawbone, and health.",
+      },
+    ],
+    sections: [
+      {
+        type: "heading",
+        level: 2,
+        text: "What's the difference between the two?",
+      },
+      {
+        type: "paragraph",
+        text: "Traditional dentures rest on your gums, held in place by suction or adhesive. Implant-supported dentures snap onto a few dental implants anchored in your jaw, so they don't shift when you eat or talk. Both replace a full arch of teeth; the difference is what holds them in. You can explore the dentures at Hampton Family Dental to see the styles we fit.",
+        links: [
+          {
+            text: "dental implants",
+            href: "/restorative-dentistry/dental-implants",
+          },
+          {
+            text: "dentures at Hampton Family Dental",
+            href: "/restorative-dentistry/dentures",
+          },
+        ],
+      },
+      {
+        type: "image",
+        src: "/images/blog/three-ways-to-replace-a-full-arch.webp",
+        alt: "Three ways to replace a full arch of teeth compared — a traditional denture resting on the gum (removable, lowest cost, least stable), an implant-supported overdenture snapping onto 2–4 implants (removable, mid cost, more stable), and a fixed full-arch All-on-4 permanently anchored on 4–6 implants (fixed, highest cost, most stable).",
+        caption: "Three ways to replace a full arch of teeth",
+        width: 1536,
+        height: 1024,
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "Dentures vs. implant-supported dentures at a glance",
+      },
+      {
+        type: "table",
+        columns: ["", "Traditional dentures", "Implant-supported dentures"],
+        rows: [
+          ["Upfront cost (per arch)", "$1,000–$3,000", "$7,000–$15,000"],
+          ["How they stay in", "Suction or adhesive", "Snap onto 2–4 implants"],
+          ["Stability", "Can shift when eating", "Very stable"],
+          ["Eating", "Some foods are harder", "Closer to natural"],
+          ["Jawbone", "Bone slowly shrinks", "Helps preserve bone"],
+          ["Lifespan", "About 5–8 years", "About 15–20+ years"],
+          ["Surgery needed", "No", "Yes (implant placement)"],
+        ],
+        caption:
+          "Typical 2026 national figures. Your exact cost depends on your exam.",
+      },
+
+      { type: "heading", level: 2, text: "How much does each option cost?" },
+      {
+        type: "paragraph",
+        text: "Traditional full dentures run about $1,000 to $3,000 per arch, while implant-supported overdentures typically cost $7,000 to $15,000 per arch — because you're also paying for the implants that anchor them. A full mouth (both arches) roughly doubles those numbers. Because implants are involved, it helps to also read how much implants cost. Our membership plan and financing can make either option easier on the budget.",
+        links: [
+          {
+            text: "how much implants cost",
+            href: "/blog/how-much-do-dental-implants-cost",
+          },
+          { text: "membership plan and financing", href: "/specials" },
+        ],
+      },
+      {
+        type: "image",
+        src: "/images/blog/denture-upfront-cost-per-arch.webp",
+        alt: "Bar chart of typical 2026 per-arch costs — traditional full denture $1,000–$3,000, implant-supported overdenture $7,000–$15,000, and fixed full-arch (All-on-4) $15,000–$30,000+.",
+        caption: "Typical 2026 upfront cost, per arch",
+        width: 1065,
+        height: 510,
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "Which is more comfortable and stable?",
+      },
+      {
+        type: "paragraph",
+        text: "This is where implant-supported dentures really pull ahead. Because they clip onto implants, they don't rock, slip, or need adhesive — so you can bite into an apple or a sandwich with confidence, and you're not worrying about them moving when you speak. Traditional dentures have come a long way and fit many people well, but almost everyone who's worn both says the implant-anchored version feels more like their own teeth.",
+      },
+
+      { type: "heading", level: 2, text: "What about your jawbone?" },
+      {
+        type: "paragraph",
+        text: "Here's a trade-off that doesn't come up at every consultation. When a tooth is gone, the jawbone underneath is no longer stimulated and slowly shrinks — and traditional dentures don't stop that, which is one reason their fit changes over the years. Because implants replace the tooth root, they help preserve the bone, according to oral surgeons (AAOMS). It's not a scare tactic — it's just a real difference worth knowing when you weigh the two.",
+        links: [
+          {
+            text: "oral surgeons (AAOMS)",
+            href: "https://www.aaoms.org/",
+            external: true,
+          },
+        ],
+      },
+
+      { type: "heading", level: 2, text: "How long does each option last?" },
+      {
+        type: "paragraph",
+        text: "Traditional dentures usually last about 5 to 8 years before they need relining or replacing, partly because the jaw changes shape underneath them. Implant-supported dentures often last 15 to 20 years or more with good care. That longer lifespan is part of why the higher upfront cost can even out over time — though it doesn't erase the fact that the first bill is bigger.",
+      },
+      {
+        type: "image",
+        src: "/images/blog/denture-typical-lifespan.webp",
+        alt: "Bar chart comparing typical lifespan — traditional dentures about 5–8 years, implant-supported dentures about 15–20+ years with care.",
+        caption: "Typical lifespan before replacement",
+        width: 1065,
+        height: 420,
+      },
+
+      { type: "heading", level: 2, text: "Which option is right for you?" },
+      {
+        type: "paragraph",
+        text: "Lean toward implant-supported dentures if you want the most stability, you're bothered by a denture that slips, and you have — or can build — enough jawbone for implants. The National Institute of Dental Research notes that full tooth loss is common, and there's no shame in either path — what matters is the one that fits your life. Dr. Keyur Dudhat will walk you through see the denture options we fit and what each would mean for you.",
+        links: [
+          {
+            text: "National Institute of Dental Research",
+            href: "https://www.nidcr.nih.gov/research/data-statistics/tooth-loss",
+            external: true,
+          },
+          { text: "Dr. Keyur Dudhat", href: "/about/dr-keyur-dudhat" },
+          {
+            text: "see the denture options we fit",
+            href: "/restorative-dentistry/dentures",
+          },
+        ],
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "When traditional dentures are the better choice",
+      },
+      {
+        type: "paragraph",
+        text: "We'll be honest: traditional dentures are the smarter pick for plenty of people. If surgery isn't right for your health, if your budget rules out implants right now, or if you need teeth quickly, a well-made traditional denture restores your smile at a fraction of the cost. Many patients also start with a traditional denture and move to implants later. There's no wrong answer here — only the one that fits you.",
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "Replacing your teeth in Southampton",
+      },
+      {
+        type: "paragraph",
+        text: "The best way to choose is to look at your actual mouth. Dr. Dudhat plans tooth replacement with 3D imaging and will walk you through both options honestly — including the costs — so you can decide without pressure. Whether you land on a traditional denture or an implant-supported one, you can talk to us about dentures and we'll fit it right here.",
+        links: [
+          {
+            text: "talk to us about dentures",
+            href: "/restorative-dentistry/dentures",
+          },
+        ],
+      },
+      {
+        type: "cta",
+        heading: "Weighing your options?",
+        text: "Call (215) 357-2224 or book a consultation — we'll look at your mouth and give you an honest recommendation, with the costs laid out.",
+      },
+    ],
+    faqs: [
+      {
+        q: "What is the difference between dentures and implant-supported dentures?",
+        a: "Traditional dentures rest on your gums and are held by suction or adhesive. Implant-supported dentures snap onto a few dental implants anchored in the jaw, giving a much more stable fit and helping slow bone loss.",
+      },
+      {
+        q: "How much do implant-supported dentures cost?",
+        a: "Implant-supported (overdentures) typically cost about $7,000 to $15,000 per arch in 2026, versus roughly $1,000 to $3,000 for a traditional full denture. Your exact cost depends on your exam.",
+      },
+      {
+        q: "Do dentures cause bone loss?",
+        a: "Traditional dentures don't stimulate the jawbone, so bone can slowly shrink over time, which is one reason denture fit changes. Implants help preserve bone because they replace the tooth root.",
+      },
+      {
+        q: "How long do dentures last?",
+        a: "Traditional dentures usually last about 5 to 8 years before they need relining or replacing. Implant-supported dentures often last 15 to 20 years or more with good care.",
+      },
+    ],
+    extraSchema: [
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalWebPage",
+        name: "Dentures vs. Implant-Supported Dentures: An Honest Comparison",
+        url: "https://www.hamptonfamilydentist.com/blog/dentures-vs-implant-supported-dentures",
+        about: {
+          "@type": "MedicalProcedure",
+          name: "Tooth replacement (dentures and implant-supported dentures)",
+        },
+        lastReviewed: "2026-08-21",
+        reviewedBy: {
+          "@type": "Person",
+          name: "Dr. Keyur Dudhat, DMD",
+          jobTitle: "Dentist",
+          medicalSpecialty: "Dentistry",
+          worksFor: "Hampton Family Dental",
+        },
+        publisher: { "@type": "Organization", name: "Hampton Family Dental" },
+      },
+      {
+        ...dentistSchema,
+        medicalSpecialty: "Dentistry",
+        availableService: {
+          "@type": "MedicalProcedure",
+          name: "Dentures and implant-supported dentures",
+        },
+      },
+    ],
+  },
+
+  {
+    slug: "professional-teeth-whitening-vs-store-bought",
+    title: "Professional Teeth Whitening vs. Store-Bought Kits: What's Worth It?",
+    metaTitle: "Professional Teeth Whitening vs. Store Kits | Southampton PA",
+    metaDescription:
+      "Professional whitening costs $300–$1,000 and uses 25–40% peroxide; store kits are $20–$100 at 3–10%. An honest look at cost, speed, results, and safety.",
+    excerpt:
+      "A drugstore kit is $20 and a professional treatment is $500 — but the gel is four times stronger. Here's when each one is genuinely the right call.",
+    category: "Cosmetic Dentistry",
+    publishedAt: "2026-08-24",
+    readTime: "7 min read",
+    reviewedBy: "Dr. Keyur Dudhat, DMD",
+    lastReviewedLabel: "Last reviewed August 2026",
+    hero: {
+      src: "/images/blog/professional-teeth-whitening-vs-store-bought.webp",
+      alt: "Professional teeth whitening compared with store-bought whitening kits at Hampton Family Dental in Southampton PA",
+      width: 1536,
+      height: 1024,
+    },
+    answerBox: {
+      text: "Professional teeth whitening works faster, lasts longer, and gives more even results using 25–40% peroxide under a dentist's care, and costs about $300–$1,000 in-office. Store-bought kits ($20–$100) use milder 3–10% peroxide, so they lighten a shade or two slowly and suit minor staining. For deeper or uneven stains, professional wins. At Hampton Family Dental in Southampton, PA, Dr. Dudhat helps you pick what fits.",
+    },
+    keyTakeaways: [
+      {
+        text: "Professional whitening uses much stronger gel (25–40% peroxide) than store kits (3–10%), so it works faster.",
+      },
+      {
+        text: "In-office whitening costs about $300–$1,000; dentist take-home trays $100–$600; drugstore kits $20–$100.",
+      },
+      {
+        text: "Professional results can last 1–3 years; store-bought kits usually lighten only 1–2 shades over weeks.",
+      },
+      {
+        text: "Store-bought kits are fine for mild surface stains; professional wins for deep, uneven, or age-related discoloration.",
+      },
+      {
+        text: "A dentist checks your teeth first, protects your gums, and manages sensitivity — safety a box can't offer.",
+      },
+    ],
+    sections: [
+      {
+        type: "heading",
+        level: 2,
+        text: "How is professional whitening different from a store kit?",
+      },
+      {
+        type: "paragraph",
+        text: "Both work the same basic way — a peroxide gel breaks down the stains on your enamel — but the strength and the oversight are very different. According to the American Dental Association, over-the-counter products use lower bleaching concentrations than what a dentist applies. Store kits run about 3–10% peroxide so they're safe to use unsupervised; professional teeth whitening at Hampton Family Dental uses 25–40% under careful supervision, with your gums protected first.",
+        links: [
+          {
+            text: "American Dental Association",
+            href: "https://www.mouthhealthy.org/all-topics-a-z/whitening",
+            external: true,
+          },
+          {
+            text: "professional teeth whitening at Hampton Family Dental",
+            href: "/cosmetic-dentistry/teeth-whitening",
+          },
+        ],
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "Professional vs. store-bought at a glance",
+      },
+      {
+        type: "table",
+        columns: ["", "Professional whitening", "Store-bought kits"],
+        rows: [
+          ["Cost", "$300–$1,000 in-office", "$20–$100"],
+          ["Peroxide strength", "25–40%", "3–10%"],
+          ["Speed", "1 visit / ~1 week (trays)", "2–8 weeks of daily use"],
+          ["Results", "Up to 8 shades, even", "1–2 shades, sometimes patchy"],
+          ["How long it lasts", "1–3 years", "Fades faster"],
+          [
+            "Safety",
+            "Dentist checks + protects gums",
+            "Unsupervised; sensitivity risk",
+          ],
+          [
+            "Best for",
+            "Deep, uneven, age-related stains",
+            "Mild surface staining",
+          ],
+        ],
+        caption:
+          "Typical 2026 national figures. Your exact result depends on your teeth.",
+      },
+
+      { type: "heading", level: 2, text: "How much does each option cost?" },
+      {
+        type: "paragraph",
+        text: "In-office whitening costs about $300 to $1,000 per session, dentist take-home trays run $100 to $600, and drugstore kits are $20 to $100. The American Academy of Cosmetic Dentistry has put the average dentist-supervised whitening around $500. Whitening is cosmetic, so insurance doesn't cover it — but our membership plan and current offers and financing can help. You can also see our whitening options for what we offer.",
+        links: [
+          {
+            text: "American Academy of Cosmetic Dentistry",
+            href: "https://aacd.com/",
+            external: true,
+          },
+          { text: "membership plan and current offers", href: "/specials" },
+          {
+            text: "see our whitening options",
+            href: "/cosmetic-dentistry/teeth-whitening",
+          },
+        ],
+      },
+      {
+        type: "image",
+        src: "/images/blog/teeth-whitening-cost-by-option.webp",
+        alt: "Bar chart of typical 2026 teeth-whitening costs — in-office professional $300–$1,000, dentist take-home trays $100–$600, and store-bought kits $20–$100.",
+        caption: "Typical 2026 whitening cost by option",
+        width: 1065,
+        height: 495,
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "How fast and how white are the results?",
+      },
+      {
+        type: "paragraph",
+        text: "This is where professional whitening pulls ahead. In-office treatment can lift several shades in a single 60–90 minute visit, and dentist take-home trays get you there in about a week or two of short daily wear. Store-bought strips and kits work on mild surface stains but usually lighten only a shade or two over several weeks — and because the trays are one-size-fits-most, the result can come out patchy. Professional results also last longer, often one to three years with good habits.",
+      },
+      {
+        type: "image",
+        src: "/images/blog/teeth-whitening-results-and-longevity.webp",
+        alt: "Bar chart comparing whitening results and how long they last — professional whitening lifts up to 8 shades and lasts 1–3 years, while store-bought kits lift 1–2 shades and fade sooner.",
+        caption: "Results and how long they last",
+        width: 1065,
+        height: 435,
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "Is teeth whitening safe for your enamel?",
+      },
+      {
+        type: "paragraph",
+        text: "Whitening done under a dentist's care is considered one of the safest cosmetic treatments, and it doesn't harm healthy enamel. The difference is oversight: a dentist checks first for cavities, gum recession, or worn enamel — whitening over those can cause real sensitivity — then protects your gums and adjusts the treatment to keep you comfortable. With an unsupervised store kit, it's easier to overuse the product or let gel leak onto the gums. The ADA on whitening sensitivity recommends checking with your dentist before you start, especially if your teeth are sensitive.",
+        links: [
+          {
+            text: "ADA on whitening sensitivity",
+            href: "https://www.mouthhealthy.org/all-topics-a-z/whitening",
+            external: true,
+          },
+        ],
+      },
+      {
+        type: "image",
+        src: "/images/blog/teeth-whitening-options-compared.webp",
+        alt: "Decision guide comparing whitening options — a store-bought kit may be enough if you have mild surface staining, a tight budget, patience for slower results, and no sensitivity; choose professional whitening if you have deep or age-related stains, uneven tooth color, want fast results for an event, or have sensitive teeth needing oversight.",
+        caption: "Which whitening option is right for you?",
+        width: 1536,
+        height: 1024,
+      },
+
+      { type: "heading", level: 2, text: "Which option is right for you?" },
+      {
+        type: "paragraph",
+        text: "Lean toward professional whitening if you have deeper or age-related discoloration, uneven color, sensitive teeth that need managing, or an event you want to look your best for. For stubborn intrinsic stains that whitening can't fully lift, porcelain veneers may be a better route — something Dr. Keyur Dudhat can talk through at a consult, along with other cosmetic options.",
+        links: [
+          {
+            text: "porcelain veneers",
+            href: "/cosmetic-dentistry/porcelain-veneers",
+          },
+          { text: "Dr. Keyur Dudhat", href: "/about/dr-keyur-dudhat" },
+          { text: "other cosmetic options", href: "/cosmetic-dentistry" },
+        ],
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "When a store-bought kit is enough",
+      },
+      {
+        type: "paragraph",
+        text: "We'll be honest: a drugstore kit is perfectly fine for some people. If you have mild surface staining from coffee or tea, no sensitivity issues, a tight budget, and you're patient with gradual results, a whitening strip or kit can give you a nice little lift. Many people start there and come to the dentist when they want a bigger, faster, more even change. There's no wrong starting point.",
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "Whitening your smile in Southampton",
+      },
+      {
+        type: "paragraph",
+        text: "The best way to get a bright, even result is to start with a quick look at your teeth. Dr. Dudhat will tell you honestly whether a professional treatment is worth it for your smile — or whether a simpler option will do — with no pressure either way. When you're ready, book a whitening consultation and we'll help you get there.",
+        links: [
+          {
+            text: "book a whitening consultation",
+            href: "/cosmetic-dentistry/teeth-whitening",
+          },
+        ],
+      },
+      {
+        type: "cta",
+        heading: "Want a brighter, even smile?",
+        text: "Call (215) 357-2224 or book a whitening consultation — we'll check your teeth first and tell you honestly what will work.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Is professional teeth whitening worth it?",
+        a: "For deep, uneven, or age-related staining, yes — professional whitening is faster, more even, and longer-lasting. For mild surface stains on a tight budget, a store-bought kit may be enough.",
+      },
+      {
+        q: "How much does professional teeth whitening cost?",
+        a: "In-office whitening typically costs $300 to $1,000 per session, and dentist take-home trays run $100 to $600. Store-bought kits cost about $20 to $100.",
+      },
+      {
+        q: "How long does professional whitening last?",
+        a: "Professional whitening results usually last one to three years, depending on your diet, habits, and whether you use maintenance trays. Store-bought results fade faster.",
+      },
+      {
+        q: "Is teeth whitening safe for your enamel?",
+        a: "Whitening done under a dentist's care is considered safe for enamel. A dentist protects your gums and manages sensitivity, which is harder to control with unsupervised store-bought kits.",
+      },
+    ],
+    extraSchema: [
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalWebPage",
+        name: "Professional Teeth Whitening vs. Store-Bought Kits: What's Worth It?",
+        url: "https://www.hamptonfamilydentist.com/blog/professional-teeth-whitening-vs-store-bought",
+        about: { "@type": "MedicalProcedure", name: "Teeth whitening" },
+        lastReviewed: "2026-08-24",
+        reviewedBy: {
+          "@type": "Person",
+          name: "Dr. Keyur Dudhat, DMD",
+          jobTitle: "Dentist",
+          medicalSpecialty: "Dentistry",
+          worksFor: "Hampton Family Dental",
+        },
+        publisher: { "@type": "Organization", name: "Hampton Family Dental" },
+      },
+      {
+        ...dentistSchema,
+        medicalSpecialty: "Dentistry",
+        availableService: {
+          "@type": "MedicalProcedure",
+          name: "Teeth whitening",
+        },
+      },
+    ],
+  },
+
+  {
+    slug: "how-long-do-veneers-last",
+    title: "How Long Do Veneers Last? An Honest Guide to Cost & Care",
+    metaTitle: "How Long Do Veneers Last? Cost & Care | Southampton PA",
+    metaDescription:
+      "Porcelain veneers typically last 10–15 years and often 20+; composite about 5–7. What drives lifespan, what they cost, and how to care for them.",
+    excerpt:
+      "Porcelain veneers can last 20 years — or wear out in eight. The difference comes down to four things, and only one of them is the porcelain.",
+    category: "Cosmetic Dentistry",
+    publishedAt: "2026-08-26",
+    readTime: "7 min read",
+    reviewedBy: "Dr. Keyur Dudhat, DMD",
+    lastReviewedLabel: "Last reviewed August 2026",
+    hero: {
+      src: "/images/blog/how-long-do-veneers-last.webp",
+      alt: "Porcelain veneers being matched for shade and fit at Hampton Family Dental in Southampton PA",
+      width: 1536,
+      height: 1024,
+    },
+    answerBox: {
+      text: "With good care, porcelain veneers typically last 10 to 15 years — and often 20 or more. Composite veneers usually last about 5 to 7 years. How long yours last comes down to your oral hygiene, your bite, and habits like grinding or nail-biting. Porcelain costs about $900–$2,500 per tooth. At Hampton Family Dental in Southampton, PA, Dr. Dudhat plans veneers built to last.",
+    },
+    keyTakeaways: [
+      {
+        text: "Porcelain veneers typically last 10–15 years, and often 20+, with good care; composite lasts about 5–7 years.",
+      },
+      {
+        text: "The biggest factors are your daily oral hygiene, your bite, and habits like grinding or biting hard objects.",
+      },
+      {
+        text: "Porcelain costs about $900–$2,500 per tooth; a full set of 6–8 runs roughly $9,000–$24,000.",
+      },
+      {
+        text: "A night guard, regular checkups, and skipping ice and nail-biting can add years to your veneers.",
+      },
+      {
+        text: "Veneers are a long-term commitment — a little enamel is reshaped, so the teeth always need a covering afterward.",
+      },
+    ],
+    sections: [
+      { type: "heading", level: 2, text: "How long do veneers really last?" },
+      {
+        type: "paragraph",
+        text: "Porcelain veneers typically last 10 to 15 years, and often 20 or more, with good care. That's not just a marketing line — clinical research following feldspathic porcelain veneers bonded to enamel found roughly a 96% survival rate at 21 years, and a 2018 review found the vast majority lasted well past 10 years. You can see the porcelain veneers at Hampton Family Dental for how we plan them to last.",
+        links: [
+          {
+            text: "clinical research",
+            href: "https://pubmed.ncbi.nlm.nih.gov/22282724/",
+            external: true,
+          },
+          {
+            text: "porcelain veneers at Hampton Family Dental",
+            href: "/cosmetic-dentistry/porcelain-veneers",
+          },
+        ],
+      },
+      {
+        type: "image",
+        src: "/images/blog/typical-veneer-lifespan.webp",
+        alt: "Bar chart comparing typical veneer lifespan — porcelain veneers 10–15 years and often 20 or more, composite veneers about 5–7 years.",
+        caption: "Typical veneer lifespan with good care",
+        width: 1065,
+        height: 435,
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "Porcelain vs. composite: how the material changes the answer",
+      },
+      {
+        type: "paragraph",
+        text: "The material you choose is the single biggest driver of lifespan. Here's the honest comparison:",
+      },
+      {
+        type: "table",
+        columns: ["", "Porcelain veneers", "Composite veneers"],
+        rows: [
+          ["Lifespan", "10–15 years (often 20+)", "About 5–7 years"],
+          ["Cost per tooth", "$900–$2,500", "$250–$1,500"],
+          ["Stain resistance", "Excellent", "Good, stains sooner"],
+          ["Visits", "2–3 visits (lab-made)", "Often 1 visit (chairside)"],
+          ["Look", "Natural translucency", "Very good, less translucent"],
+          [
+            "Best for",
+            "Long-term, whole-smile results",
+            "Budget, quick fixes, single teeth",
+          ],
+        ],
+        caption:
+          "Typical 2026 national figures. Your exact cost depends on your case.",
+      },
+      {
+        type: "image",
+        src: "/images/blog/veneer-lifespan-by-type.webp",
+        alt: "Bar chart of veneer lifespan by type — porcelain veneers lasting 10–15 years or more compared with composite veneers at about 5–7 years.",
+        caption: "Lifespan by veneer type",
+        width: 1065,
+        height: 435,
+      },
+      {
+        type: "paragraph",
+        text: "Porcelain wins on durability and its stain-resistant finish; composite wins on cost and speed. Both can look beautiful — it's a trade-off, not a right-or-wrong. If stain resistance is what's drawing you in, it's worth reading how professional whitening compares to store-bought kits first, since a simpler route sometimes gets you most of the way. You can also browse other cosmetic options.",
+        links: [
+          {
+            text: "how professional whitening compares to store-bought kits",
+            href: "/blog/professional-teeth-whitening-vs-store-bought",
+          },
+          { text: "other cosmetic options", href: "/cosmetic-dentistry" },
+        ],
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "What makes veneers last longer (or wear out sooner)?",
+      },
+      {
+        type: "paragraph",
+        text: "Beyond the material, four things decide whether your veneers reach the top of that range or the bottom:",
+      },
+      {
+        type: "list",
+        variant: "check",
+        items: [
+          {
+            text: "Your oral hygiene — brushing and flossing protect the bond and the tooth underneath.",
+          },
+          {
+            text: "Your bite and grinding — bruxism puts stress no veneer is built to take long-term.",
+          },
+          {
+            text: "Your habits — biting ice, pens, or nails, or using teeth as tools, chips veneers early.",
+          },
+          {
+            text: "The quality of the placement — an experienced dentist and a good bond make a real difference.",
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "That last point is why it's worth choosing carefully — how our veneers are made matters as much as the porcelain itself.",
+        links: [
+          {
+            text: "how our veneers are made",
+            href: "/cosmetic-dentistry/porcelain-veneers",
+          },
+        ],
+      },
+      {
+        type: "image",
+        src: "/images/blog/what-makes-veneers-last-longer.webp",
+        alt: "Guide to what makes veneers last longer — daily oral hygiene protects the bond, a night guard shields against grinding, avoiding ice and nail-biting prevents chips, and skilled placement by an experienced dentist improves durability.",
+        caption: "What makes veneers last longer",
+        width: 1536,
+        height: 1024,
+      },
+
+      { type: "heading", level: 2, text: "How to care for your veneers" },
+      {
+        type: "paragraph",
+        text: "The good news: caring for veneers is mostly caring for your teeth. Brush and floss daily, keep your regular checkups, and if you grind your teeth at night, a custom night guard is one of the smartest things you can do — the American Dental Association notes that grinding is a leading cause of early cosmetic wear. Skip biting ice and nails, and use a straw for coffee, tea, or wine to keep everything bright.",
+        links: [
+          {
+            text: "American Dental Association",
+            href: "https://www.mouthhealthy.org/all-topics-a-z/veneers",
+            external: true,
+          },
+        ],
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "How much do veneers cost — and are they worth it?",
+      },
+      {
+        type: "paragraph",
+        text: "Porcelain veneers cost about $900 to $2,500 per tooth, with a national average around $1,765 per the American Academy of Cosmetic Dentistry; a full set of 6 to 8 front teeth typically runs $9,000 to $24,000. Here's the honest way to think about it: spread over a 15-year lifespan, a $2,000 veneer works out to about $133 a year. Veneers are cosmetic, so insurance doesn't cover them — but our financing and current offers, including CareCredit, make the investment easier to manage.",
+        links: [
+          {
+            text: "American Academy of Cosmetic Dentistry",
+            href: "https://aacd.com/",
+            external: true,
+          },
+          { text: "financing and current offers", href: "/specials" },
+        ],
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "Are veneers a permanent commitment?",
+      },
+      {
+        type: "paragraph",
+        text: "Yes — and this is the honest part every buyer should hear before they commit. To place veneers, a dentist reshapes a thin layer of enamel, and enamel doesn't grow back. That means once you have veneers, your teeth will always need some form of covering — you'll replace veneers over the years rather than go back to bare teeth. That's not a drawback so much as a decision to make with your eyes open: veneers are a long-term investment in your smile, not a temporary look.",
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "Getting veneers that last in Southampton",
+      },
+      {
+        type: "paragraph",
+        text: "Because placement quality is one of the biggest factors in how long veneers last, who does them matters. Dr. Keyur Dudhat plans each case with digital imaging and matches shade and shape so the result looks natural, not obvious — and is built to hold up. If you're weighing whether veneers are right for you, book a veneers consultation and we'll give you an honest answer.",
+        links: [
+          { text: "Dr. Keyur Dudhat", href: "/about/dr-keyur-dudhat" },
+          {
+            text: "book a veneers consultation",
+            href: "/cosmetic-dentistry/porcelain-veneers",
+          },
+        ],
+      },
+      {
+        type: "cta",
+        heading: "Thinking about veneers?",
+        text: "Call (215) 357-2224 or book a consultation — we'll talk through material, cost, and what your veneers would realistically need over the years.",
+      },
+    ],
+    faqs: [
+      {
+        q: "How long do porcelain veneers last?",
+        a: "With good care, porcelain veneers typically last 10 to 15 years, and many last 20 years or more. Composite veneers usually last about 5 to 7 years.",
+      },
+      {
+        q: "How can I make my veneers last longer?",
+        a: "Brush and floss daily, keep up regular checkups, wear a night guard if you grind, and avoid biting ice, pens, or nails. These habits protect the bond and the tooth underneath.",
+      },
+      {
+        q: "Do veneers ruin your teeth?",
+        a: "No. When placed by an experienced dentist, only a thin layer of enamel is reshaped. Veneers protect the front of the tooth, though the teeth will always need some covering afterward.",
+      },
+      {
+        q: "Are veneers worth the money?",
+        a: "For many people, yes. Spread over their lifespan, a porcelain veneer works out to roughly $130–$170 per year, and the result is a durable, stain-resistant smile.",
+      },
+    ],
+    extraSchema: [
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalWebPage",
+        name: "How Long Do Veneers Last? An Honest Guide to Cost & Care",
+        url: "https://www.hamptonfamilydentist.com/blog/how-long-do-veneers-last",
+        about: { "@type": "MedicalProcedure", name: "Dental veneers" },
+        lastReviewed: "2026-08-26",
+        reviewedBy: {
+          "@type": "Person",
+          name: "Dr. Keyur Dudhat, DMD",
+          jobTitle: "Dentist",
+          medicalSpecialty: "Dentistry",
+          worksFor: "Hampton Family Dental",
+        },
+        publisher: { "@type": "Organization", name: "Hampton Family Dental" },
+      },
+      {
+        ...dentistSchema,
+        medicalSpecialty: "Dentistry",
+        availableService: {
+          "@type": "MedicalProcedure",
+          name: "Porcelain veneers",
+        },
+      },
+    ],
+  },
+
+  {
+    slug: "signs-of-gum-disease",
+    title: "5 Signs of Gum Disease You Shouldn't Ignore",
+    metaTitle: "5 Signs of Gum Disease You Shouldn't Ignore | Southampton PA",
+    metaDescription:
+      "Red or bleeding gums, recession, bad breath, loose teeth — the five warning signs of gum disease, why it's often painless, and when it's still reversible.",
+    excerpt:
+      "Gum disease usually doesn't hurt until it's advanced — which is exactly why it gets missed. Here are the five early signs, and the point at which it stops being reversible.",
+    category: "General Dentistry",
+    publishedAt: "2026-08-28",
+    readTime: "6 min read",
+    reviewedBy: "Dr. Jeffrey Brenner, DMD",
+    lastReviewedLabel: "Last reviewed August 2026",
+    hero: {
+      src: "/images/blog/signs-of-gum-disease.webp",
+      alt: "A dentist checking a patient's gums for early signs of gum disease at Hampton Family Dental in Southampton PA",
+      width: 1536,
+      height: 1024,
+    },
+    answerBox: {
+      text: "The five most common signs of gum disease are red or swollen gums, gums that bleed when you brush or floss, gums pulling away so teeth look longer, persistent bad breath or a bad taste, and loose or shifting teeth. Gum disease is often painless early on, when it's still reversible — so if you notice any of these, see a dentist. At Hampton Family Dental in Southampton, PA, catching it early means gentler treatment.",
+    },
+    keyTakeaways: [
+      {
+        text: "The five signs to watch: red/swollen gums, bleeding, receding gums, persistent bad breath, and loose teeth.",
+      },
+      {
+        text: "Gum disease is often silent — it usually doesn't hurt early, which is exactly why it gets missed.",
+      },
+      {
+        text: "Caught early (gingivitis), it's fully reversible; left to advance (periodontitis), it's manageable but permanent.",
+      },
+      {
+        text: "It's very common — the CDC estimates about 47% of adults 30 and older have some form.",
+      },
+      {
+        text: "Early detection means gentler treatment — often a simple cleaning or a minimally-invasive option, not surgery.",
+      },
+    ],
+    sections: [
+      {
+        type: "heading",
+        level: 2,
+        text: "What is gum disease — and why does it matter?",
+      },
+      {
+        type: "paragraph",
+        text: "Gum disease is an infection of the gums and the tissues that hold your teeth in place, caused by plaque building up along the gumline. It matters because it's the leading cause of tooth loss in adults — and because it's sneaky. The CDC estimates about 47% of adults 30 and older have some form of it, and most don't know, since early gum disease rarely hurts. The good news: caught early, it's very treatable. If you're noticing changes, gum disease treatment at Hampton Family Dental starts with a simple look at your gums, and it's part of routine general dental care.",
+        links: [
+          {
+            text: "CDC",
+            href: "https://www.cdc.gov/oral-health/php/periodontal-disease/index.html",
+            external: true,
+          },
+          {
+            text: "gum disease treatment at Hampton Family Dental",
+            href: "/general-dentistry/perio-protect",
+          },
+          { text: "general dental care", href: "/general-dentistry" },
+        ],
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "The 5 signs of gum disease to watch for",
+      },
+      {
+        type: "image",
+        src: "/images/blog/five-signs-of-gum-disease.webp",
+        alt: "Infographic listing the five signs of gum disease — red or swollen gums, bleeding when brushing, receding gums, persistent bad breath, and loose teeth — with the note that a checkup catches it early.",
+        caption: "5 signs of gum disease",
+        width: 1024,
+        height: 1536,
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "1. Red, swollen, or tender gums",
+      },
+      {
+        type: "paragraph",
+        text: "Healthy gums are firm and pale pink. According to the American Academy of Periodontology, gums that look red, puffy, or feel tender are one of the earliest signs that inflammation has set in.",
+        links: [
+          {
+            text: "American Academy of Periodontology",
+            href: "https://www.perio.org/for-patients/gum-disease-information/gum-disease-risk-factors/",
+            external: true,
+          },
+        ],
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "2. Gums that bleed when you brush or floss",
+      },
+      {
+        type: "paragraph",
+        text: "This is the sign people notice most — a little pink in the sink. Healthy gums generally don't bleed, so regular bleeding when you brush or floss is worth paying attention to, not brushing off.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "3. Gums that are pulling away (receding)",
+      },
+      {
+        type: "paragraph",
+        text: "If your teeth suddenly look longer, your gums may be receding — pulling away from the teeth and forming little pockets where bacteria collect. The Cleveland Clinic lists recession as a key marker that gum disease is progressing.",
+        links: [
+          {
+            text: "Cleveland Clinic",
+            href: "https://my.clevelandclinic.org/health/diseases/10950-gum-periodontal-disease",
+            external: true,
+          },
+        ],
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "4. Persistent bad breath or a bad taste",
+      },
+      {
+        type: "paragraph",
+        text: "Breath that stays bad no matter how much you brush, or a lingering bad taste, can be a sign of the bacteria that drive gum disease living below the gumline. It's easy to blame on food, but when it won't go away, it's worth a mention at your next visit.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "5. Loose or shifting teeth",
+      },
+      {
+        type: "paragraph",
+        text: "This is a later, more serious sign. When gum disease has damaged the bone and tissue that anchor your teeth, they can start to feel loose or shift how they fit together when you bite. Loose teeth in an adult are never normal — see a dentist promptly.",
+      },
+
+      { type: "heading", level: 2, text: "Can gum disease be reversed?" },
+      {
+        type: "paragraph",
+        text: "Here's the part that makes catching it early so worth it. The earliest stage, gingivitis, is fully reversible — a professional cleaning plus good home care can return your gums to health. But once it advances to periodontitis, the lost bone support doesn't fully come back; it can be managed and slowed, but not reversed. That's the whole reason not to ignore the early signs — and why keeping up with regular cleanings matters more than most people realise.",
+        links: [
+          {
+            text: "regular cleanings",
+            href: "/general-dentistry/oral-hygiene",
+          },
+        ],
+      },
+      {
+        type: "image",
+        src: "/images/blog/how-gum-disease-progresses.webp",
+        alt: "Diagram showing gum disease progressing from healthy gums to gingivitis to periodontitis, with gingivitis marked reversible with early care and periodontitis marked manageable but not reversible.",
+        caption: "How gum disease progresses (and when it's reversible)",
+        width: 968,
+        height: 495,
+      },
+
+      { type: "heading", level: 2, text: "How is gum disease treated?" },
+      {
+        type: "paragraph",
+        text: "Treatment depends on how far things have gone — and it's usually gentler than people fear. Early gum disease often needs nothing more than a thorough cleaning and better home habits. More advanced cases may need a deeper cleaning below the gumline (scaling and root planing). Before jumping to gum surgery, we also offer a gentle, minimally-invasive option — Perio Protect, custom trays that deliver medication below the gumline at home. It's comfortable, easy to use, and can help many patients get gum disease under control without surgery.",
+        links: [
+          {
+            text: "a gentle, minimally-invasive option",
+            href: "/general-dentistry/perio-protect",
+          },
+        ],
+      },
+
+      { type: "heading", level: 2, text: "When to see a dentist" },
+      {
+        type: "callout",
+        variant: "warning",
+        heading: "When to book",
+        text: "See a dentist if your gums bleed regularly, look red or swollen, are pulling away from your teeth, or if you have persistent bad breath. If a tooth feels loose, don't wait — book promptly. None of these means the worst; most early gum disease is easily treated. The point of coming in is to catch it while it's still simple to fix.",
+        links: [
+          { text: "book promptly", href: "/patient-information/scheduling" },
+        ],
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "Protecting your gums in Southampton",
+      },
+      {
+        type: "paragraph",
+        text: "The best defense is simple: brush and floss daily, and keep your regular checkups so we can spot the early signs before you do. Dr. Jeffrey Brenner and the team have cared for Southampton smiles for more than 20 years, and a quick gum-health check is part of every visit. If you've noticed any of the signs above, don't wait for it to settle on its own — it won't. Book a gum-health checkup and we'll take a look.",
+        links: [
+          { text: "Dr. Jeffrey Brenner", href: "/about/dr-jeffrey-brenner" },
+          {
+            text: "Book a gum-health checkup",
+            href: "/general-dentistry/perio-protect",
+          },
+        ],
+      },
+      {
+        type: "cta",
+        heading: "Noticed a sign?",
+        text: "Call (215) 357-2224 or book a gum-health checkup — catching gum disease early usually means a simple cleaning, not surgery.",
+      },
+    ],
+    faqs: [
+      {
+        q: "What are the first signs of gum disease?",
+        a: "The earliest signs are usually red, swollen gums and bleeding when you brush or floss. Because early gum disease rarely hurts, these small changes are easy to miss, so it's worth acting on them.",
+      },
+      {
+        q: "Can gum disease be reversed?",
+        a: "The earliest stage, gingivitis, is fully reversible with a professional cleaning and good home care. Once it advances to periodontitis, it can be managed and slowed but not fully reversed, which is why early action matters.",
+      },
+      {
+        q: "Is bleeding gums always gum disease?",
+        a: "Not always, but gums that bleed regularly when you brush or floss are the most common early warning sign and shouldn't be ignored. Healthy gums generally don't bleed.",
+      },
+      {
+        q: "How is gum disease treated?",
+        a: "Early gum disease is often treated with a professional cleaning and better home care. More advanced cases may need a deeper cleaning (scaling and root planing) or a minimally-invasive option like Perio Protect trays before considering surgery.",
+      },
+    ],
+    extraSchema: [
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalWebPage",
+        name: "5 Signs of Gum Disease You Shouldn't Ignore",
+        url: "https://www.hamptonfamilydentist.com/blog/signs-of-gum-disease",
+        about: {
+          "@type": "MedicalCondition",
+          name: "Gum disease (periodontal disease)",
+        },
+        lastReviewed: "2026-08-28",
+        reviewedBy: {
+          "@type": "Person",
+          name: "Dr. Jeffrey Brenner, DMD",
+          jobTitle: "Dentist",
+          medicalSpecialty: "Dentistry",
+          worksFor: "Hampton Family Dental",
+        },
+        publisher: { "@type": "Organization", name: "Hampton Family Dental" },
+      },
+      {
+        ...dentistSchema,
+        medicalSpecialty: "Dentistry",
+        availableService: {
+          "@type": "MedicalProcedure",
+          name: "Gum disease treatment",
+        },
+      },
+    ],
+  },
+
+  {
+    slug: "root-canal-cost",
+    title: "How Much Does a Root Canal Cost, and Does It Hurt?",
+    metaTitle: "How Much Does a Root Canal Cost? Does It Hurt? | Southampton PA",
+    metaDescription:
+      "A root canal costs $700–$1,800 depending on the tooth, plus $800–$2,000 for a crown. Insurance often covers 50–80%. And no — it doesn't hurt the way you fear.",
+    excerpt:
+      "Two questions stop people from getting a root canal: what it costs and whether it hurts. Here are honest answers to both — including the second bill nobody mentions.",
+    category: "Restorative Dentistry",
+    publishedAt: "2026-08-31",
+    readTime: "8 min read",
+    reviewedBy: "Dr. Jeffrey Brenner, DMD",
+    lastReviewedLabel: "Last reviewed August 2026",
+    hero: {
+      src: "/images/blog/root-canal-cost.webp",
+      alt: "A patient discussing root canal cost and treatment with a dentist at Hampton Family Dental in Southampton PA",
+      width: 1536,
+      height: 1024,
+    },
+    answerBox: {
+      text: "A root canal typically costs $700 to $1,800 depending on the tooth — front teeth cost the least, molars the most — with a crown usually adding $800 to $2,000. Insurance often covers 50–80%. And does it hurt? Not the way people fear: the pain comes from the infection beforehand, and the procedure itself, done under local anesthesia, relieves it and feels much like a filling.",
+    },
+    keyTakeaways: [
+      {
+        text: "A root canal alone runs about $700–$1,800 depending on the tooth; a crown afterward adds $800–$2,000.",
+      },
+      {
+        text: "Molars cost the most because they have more canals; front teeth are the least expensive.",
+      },
+      {
+        text: "Insurance usually covers 50–80% of a root canal, bringing out-of-pocket to roughly $200–$900.",
+      },
+      {
+        text: "It doesn't hurt the way people fear — the pain is from the infection, and the procedure relieves it.",
+      },
+      {
+        text: "Saving the tooth with a root canal is usually cheaper than pulling it and replacing it with an implant.",
+      },
+    ],
+    sections: [
+      { type: "heading", level: 2, text: "How much does a root canal cost?" },
+      {
+        type: "paragraph",
+        text: "A root canal costs about $700 to $1,800 in 2026, and the biggest factor is which tooth needs it. Front teeth have a single canal and sit at the low end; molars have three or four canals and cost the most. Here's the honest breakdown — and you can see root canal treatment at Hampton Family Dental for how we handle each case:",
+        links: [
+          {
+            text: "root canal treatment at Hampton Family Dental",
+            href: "/restorative-dentistry/root-canal",
+          },
+        ],
+      },
+      {
+        type: "table",
+        columns: ["Tooth", "Canals", "Typical cost (procedure only)"],
+        rows: [
+          ["Front tooth (incisor/canine)", "1", "$700–$1,100"],
+          ["Premolar", "1–2", "$800–$1,400"],
+          ["Molar", "3–4", "$1,000–$1,800"],
+        ],
+        caption:
+          "Typical 2026 national ranges before insurance. Your exact cost depends on your exam.",
+      },
+      {
+        type: "image",
+        src: "/images/blog/root-canal-cost-by-tooth-type.webp",
+        alt: "Bar chart of typical 2026 root canal cost by tooth before insurance — front tooth $700–$1,100, premolar $800–$1,400, molar $1,000–$1,800.",
+        caption: "Root canal cost by tooth type",
+        width: 1065,
+        height: 495,
+      },
+
+      { type: "heading", level: 2, text: "Don't forget the crown" },
+      {
+        type: "paragraph",
+        text: "Here's the part that surprises people: the root canal and the crown are two separate bills. Most back teeth need a crown afterward to protect the tooth, and that adds roughly $800 to $2,000. So an all-in molar root canal plus crown commonly totals about $1,800 to $3,800 before insurance. It's worth asking about the full cost up front so the second bill isn't a surprise.",
+        links: [
+          {
+            text: "a crown afterward",
+            href: "/restorative-dentistry/dental-crowns",
+          },
+        ],
+      },
+
+      { type: "heading", level: 2, text: "Does insurance cover a root canal?" },
+      {
+        type: "paragraph",
+        text: "Most dental plans do cover root canals — usually 50 to 80% as a major restorative procedure — which brings the typical out-of-pocket cost down to around $200 to $900. Your exact share depends on your deductible and annual maximum, so it's smart to get a pre-estimate. We check your benefits before treatment, and our financing and current offers, including CareCredit, can spread out whatever's left.",
+        links: [
+          { text: "financing and current offers", href: "/specials" },
+        ],
+      },
+
+      { type: "heading", level: 2, text: "Does a root canal hurt?" },
+      {
+        type: "paragraph",
+        text: "This is the fear that keeps people from getting the treatment that would actually help them — so here's the honest truth. The pain you feel before a root canal comes from the infected, inflamed tooth. The procedure itself is done under local anesthesia, so you're numb the whole time, and according to the American Association of Endodontists, most people say it feels about the same as getting a filling. Far from causing pain, a root canal relieves it. You can read what the procedure actually involves if that helps settle the nerves.",
+        links: [
+          {
+            text: "American Association of Endodontists",
+            href: "https://www.aae.org/patients/root-canal-treatment/",
+            external: true,
+          },
+          {
+            text: "what the procedure actually involves",
+            href: "/restorative-dentistry/root-canal",
+          },
+        ],
+      },
+      {
+        type: "image",
+        src: "/images/blog/what-a-root-canal-does-in-4-steps.webp",
+        alt: "Four steps of a root canal — numb the tooth with local anesthesia, remove the infected pulp, clean and shape the canals, then seal it and add a crown, with a note that most people say it feels like a filling.",
+        caption: "What a root canal actually does — in 4 steps",
+        width: 1536,
+        height: 1024,
+      },
+      {
+        type: "paragraph",
+        text: "Afterward, the tooth may feel a little sore or tender for a few days as everything settles — over-the-counter pain relief usually handles it — but the deep, throbbing pain that sent you in is gone.",
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "Why does a root canal cost what it does?",
+      },
+      {
+        type: "paragraph",
+        text: "A root canal isn't a quick fix — you're paying for a careful, multi-step procedure: numbing the tooth, removing the infected pulp, cleaning and shaping the tiny canals, and sealing them. Molars cost more because they have more canals to treat and sit at the back of the mouth, where they're harder to reach. A specialist (endodontist) typically charges 20–30% more than a general dentist for the same tooth, which is one reason having it done at your regular dental office can be more affordable.",
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "Is a root canal worth it — or should I just pull the tooth?",
+      },
+      {
+        type: "paragraph",
+        text: "It's a fair question, and the honest answer usually favors saving the tooth. Pulling it is cheaper today, but the gap doesn't stay closed — a missing tooth needs replacing, and an implant plus crown typically runs $3,000 to $5,000 or more. A root canal and crown keeps your own natural tooth, usually for far less. Nothing replaces your natural tooth as well as your natural tooth — but the right choice depends on your specific situation, which is what a quick exam sorts out.",
+        links: [
+          {
+            text: "an implant",
+            href: "/restorative-dentistry/dental-implants",
+          },
+        ],
+      },
+      {
+        type: "image",
+        src: "/images/blog/save-the-tooth-vs-replace-it.webp",
+        alt: "Bar chart comparing all-in cost — root canal plus crown to save the tooth ($1,800–$3,800) versus extraction plus implant to replace it ($3,000–$5,500).",
+        caption: "Saving the tooth vs. replacing it",
+        width: 1065,
+        height: 435,
+      },
+
+      { type: "heading", level: 2, text: "What happens if you wait?" },
+      {
+        type: "paragraph",
+        text: "Putting it off doesn't make the problem cheaper or easier. An infected tooth doesn't heal on its own — the infection tends to spread, the pain usually gets worse, and a tooth that could have been saved can reach the point where it has to come out. Acting while the tooth is still restorable is almost always the less expensive, less painful path.",
+      },
+      {
+        type: "callout",
+        variant: "warning",
+        heading: "When it's urgent",
+        text: "If you ever have facial swelling, a fever, or swelling that affects breathing or swallowing, that's urgent — call us or seek care right away.",
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "Getting a root canal in Southampton",
+      },
+      {
+        type: "paragraph",
+        text: "If you've been told you need a root canal, the worst thing to do is nothing. Dr. Jeffrey Brenner and the team have relieved Southampton toothaches for more than 20 years, and we'll give you a clear, written estimate and walk you through exactly what to expect — no pressure, no surprises. Talk to us about your tooth and let's get you out of pain.",
+        links: [
+          { text: "Dr. Jeffrey Brenner", href: "/about/dr-jeffrey-brenner" },
+          {
+            text: "Talk to us about your tooth",
+            href: "/restorative-dentistry/root-canal",
+          },
+        ],
+      },
+      {
+        type: "cta",
+        heading: "In pain or facing a root canal?",
+        text: "Call (215) 357-2224 or book a visit — we'll check your benefits, give you a written estimate, and get you comfortable.",
+      },
+    ],
+    faqs: [
+      {
+        q: "How much does a root canal cost?",
+        a: "A root canal typically costs $700 to $1,800 depending on the tooth, with front teeth costing the least and molars the most. A crown afterward usually adds $800 to $2,000. Insurance often covers 50 to 80 percent.",
+      },
+      {
+        q: "Does a root canal hurt?",
+        a: "Not the way people fear. The pain you feel beforehand comes from the infected tooth. The root canal is done under local anesthesia, so the procedure itself feels much like getting a filling and actually relieves the pain.",
+      },
+      {
+        q: "Is a root canal cheaper than pulling the tooth?",
+        a: "Usually, yes, over time. A root canal and crown often cost less than extracting the tooth and replacing it with an implant, which can run $3,000 to $5,000 or more, and it keeps your natural tooth.",
+      },
+      {
+        q: "How much does a root canal cost with insurance?",
+        a: "Most dental plans cover 50 to 80 percent of a root canal as a major restorative procedure, bringing typical out-of-pocket cost to around $200 to $900, depending on your plan and annual maximum.",
+      },
+    ],
+    extraSchema: [
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalWebPage",
+        name: "How Much Does a Root Canal Cost, and Does It Hurt?",
+        url: "https://www.hamptonfamilydentist.com/blog/root-canal-cost",
+        about: {
+          "@type": "MedicalProcedure",
+          name: "Root canal treatment (endodontic therapy)",
+        },
+        lastReviewed: "2026-08-31",
+        reviewedBy: {
+          "@type": "Person",
+          name: "Dr. Jeffrey Brenner, DMD",
+          jobTitle: "Dentist",
+          medicalSpecialty: "Dentistry",
+          worksFor: "Hampton Family Dental",
+        },
+        publisher: { "@type": "Organization", name: "Hampton Family Dental" },
+      },
+      {
+        ...dentistSchema,
+        medicalSpecialty: "Dentistry",
+        availableService: {
+          "@type": "MedicalProcedure",
+          name: "Root canal treatment",
+        },
+      },
+    ],
+  },
 ];
 
 /** Parses either a plain date or a full ISO timestamp with offset. */
