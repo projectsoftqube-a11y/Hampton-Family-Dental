@@ -120,6 +120,7 @@ export default function Header() {
                   width={229}
                   height={55}
                   priority
+                  quality={90}
                   className={`h-8 sm:h-9 xl:h-[32px] 2xl:h-10 w-auto object-contain transition-all duration-500
                     ${lightSurface ? "" : "brightness-0 invert"}
                   `}

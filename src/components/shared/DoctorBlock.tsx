@@ -26,6 +26,11 @@ export default function DoctorBlock() {
                 src="/images/dentist_portrait_1779858109259.webp"
                 alt="Dr. Jeffrey Brenner, DMD"
                 fill
+                /* Fixed 144px circle (w-36) — see the note in
+                   AboutHubClient: a fill image with no `sizes` falls back to
+                   100vw and fetches a viewport-sized file for a thumbnail. */
+                sizes="144px"
+                quality={90}
                 className="object-cover"
               />
             </div>
@@ -55,6 +60,8 @@ export default function DoctorBlock() {
                 src="/doctor-avatar.png"
                 alt="Dr. Keyur Dudhat, DMD"
                 fill
+                sizes="144px"
+                quality={90}
                 className="object-cover"
               />
             </div>

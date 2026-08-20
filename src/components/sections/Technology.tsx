@@ -279,6 +279,7 @@ export default function Technology() {
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 500px"
+                    quality={90}
                   />
                   {/* Soft right-side gradient for the seam */}
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-white/40 hidden md:block" />

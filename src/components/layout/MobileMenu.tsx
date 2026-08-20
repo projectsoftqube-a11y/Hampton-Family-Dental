@@ -135,6 +135,7 @@ export default function MobileMenu({ onClose }: MobileMenuProps) {
             width={229}
             height={55}
             priority
+            quality={90}
             className="h-9 w-auto object-contain brightness-0 invert"
           />
           <button

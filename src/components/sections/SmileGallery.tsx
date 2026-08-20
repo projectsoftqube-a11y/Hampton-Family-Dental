@@ -161,6 +161,7 @@ export default function SmileGallery() {
                       fill
                       className="object-cover"
                       sizes="(max-width: 1024px) 100vw, 700px"
+                      quality={90}
                       priority
                     />
                     {/* Soft top & bottom vignettes for chip legibility */}
@@ -386,6 +387,7 @@ export default function SmileGallery() {
                       fill
                       className="object-cover"
                       sizes="200px"
+                      quality={90}
                     />
                     <div
                       className={`absolute inset-0 transition-opacity duration-500 ${

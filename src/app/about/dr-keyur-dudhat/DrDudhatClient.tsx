@@ -87,6 +87,7 @@ export default function DrDudhatClient() {
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 400px"
+                  quality={90}
                   priority
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-navy/40 via-transparent to-transparent" />

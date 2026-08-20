@@ -145,6 +145,7 @@ export default function WhyChooseUsClient() {
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 450px"
+                  quality={90}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-navy/30 via-transparent to-transparent" />
               </div>

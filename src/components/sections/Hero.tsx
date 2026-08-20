@@ -63,6 +63,7 @@ export default function Hero() {
           fill
           priority
           sizes="80vw"
+          quality={90}
           className="object-cover object-right"
         />
         {/* The family is grouped in the right half of the photograph and its
@@ -227,6 +228,7 @@ export default function Hero() {
             fill
             priority
             sizes="100vw"
+            quality={90}
             /* Right-anchored here too: at these short aspect ratios a centred
                crop would slice the grandmother out of the group. */
             className="object-cover object-right"

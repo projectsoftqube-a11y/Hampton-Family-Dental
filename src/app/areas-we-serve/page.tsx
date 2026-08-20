@@ -37,6 +37,7 @@ export default function AreasWeServePage() {
           fill
           priority
           sizes="100vw"
+          quality={90}
           className="object-cover opacity-35"
         />
         <div className="absolute inset-0 bg-gradient-to-br from-navy-dark via-navy-dark/90 to-navy-dark/55" />

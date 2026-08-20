@@ -98,6 +98,7 @@ export default function AboutHubClient() {
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 600px"
+                quality={90}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy/30 via-transparent to-transparent" />
             </motion.div>
@@ -167,6 +168,11 @@ export default function AboutHubClient() {
                   src="/images/dentist_portrait_1779858109259.webp"
                   alt="Dr. Jeffrey Brenner"
                   fill
+                  /* The frame is a fixed 192px circle (w-48). Without `sizes`,
+                     a fill image defaults to 100vw and downloads a
+                     viewport-width file for a thumbnail. 384px covers 2x. */
+                  sizes="192px"
+                  quality={90}
                   className="object-cover"
                 />
               </div>
@@ -204,6 +210,8 @@ export default function AboutHubClient() {
                   src="/doctor-avatar.png"
                   alt="Dr. Keyur Dudhat"
                   fill
+                  sizes="192px"
+                  quality={90}
                   className="object-cover"
                 />
               </div>

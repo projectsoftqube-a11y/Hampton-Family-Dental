@@ -295,6 +295,7 @@ export default function Services() {
                         fill
                         className="object-cover group-hover:scale-[1.08] transition-transform duration-[1.2s] ease-out"
                         sizes="(max-width: 768px) 80vw, 440px"
+                        quality={90}
                       />
                       {/* Subtle teal wash on hover */}
                       <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-transparent to-primary/0

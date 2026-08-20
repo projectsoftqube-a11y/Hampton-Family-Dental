@@ -282,6 +282,7 @@ export default function InsuranceAndPaymentClient() {
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 450px"
+                quality={90}
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-navy-dark/60 via-navy-dark/20 to-transparent z-10" />
               <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center text-primary absolute top-6 left-6 z-20 shadow-md">

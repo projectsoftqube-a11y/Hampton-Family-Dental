@@ -125,6 +125,7 @@ export default function Contact() {
           fill
           className="object-cover"
           sizes="100vw"
+          quality={90}
         />
         <div className="absolute inset-0 bg-gradient-to-br from-navy-dark/85 via-navy/80 to-navy-dark" />
       </div>

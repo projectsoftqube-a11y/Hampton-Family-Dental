@@ -158,6 +158,7 @@ export default function Footer() {
                 alt="Hampton Family Dental"
                 width={208}
                 height={50}
+                quality={90}
                 className="h-10 w-auto object-contain brightness-0 invert transition-transform duration-500 group-hover:scale-[1.02]"
               />
             </Link>

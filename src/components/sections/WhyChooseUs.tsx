@@ -116,6 +116,7 @@ export default function WhyChooseUs() {
                 fill
                 className="object-cover group-hover:scale-[1.05] transition-transform duration-[1.5s]"
                 sizes="(max-width: 1024px) 100vw, 50vw"
+                quality={90}
               />
               <div className="absolute inset-0 bg-gradient-to-br from-navy/85 via-navy/70 to-navy-dark" />
             </div>
@@ -398,6 +399,7 @@ export default function WhyChooseUs() {
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-[1.5s]"
                 sizes="300px"
+                quality={90}
               />
               <div className="absolute inset-0 bg-gradient-to-r from-transparent to-beige/30" />
             </div>

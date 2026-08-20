@@ -181,6 +181,7 @@ export default function OurStoryClient() {
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 500px"
+                quality={90}
                 priority
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy/30 via-transparent to-transparent" />

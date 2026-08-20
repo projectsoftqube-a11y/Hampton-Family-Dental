@@ -158,6 +158,7 @@ export default function BlogPostClient({ post }: { post: BlogPost }) {
               priority
               className="w-full h-auto object-cover"
               sizes="(max-width: 1180px) 100vw, 1120px"
+              quality={90}
             />
           </div>
 
@@ -287,6 +288,7 @@ export default function BlogPostClient({ post }: { post: BlogPost }) {
                               loading="lazy"
                               className="w-full h-auto object-contain"
                               sizes="(max-width: 1024px) 100vw, 700px"
+                              quality={90}
                             />
                           </div>
                           {section.caption && (

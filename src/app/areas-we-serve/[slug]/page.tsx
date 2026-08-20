@@ -154,6 +154,7 @@ export default async function AreaDetailPage({ params }: AreaPageProps) {
           fill
           priority
           sizes="100vw"
+          quality={90}
           className="object-cover opacity-30"
         />
         <div className="absolute inset-0 bg-gradient-to-br from-navy-dark via-navy-dark/92 to-navy-dark/60" />

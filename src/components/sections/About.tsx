@@ -145,6 +145,7 @@ export default function About() {
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 40vw"
+                quality={90}
               />
               {/* Soft top gradient */}
               <div className="absolute inset-0 bg-gradient-to-t from-navy/15 via-transparent to-transparent" />
@@ -170,6 +171,7 @@ export default function About() {
                 fill
                 className="object-cover"
                 sizes="280px"
+                quality={90}
               />
             </motion.div>
 
@@ -284,6 +286,7 @@ export default function About() {
                         alt="Dr. Jeffrey Brenner"
                         width={56}
                         height={56}
+                        quality={90}
                         className="object-cover w-full h-full"
                       />
                     </div>
@@ -311,6 +314,7 @@ export default function About() {
                         alt="Dr. Keyur Dudhat"
                         width={56}
                         height={56}
+                        quality={90}
                         className="object-cover w-full h-full"
                       />
                     </div>

@@ -3,6 +3,21 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   images: {
     formats: ["image/avif", "image/webp"],
+    /*
+      Next's default re-encode quality is 75, which reads as soft on the
+      photographic images — especially on a 2x display, where they are already
+      being scaled up. 90 costs a modest number of bytes (AVIF/WebP are
+      efficient at this end of the curve) and removes the compression half of
+      the blurriness users reported.
+
+      In Next 16 `qualities` is an allowlist, not a default: a `quality` prop
+      whose value is not listed here is coerced to the nearest entry. 75 stays
+      in the list so any image left at the default still optimizes normally.
+
+      Note this only governs Next's re-encode of the source file — it cannot
+      add detail a small source never had.
+    */
+    qualities: [75, 90],
   },
   async redirects() {
     return [
