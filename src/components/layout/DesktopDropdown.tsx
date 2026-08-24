@@ -45,7 +45,7 @@ export default function DesktopDropdown({
     return (
       <Link
         href={item.href}
-        className={`relative px-2 xl:px-1.5 2xl:px-3 py-2 text-[10px] xl:text-[9.5px] 2xl:text-[11px] font-semibold tracking-[0.05em] 2xl:tracking-[0.12em] uppercase whitespace-nowrap transition-colors duration-300 ${
+        className={`relative px-2 xl:px-1.5 2xl:px-2.5 py-2 text-[11.5px] xl:text-[11px] 2xl:text-[12.5px] font-semibold tracking-[0.03em] 2xl:tracking-[0.08em] uppercase whitespace-nowrap transition-colors duration-300 ${
           pathname === item.href
             ? lightSurface
               ? "text-primary"
@@ -79,7 +79,7 @@ export default function DesktopDropdown({
       {/* Trigger */}
       <Link
         href={item.href}
-        className={`group relative flex items-center gap-0.5 px-2 xl:px-1.5 2xl:px-3 py-2 text-[10px] xl:text-[9.5px] 2xl:text-[11px] font-semibold tracking-[0.05em] 2xl:tracking-[0.12em] uppercase whitespace-nowrap transition-colors duration-300 ${
+        className={`group relative flex items-center gap-0.5 px-2 xl:px-1.5 2xl:px-2.5 py-2 text-[11.5px] xl:text-[11px] 2xl:text-[12.5px] font-semibold tracking-[0.03em] 2xl:tracking-[0.08em] uppercase whitespace-nowrap transition-colors duration-300 ${
           isActive
             ? lightSurface
               ? "text-primary"

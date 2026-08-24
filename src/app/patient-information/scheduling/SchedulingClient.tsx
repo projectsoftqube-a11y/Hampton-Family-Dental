@@ -4,7 +4,6 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { 
-  Sparkles, 
   Calendar, 
   Heart, 
   ShieldCheck, 
@@ -85,53 +84,45 @@ export default function SchedulingClient() {
 
   return (
     <main className="bg-white overflow-hidden font-body text-navy">
-      {/* ─── Hero Section ─── */}
-      <section className="relative pt-36 pb-20 md:pt-44 md:pb-24 bg-navy-dark text-white">
+      {/* ─── Hero Section ───
+          Deliberately compact. This page exists to capture a booking, so the
+          form is the priority: the banner is trimmed to a title and a single
+          line, and the vertical padding roughly halved, which pulls the form
+          up into the first screen instead of below the fold. */}
+      <section className="relative pt-28 pb-10 md:pt-32 md:pb-12 bg-navy-dark text-white">
         <div className="absolute top-[20%] right-[-10%] w-[500px] h-[500px] rounded-full bg-primary/10 blur-[140px] pointer-events-none" />
         <div className="absolute bottom-[10%] left-[-10%] w-[400px] h-[400px] rounded-full bg-primary/5 blur-[120px] pointer-events-none" />
         
         <div className="relative z-10 max-w-[1300px] mx-auto px-5 md:px-10">
           <Breadcrumbs items={breadcrumbs} />
           
-          <div className="max-w-3xl mt-6">
-            <motion.div
-              initial={{ opacity: 0, y: 15 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="inline-flex items-center gap-3 mb-5"
-            >
-              <div className="h-px w-8 bg-primary-light" />
-              <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-white/8 border border-white/15">
-                <Sparkles className="w-3 h-3 text-primary-light" />
-                <span className="text-white/95 text-[10px] tracking-[0.25em] uppercase font-semibold">
-                  Schedule Now
-                </span>
-              </div>
-            </motion.div>
-
+          <div className="max-w-3xl mt-4">
+            {/* The "Schedule Now" eyebrow badge was removed: it repeated the
+                H1 directly beneath it and cost a row of height on a page
+                whose job is to get the patient into the form. */}
             <motion.h1
               initial={{ opacity: 0, y: 25 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.15 }}
-              className="font-heading text-white mb-6 text-4xl md:text-5xl lg:text-6xl font-bold leading-tight"
+              className="font-heading text-white mb-3 text-3xl md:text-4xl font-bold leading-tight"
             >
               Schedule Your Appointment
             </motion.h1>
-            
+
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="text-white/75 text-base md:text-lg leading-relaxed max-w-2xl"
+              className="text-white/75 text-sm md:text-base leading-relaxed max-w-2xl"
             >
-              Take the first step toward a healthy, beautiful smile. Submit an online request or call our Southampton staff directly.
+              Submit the form below and our Southampton team will call you back to confirm a time.
             </motion.p>
           </div>
         </div>
       </section>
 
       {/* ─── main Scheduling Panel ─── */}
-      <section className="py-16 md:py-24 bg-beige-light/20 relative">
+      <section className="pt-8 md:pt-10 pb-16 md:pb-24 bg-beige-light/20 relative">
         <div className="max-w-[1300px] mx-auto px-5 md:px-10">
           <div className="grid lg:grid-cols-12 gap-12 items-start">
             
@@ -139,13 +130,16 @@ export default function SchedulingClient() {
             <div className="lg:col-span-8 space-y-8">
               
               <div className="bg-white border border-navy/5 p-6 md:p-10 rounded-3xl shadow-lg space-y-6">
-                <div className="space-y-4">
+                <div className="space-y-3">
                   <h2 className="font-heading text-navy text-2xl font-bold">Request an Appointment Online</h2>
                   <p className="text-navy/80 text-sm md:text-base leading-relaxed">
-                    Booking your visit is simple. Call us at <a href={practiceInfo.phoneTel} className="text-primary hover:underline font-semibold">{practiceInfo.phone}</a> or submit the form below and our team will call you back to confirm a time that works for you. 
+                    Booking your visit is simple. Call us at <a href={practiceInfo.phoneTel} className="text-primary hover:underline font-semibold">{practiceInfo.phone}</a> or submit the form below and our team will call you back to confirm a time that works for you.
                   </p>
+                  {/* Emphasis sits on the two phrases a scanning patient is
+                      looking for — what they came in for, and the promise —
+                      rather than on a keyword phrase. */}
                   <p className="text-navy/60 text-xs md:text-sm leading-relaxed">
-                    Whether you need a routine checkup or want to <strong className="text-navy">book dentist appointment southampton</strong> for advanced restorative care, we make the process stress-free. Our care coordinators will reach out shortly to match you with a clinical slot.
+                    Whether you need a <strong className="text-navy font-semibold">routine checkup and cleaning</strong> or you are dealing with a <strong className="text-navy font-semibold">tooth filled with pain</strong>, we make the process <strong className="text-navy font-semibold">stress-free</strong>. Our care coordinators will reach out shortly to book your dentist appointment in Southampton.
                   </p>
                 </div>
 

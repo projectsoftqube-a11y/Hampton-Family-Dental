@@ -212,6 +212,28 @@ export default function TrustStats() {
           ))}
         </div>
 
+        {/* Extra Discounts Strip
+            Sits directly under the plan cards, not under the emergency
+            banner: these percentages are a membership-plan benefit, so
+            placing them after the emergency offer read as though the
+            discounts applied to that instead. */}
+        <motion.div
+          initial={{ opacity: 0, y: 15 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="mt-8 max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4 text-center"
+        >
+          <div className="rounded-2xl border border-dashed border-primary/30 bg-primary/5 p-4 flex items-center justify-center gap-3">
+            <span className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center font-heading text-primary-dark font-bold text-sm">15%</span>
+            <span className="text-navy text-xs font-semibold uppercase tracking-wider">OFF All Other Procedures</span>
+          </div>
+          <div className="rounded-2xl border border-dashed border-primary/30 bg-primary/5 p-4 flex items-center justify-center gap-3">
+            <span className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center font-heading text-primary-dark font-bold text-sm">10%</span>
+            <span className="text-navy text-xs font-semibold uppercase tracking-wider">OFF Ortho & Implants</span>
+          </div>
+        </motion.div>
+
         {/* Emergency Visit Banner */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -248,24 +270,6 @@ export default function TrustStats() {
             >
               Book Now
             </Link>
-          </div>
-        </motion.div>
-
-        {/* Extra Discounts Strip */}
-        <motion.div
-          initial={{ opacity: 0, y: 15 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          className="mt-12 max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4 text-center"
-        >
-          <div className="rounded-2xl border border-dashed border-primary/30 bg-primary/5 p-4 flex items-center justify-center gap-3">
-            <span className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center font-heading text-primary-dark font-bold text-sm">15%</span>
-            <span className="text-navy text-xs font-semibold uppercase tracking-wider">OFF All Other Procedures</span>
-          </div>
-          <div className="rounded-2xl border border-dashed border-primary/30 bg-primary/5 p-4 flex items-center justify-center gap-3">
-            <span className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center font-heading text-primary-dark font-bold text-sm">10%</span>
-            <span className="text-navy text-xs font-semibold uppercase tracking-wider">OFF Ortho & Implants</span>
           </div>
         </motion.div>
 
