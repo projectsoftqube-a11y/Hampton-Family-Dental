@@ -19,6 +19,23 @@ const FIELD_LABELS: Record<string, string> = {
 
 const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
+/**
+ * Turns an error into a single safe log line.
+ *
+ * SMTP rejections often quote the addresses involved, and the message carries
+ * the enquirer's address as replyTo — so an unfiltered error string can leak
+ * the very detail the log is meant to keep out. Any address is masked, and
+ * newlines are flattened so one failure stays one grep-able line.
+ */
+function redact(err: unknown): string {
+  const raw = err instanceof Error ? err.message : String(err);
+  return raw
+    .replace(/[^\s@<>",;:]+@[^\s@<>",;:]+/g, "[email-redacted]")
+    .replace(/\s+/g, " ")
+    .trim()
+    .slice(0, 300);
+}
+
 function escapeHtml(value: string): string {
   return value
     .replace(/&/g, "&amp;")
@@ -87,47 +104,57 @@ export async function POST(request: NextRequest) {
       </table>
     </div>`;
 
+  const subject = `${formType}${name ? ` — ${name}` : ""}`;
+
   try {
     const transport = getTransport();
-    await transport.sendMail({
+    const message = {
       from: `"${mailConfig.fromName}" <${mailConfig.from}>`,
-      to: mailConfig.to,
-      // Backup copy of every lead — see mailConfig.bcc.
-      bcc: mailConfig.bcc || undefined,
       replyTo: email || undefined,
-      subject: `${formType}${name ? ` — ${name}` : ""}`,
       text: textBody,
       html: htmlBody,
-    });
+    };
+
+    await transport.sendMail({ ...message, to: mailConfig.to, subject });
+
+    /*
+      Second copy, best effort. Awaited rather than fired and forgotten —
+      a serverless function can be frozen the moment the response is
+      returned, which would drop an un-awaited send.
+
+      Its failure must never fail the request: the practice already has the
+      enquiry, and telling the visitor to call again would cost a real lead.
+    */
+    if (mailConfig.backupTo) {
+      try {
+        await transport.sendMail({
+          ...message,
+          to: mailConfig.backupTo,
+          subject: `${mailConfig.backupSubjectPrefix}${subject}`,
+        });
+      } catch (backupErr) {
+        console.error(
+          `LEAD_BACKUP_COPY_FAILED formType=${formType} error=${redact(
+            backupErr
+          )} timestamp=${new Date().toISOString()}`
+        );
+      }
+    }
+
     return NextResponse.json({ ok: true });
   } catch (err) {
     /*
-      Last line of defence. The bcc backup rides the same SMTP transport, so
-      when SMTP itself fails — expired app password, full mailbox, provider
-      throttling — neither copy is sent and the lead would otherwise vanish
-      with nothing but a stack trace.
+      Alarm, not a record. It says a submission failed and why, so the outage
+      is noticed — the enquiry itself is recovered from the backup email copy.
 
-      Writing the whole submission to the runtime log as one greppable line
-      means it can still be recovered by hand. Search the host's logs for
-      LEAD_CAPTURE_FAILED.
-
-      This is a safety net, not a record system: log retention is limited and
-      it contains the enquirer's contact details, so it should be replaced by
-      real storage (see the storage options in the accompanying ticket) rather
-      than relied on. Logged only on failure, never on the success path.
+      Deliberately carries no name, phone, email or message: runtime logs are
+      visible to anyone with host access and are not an appropriate place for
+      patient contact details. Logged on failure only, never on success.
     */
     console.error(
-      "LEAD_CAPTURE_FAILED",
-      JSON.stringify({
-        timestamp: new Date().toISOString(),
-        formType,
-        emailSendStatus: "failed",
-        error: err instanceof Error ? err.message : String(err),
-        submission: rows.reduce<Record<string, string>>((acc, r) => {
-          acc[r.label] = r.value;
-          return acc;
-        }, {}),
-      })
+      `LEAD_CAPTURE_FAILED formType=${formType} status=failed error=${redact(
+        err
+      )} timestamp=${new Date().toISOString()}`
     );
     return NextResponse.json(
       { error: "Could not send your message. Please call us or try again later." },

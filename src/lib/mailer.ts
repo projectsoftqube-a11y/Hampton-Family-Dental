@@ -27,15 +27,22 @@ export const mailConfig = {
   fromName: process.env.SMTP_FROM_NAME || "Hampton Family Dental Website",
   to: process.env.ENQUIRY_TO || "info@hamptonfamilydentist.com",
   /**
-   * Blind copy of every enquiry, so a lead still exists somewhere if the main
-   * inbox is cleared, mis-filed, or the mailbox changes hands.
+   * Second copy of every enquiry, so a lead still exists if the first is
+   * deleted or mis-filed. Goes to the practice's own inbox by default —
+   * patient contact details are deliberately not routed to a third party.
    *
-   * Note what this does NOT protect against: it rides the same SMTP transport
-   * as the main message, so if SMTP itself fails, this fails with it. The
-   * failure path in the enquiry route covers that case separately.
+   * Sent as its own message rather than a bcc on the first: both copies land
+   * in the same mailbox, so they need different subjects to be told apart,
+   * and a bcc shares the original's subject line. It is sent separately, so
+   * one copy can survive the other being rejected.
+   *
+   * Does NOT protect against SMTP itself failing — both sends use the same
+   * transport. The enquiry route's failure path covers that.
    *
    * Set LEADS_BACKUP_EMAIL="" to switch the copy off.
    */
-  bcc:
-    process.env.LEADS_BACKUP_EMAIL ?? "hampton-leads-backup@softqubes.com",
+  backupTo:
+    process.env.LEADS_BACKUP_EMAIL ?? "info@hamptonfamilydentist.com",
+  /** Marks the second copy so it is obvious at a glance in a shared inbox. */
+  backupSubjectPrefix: "[BACKUP] ",
 };
