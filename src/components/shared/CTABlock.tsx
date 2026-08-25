@@ -50,7 +50,7 @@ export default function CTABlock() {
       timeOfDay: formData.timeOfDay,
       visitTypes: formData.visitTypes,
       message: formData.message,
-    });
+    }, { pageType: "main_cta" });
     setSending(false);
     if (err) {
       setSubmitError(err);

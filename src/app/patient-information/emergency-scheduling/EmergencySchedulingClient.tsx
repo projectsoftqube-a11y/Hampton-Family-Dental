@@ -57,7 +57,7 @@ export default function EmergencySchedulingClient() {
       phone: formData.phone,
       symptom: formData.symptom,
       notes: formData.notes,
-    });
+    }, { pageType: "main_emergency" });
     setSending(false);
     if (err) {
       setSubmitError(err);

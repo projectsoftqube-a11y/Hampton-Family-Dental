@@ -26,4 +26,16 @@ export const mailConfig = {
   from: process.env.SMTP_FROM || process.env.SMTP_USER || "",
   fromName: process.env.SMTP_FROM_NAME || "Hampton Family Dental Website",
   to: process.env.ENQUIRY_TO || "info@hamptonfamilydentist.com",
+  /**
+   * Blind copy of every enquiry, so a lead still exists somewhere if the main
+   * inbox is cleared, mis-filed, or the mailbox changes hands.
+   *
+   * Note what this does NOT protect against: it rides the same SMTP transport
+   * as the main message, so if SMTP itself fails, this fails with it. The
+   * failure path in the enquiry route covers that case separately.
+   *
+   * Set LEADS_BACKUP_EMAIL="" to switch the copy off.
+   */
+  bcc:
+    process.env.LEADS_BACKUP_EMAIL ?? "hampton-leads-backup@softqubes.com",
 };

@@ -92,6 +92,8 @@ export async function POST(request: NextRequest) {
     await transport.sendMail({
       from: `"${mailConfig.fromName}" <${mailConfig.from}>`,
       to: mailConfig.to,
+      // Backup copy of every lead — see mailConfig.bcc.
+      bcc: mailConfig.bcc || undefined,
       replyTo: email || undefined,
       subject: `${formType}${name ? ` — ${name}` : ""}`,
       text: textBody,
@@ -99,7 +101,34 @@ export async function POST(request: NextRequest) {
     });
     return NextResponse.json({ ok: true });
   } catch (err) {
-    console.error("Enquiry email failed:", err);
+    /*
+      Last line of defence. The bcc backup rides the same SMTP transport, so
+      when SMTP itself fails — expired app password, full mailbox, provider
+      throttling — neither copy is sent and the lead would otherwise vanish
+      with nothing but a stack trace.
+
+      Writing the whole submission to the runtime log as one greppable line
+      means it can still be recovered by hand. Search the host's logs for
+      LEAD_CAPTURE_FAILED.
+
+      This is a safety net, not a record system: log retention is limited and
+      it contains the enquirer's contact details, so it should be replaced by
+      real storage (see the storage options in the accompanying ticket) rather
+      than relied on. Logged only on failure, never on the success path.
+    */
+    console.error(
+      "LEAD_CAPTURE_FAILED",
+      JSON.stringify({
+        timestamp: new Date().toISOString(),
+        formType,
+        emailSendStatus: "failed",
+        error: err instanceof Error ? err.message : String(err),
+        submission: rows.reduce<Record<string, string>>((acc, r) => {
+          acc[r.label] = r.value;
+          return acc;
+        }, {}),
+      })
+    );
     return NextResponse.json(
       { error: "Could not send your message. Please call us or try again later." },
       { status: 500 }

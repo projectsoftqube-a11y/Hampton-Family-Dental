@@ -51,7 +51,7 @@ export default function ContactClient() {
       phone: formData.phone,
       visitTypes: formData.visitTypes,
       message: formData.message,
-    });
+    }, { pageType: "main_contact" });
     setSending(false);
     if (err) {
       setSubmitError(err);

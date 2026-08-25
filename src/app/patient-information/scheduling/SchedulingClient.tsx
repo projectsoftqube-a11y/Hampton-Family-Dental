@@ -69,7 +69,7 @@ export default function SchedulingClient() {
       preferredTime: formData.preferredTime,
       visitTypes: formData.visitTypes,
       notes: formData.notes,
-    });
+    }, { pageType: "main_scheduling" });
     setSending(false);
     if (err) {
       setSubmitError(err);

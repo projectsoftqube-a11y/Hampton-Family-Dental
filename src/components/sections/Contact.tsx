@@ -101,7 +101,7 @@ export default function Contact() {
       service: formData.service,
       visitTypes: formData.visitTypes,
       message: formData.message,
-    });
+    }, { pageType: "main_homepage" });
     setSending(false);
     if (err) {
       setSubmitError(err);

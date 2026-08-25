@@ -54,14 +54,18 @@ export const metadata: Metadata = {
   },
 };
 
-/** Google Tag Manager container for hamptonfamilydentist.com. */
+/**
+ * Google Tag Manager container — the single source of truth for all tracking
+ * on this site. GA4, Google Ads conversions and anything else are configured
+ * as tags inside the container, not as separate scripts here.
+ *
+ * A direct Google global-site-tag layer (GA4 + a Google Ads conversion ID)
+ * used to sit alongside this container, with the Ads conversion fired from
+ * sendEnquiry.ts. Both were removed so leads are counted once, by GTM only.
+ * Do not re-add a second tracking layer here — see the commit that removed it
+ * for the IDs, which now belong in the container instead.
+ */
 const GTM_ID = "GTM-WLNN5FJV";
-
-/** Google Analytics 4 measurement ID (gtag.js global site tag). */
-const GA_ID = "G-1KLWZ2499J";
-
-/** Google Ads conversion ID, configured on the same gtag instance. */
-const GOOGLE_ADS_ID = "AW-18372303940";
 
 export default function RootLayout({
   children,
@@ -90,26 +94,6 @@ export default function RootLayout({
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${GTM_ID}');`,
-          }}
-        />
-
-        {/* ── Google tag (gtag.js) ──
-            Global site tag for GA4 + Google Ads. Both `config` commands run on
-            the same gtag instance, exactly as Google's install instructions
-            describe: the GA4 measurement ID first, then this Ads account's
-            conversion ID directly beneath it.
-
-            Kept separate from the GTM container above on purpose — the Ads
-            conversion is fired directly via gtag() from the shared form helper
-            (src/lib/sendEnquiry.ts) rather than through a GTM trigger, because
-            the site has no post-submit "thank you" page to hang a pageview
-            trigger on: every form resolves in place. */}
-        {/* eslint-disable-next-line @next/next/next-script-for-ga */}
-        <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} />
-        {/* eslint-disable-next-line @next/next/next-script-for-ga */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', '${GA_ID}');gtag('config', '${GOOGLE_ADS_ID}');`,
           }}
         />
       </head>
