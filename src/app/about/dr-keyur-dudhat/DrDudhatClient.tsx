@@ -82,10 +82,10 @@ export default function DrDudhatClient() {
                 className="relative aspect-square md:aspect-[4/5] lg:aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl border border-navy/5 bg-beige-light/30"
               >
                 <Image
-                  src="/doctor-avatar.png"
+                  src="/images/dr-keyur-dudhat.webp"
                   alt="Dr. Keyur Dudhat, DMD"
                   fill
-                  className="object-cover"
+                  className="object-cover object-top"
                   sizes="(max-width: 1024px) 100vw, 400px"
                   quality={90}
                   priority

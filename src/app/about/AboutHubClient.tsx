@@ -207,7 +207,7 @@ export default function AboutHubClient() {
             >
               <div className="relative w-48 h-48 rounded-full overflow-hidden mb-6 border-4 border-white shadow-lg">
                 <Image
-                  src="/doctor-avatar.png"
+                  src="/images/dr-keyur-dudhat.webp"
                   alt="Dr. Keyur Dudhat"
                   fill
                   sizes="192px"

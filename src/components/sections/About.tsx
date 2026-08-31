@@ -310,7 +310,7 @@ export default function About() {
                   >
                     <div className="w-14 h-14 rounded-full overflow-hidden ring-2 ring-primary/30 shrink-0 bg-navy/5 flex items-center justify-center">
                       <Image
-                        src="/doctor-avatar.png"
+                        src="/images/dr-keyur-dudhat.webp"
                         alt="Dr. Keyur Dudhat"
                         width={56}
                         height={56}

@@ -15,12 +15,19 @@ export const metadata: Metadata = {
       "Meet Dr. Keyur Dudhat, DMD — partner at Hampton Family Dental in Southampton, PA, specializing in cosmetic dentistry, digital imaging, and dental implants.",
     url: `${SITE_URL}/about/dr-keyur-dudhat`,
     type: "profile",
+    images: [
+      {
+        url: `${SITE_URL}/images/dr-keyur-dudhat.webp`,
+        alt: "Dr. Keyur Dudhat, DMD — Hampton Family Dental, Southampton PA",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Dr. Keyur Dudhat, DMD | Hampton Family Dental",
     description:
       "Meet Dr. Keyur Dudhat, DMD — partner at Hampton Family Dental in Southampton, PA, specializing in cosmetic dentistry, digital imaging, and dental implants.",
+    images: [`${SITE_URL}/images/dr-keyur-dudhat.webp`],
   },
 };
 
@@ -52,7 +59,7 @@ export default function DrDudhatBioPage() {
       "Clear Correct",
       "Advanced Imaging"
     ],
-    "image": `${SITE_URL}/doctor-avatar.png`,
+    "image": `${SITE_URL}/images/dr-keyur-dudhat.webp`,
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "283 Second Street Pike, Suite 140",
