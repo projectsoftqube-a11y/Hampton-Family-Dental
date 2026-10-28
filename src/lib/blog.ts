@@ -5300,6 +5300,1208 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "toothache-tooth-pain-at-night",
+    title: "Toothache and Tooth Pain at Night: Causes and Emergency Relief",
+    metaTitle: "Toothache at Night: Causes & Emergency Relief Guide",
+    metaDescription:
+      "Why tooth pain feels worse at night, how to tell if it can wait until morning, abscess warning signs, and the relief steps that actually work — from a Southampton PA dentist with same-day emergency slots.",
+    excerpt:
+      "Lying flat makes a sore tooth throb harder — that part is real physiology. Here's what causes nighttime tooth pain, what safely gets you to morning, and the signs that mean you shouldn't wait.",
+    category: "Emergency Care",
+    publishedAt: "2026-10-07",
+    readTime: "9 min read",
+    reviewedBy: "Dr. Jeffrey Brenner, DMD",
+    lastReviewedLabel: "Last reviewed October 2026",
+    hero: {
+      src: "/images/blog/toothache-tooth-pain-at-night.webp",
+      alt: "A woman holding her jaw in bed at night with tooth pain, from Hampton Family Dental's emergency guide for Southampton PA",
+      width: 1672,
+      height: 941,
+    },
+    answerBox: {
+      text: "A toothache at night is usually caused by a cavity, an abscess, gum inflammation, or teeth grinding — and the pain often feels worse because lying flat sends more blood to your head and there are no daytime distractions. For mild pain, OTC ibuprofen, a cold compress, and a warm salt-water rinse can get you through the night. But if you have facial swelling, fever, pulsing throbbing pain, or difficulty swallowing, call an emergency dentist immediately — or 911 if your breathing is affected. At Hampton Family Dental in Southampton, PA, Dr. Jeffrey Brenner keeps same-day emergency slots open.",
+      links: [
+        {
+          text: "same-day emergency slots",
+          href: "/general-dentistry/emergency-dentistry",
+        },
+      ],
+    },
+    keyTakeaways: [
+      {
+        text: "Pain feels worse at night because lying flat increases blood flow to the head, there are fewer distractions, and nighttime grinding adds pressure.",
+      },
+      {
+        text: "Safe home relief: OTC ibuprofen, a cold compress on the cheek, a warm salt-water rinse, and keeping your head elevated.",
+      },
+      {
+        text: "Facial swelling, fever, or pulsing pain with a bad taste can signal a tooth abscess — that needs same-day attention, not a wait-and-see.",
+      },
+      {
+        text: "Call 911 if facial swelling affects your breathing or swallowing. A serious dental infection can become life-threatening.",
+      },
+      {
+        text: "Hampton Family Dental in Southampton, PA offers same-day emergency appointments. Call (215) 357-2224 as early in the day as you can.",
+        links: [
+          {
+            text: "same-day emergency appointments",
+            href: "/general-dentistry/emergency-dentistry",
+          },
+        ],
+      },
+    ],
+    sections: [
+      {
+        type: "callout",
+        variant: "danger",
+        heading: "Call 911 or go to the ER now if",
+        text: "You have facial swelling affecting your breathing or swallowing, a high fever (102°F or above) with tooth pain, uncontrolled bleeding from the mouth, or you feel very unwell, confused, or dizzy. For other dental emergencies, call Hampton Family Dental at (215) 357-2224 — same-day slots are available during office hours.",
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "When is a nighttime toothache a dental emergency?",
+      },
+      {
+        type: "paragraph",
+        text: "Not every nighttime toothache is a true emergency. Some can wait until morning for a regular appointment; others need attention right away. The difference usually comes down to whether there are signs of spreading infection — swelling, fever, pus — or just pain. Here is how to tell them apart.",
+      },
+      {
+        type: "image",
+        src: "/images/blog/toothache-wait-until-morning-or-emergency.webp",
+        alt: "Decision chart comparing nighttime toothache symptoms. Monitor or book soon: mild dull ache, pain only when chewing cold, pain fades with OTC relief, no swelling, started under 24 hours ago. Call an emergency dentist: facial or jaw swelling, fever with tooth pain, pulsing throbbing pain, bad taste or pus, difficulty swallowing.",
+        caption: "Can it wait until morning, or is it an emergency?",
+        width: 1332,
+        height: 666,
+      },
+      {
+        type: "image",
+        src: "/images/blog/nighttime-toothache-first-10-minutes.webp",
+        alt: "Triage flowchart titled Nighttime Toothache: Your First 10 Minutes, showing three paths — call 911 for swelling or airway problems, contact an emergency dentist for severe pain or pus, or use safe home care for mild pain.",
+        caption: "Nighttime toothache: your first 10 minutes",
+        width: 1999,
+        height: 1116,
+      },
+
+      { type: "heading", level: 3, text: "When to call 911 or go to the ER" },
+      {
+        type: "paragraph",
+        text: "Go to the ER immediately — or call 911 — if you have facial, jaw, or neck swelling that affects your breathing or swallowing; a high fever of 102°F or above combined with tooth pain; uncontrolled bleeding from the mouth that won't stop with pressure; or if you feel very unwell, confused, or dizzy. A serious dental infection can spread quickly and, in rare cases, become life-threatening — a condition called Ludwig's angina. The ER can give you antibiotics and manage your airway while you follow up with an emergency dentist in Southampton PA for the dental treatment itself.",
+        links: [
+          {
+            text: "emergency dentist in Southampton PA",
+            href: "/general-dentistry/emergency-dentistry",
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "For other urgent dental problems — a knocked-out tooth, severe abscess pain without airway symptoms, a lost filling, or a crown that fell off — an emergency dentist is usually the right first call. For a fuller walkthrough, see our guide on what to do during a dental emergency.",
+        links: [
+          {
+            text: "what to do during a dental emergency",
+            href: "/blog/dental-emergency-what-to-do",
+          },
+        ],
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "Why does tooth pain feel worse at night?",
+      },
+      {
+        type: "paragraph",
+        text: "You are not imagining it — dental pain really does intensify after dark. There are four main reasons, and they stack on top of each other.",
+      },
+      {
+        type: "list",
+        variant: "plus",
+        items: [
+          {
+            text: "Lying flat increases blood flow to your head. Upright during the day, gravity pulls blood downward. When you lie down, more blood reaches your head and face, and that extra pressure around an already-inflamed tooth makes the throbbing worse.",
+          },
+          {
+            text: "There are no daytime distractions. Work, conversation, and screens compete for your attention all day. At night, in quiet darkness, your brain has little else to focus on but the pain signal.",
+          },
+          {
+            text: "Teeth grinding during sleep (bruxism). Many people clench or grind without knowing it. For a tooth already sore from decay or inflammation, that added pressure is enough to trigger pain.",
+          },
+          {
+            text: "Lower cortisol at night. Cortisol — a natural anti-inflammatory your body produces — is at its lowest overnight, so your pain tolerance is genuinely reduced during sleeping hours.",
+          },
+        ],
+      },
+      {
+        type: "image",
+        src: "/images/blog/why-tooth-pain-feels-worse-at-night.webp",
+        alt: "Bar chart of why tooth pain feels worse at night — lying flat increases blood flow to the head, no daytime distractions, teeth grinding during sleep, food debris by bedtime, and lower cortisol at night.",
+        caption: "Why tooth pain feels worse at night",
+        width: 1241,
+        height: 544,
+      },
+
+      { type: "heading", level: 2, text: "What causes a toothache at night?" },
+      {
+        type: "paragraph",
+        text: "Most nighttime tooth pain traces back to one of these causes:",
+      },
+      {
+        type: "list",
+        variant: "plus",
+        items: [
+          {
+            text: "Cavity (tooth decay) — the most common cause. Once decay reaches the sensitive inner layer of the tooth, pain becomes noticeable, especially after sugar, heat, or cold.",
+          },
+          {
+            text: "Tooth abscess (infection) — a serious infection at the root of the tooth or in the surrounding bone. The pain is typically pulsing or throbbing, and it needs same-day attention.",
+          },
+          {
+            text: "Gum disease or inflammation — swollen, infected gums cause a dull, persistent ache that often peaks at night.",
+          },
+          {
+            text: "Teeth grinding (bruxism) — chronic grinding inflames the tooth's internal nerve and the surrounding muscles, leaving you sore with a headache by morning.",
+          },
+          {
+            text: "Cracked or damaged tooth — a tiny crack lets bacteria and temperature changes reach the nerve, causing sharp pain when you bite down.",
+          },
+          {
+            text: "Impacted wisdom tooth — a wisdom tooth that can't fully emerge causes gum inflammation (pericoronitis) and radiating pain.",
+          },
+          {
+            text: "Sinus pressure — a sinus infection or congestion can mimic upper molar pain, because those roots sit close to the sinus floor.",
+          },
+        ],
+      },
+      {
+        type: "image",
+        src: "/images/blog/causes-of-nighttime-tooth-pain.webp",
+        alt: "Horizontal bar chart of common causes of nighttime tooth pain — cavity or decay, tooth abscess, gum disease, teeth grinding, cracked tooth, impacted wisdom tooth, and sinus pressure.",
+        caption: "Most common causes of nighttime tooth pain",
+        width: 1241,
+        height: 603,
+      },
+      {
+        type: "paragraph",
+        text: "If you recently had a tooth extracted and this pain feels different — sharp, starting three to five days afterwards, with a bad taste — read our guide on dry socket symptoms and relief.",
+        links: [
+          {
+            text: "dry socket symptoms and relief",
+            href: "/blog/what-is-dry-socket",
+          },
+        ],
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "How to stop a toothache at night fast: safe home relief",
+      },
+      {
+        type: "paragraph",
+        text: "These steps are safe to try while you wait for a morning appointment. None of them fix the underlying cause — only a dentist can do that — but they can get you through the night.",
+      },
+      {
+        type: "list",
+        variant: "check",
+        items: [
+          {
+            text: "Take OTC pain relief. Ibuprofen (Advil, Motrin) is usually most effective because it reduces inflammation as well as pain. Acetaminophen (Tylenol) also works. Follow the label directions.",
+          },
+          {
+            text: "Apply a cold compress. Twenty minutes on the outside of the cheek, twenty minutes off. Cold narrows blood vessels and dulls the pain signal.",
+          },
+          {
+            text: "Rinse with warm salt water. Half a teaspoon of salt in 8 oz of warm water, swished gently for 30 seconds and spat out. It reduces inflammation and loosens debris.",
+          },
+          {
+            text: "Keep your head elevated. Prop yourself up with an extra pillow or two to ease the blood-flow pressure on the painful tooth.",
+          },
+          {
+            text: "Avoid triggers. Hot, cold, sugary, and acidic food and drink all spike dental pain. Stick to lukewarm, soft food until you can be seen.",
+          },
+          {
+            text: "Try clove oil. Clove oil contains eugenol, a natural analgesic. Dab a tiny amount on a cotton swab and apply it to the sore area — do not swallow it, and do not use it on an open wound.",
+          },
+        ],
+      },
+      {
+        type: "callout",
+        variant: "warning",
+        heading: "What not to do",
+        text: "Do not place aspirin directly on your gum — it causes chemical burns. Do not apply heat to the outside of your cheek, which can worsen an infection. Do not try to drain or pop a swelling yourself. And do not ignore pain that is severe or getting worse; it will not fix itself.",
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "What is an abscessed tooth, and why is it serious?",
+      },
+      {
+        type: "paragraph",
+        text: "A tooth abscess is a pocket of pus caused by a bacterial infection in the tooth's root or in the bone around it. According to the American Association of Endodontists, abscesses can turn serious quickly and will not clear up on their own.",
+      },
+      {
+        type: "list",
+        variant: "plus",
+        items: [
+          { text: "Pulsing, throbbing pain — often constant, often severe" },
+          { text: "Pain radiating to the jaw, ear, or neck" },
+          { text: "Facial, jaw, or cheek swelling" },
+          { text: "Fever" },
+          {
+            text: "A bad taste in your mouth, or visible pus around the tooth",
+          },
+          {
+            text: "Tender or swollen lymph nodes under the jaw or in the neck",
+          },
+          { text: "Sensitivity to pressure or chewing" },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "An abscess needs same-day treatment. The dentist drains the infection, prescribes antibiotics if needed, and either treats the tooth with a root canal or, if it cannot be saved, extracts it. Left alone, the infection can spread to the jaw, the neck, the bloodstream (sepsis), or the airway — rare, but serious. If you suspect an abscess, don't wait: call (215) 357-2224 at the earliest opportunity. If swelling is affecting your breathing or swallowing, go to the ER instead.",
+        links: [
+          { text: "root canal", href: "/restorative-dentistry/root-canal" },
+          {
+            text: "extracts it",
+            href: "/general-dentistry/tooth-extraction",
+          },
+        ],
+      },
+
+      { type: "heading", level: 2, text: "How to sleep with tooth pain" },
+      {
+        type: "paragraph",
+        text: "Getting through the night is possible with the right setup:",
+      },
+      {
+        type: "list",
+        variant: "check",
+        items: [
+          {
+            text: "Take OTC pain relief about 30 minutes before bed so it is working as you fall asleep",
+          },
+          {
+            text: "Elevate your head with an extra pillow or two to reduce blood-flow pressure",
+          },
+          { text: "Sleep on the opposite side if the pain is one-sided" },
+          {
+            text: "Avoid hot, cold, or sugary food and drink in the two hours before bed",
+          },
+          { text: "Rinse with warm salt water right before lying down" },
+          { text: "Keep a cold compress within reach in case the pain spikes" },
+          {
+            text: "Set an alarm for your next dose of pain relief, following the label directions",
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "If the pain is severe enough that you cannot sleep at all despite these steps, call an emergency dentist. That usually points to a problem that cannot wait.",
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "How Hampton Family Dental handles emergency appointments",
+      },
+      {
+        type: "paragraph",
+        text: "Hampton Family Dental in Southampton, PA keeps same-day emergency slots open during office hours — Monday 8–6, Tuesday 8–4, Wednesday 9–1, and Thursday 8–4. Dr. Jeffrey Brenner has handled dental emergencies in this community for over 20 years.",
+        links: [
+          {
+            text: "over 20 years",
+            href: "/about/our-story",
+          },
+        ],
+      },
+      {
+        type: "list",
+        variant: "plus",
+        items: [
+          {
+            text: "Call (215) 357-2224 as early in the day as you can — same-day slots fill up.",
+          },
+          {
+            text: "Describe your symptoms honestly: swelling, fever, how severe the pain is, how long it has been going on. It helps the team triage you properly.",
+          },
+          {
+            text: "For after-hours emergencies, the voicemail gives guidance. If swelling is affecting your breathing, do not wait for a callback — go to the ER.",
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "On cost: emergency dental visits are often covered by insurance, and our team will verify your insurance coverage before treatment. We also run a $59 emergency visit special that covers a focused exam and the necessary X-rays. For patients without insurance, our in-house membership plan starts at $288/year and includes 15% off other procedures.",
+        links: [
+          {
+            text: "verify your insurance coverage",
+            href: "/patient-information/insurance-and-payment",
+          },
+          {
+            text: "$59 emergency visit special",
+            href: "/specials",
+          },
+          {
+            text: "in-house membership plan",
+            href: "/specials",
+          },
+        ],
+      },
+      {
+        type: "cta",
+        heading: "In pain right now?",
+        text: "Call (215) 357-2224 for a same-day emergency appointment, or book online and we'll get you in as quickly as we can.",
+      },
+    ],
+    faqs: [
+      {
+        q: "How do you stop a toothache at night fast?",
+        a: "Take over-the-counter ibuprofen or acetaminophen as directed. Apply a cold compress to the outside of your cheek for 20 minutes on, 20 minutes off. Rinse gently with warm salt water (half a teaspoon in 8 oz of water). Keep your head elevated with an extra pillow, and avoid hot, cold, or sugary food. If the pain is severe or you have swelling, call an emergency dentist.",
+      },
+      {
+        q: "Why does toothache get worse at night?",
+        a: "Lying flat sends more blood to your head, which increases pressure on an inflamed tooth. There are fewer distractions than during the day, so your brain focuses more on the pain. Many people also grind their teeth during sleep, putting added pressure on sensitive teeth, and lower nighttime cortisol levels can make pain feel more intense.",
+      },
+      {
+        q: "When should you go to the ER for a toothache?",
+        a: "Go to the ER or call 911 if you have facial swelling that affects your breathing or swallowing, a high fever with tooth pain, uncontrolled bleeding, or you feel generally very unwell. These can signal a serious dental infection needing immediate medical care. For other dental emergencies without those red flags, an emergency dentist is usually the right first call.",
+      },
+      {
+        q: "Can a toothache go away on its own?",
+        a: "A toothache that fades can give the false impression the problem is gone, but the underlying cause — a cavity, infection, or cracked tooth — typically does not heal on its own. If a tooth is bad enough to wake you at night, you need to see a dentist, even if it feels better the next morning.",
+      },
+      {
+        q: "How do you tell if a tooth is infected or abscessed?",
+        a: "Signs of a tooth abscess include throbbing or pulsing pain, pain radiating to your jaw, ear, or neck, facial swelling, fever, a bad taste or visible pus around the tooth, and tender or swollen lymph nodes under your jaw. An abscess needs same-day treatment — it will not clear up on its own, and the infection can spread.",
+      },
+      {
+        q: "What is the strongest OTC painkiller for toothache?",
+        a: "Ibuprofen (Advil, Motrin) is generally the most effective over-the-counter option for dental pain because it reduces both pain and inflammation. Alternating ibuprofen and acetaminophen can give stronger relief than either alone, but check dosing with a pharmacist or doctor and never exceed the label directions. Avoid applying aspirin directly to the gum, which can cause chemical burns.",
+      },
+      {
+        q: "Is tooth pain always a dental emergency?",
+        a: "No. Mild sensitivity to cold that fades, or a dull ache that responds to over-the-counter pain relief, can usually wait for a next-day appointment. Severe pain, swelling, fever, or any sign of infection should be treated as an emergency and seen the same day.",
+      },
+      {
+        q: "Can I get a same-day emergency dental appointment in Southampton PA?",
+        a: "Yes. Hampton Family Dental in Southampton, PA keeps same-day emergency slots open during office hours. Call (215) 357-2224 as early in the day as possible when you are in pain. For after-hours emergencies, call the office — the voicemail provides guidance for serious situations.",
+      },
+    ],
+    extraSchema: [
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalWebPage",
+        name: "Toothache and Tooth Pain at Night: Causes and Emergency Relief",
+        url: "https://www.hamptonfamilydentist.com/blog/toothache-tooth-pain-at-night",
+        about: {
+          "@type": "MedicalCondition",
+          name: "Toothache",
+          alternateName: "Tooth pain",
+        },
+        lastReviewed: "2026-10-07",
+        reviewedBy: {
+          "@type": "Person",
+          name: "Dr. Jeffrey Brenner, DMD",
+          jobTitle: "Dentist",
+          medicalSpecialty: "Dentistry",
+          worksFor: "Hampton Family Dental",
+        },
+        publisher: { "@type": "Organization", name: "Hampton Family Dental" },
+      },
+      {
+        ...dentistSchema,
+        medicalSpecialty: "Dentistry",
+        availableService: {
+          "@type": "MedicalProcedure",
+          name: "Emergency dental care",
+        },
+      },
+    ],
+  },
+  {
+    slug: "clearcorrect-vs-invisalign-southampton-pa",
+    title: "ClearCorrect vs Invisalign: Which Is Right for Southampton Patients?",
+    metaTitle: "ClearCorrect vs Invisalign: Which Is Right? | Southampton",
+    metaDescription:
+      "An honest side-by-side of the two leading clear aligner systems — cost, treatment time, comfort, and case range — from a Southampton PA cosmetic dentist who offers ClearCorrect in-office.",
+    excerpt:
+      "Both straighten teeth with clear trays, and both are FDA-cleared. The real differences are price, case range, and tray feel. Here's how a Southampton dentist decides between them.",
+    category: "Cosmetic Dentistry",
+    publishedAt: "2026-10-15",
+    readTime: "9 min read",
+    reviewedBy: "Dr. Keyur Dudhat, DMD",
+    lastReviewedLabel: "Last reviewed October 2026",
+    hero: {
+      src: "/images/blog/clearcorrect-vs-invisalign.webp",
+      alt: "ClearCorrect versus Invisalign clear aligner comparison from Hampton Family Dental in Southampton PA",
+      width: 1672,
+      height: 941,
+    },
+    answerBox: {
+      text: "ClearCorrect and Invisalign both use clear plastic trays to straighten teeth, and both are FDA-cleared and clinically effective. The main differences: ClearCorrect is typically less expensive (around $3,000–$5,500 nationally versus $4,000–$7,500 for Invisalign), while Invisalign has a broader published case range for very complex orthodontic needs. At Hampton Family Dental in Southampton, PA, Dr. Keyur Dudhat offers ClearCorrect at $5,000 (regularly $6,500) with a free consultation and 3D digital scan.",
+      links: [
+        {
+          text: "ClearCorrect",
+          href: "/cosmetic-dentistry/clear-correct",
+        },
+      ],
+    },
+    keyTakeaways: [
+      {
+        text: "Both ClearCorrect and Invisalign are FDA-cleared clear aligner systems. They work the same way and produce similar outcomes for most cases.",
+      },
+      {
+        text: "Nationally, ClearCorrect typically costs $3,000–$5,500 and Invisalign $4,000–$7,500. Case complexity, your dentist, and insurance all move the final number.",
+      },
+      {
+        text: "Invisalign has a broader published case range and may be preferred for very complex bite correction. For most mild-to-moderate cases, ClearCorrect is clinically equivalent and costs less.",
+      },
+      {
+        text: "Treatment time is similar for both: 6–12 months for mild cases, 12–24 months for complex ones. Daily wear time matters more than the brand.",
+      },
+      {
+        text: "At Hampton Family Dental, ClearCorrect is currently $5,000 (regularly $6,500) with a free consultation and 3D-imaging-guided planning from Dr. Dudhat.",
+        links: [
+          { text: "free consultation", href: "/patient-information/scheduling" },
+        ],
+      },
+    ],
+    sections: [
+      {
+        type: "heading",
+        level: 2,
+        text: "ClearCorrect vs Invisalign at a glance",
+      },
+      {
+        type: "paragraph",
+        text: "Both systems are FDA-cleared Class II medical devices made by established manufacturers — ClearCorrect by the Straumann Group, Invisalign by Align Technology. Here is how they compare on the factors patients actually ask about.",
+      },
+      {
+        type: "table",
+        columns: ["Feature", "ClearCorrect", "Invisalign"],
+        rows: [
+          ["Manufacturer", "Straumann Group", "Align Technology"],
+          ["FDA cleared", "Yes", "Yes"],
+          ["Material", "ClearQuartz tri-layer", "SmartTrack"],
+          ["Typical cost (national)", "$3,000–$5,500", "$4,000–$7,500"],
+          [
+            "Case range",
+            "Mild to moderate; some complex",
+            "Mild to very complex (broader)",
+          ],
+          [
+            "Treatment duration",
+            "6–20 months (case-dependent)",
+            "6–24 months (case-dependent)",
+          ],
+          [
+            "Tray trim",
+            "Thinner, trimmed to the gumline",
+            "Slightly thicker, standard scalloped",
+          ],
+          [
+            "Attachments",
+            "Fewer typically needed",
+            "More attachment variety",
+          ],
+          ["Daily wear time", "20–22 hours/day", "20–22 hours/day"],
+          [
+            "Available at Hampton",
+            "Yes — $5,000 (regularly $6,500)",
+            "Available at select local practices",
+          ],
+        ],
+        caption:
+          "Sources: ClearCorrect.com (Straumann), Invisalign.com (Align Technology). Your dentist determines which system is clinically appropriate for your case.",
+      },
+      {
+        type: "image",
+        src: "/images/blog/clearcorrect-vs-invisalign-feature-comparison.webp",
+        alt: "Grouped bar chart comparing ClearCorrect and Invisalign across six features — tray thickness and comfort, discreetness, case range, treatment length, attachments required, and in-person monitoring.",
+        caption: "Feature-by-feature comparison",
+        width: 1331,
+        height: 644,
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "How much do ClearCorrect and Invisalign cost?",
+      },
+      {
+        type: "paragraph",
+        text: "Clear aligner costs vary with case complexity, your dentist's experience, and your location — but the two systems sit in different typical ranges. ClearCorrect runs $3,000 to $5,500 nationally for most cases, with some complex cases going higher. Invisalign runs $4,000 to $7,500; short-term express cases can be lower, and comprehensive treatment can exceed $8,000. Both ranges reflect published ADA Health Policy Institute and CareCredit data. A short mild-crowding case sits at the low end; a long complex case at the high end.",
+      },
+      {
+        type: "image",
+        src: "/images/blog/clearcorrect-vs-invisalign-cost-comparison.webp",
+        alt: "Horizontal bar chart comparing clear aligner costs — ClearCorrect at Hampton Family Dental $5,000, ClearCorrect national average $3,000 to $5,500, and Invisalign national average $4,000 to $7,500, without insurance.",
+        caption: "Clear aligner cost comparison",
+        width: 1246,
+        height: 582,
+      },
+
+      {
+        type: "heading",
+        level: 3,
+        text: "ClearCorrect cost at Hampton Family Dental",
+      },
+      {
+        type: "paragraph",
+        text: "At Hampton Family Dental in Southampton, PA, ClearCorrect clear aligners are currently offered at $5,000, regularly $6,500. That includes a free consultation and smile assessment with Dr. Keyur Dudhat, a 3D digital scan with a projected result preview before you commit, your complete ClearCorrect treatment, and all follow-up visits and refinements. Flexible monthly payment plans are available and most PPO insurances are accepted.",
+        links: [
+          {
+            text: "Dr. Keyur Dudhat",
+            href: "/about/dr-keyur-dudhat",
+          },
+          {
+            text: "ClearCorrect clear aligners",
+            href: "/cosmetic-dentistry/clear-correct",
+          },
+        ],
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "How long does treatment take with each?",
+      },
+      {
+        type: "paragraph",
+        text: "Treatment duration depends mostly on case complexity, not on the brand of aligner. Mild cases — small crowding or minor spacing — typically take 6 to 12 months with either system. Moderate cases, meaning spacing with rotation or mild bite correction, take 10 to 18 months. Complex cases involving significant misalignment or bite correction take 14 to 24 months.",
+      },
+      {
+        type: "paragraph",
+        text: "Within each category, ClearCorrect averages run slightly shorter at the mild end, and Invisalign averages slightly longer at the complex end — largely because Invisalign is more often used for the hardest cases in the first place. What matters far more than the brand is daily wear time: both systems need 20 to 22 hours a day to stay on schedule.",
+      },
+      {
+        type: "image",
+        src: "/images/blog/clearcorrect-vs-invisalign-treatment-timeline.webp",
+        alt: "Horizontal bar chart comparing ClearCorrect and Invisalign treatment duration by case complexity — mild, moderate, and complex cases, ranging from 6 to 24 months.",
+        caption: "Treatment duration by case complexity",
+        width: 1241,
+        height: 545,
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "Which is better for complex cases?",
+      },
+      {
+        type: "paragraph",
+        text: "For straightforward crowding, spacing, and mild bite issues, both systems work equally well. The differences show up at the complex end.",
+      },
+      {
+        type: "paragraph",
+        text: "Invisalign has advantages when significant bite correction is needed (overbite, crossbite, open bite), when large tooth movements are required for impacted or severely rotated teeth, when multiple attachments are needed to control specific movements, or when the case would otherwise call for braces but you want a clear option.",
+      },
+      {
+        type: "paragraph",
+        text: "ClearCorrect has advantages when cost is a significant factor and insurance coverage is limited, when the case is mild to moderate — which most adult cases are — when you prefer a thinner, less bulky tray, or when you would rather have fewer attachments bonded to your teeth.",
+      },
+      {
+        type: "paragraph",
+        text: "Your dentist's 3D scan and treatment plan show which one fits your case. At Hampton Family Dental, Dr. Dudhat uses 3D-imaging-guided planning for every clear aligner case, so you see your projected result before committing to either system.",
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "Are ClearCorrect aligners more comfortable than Invisalign?",
+      },
+      {
+        type: "paragraph",
+        text: "Comfort is individual, but there are real structural differences. ClearCorrect trays use a thinner tri-layer material (ClearQuartz) and are typically trimmed closer to the gumline — many patients report they feel slightly less bulky and are easier to take in and out. Invisalign trays use SmartTrack material with a scalloped trim; some patients find the slightly thicker material more noticeable at first, though it is not a dramatic difference.",
+      },
+      {
+        type: "paragraph",
+        text: "Both systems cause some soreness during the first 24 to 72 hours of each new tray. That is normal and means the aligners are doing their job. By tray five or six, most people have adjusted and the discomfort fades quickly with each change.",
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "Does insurance cover ClearCorrect and Invisalign?",
+      },
+      {
+        type: "paragraph",
+        text: "Many dental plans with orthodontic benefits cover a portion of clear aligner treatment — typically $1,000 to $3,000 toward either system. Coverage varies widely: some plans carry a lifetime orthodontic maximum of $1,500–$3,000, some cover adults while others limit orthodontic benefits to under-19s, and many plans don't distinguish between brands at all because both qualify as medically necessary orthodontic treatment.",
+      },
+      {
+        type: "paragraph",
+        text: "Hampton Family Dental will verify your specific benefits before treatment and apply any coverage to the $5,000 ClearCorrect price. For patients without aligner coverage, our in-house membership plan starts at $288/year and includes 15% off most procedures and 10% off orthodontics and implants — ask whether it can be combined with the current ClearCorrect offer.",
+        links: [
+          {
+            text: "verify your specific benefits",
+            href: "/patient-information/insurance-and-payment",
+          },
+          {
+            text: "in-house membership plan",
+            href: "/specials",
+          },
+        ],
+      },
+      {
+        type: "cta",
+        heading: "Not sure which aligner fits your case?",
+        text: "Book a free aligner consultation and 3D scan with Dr. Dudhat. You'll see your projected result and a written cost before you commit to anything.",
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "How does your Southampton dentist choose between the two?",
+      },
+      {
+        type: "paragraph",
+        text: "Dr. Dudhat uses 3D-imaging-guided planning for every clear aligner case at Hampton Family Dental. Here is the framework behind the recommendation.",
+      },
+      {
+        type: "list",
+        variant: "plus",
+        items: [
+          {
+            text: "3D scan and bite analysis. A digital scan shows the exact position of every tooth and the bite relationship — no impression trays, no gag reflex, no guesswork.",
+          },
+          {
+            text: "Case classification. The scan classifies your case as mild, moderate, or complex based on crowding, spacing, rotation, and bite correction needs.",
+          },
+          {
+            text: "System match. For most mild-to-moderate cases, ClearCorrect is clinically appropriate and better value. For significant bite correction or very complex movements, Invisalign may be the better fit.",
+          },
+          {
+            text: "Projected result preview. You see what your smile will look like at the end of treatment before you commit — timeline, number of trays, and total cost shown upfront.",
+          },
+          {
+            text: "Your decision. With the plan in hand, you choose based on your priorities: cost, comfort, timeline. The recommendation is clinical; the choice is yours.",
+          },
+        ],
+      },
+      {
+        type: "image",
+        src: "/images/blog/clearcorrect-vs-invisalign-decision-flowchart.webp",
+        alt: "Decision flowchart titled Choosing Your Clear Aligner, showing three paths — ClearCorrect for mild to moderate crowding, Invisalign for complex bite correction, and a joint dentist recommendation.",
+        caption: "Choosing your clear aligner: ClearCorrect or Invisalign?",
+        width: 1999,
+        height: 1116,
+      },
+      {
+        type: "paragraph",
+        text: "If you are also weighing clear aligners against traditional braces, see our Invisalign vs. braces comparison. You can also read more about ClearCorrect at Hampton Family Dental or about Invisalign treatment here.",
+        links: [
+          {
+            text: "Invisalign vs. braces comparison",
+            href: "/blog/invisalign-vs-braces",
+          },
+          {
+            text: "ClearCorrect at Hampton Family Dental",
+            href: "/cosmetic-dentistry/clear-correct",
+          },
+          {
+            text: "Invisalign treatment here",
+            href: "/cosmetic-dentistry/invisalign",
+          },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Is ClearCorrect cheaper than Invisalign?",
+        a: "Generally, yes. Nationally, ClearCorrect typically costs $3,000 to $5,500 while Invisalign costs $4,000 to $7,500. At Hampton Family Dental in Southampton, PA, ClearCorrect is currently offered at $5,000, regularly $6,500. Your actual cost depends on case complexity and whether your insurance covers aligner treatment.",
+      },
+      {
+        q: "Is ClearCorrect as good as Invisalign?",
+        a: "Both are FDA-cleared clear aligner systems that effectively treat mild to moderate crowding, spacing, and some bite issues. Invisalign has a larger published case range and may be preferred for very complex cases. For most patients with mild-to-moderate alignment needs, ClearCorrect is clinically equivalent and typically less expensive.",
+      },
+      {
+        q: "Can ClearCorrect fix complex orthodontic cases?",
+        a: "ClearCorrect handles mild-to-moderate cases including crowding, spacing, and some rotations very well. For significant bite correction, large tooth movements, or attachment-heavy cases, Invisalign or traditional braces may be the better option. Your dentist's 3D scan will show which system fits your case.",
+      },
+      {
+        q: "How long does ClearCorrect take compared to Invisalign?",
+        a: "Treatment duration is similar for both: 6 to 12 months for mild cases and 12 to 24 months for complex ones. The exact timeline depends on your case and how consistently you wear the aligners — 20 to 22 hours per day is recommended for both systems.",
+      },
+      {
+        q: "Are ClearCorrect aligners more comfortable than Invisalign?",
+        a: "Many patients report that ClearCorrect's trimmed-gumline design feels slightly less bulky, especially during the first few days of each new tray. Comfort varies by individual. Both systems cause some soreness during the first 24 to 72 hours of a new tray, which is normal and means the aligner is working.",
+      },
+      {
+        q: "Does insurance cover ClearCorrect and Invisalign?",
+        a: "Many dental plans with orthodontic benefits cover a portion of clear aligner treatment — typically $1,000 to $3,000 toward either system — though coverage varies widely. Hampton Family Dental will verify your benefits before treatment. For patients without aligner coverage, our membership plan starts at $288/year and includes 10% off orthodontic treatment.",
+      },
+      {
+        q: "Why is Invisalign more popular than ClearCorrect?",
+        a: "Invisalign (Align Technology) has been on the market longer and spends significantly more on consumer advertising. Clinical outcomes between the two systems are comparable for most cases. Popularity is not the same as clinical superiority — your dentist's recommendation should be based on your case, not brand recognition.",
+      },
+      {
+        q: "What is the ClearCorrect offer at Hampton Family Dental?",
+        a: "Hampton Family Dental currently offers ClearCorrect clear aligners at $5,000, regularly $6,500. The offer includes a free consultation and 3D digital scan with Dr. Keyur Dudhat. Flexible monthly payment plans are available and most PPO insurances are accepted. Call (215) 357-2224 to book your free aligner consultation.",
+      },
+    ],
+    extraSchema: [
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalWebPage",
+        name: "ClearCorrect vs Invisalign: Which Is Right for Southampton Patients?",
+        url: "https://www.hamptonfamilydentist.com/blog/clearcorrect-vs-invisalign-southampton-pa",
+        about: {
+          "@type": "MedicalProcedure",
+          name: "Clear aligner orthodontic treatment",
+        },
+        lastReviewed: "2026-10-15",
+        reviewedBy: {
+          "@type": "Person",
+          name: "Dr. Keyur Dudhat, DMD",
+          jobTitle: "Dentist",
+          medicalSpecialty: "Dentistry",
+          worksFor: "Hampton Family Dental",
+        },
+        publisher: { "@type": "Organization", name: "Hampton Family Dental" },
+      },
+      {
+        ...dentistSchema,
+        medicalSpecialty: "Dentistry",
+        availableService: {
+          "@type": "MedicalProcedure",
+          name: "ClearCorrect clear aligners",
+        },
+      },
+    ],
+  },
+  {
+    slug: "dental-implant-process-what-to-expect-southampton",
+    title:
+      "Dental Implants in Southampton PA: The Process, Costs and What to Expect",
+    metaTitle: "Dental Implants Southampton PA: Process & Costs",
+    metaDescription:
+      "A step-by-step walkthrough of the 5-stage dental implant process, national cost ranges from single-tooth to All-on-4, sourced success rates, and what to expect week by week in Bucks County.",
+    excerpt:
+      "From the first 3D scan to the final crown, a single-tooth implant takes about 6 to 9 months. Here's what happens at each stage, what it costs, and how long implants actually last.",
+    category: "Restorative Dentistry",
+    publishedAt: "2026-10-23",
+    readTime: "10 min read",
+    reviewedBy: "Dr. Keyur Dudhat, DMD",
+    lastReviewedLabel: "Last reviewed October 2026",
+    hero: {
+      src: "/images/blog/dental-implant-process-southampton.webp",
+      alt: "The dental implant process at Hampton Family Dental in Southampton PA — process, costs and what patient results look like",
+      width: 1672,
+      height: 941,
+    },
+    answerBox: {
+      text: "The dental implant process has five stages — consultation and 3D scan, extraction and bone graft if needed, implant post placement, osseointegration (3 to 6 months of healing), and final crown placement — and typically takes 6 to 9 months in total. National costs run $3,000 to $6,000 for a single-tooth implant and $30,000 to $50,000 for a full-mouth All-on-4 reconstruction. At Hampton Family Dental in Southampton, PA, Dr. Keyur Dudhat plans every implant case with 3D imaging so you see your projected result before you commit.",
+      links: [
+        {
+          text: "dental implant",
+          href: "/restorative-dentistry/dental-implants",
+        },
+      ],
+    },
+    keyTakeaways: [
+      {
+        text: "The process has five stages: consultation and 3D scan, extraction or bone graft if needed, implant post placement, osseointegration healing, and the final crown.",
+      },
+      {
+        text: "Most single-tooth implants take 6 to 9 months from first visit to final crown. Full-mouth cases can be done in a similar window with the All-on-4 approach.",
+      },
+      {
+        text: "National cost ranges: single-tooth $3,000–$6,000, implant bridge $5,000–$15,000, All-on-4 $15,000–$30,000 per arch, full-mouth $30,000–$50,000. Bone grafts and sinus lifts add $300–$5,000.",
+      },
+      {
+        text: "According to AAOMS and NIDCR, implants have roughly a 97% success rate at one year and remain above 90% at 20 years when hygiene and checkups are maintained.",
+      },
+      {
+        text: "At Hampton Family Dental, Dr. Dudhat plans every implant case with 3D imaging — you see the projected result and a written estimate before anything begins.",
+        links: [
+          { text: "Dr. Dudhat", href: "/about/dr-keyur-dudhat" },
+        ],
+      },
+    ],
+    sections: [
+      {
+        type: "heading",
+        level: 2,
+        text: "The 5-stage dental implant process, week by week",
+      },
+      {
+        type: "paragraph",
+        text: "A dental implant replaces a missing tooth root with a titanium post that bonds to your jawbone, then supports a crown that looks and functions like a natural tooth. The process unfolds in five stages. For a full overview of what we offer, see dental implant services at Hampton Family Dental.",
+        links: [
+          {
+            text: "dental implant services at Hampton Family Dental",
+            href: "/restorative-dentistry/dental-implants",
+          },
+        ],
+      },
+      {
+        type: "image",
+        src: "/images/blog/dental-implant-treatment-timeline.webp",
+        alt: "Timeline chart of the 5-stage dental implant process — consultation and 3D scan at week 0, extraction or bone graft weeks 2 to 10, implant post placement at week 10, osseointegration weeks 14 to 28, and abutment with final crown weeks 28 to 30.",
+        caption: "The 5-stage dental implant process (typical timeline)",
+        width: 1421,
+        height: 661,
+      },
+      {
+        type: "image",
+        src: "/images/blog/five-stage-dental-implant-process.webp",
+        alt: "Infographic titled From Consultation to New Smile showing the five stages of a dental implant journey with icons and week ranges for each stage.",
+        caption: "From consultation to new smile: your implant journey",
+        width: 1999,
+        height: 1116,
+      },
+
+      { type: "heading", level: 3, text: "Stage 1 — Consultation and 3D scan" },
+      {
+        type: "paragraph",
+        text: "Your first visit is an evaluation. Your dentist takes a 3D cone-beam CT scan that shows your jawbone volume, nerve positions, sinus location, and the exact spots where implants can be placed safely. You see your projected result in digital planning software, get a clear written estimate, and leave with a step-by-step plan. If a tooth needs extracting first, or you need a bone graft, those get scheduled next. Timeline: one visit, usually 60 to 90 minutes.",
+      },
+
+      {
+        type: "heading",
+        level: 3,
+        text: "Stage 2 — Extraction and bone graft (if needed)",
+      },
+      {
+        type: "paragraph",
+        text: "If the failing tooth is still in place, it is extracted. If your jawbone lacks the volume to support an implant, a bone graft is placed at the same time or in a separate visit. Grafts take 3 to 6 months to integrate and strengthen the ridge. Not every patient needs one — your 3D scan decides it. If you don't, this stage is skipped entirely. Timeline: extraction day, plus 3 to 6 months of healing if a graft is placed.",
+        links: [
+          {
+            text: "it is extracted",
+            href: "/general-dentistry/tooth-extraction",
+          },
+        ],
+      },
+
+      { type: "heading", level: 3, text: "Stage 3 — Implant post placement" },
+      {
+        type: "paragraph",
+        text: "The titanium implant post is surgically placed into your jawbone under local anesthesia, with sedation available. Guided surgery using the 3D scan means the post goes exactly where it was planned — no guesswork. You go home with soft-food instructions and over-the-counter pain management. Most patients return to desk work the next day; physically demanding jobs may need two or three days off. Timeline: one visit, typically 60 to 90 minutes per implant.",
+      },
+
+      {
+        type: "heading",
+        level: 3,
+        text: "Stage 4 — Osseointegration (3 to 6 months)",
+      },
+      {
+        type: "paragraph",
+        text: "This is the quiet stage, and it is the one that makes implants work. Osseointegration is the process where your jawbone cells grow directly onto the titanium surface, locking the implant permanently in place. You come in once or twice for quick checks. The rest of the time you are simply living normally — eating, working, sleeping — while your bone does the job. Your dentist confirms the implant is fully integrated before moving on. Timeline: 3 to 6 months.",
+      },
+
+      {
+        type: "heading",
+        level: 3,
+        text: "Stage 5 — Abutment and final crown",
+      },
+      {
+        type: "paragraph",
+        text: "Once osseointegration is confirmed, a small connector called an abutment is attached to the implant post, and your custom crown is placed on top, colour-matched to your natural teeth. From this visit on, you have a tooth that looks, feels, and functions like a natural one. Brush, floss, and keep up with checkups, and it should serve you for decades. Timeline: one to two visits over two to three weeks.",
+        links: [
+          {
+            text: "custom crown",
+            href: "/restorative-dentistry/dental-crowns",
+          },
+        ],
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "How much do dental implants cost in Bucks County?",
+      },
+      {
+        type: "paragraph",
+        text: "Cost depends on what you are replacing and whether you need preparatory procedures first. These are national average ranges from the ADA Health Policy Institute and industry data; Bucks County sits in line with them.",
+      },
+      {
+        type: "table",
+        columns: ["Option", "National cost range", "What it includes"],
+        rows: [
+          [
+            "Single-tooth implant",
+            "$3,000–$6,000",
+            "Implant post, abutment and crown",
+          ],
+          [
+            "Implant-supported bridge (3 teeth)",
+            "$5,000–$15,000",
+            "Two implants supporting a 3-tooth bridge",
+          ],
+          [
+            "All-on-4 (per arch)",
+            "$15,000–$30,000",
+            "Four implants supporting a full fixed denture, one arch",
+          ],
+          [
+            "Full-mouth (both arches)",
+            "$30,000–$50,000",
+            "All-on-4 upper and lower",
+          ],
+          [
+            "Bone graft (if needed)",
+            "$300–$3,000",
+            "Added when jawbone volume is insufficient",
+          ],
+          [
+            "Sinus lift (if needed)",
+            "$1,500–$5,000",
+            "Added for upper-jaw cases when the sinus floor sits too low",
+          ],
+        ],
+        caption:
+          "Sources: ADA Health Policy Institute, AAID, CareCredit. Without insurance — your actual cost depends on your 3D scan and treatment plan.",
+      },
+      {
+        type: "image",
+        src: "/images/blog/dental-implant-cost-ranges-bucks-county.webp",
+        alt: "Horizontal bar chart of dental implant cost ranges — single-tooth, implant-supported bridge, All-on-4 per arch, full-mouth both arches, bone graft and sinus lift.",
+        caption: "Dental implant cost by option",
+        width: 1242,
+        height: 623,
+      },
+      {
+        type: "paragraph",
+        text: "For a deeper breakdown, see our guide to how much dental implants cost. If you are still comparing options, our guide comparing implants, dentures and bridges walks through the alternatives.",
+        links: [
+          {
+            text: "how much dental implants cost",
+            href: "/blog/how-much-do-dental-implants-cost",
+          },
+          {
+            text: "comparing implants, dentures and bridges",
+            href: "/blog/implants-vs-dentures-vs-bridges",
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "On insurance: many dental plans cover a portion of implants when treatment is medically necessary, particularly the crown component. Our team will verify your insurance benefits before treatment. For patients without insurance, our in-house membership plan starts at $288/year and includes 10% off implant treatment plus 15% off most other procedures.",
+        links: [
+          {
+            text: "verify your insurance benefits",
+            href: "/patient-information/insurance-and-payment",
+          },
+          {
+            text: "in-house membership plan",
+            href: "/specials",
+          },
+        ],
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "What are full mouth implants (All-on-4)?",
+      },
+      {
+        type: "paragraph",
+        text: "Full-mouth dental implants replace an entire upper or lower arch. The most common approach today is All-on-4, where four strategically placed implant posts support a full fixed denture — giving you a non-removable, functional set of teeth without needing one implant per missing tooth.",
+      },
+      {
+        type: "list",
+        variant: "plus",
+        items: [
+          {
+            text: "Patients with widespread tooth loss or failing teeth throughout one or both arches",
+          },
+          {
+            text: "Current denture wearers who want a non-removable solution",
+          },
+          {
+            text: "Patients who want a fixed smile without the time and cost of individual implants for every tooth",
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "The advantage over traditional dentures: no slipping, no adhesives, better chewing function, and bone stimulation that prevents the jaw shrinkage dentures cause over time. National cost runs $15,000 to $30,000 per arch, or $30,000 to $50,000 for both. If you are weighing this against conventional dentures, our comparison of dentures and implant-supported dentures covers the trade-offs.",
+        links: [
+          {
+            text: "traditional dentures",
+            href: "/restorative-dentistry/dentures",
+          },
+          {
+            text: "comparison of dentures and implant-supported dentures",
+            href: "/blog/dentures-vs-implant-supported-dentures",
+          },
+        ],
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "Is the dental implant procedure painful?",
+      },
+      {
+        type: "paragraph",
+        text: "You should not feel pain during the surgery itself. Local anesthesia numbs the area completely — you feel pressure, not sharp discomfort. For patients who want more comfort, or who are having several implants placed at once, nitrous oxide, oral sedation, and IV sedation are available.",
+      },
+      {
+        type: "paragraph",
+        text: "Post-procedure discomfort typically peaks in the first 24 to 72 hours. Most patients manage it with over-the-counter ibuprofen or acetaminophen, cold compresses, and rest. Prescription pain medication is available if needed, though many patients find they don't need it past day two. The honest verdict most patients give afterwards: it was less uncomfortable than they expected.",
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "How long do dental implants last? Success rates over time",
+      },
+      {
+        type: "paragraph",
+        text: "Dental implants have one of the highest long-term success rates of any dental procedure. According to AAOMS and NIDCR data, success stays above 90% even at the 20-year mark.",
+      },
+      {
+        type: "image",
+        src: "/images/blog/dental-implant-success-rates-over-time.webp",
+        alt: "Bar chart showing reported dental implant success rates by year — approximately 97.5% at 1 year, 96% at 5 years, 94% at 10 years, 92% at 15 years and 90% at 20 or more years.",
+        caption: "Dental implant success rates over time",
+        width: 1265,
+        height: 542,
+      },
+      {
+        type: "paragraph",
+        text: "The implant post itself — the titanium screw — can last 25 years or more, and in many cases a lifetime, because titanium integrates permanently with jawbone. The crown on top typically needs replacing every 10 to 15 years from normal wear. Think of it like a car: the engine can run for decades, while the paint may need refreshing. What affects longevity is oral hygiene, smoking, overall health conditions like diabetes and osteoporosis, bone density, and keeping up with checkups. Our guide on how long dental implants last goes deeper.",
+        links: [
+          {
+            text: "how long dental implants last",
+            href: "/blog/how-long-do-dental-implants-last",
+          },
+        ],
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "Will I need a bone graft or sinus lift?",
+      },
+      {
+        type: "paragraph",
+        text: "Not every patient does, and your 3D scan determines it before you commit to anything. You may need a bone graft if the tooth has been missing for years and the jawbone has shrunk, if you wore a denture that caused ridge resorption, or if the tooth was lost to periodontal disease that damaged the bone. You may need a sinus lift if the implant is going into the upper jaw molar area and the sinus floor sits too low for safe placement.",
+      },
+      {
+        type: "paragraph",
+        text: "Both procedures are routine and safe, and both add 3 to 6 months of healing time. A bone graft costs $300 to $3,000 and a sinus lift $1,500 to $5,000. If you don't need either, your treatment moves faster and costs less.",
+      },
+      {
+        type: "cta",
+        heading: "Ready to see what your implant plan looks like?",
+        text: "Book a free implant consultation with a 3D scan. You'll get a projected result and a complete written estimate before any work begins.",
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "How Hampton Family Dental plans every implant case",
+      },
+      {
+        type: "paragraph",
+        text: "Dr. Dudhat uses 3D-imaging-guided planning for every implant case. Here is what that means in practice.",
+      },
+      {
+        type: "list",
+        variant: "check",
+        items: [
+          {
+            text: "Your 3D cone-beam scan shows exact bone volume, nerve positions, and sinus location",
+          },
+          {
+            text: "Treatment planning software maps the ideal implant position before anything happens in your mouth",
+          },
+          {
+            text: "You see the projected result on screen — what the implant will look like once it is in place",
+          },
+          {
+            text: "Any preparatory work (extraction, bone graft, sinus lift) is identified and scheduled upfront",
+          },
+          {
+            text: "You leave with a complete written treatment plan, timeline, and estimate",
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "The practice has provided dental care in Southampton for over 20 years, and Dr. Keyur Dudhat brought advanced implant and cosmetic training to the team — which means care that once meant a referral elsewhere now happens here.",
+        links: [
+          {
+            text: "over 20 years",
+            href: "/about/our-story",
+          },
+          {
+            text: "Dr. Keyur Dudhat",
+            href: "/about/dr-keyur-dudhat",
+          },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "How long does the dental implant process take?",
+        a: "Most single-tooth implant treatments take 6 to 9 months from first consultation to final crown. The implant post is placed in one visit, followed by 3 to 6 months of osseointegration healing, then the abutment and final crown. Cases needing a bone graft add another 3 to 6 months of healing.",
+      },
+      {
+        q: "How much do dental implants cost in Bucks County?",
+        a: "National averages for Pennsylvania are $3,000 to $6,000 for a single-tooth implant including post, abutment and crown; $5,000 to $15,000 for an implant-supported bridge replacing three teeth; $15,000 to $30,000 per arch for All-on-4; and $30,000 to $50,000 for a full-mouth reconstruction. Preparatory procedures like bone grafts ($300–$3,000) or sinus lifts ($1,500–$5,000) add to the total.",
+      },
+      {
+        q: "Is getting a dental implant painful?",
+        a: "You should not feel pain during the surgery — local anesthesia numbs the area completely, and sedation options are available. Post-procedure discomfort typically peaks in the first 24 to 72 hours and is managed with over-the-counter pain relief for most patients. Many patients report less discomfort than they expected.",
+      },
+      {
+        q: "What is the success rate of dental implants?",
+        a: "According to AAOMS and NIDCR, dental implants have a reported success rate of approximately 97% at one year, and they remain above 90% at twenty years when patients maintain good oral hygiene and attend regular checkups. Success depends on bone quality, smoking status, overall health, and ongoing care.",
+      },
+      {
+        q: "Do you need a bone graft for a dental implant?",
+        a: "Not every patient needs one. A bone graft is recommended when the jawbone lacks the volume or density to support the implant post, and your 3D scan determines this. If needed, a graft adds 3 to 6 months of healing time and typically costs $300 to $3,000 depending on the type and extent.",
+      },
+      {
+        q: "What are full mouth dental implants?",
+        a: "Full-mouth dental implants replace an entire upper or lower arch of teeth. The most common option is All-on-4 — four implant posts supporting a full fixed denture per arch. This gives a non-removable, functional set of teeth without needing one implant per missing tooth. National cost is $15,000 to $30,000 per arch, or $30,000 to $50,000 for both.",
+      },
+      {
+        q: "Can dental implants be done in one day?",
+        a: "Some cases qualify for immediate-load (same-day) implants, where a temporary crown is placed on the implant post the same day. The final permanent crown still requires osseointegration, meaning 3 to 6 months of healing. Your dentist's 3D scan determines whether immediate loading is clinically appropriate for your case.",
+      },
+      {
+        q: "How long do dental implants last?",
+        a: "The implant post itself can last 25 years or more — and in many cases a lifetime — because titanium integrates permanently with jawbone. The crown or restoration on top typically needs replacement every 10 to 15 years from normal wear.",
+      },
+    ],
+    extraSchema: [
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalWebPage",
+        name: "Dental Implants in Southampton PA: The Process, Costs and What to Expect",
+        url: "https://www.hamptonfamilydentist.com/blog/dental-implant-process-what-to-expect-southampton",
+        about: {
+          "@type": "MedicalProcedure",
+          name: "Dental implant placement",
+        },
+        lastReviewed: "2026-10-23",
+        reviewedBy: {
+          "@type": "Person",
+          name: "Dr. Keyur Dudhat, DMD",
+          jobTitle: "Dentist",
+          medicalSpecialty: "Dentistry",
+          worksFor: "Hampton Family Dental",
+        },
+        publisher: { "@type": "Organization", name: "Hampton Family Dental" },
+      },
+      {
+        ...dentistSchema,
+        medicalSpecialty: "Dentistry",
+        availableService: {
+          "@type": "MedicalProcedure",
+          name: "Dental implants",
+        },
+      },
+    ],
+  },
 ];
 
 /** Parses either a plain date or a full ISO timestamp with offset. */
