@@ -6502,6 +6502,871 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "dental-bonding-vs-veneers",
+    title: "Dental Bonding vs Veneers: Which Cosmetic Fix Is Right for You?",
+    metaTitle: "Dental Bonding vs Veneers: Which Is Right? | Guide",
+    metaDescription:
+      "An honest side-by-side on cost, lifespan, appearance, reversibility and chair time — plus when each one wins. From a Southampton PA cosmetic dentist who performs both.",
+    excerpt:
+      "Bonding is one visit, cheaper, and reversible. Veneers last two to three times longer but take enamel with them. Here's how a cosmetic dentist actually decides between the two.",
+    category: "Cosmetic Dentistry",
+    publishedAt: "2026-10-26",
+    readTime: "10 min read",
+    reviewedBy: "Dr. Keyur Dudhat, DMD",
+    lastReviewedLabel: "Last reviewed October 2026",
+    hero: {
+      src: "/images/blog/dental-bonding-vs-veneers.webp",
+      alt: "Dental bonding compared with porcelain veneers at Hampton Family Dental in Southampton PA",
+      width: 1672,
+      height: 941,
+    },
+    answerBox: {
+      text: "Dental bonding uses tooth-colored composite resin applied in a single visit to repair chips, gaps, or small cosmetic concerns — $100 to $600 per tooth, reversible, lasting 3 to 10 years. Porcelain veneers are custom-made shells placed over the front of your teeth across two to three visits — $925 to $2,500 per tooth, considered permanent, lasting 10 to 15 years and often 20 or more. At Hampton Family Dental in Southampton, PA, Dr. Keyur Dudhat performs both and will show you which fits your case at a cosmetic consultation.",
+      links: [
+        {
+          text: "Dental bonding",
+          href: "/cosmetic-dentistry/dental-bonding",
+        },
+        {
+          text: "Porcelain veneers",
+          href: "/cosmetic-dentistry/porcelain-veneers",
+        },
+      ],
+    },
+    keyTakeaways: [
+      {
+        text: "Bonding is faster, cheaper, and reversible. Veneers last longer, resist staining better, and are permanent.",
+      },
+      {
+        text: "Cost: bonding $100–$600 per tooth, veneers $925–$2,500 per tooth. A six-tooth smile runs $600–$3,600 in bonding or $5,550–$15,000 in veneers.",
+      },
+      {
+        text: "Lifespan: bonding 3 to 10 years, porcelain veneers 10 to 15 years and often 20 or more with good care.",
+      },
+      {
+        text: "For a single chipped tooth, bonding is usually the better value. For a full smile makeover, veneers give the longer-lasting result.",
+      },
+      {
+        text: "You can mix both across different teeth. Hampton Family Dental performs both procedures, so the recommendation follows your case rather than what the office happens to offer.",
+        links: [
+          { text: "both procedures", href: "/cosmetic-dentistry" },
+        ],
+      },
+    ],
+    sections: [
+      {
+        type: "heading",
+        level: 2,
+        text: "Dental bonding vs veneers at a glance",
+      },
+      {
+        type: "paragraph",
+        text: "Both treatments change how your teeth look, and both are done by a cosmetic dentist — but they differ in almost every practical respect. Here is the side-by-side.",
+      },
+      {
+        type: "table",
+        columns: ["Feature", "Dental bonding", "Porcelain veneers"],
+        rows: [
+          ["Material", "Composite resin", "Porcelain (lithium disilicate)"],
+          ["Typical cost per tooth", "$100–$600", "$925–$2,500"],
+          ["Full smile (6 teeth)", "$600–$3,600", "$5,550–$15,000"],
+          [
+            "Chair time",
+            "1 visit (30–60 min per tooth)",
+            "2–3 visits over 2–3 weeks",
+          ],
+          ["Enamel reduction", "None (reversible)", "About 0.5mm (permanent)"],
+          ["Lifespan", "3–10 years", "10–15 years, often 20+"],
+          ["Stain resistance", "Moderate", "Excellent"],
+          [
+            "Best for",
+            "Small fixes, chip repair, tighter budget",
+            "Full smile makeover, long-term result",
+          ],
+          ["Available at Hampton", "Yes", "Yes"],
+        ],
+        caption:
+          "Sources: ADA Health Policy Institute, AACD, Cleveland Clinic. National averages without insurance.",
+      },
+      {
+        type: "image",
+        src: "/images/blog/bonding-vs-veneers-feature-comparison.webp",
+        alt: "Grouped bar chart comparing composite bonding and porcelain veneers across six features — durability, stain resistance, natural appearance, reversibility, chair time and case range.",
+        caption: "Feature-by-feature comparison",
+        width: 1331,
+        height: 648,
+      },
+
+      { type: "heading", level: 2, text: "What is dental bonding?" },
+      {
+        type: "paragraph",
+        text: "Dental bonding is a cosmetic procedure where tooth-colored composite resin is applied to your tooth, shaped by hand, and hardened with a UV curing light. It is a conservative, same-day fix for a lot of common cosmetic complaints: chipped or cracked teeth, small gaps, minor discoloration that whitening won't shift, teeth that look short or uneven, and roots exposed by gum recession.",
+        links: [
+          {
+            text: "Dental bonding",
+            href: "/cosmetic-dentistry/dental-bonding",
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "The dentist roughens the tooth surface slightly, applies a bonding agent, shapes the composite to match the natural tooth, and cures it with light. Shaping and polishing finish the job. Figure 30 to 60 minutes per tooth, one visit, and in most cases no anesthesia at all. The key advantage is that no enamel is removed — if you change your mind later or want to move to veneers, your natural tooth is intact underneath.",
+      },
+
+      { type: "heading", level: 2, text: "What are porcelain veneers?" },
+      {
+        type: "paragraph",
+        text: "Porcelain veneers are thin, custom-made shells of porcelain that cover the front surface of your teeth. They are the stronger answer for full smile makeovers, severe discoloration that whitening cannot correct, misshapen or uneven teeth across several front teeth, permanently chipped or worn teeth, and for anyone who wants one consistent long-term result.",
+        links: [
+          {
+            text: "Porcelain veneers",
+            href: "/cosmetic-dentistry/porcelain-veneers",
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "A thin layer of enamel — around 0.5mm — is removed to make room for the veneer. Impressions or a digital scan are taken and temporaries are placed while the permanent veneers are fabricated at a dental lab. At the second visit, the temporaries come off and the permanent veneers are bonded in place. The thing to understand before you start: veneers require that enamel removal and are a permanent commitment. You will have veneers for the rest of your life, though individual ones can be replaced as they wear.",
+      },
+
+      { type: "heading", level: 2, text: "How much does each one cost?" },
+      {
+        type: "paragraph",
+        text: "Cost is the clearest difference between the two. These are national averages from ADA and industry data.",
+      },
+      {
+        type: "table",
+        columns: ["Option", "Per tooth", "Full smile (6 teeth)"],
+        rows: [
+          ["Composite bonding", "$100–$600", "$600–$3,600"],
+          ["Porcelain veneer", "$925–$2,500", "$5,550–$15,000"],
+        ],
+        caption:
+          "Sources: ADA Health Policy Institute, AACD, CareCredit. National averages without insurance — your actual cost depends on your case.",
+      },
+      {
+        type: "image",
+        src: "/images/blog/bonding-vs-veneers-cost-comparison.webp",
+        alt: "Horizontal bar chart comparing dental bonding and porcelain veneer costs per tooth and for a full six-tooth smile.",
+        caption: "Bonding vs veneers: cost comparison",
+        width: 1242,
+        height: 582,
+      },
+      {
+        type: "paragraph",
+        text: "On insurance: most cosmetic dental work is not covered, because bonding or veneers done purely for appearance counts as elective. Bonding may be covered when it repairs a cracked tooth and is therefore medically necessary. For patients paying out of pocket, our in-house membership plan starts at $288/year and includes 15% off cosmetic procedures.",
+        links: [
+          {
+            text: "in-house membership plan",
+            href: "/specials",
+          },
+        ],
+      },
+
+      { type: "heading", level: 2, text: "Which lasts longer?" },
+      {
+        type: "paragraph",
+        text: "Porcelain veneers, by a clear margin. Composite bonding typically lasts 3 to 10 years before it chips, stains, or needs a touch-up. Porcelain veneers typically last 10 to 15 years, and often 20 or more, before they need replacing.",
+      },
+      {
+        type: "image",
+        src: "/images/blog/bonding-vs-veneers-lifespan.webp",
+        alt: "Horizontal bar chart comparing lifespans — composite bonding 3 to 10 years and porcelain veneers 10 to 20 or more years with good care.",
+        caption: "Lifespan comparison",
+        width: 1241,
+        height: 545,
+      },
+      {
+        type: "paragraph",
+        text: "The reason is material: porcelain is harder, non-porous, and far more stain-resistant than composite resin. Placement matters too — bonding on front teeth that don't take chewing force outlasts bonding on back teeth. So do habits. Grinding, chewing ice, or biting your nails will shorten the life of either option. For more detail, see our guide on how long veneers last.",
+        links: [
+          {
+            text: "how long veneers last",
+            href: "/blog/how-long-do-veneers-last",
+          },
+        ],
+      },
+
+      { type: "heading", level: 2, text: "Which fits which situation?" },
+      {
+        type: "paragraph",
+        text: "The right answer depends entirely on what you are treating. Here is how a cosmetic dentist actually thinks about it, case by case.",
+      },
+
+      { type: "heading", level: 3, text: "Chipped or broken tooth" },
+      {
+        type: "paragraph",
+        text: "Bonding wins for most chipped teeth. A composite repair takes 30 to 60 minutes, costs $100 to $600, matches your natural tooth colour, and removes no enamel. For large structural chips or broken teeth where significant tooth structure is gone, a veneer or a crown is the better choice.",
+        links: [
+          { text: "a crown", href: "/restorative-dentistry/dental-crowns" },
+        ],
+      },
+
+      { type: "heading", level: 3, text: "Small gaps between teeth" },
+      {
+        type: "paragraph",
+        text: "Bonding often wins for one or two small gaps — composite can be added to the sides of adjacent teeth and close the space in a single visit. For wider gaps, or when several need closing across the smile, veneers give a more uniform result. And there is a third option worth naming: if the underlying alignment is what should really move, clear aligners address the cause rather than masking it.",
+        links: [
+          {
+            text: "clear aligners",
+            href: "/cosmetic-dentistry/clear-correct",
+          },
+        ],
+      },
+
+      {
+        type: "heading",
+        level: 3,
+        text: "Discolored teeth that whitening can't fix",
+      },
+      {
+        type: "paragraph",
+        text: "Veneers usually win here. Deep intrinsic discoloration — from tetracycline, dental trauma, or genetics — does not respond to professional whitening. Porcelain covers it completely and does not stain over time. Bonding can mask discoloration too, but the composite itself is more likely to stain within a few years.",
+        links: [
+          {
+            text: "professional whitening",
+            href: "/cosmetic-dentistry/teeth-whitening",
+          },
+        ],
+      },
+
+      { type: "heading", level: 3, text: "Full smile makeover" },
+      {
+        type: "paragraph",
+        text: "Veneers almost always win for a comprehensive change. When you are treating six or more front teeth for a uniform look — matched shape, colour, and length — porcelain gives the most predictable and longest-lasting result. The upfront cost is higher, but you are not revisiting it for 10 to 20 years. For how the whole plan comes together, see our smile makeover guide.",
+        links: [
+          {
+            text: "smile makeover guide",
+            href: "/blog/smile-makeover-guide",
+          },
+        ],
+      },
+      {
+        type: "image",
+        src: "/images/blog/bonding-vs-veneers-decision-flowchart.webp",
+        alt: "Decision flowchart titled Which Fix Fits Your Smile, showing three paths — bonding for a single chip or discoloration, veneers for a multi-tooth smile makeover, and a mixed approach across different teeth.",
+        caption: "Which fix fits your smile?",
+        width: 1999,
+        height: 1116,
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "Can you mix bonding and veneers on different teeth?",
+      },
+      {
+        type: "paragraph",
+        text: "Yes — and it is more common than people expect, often as the smartest plan rather than a compromise.",
+      },
+      {
+        type: "list",
+        variant: "plus",
+        items: [
+          {
+            text: "Veneers on the two front teeth that show most when you smile, bonding on the side teeth that draw less attention",
+          },
+          {
+            text: "Veneers on severely discolored teeth, bonding on teeth that only have minor chips",
+          },
+          {
+            text: "Veneers on the upper front teeth that show when smiling, bonding on the less visible lower teeth",
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Your cosmetic dentist plans this at the consultation so shade, shape, and finish blend naturally. The goal is one coherent smile, not a patchwork.",
+      },
+
+      { type: "heading", level: 2, text: "Do veneers damage your teeth?" },
+      {
+        type: "paragraph",
+        text: "Porcelain veneers require minor enamel reduction, typically about 0.5mm per tooth — roughly the thickness of a fingernail. That enamel is permanently removed to make room for the veneer so it sits flush with your bite.",
+      },
+      {
+        type: "paragraph",
+        text: "Is that damage? Technically yes: your natural tooth structure is permanently altered. In practice, a properly placed veneer protects the tooth underneath and functions like a natural one for 10 to 20 years. The honest framing is less about damage and more about commitment — you will have veneers, or something covering the prepared tooth, for the rest of your life.",
+      },
+      {
+        type: "callout",
+        variant: "warning",
+        heading: "Bonding is the reversible option",
+        text: "No enamel is removed for bonding, so your natural tooth is preserved underneath. That is why bonding is often the better recommendation for younger patients, or for anyone who wants to keep every future option open.",
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "How your Southampton dentist decides between the two",
+      },
+      {
+        type: "paragraph",
+        text: "Dr. Keyur Dudhat performs both bonding and veneers at Hampton Family Dental. Here is the framework behind a cosmetic consultation.",
+        links: [
+          { text: "Dr. Keyur Dudhat", href: "/about/dr-keyur-dudhat" },
+        ],
+      },
+      {
+        type: "list",
+        variant: "check",
+        items: [
+          {
+            text: "Smile assessment — photos, bite evaluation, and a tooth-by-tooth review of what is bothering you against what is clinically there",
+          },
+          {
+            text: "Case classification — single tooth, several teeth, or a full smile? Chip, discoloration, gap, or shape? Each points somewhere different",
+          },
+          {
+            text: "Projected result preview — digital imaging or a wax mock-up shows what each option would look like before you commit to anything",
+          },
+          {
+            text: "Honest recommendation — because both procedures are offered here, the advice follows your case rather than what the office happens to perform",
+          },
+          {
+            text: "Your decision — with a full written estimate in hand, you weigh cost, longevity, chair time, and reversibility yourself",
+          },
+        ],
+      },
+      {
+        type: "cta",
+        heading: "Not sure which one fits your smile?",
+        text: "Book a cosmetic consultation with Dr. Dudhat. You'll see a projected result and a written estimate for both options before you decide anything.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Which lasts longer, bonding or veneers?",
+        a: "Porcelain veneers typically last 10 to 15 years and often 20 or more with good care; dental bonding typically lasts 3 to 10 years. Veneers are more durable and stain-resistant because they are porcelain, while bonding uses composite resin that wears and stains faster.",
+      },
+      {
+        q: "Is dental bonding cheaper than veneers?",
+        a: "Yes. Dental bonding typically costs $100 to $600 per tooth while porcelain veneers typically cost $925 to $2,500 per tooth without insurance. A full-smile bonding treatment runs $600 to $3,600; a set of six veneers runs $5,550 to $15,000. Bonding is less expensive but does not last as long.",
+      },
+      {
+        q: "Can you get bonding and veneers on the same teeth?",
+        a: "Not usually on the same tooth, but yes across different teeth in the same smile. Many patients have bonding on back teeth or minor chip repairs and veneers on the most visible front teeth. Your cosmetic dentist plans this at the consultation so the results blend naturally.",
+      },
+      {
+        q: "How much does bonding cost per tooth?",
+        a: "Dental bonding typically costs $100 to $600 per tooth without insurance, depending on the size of the repair and the dentist's experience. A small chip repair sits at the lower end; cosmetic bonding across several teeth at the higher end. Insurance sometimes covers bonding when it is medically necessary, such as repairing a cracked tooth, but not when it is purely cosmetic.",
+      },
+      {
+        q: "Do veneers damage your teeth?",
+        a: "Porcelain veneers require minor enamel reduction, typically about 0.5mm, to fit properly. This is permanent — your tooth is slightly altered, and veneers will need replacing over your lifetime. Bonding is reversible because no enamel is removed, which makes it the enamel-friendly choice for patients who want to preserve their natural tooth structure.",
+      },
+      {
+        q: "Can bonding fix a chipped tooth?",
+        a: "Yes — bonding is one of the most common treatments for a chipped tooth. The dentist applies composite resin to the chip, shapes it to match your tooth, and cures it with a UV light. The process typically takes 30 to 60 minutes in a single visit and costs $100 to $600 per tooth. For large chips or structural damage, a veneer or crown may be the better choice.",
+      },
+      {
+        q: "How long does dental bonding last?",
+        a: "Dental bonding typically lasts 3 to 10 years with good care. Lifespan depends on placement — bonding on front teeth that don't take chewing force lasts longer — along with diet, since coffee, wine and tobacco stain composite, and habits like nail biting or grinding. Regular checkups help it last as long as possible.",
+      },
+      {
+        q: "Are veneers worth the cost?",
+        a: "For patients who want a long-term, dramatic improvement across several front teeth, yes — veneers deliver 10 to 20 years of consistent, stain-resistant results. For a single chipped tooth or a small cosmetic fix, bonding is usually better value. The right answer depends on what you are treating and how long you want it to last.",
+      },
+    ],
+    extraSchema: [
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalWebPage",
+        name: "Dental Bonding vs Veneers: Which Cosmetic Fix Is Right for You?",
+        url: "https://www.hamptonfamilydentist.com/blog/dental-bonding-vs-veneers",
+        about: {
+          "@type": "MedicalProcedure",
+          name: "Cosmetic dental restoration",
+        },
+        lastReviewed: "2026-10-26",
+        reviewedBy: {
+          "@type": "Person",
+          name: "Dr. Keyur Dudhat, DMD",
+          jobTitle: "Dentist",
+          medicalSpecialty: "Dentistry",
+          worksFor: "Hampton Family Dental",
+        },
+        publisher: { "@type": "Organization", name: "Hampton Family Dental" },
+      },
+      {
+        ...dentistSchema,
+        medicalSpecialty: "Dentistry",
+        availableService: {
+          "@type": "MedicalProcedure",
+          name: "Dental bonding and porcelain veneers",
+        },
+      },
+    ],
+  },
+  {
+    slug: "gum-disease-treatment-cost",
+    title: "How Much Does Gum Disease Treatment Cost? (And Is It Worth It?)",
+    metaTitle: "Gum Disease Treatment Cost: What You'll Really Pay",
+    metaDescription:
+      "National cost ranges for every stage of gum disease treatment — cleaning, deep cleaning, Perio Protect, gum graft, osseous surgery — plus what waiting actually costs you.",
+    excerpt:
+      "Treating gingivitis costs about $150. Treating what it becomes can run past $15,000. Here's the cost at every stage, and the honest math on catching it early.",
+    category: "General Dentistry",
+    publishedAt: "2026-10-28",
+    readTime: "10 min read",
+    reviewedBy: "Dr. Jeffrey Brenner, DMD",
+    lastReviewedLabel: "Last reviewed October 2026",
+    hero: {
+      src: "/images/blog/gum-disease-treatment-cost.webp",
+      alt: "The cost of gum disease treatment explained by Hampton Family Dental in Southampton PA",
+      width: 1672,
+      height: 941,
+    },
+    answerBox: {
+      text: "Gum disease treatment costs $75 to $200 for a regular cleaning at the gingivitis stage, $600 to $1,400 for a full-mouth deep cleaning (scaling and root planing), $1,500 to $4,000 for a Perio Protect tray system, and $600 to $3,000 per tooth for gum graft surgery. On whether it is worth it: catching gum disease early can save thousands, because untreated advanced periodontitis leads to tooth loss and implant replacement running $15,000 or more. At Hampton Family Dental in Southampton, PA, Dr. Jeffrey Brenner evaluates every case and offers Perio Protect.",
+      links: [
+        {
+          text: "Perio Protect",
+          href: "/general-dentistry/perio-protect",
+        },
+      ],
+    },
+    keyTakeaways: [
+      {
+        text: "Cost tracks the stage: regular cleaning $75–$200, full-mouth deep cleaning $600–$1,400, Perio Protect $1,500–$4,000, surgery $600–$3,000 per tooth or quadrant.",
+      },
+      {
+        text: "Treating gingivitis at around $150 versus advanced periodontitis at $5,000 or more is the single biggest financial decision in gum care. The cost compounds fast.",
+      },
+      {
+        text: "Gingivitis is reversible with cleaning and good home care. Periodontitis is manageable but not curable — the window between them is what matters.",
+      },
+      {
+        text: "Most dental PPO plans cover scaling and root planing at 50% to 80% when pocket depths measure 4mm or deeper and treatment is medically necessary.",
+      },
+      {
+        text: "Our in-house membership plan starts at $288/year and includes cleanings plus 15% off procedures, with no deductible, annual maximum, or waiting period.",
+        links: [{ text: "membership plan", href: "/specials" }],
+      },
+    ],
+    sections: [
+      {
+        type: "heading",
+        level: 2,
+        text: "How much does gum disease treatment cost?",
+      },
+      {
+        type: "paragraph",
+        text: "What you pay depends on the stage of gum disease and which procedures you actually need. Early-stage treatment is relatively inexpensive. Advanced disease requires more intensive — and considerably more expensive — intervention.",
+      },
+      {
+        type: "table",
+        columns: ["Treatment", "National cost range", "When it's used"],
+        rows: [
+          [
+            "Regular cleaning (prophylaxis)",
+            "$75–$200",
+            "Gingivitis or healthy gums",
+          ],
+          [
+            "Deep cleaning (SRP), per quadrant",
+            "$150–$350",
+            "Pocket depths of 4mm or more",
+          ],
+          [
+            "Deep cleaning, all four quadrants",
+            "$600–$1,400",
+            "Full-mouth periodontal treatment",
+          ],
+          [
+            "Perio Protect tray system",
+            "$1,500–$4,000",
+            "Ongoing periodontal maintenance",
+          ],
+          [
+            "Gum graft surgery, per tooth",
+            "$600–$3,000",
+            "Significant gum recession",
+          ],
+          [
+            "Osseous surgery, per quadrant",
+            "$1,000–$3,000",
+            "Advanced periodontitis needing bone recontouring",
+          ],
+        ],
+        caption:
+          "Sources: ADA Health Policy Institute, AAP, CareCredit. National averages without insurance — your actual cost depends on your exam.",
+      },
+      {
+        type: "image",
+        src: "/images/blog/gum-disease-treatment-cost-by-stage.webp",
+        alt: "Horizontal bar chart of gum disease treatment costs by stage — regular cleaning, deep cleaning per quadrant and full mouth, Perio Protect tray system, gum graft surgery and osseous surgery.",
+        caption: "Gum disease treatment cost by stage",
+        width: 1278,
+        height: 658,
+      },
+      {
+        type: "paragraph",
+        text: "For more on routine cleanings specifically, see our page on professional cleanings in Southampton.",
+        links: [
+          {
+            text: "professional cleanings in Southampton",
+            href: "/general-dentistry/oral-hygiene",
+          },
+        ],
+      },
+
+      {
+        type: "heading",
+        level: 3,
+        text: "Why a deep cleaning costs more than a regular cleaning",
+      },
+      {
+        type: "paragraph",
+        text: "A regular cleaning removes plaque and tartar from above the gumline during a routine visit: one appointment, 30 to 60 minutes, no anesthesia. A deep cleaning — scaling and root planing, or SRP — goes below the gumline to clear tartar and bacteria off the tooth roots. That difference is why it costs more.",
+      },
+      {
+        type: "list",
+        variant: "plus",
+        items: [
+          { text: "Local anesthesia, because your gums need to be numbed" },
+          {
+            text: "Two to four separate visits, usually one per quadrant of the mouth",
+          },
+          {
+            text: "Specialized hand instruments and ultrasonic scalers worked below the gumline",
+          },
+          {
+            text: "A follow-up visit to re-measure pocket depths and check healing",
+          },
+        ],
+      },
+      {
+        type: "callout",
+        variant: "warning",
+        heading: "Ask for your pocket-depth chart",
+        text: "A deep cleaning should only be recommended when measured pocket depths reach 4mm or deeper. If a dentist recommends SRP, ask to see the numbers — that chart is the clinical reasoning behind the recommendation, and any dentist should be glad to walk you through it.",
+      },
+      {
+        type: "paragraph",
+        text: "For more on how dentists identify when a deep cleaning is genuinely needed, see our guide on removing tartar and when you need a deep cleaning.",
+        links: [
+          {
+            text: "removing tartar and when you need a deep cleaning",
+            href: "/blog/how-to-remove-tartar-deep-cleaning",
+          },
+        ],
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "Gingivitis vs periodontitis: what's the difference?",
+      },
+      {
+        type: "paragraph",
+        text: "Both are gum disease, but they differ in severity, in whether they can be reversed, and in what they cost to treat.",
+      },
+      {
+        type: "paragraph",
+        text: "Gingivitis is the earliest stage. Gums are red, swollen, and bleed easily when you brush or floss, but there is no bone loss yet and pocket depths are typically 3mm or less. Treatment is a professional cleaning plus better home care, and gingivitis is fully reversible.",
+      },
+      {
+        type: "paragraph",
+        text: "Periodontitis is advanced gum disease. The bone and tissue supporting your teeth have been damaged, and pocket depths measure 4mm or deeper. Treatment usually means SRP, and advanced cases may need surgery. Periodontitis is manageable but not curable — the goal becomes stopping progression rather than reversing it.",
+      },
+      {
+        type: "image",
+        src: "/images/blog/gingivitis-vs-periodontitis.webp",
+        alt: "Grouped bar chart comparing gingivitis and periodontitis on reversibility, bone loss, pocket depth, standard treatment and typical cost.",
+        caption: "Gingivitis vs periodontitis",
+        width: 1332,
+        height: 597,
+      },
+      {
+        type: "paragraph",
+        text: "The window between those two stages is where catching it matters most. If you have been told you have gingivitis, that is genuinely good news — it is the stage where about $150 of professional cleaning and consistent home care prevents everything that would otherwise follow.",
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "The cost of waiting: what happens if you don't treat it",
+      },
+      {
+        type: "paragraph",
+        text: "Gum disease does not resolve on its own. It progresses — slowly at first, then faster as bone loss accelerates. Here is what the cost escalation typically looks like.",
+      },
+      {
+        type: "image",
+        src: "/images/blog/gum-disease-cost-of-waiting.webp",
+        alt: "Bar chart showing how gum disease treatment cost escalates with waiting — gingivitis around $150, mild periodontitis $1,000, moderate periodontitis $2,500, advanced periodontitis $5,000, and tooth loss with implant replacement $15,000.",
+        caption: "The cost of waiting",
+        width: 1277,
+        height: 589,
+      },
+      {
+        type: "image",
+        src: "/images/blog/gum-disease-progression-cost-by-stage.webp",
+        alt: "Infographic of the five-stage gum disease progression with the cost at each stage, from reversible gingivitis through to tooth loss and implant replacement.",
+        caption: "The gum disease progression: what it costs at each stage",
+        width: 1999,
+        height: 1116,
+      },
+      {
+        type: "list",
+        variant: "plus",
+        items: [
+          {
+            text: "Stage 1 — Gingivitis (about $150). A regular cleaning plus better home care reverses it completely.",
+          },
+          {
+            text: "Stage 2 — Mild periodontitis (about $1,000). SRP is now required, and reversibility is lost.",
+          },
+          {
+            text: "Stage 3 — Moderate periodontitis (about $2,500). SRP plus maintenance visits every three to four months, possibly with Perio Protect.",
+          },
+          {
+            text: "Stage 4 — Advanced periodontitis (about $5,000). A gum graft or osseous surgery becomes likely, and some teeth may be lost.",
+          },
+          {
+            text: "Stage 5 — Tooth loss and replacement ($15,000+). Lost teeth are replaced with implants, bridges, or dentures. This is where the cost truly compounds.",
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "The honest math: roughly $150 of early treatment against $15,000 of late-stage replacement — and insurance typically covers a greater share at the earlier stages. For the warning signs worth watching, see our guide on the early signs of gum disease.",
+        links: [
+          {
+            text: "early signs of gum disease",
+            href: "/blog/signs-of-gum-disease",
+          },
+        ],
+      },
+
+      { type: "heading", level: 2, text: "What is Perio Protect?" },
+      {
+        type: "paragraph",
+        text: "Perio Protect is a prescription-tray system that delivers medication directly under the gumline — the area brushing and flossing cannot reach. It is used alongside professional cleanings to treat gum disease and maintain periodontal health between visits.",
+        links: [
+          {
+            text: "Perio Protect",
+            href: "/general-dentistry/perio-protect",
+          },
+        ],
+      },
+      {
+        type: "list",
+        variant: "check",
+        items: [
+          {
+            text: "Your dentist takes impressions of your teeth and custom trays are made",
+          },
+          {
+            text: "You wear the trays at home with a prescribed gel for a few minutes each day",
+          },
+          {
+            text: "The trays create a seal that holds the medication against gum tissue below the gumline, where the bacteria live",
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Cost runs $1,500 to $4,000 for the initial tray fabrication plus the first supply of prescription gel, with ongoing refills an additional cost. Perio Protect does not replace professional cleanings or SRP — it complements them and helps hold the results. Hampton Family Dental is one of the few practices in the Southampton area that offers it.",
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "Does insurance cover gum disease treatment?",
+      },
+      {
+        type: "paragraph",
+        text: "Most dental plans cover scaling and root planing as a medically necessary procedure when pocket depths measure 4mm or deeper. Typical coverage patterns look like this:",
+      },
+      {
+        type: "list",
+        variant: "plus",
+        items: [
+          {
+            text: "SRP — 50% to 80% coverage after the deductible, up to the annual maximum",
+          },
+          {
+            text: "Periodontal maintenance cleanings every three to four months — often covered",
+          },
+          {
+            text: "Gum graft surgery — covered when medically necessary for significant recession",
+          },
+          {
+            text: "Osseous surgery — typically covered at a lower percentage, around 40% to 60%",
+          },
+          {
+            text: "Perio Protect — often partial coverage, and frequently out of pocket",
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Our team will verify your insurance benefits before treatment and give you a written breakdown of what is covered and what you will owe — no surprise bills.",
+        links: [
+          {
+            text: "verify your insurance benefits",
+            href: "/patient-information/insurance-and-payment",
+          },
+        ],
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "What if I don't have insurance?",
+      },
+      {
+        type: "paragraph",
+        text: "If you are uninsured, you have options beyond third-party financing. Our in-house membership plan starts at $288/year for children and $312/year for adults, and includes two professional cleanings, two routine exams with X-rays, an emergency exam, and 15% off other procedures including SRP, Perio Protect, and surgery. There is no deductible, no annual maximum, and no waiting period.",
+        links: [
+          {
+            text: "in-house membership plan",
+            href: "/specials",
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "For most patients facing gum disease treatment without insurance, the membership plan works out simpler and often cheaper than financing. For larger treatment plans — full-mouth SRP with Perio Protect, or surgery — flexible monthly payment options are also available.",
+        links: [
+          {
+            text: "flexible monthly payment options",
+            href: "/patient-information/financing-options",
+          },
+        ],
+      },
+
+      { type: "heading", level: 2, text: "Is gum disease treatment painful?" },
+      {
+        type: "paragraph",
+        text: "Local anesthesia is used for scaling and root planing, so you should not feel pain during the procedure itself. Some sensitivity and mild soreness for a day or two afterwards is normal, and most patients manage it with over-the-counter pain relief.",
+      },
+      {
+        type: "paragraph",
+        text: "Perio Protect tray treatment is painless — you are simply wearing custom trays with a prescribed gel for a few minutes a day at home. Surgical procedures such as gum grafts and osseous surgery are performed under local anesthesia with sedation available, and recovery typically means one to two weeks of soft foods and over-the-counter pain management. Most patients find it less uncomfortable than they had braced for.",
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "How Hampton Family Dental approaches gum disease care",
+      },
+      {
+        type: "paragraph",
+        text: "Every patient gets a periodontal evaluation during their routine exam. Dr. Jeffrey Brenner measures pocket depths, assesses gum colour and bleeding, and reviews X-rays for signs of bone loss. If gum disease is found, you leave with a written treatment plan setting out exactly what is recommended and why — not a sales pitch.",
+      },
+      {
+        type: "list",
+        variant: "check",
+        items: [
+          {
+            text: "Dr. Brenner has provided periodontal care in Southampton for over 20 years",
+            links: [{ text: "over 20 years", href: "/about/our-story" }],
+          },
+          {
+            text: "Perio Protect, a prescription-tray system few local practices offer",
+            links: [
+              {
+                text: "Perio Protect",
+                href: "/general-dentistry/perio-protect",
+              },
+            ],
+          },
+          {
+            text: "Clear written treatment plans with cost estimates before any procedure begins",
+          },
+          {
+            text: "Insurance verification included, so you know what you will pay before you commit",
+          },
+          {
+            text: "A membership plan option for uninsured patients, from $288/year",
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "We see patients from Southampton, Richboro, Feasterville, Holland, Churchville, Ivyland, Huntingdon Valley, Warminster, and Newtown. You can also explore our full range of general dentistry services.",
+        links: [
+          {
+            text: "general dentistry services",
+            href: "/general-dentistry",
+          },
+        ],
+      },
+      {
+        type: "cta",
+        heading: "Worried about your gums?",
+        text: "Request a periodontal evaluation. We'll measure your pocket depths, check your insurance coverage, and give you a written plan with costs before anything begins.",
+      },
+    ],
+    faqs: [
+      {
+        q: "How much does deep cleaning cost without insurance?",
+        a: "Deep cleaning (scaling and root planing) typically costs $150 to $350 per quadrant without insurance. Most patients need all four quadrants treated, bringing the total to roughly $600 to $1,400. The exact cost depends on how much tartar sits below the gumline and how many visits are required.",
+      },
+      {
+        q: "Does insurance cover gum disease treatment?",
+        a: "Many dental plans cover scaling and root planing as medically necessary when pocket depths measure 4mm or deeper, typically at 50% to 80% after the deductible and up to the annual maximum. Perio Protect may be partially covered under some plans but is often out of pocket. Ask your dentist to verify your specific benefits before treatment begins.",
+      },
+      {
+        q: "Can gum disease be reversed?",
+        a: "Gingivitis, the earliest stage, is reversible with professional cleaning and consistent home care. Periodontitis, the more advanced stage, can be managed and controlled but is not curable. The window between the two is where early treatment makes the biggest difference, both clinically and financially.",
+      },
+      {
+        q: "How much does gum graft surgery cost?",
+        a: "Gum graft surgery typically costs $600 to $3,000 per tooth without insurance, depending on the type of graft and the tissue source. Some plans cover gum grafts when they are medically necessary due to significant recession. Your dentist will discuss the specific procedure and expected cost before treatment.",
+      },
+      {
+        q: "What is the difference between gingivitis and periodontitis?",
+        a: "Gingivitis is gum inflammation without bone loss, and it is reversible with professional cleaning and good home care. Periodontitis is advanced gum disease where the bone and tissue supporting the teeth have been damaged — manageable with treatment but not fully curable. Pocket depth is the key measurement: 3mm or less is healthy or gingivitis, while 4mm or more typically indicates periodontitis.",
+      },
+      {
+        q: "How much does Perio Protect cost?",
+        a: "Perio Protect tray systems typically cost $1,500 to $4,000 for the initial tray fabrication plus the first supply of prescription gel, with ongoing gel refills an additional cost. It is used alongside scaling and root planing to maintain gum health between visits rather than as a replacement for professional care.",
+      },
+      {
+        q: "Is gum disease treatment painful?",
+        a: "Local anesthesia is used for scaling and root planing, so you should not feel pain during the procedure. Some sensitivity and mild soreness are common for a day or two afterwards. Perio Protect tray treatment is painless at home. Surgical procedures use local anesthesia or sedation and typically involve one to two weeks of recovery discomfort.",
+      },
+      {
+        q: "Can you refuse a deep cleaning at the dentist?",
+        a: "You can decline any dental procedure. But if your dentist recommends scaling and root planing based on pocket depths of 4mm or deeper, declining means the gum disease will keep progressing — potentially toward tooth loss and much higher costs later. If you are unsure, ask for a written treatment plan showing your pocket-depth measurements and the clinical reasoning behind the recommendation.",
+      },
+    ],
+    extraSchema: [
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalWebPage",
+        name: "How Much Does Gum Disease Treatment Cost? (And Is It Worth It?)",
+        url: "https://www.hamptonfamilydentist.com/blog/gum-disease-treatment-cost",
+        about: {
+          "@type": "MedicalCondition",
+          name: "Periodontal disease",
+          alternateName: "Gum disease",
+        },
+        lastReviewed: "2026-10-28",
+        reviewedBy: {
+          "@type": "Person",
+          name: "Dr. Jeffrey Brenner, DMD",
+          jobTitle: "Dentist",
+          medicalSpecialty: "Dentistry",
+          worksFor: "Hampton Family Dental",
+        },
+        publisher: { "@type": "Organization", name: "Hampton Family Dental" },
+      },
+      {
+        ...dentistSchema,
+        medicalSpecialty: "Dentistry",
+        availableService: {
+          "@type": "MedicalProcedure",
+          name: "Scaling and root planing",
+        },
+      },
+    ],
+  },
 ];
 
 /** Parses either a plain date or a full ISO timestamp with offset. */
