@@ -6908,7 +6908,7 @@ export const blogPosts: BlogPost[] = [
     excerpt:
       "Treating gingivitis costs about $150. Treating what it becomes can run past $15,000. Here's the cost at every stage, and the honest math on catching it early.",
     category: "General Dentistry",
-    publishedAt: "2026-10-28",
+    publishedAt: "2026-10-29",
     readTime: "10 min read",
     reviewedBy: "Dr. Jeffrey Brenner, DMD",
     lastReviewedLabel: "Last reviewed October 2026",
@@ -7347,7 +7347,7 @@ export const blogPosts: BlogPost[] = [
           name: "Periodontal disease",
           alternateName: "Gum disease",
         },
-        lastReviewed: "2026-10-28",
+        lastReviewed: "2026-10-29",
         reviewedBy: {
           "@type": "Person",
           name: "Dr. Jeffrey Brenner, DMD",
