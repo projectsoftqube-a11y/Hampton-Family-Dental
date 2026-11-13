@@ -4846,6 +4846,12 @@ export const blogPosts: BlogPost[] = [
       {
         type: "paragraph",
         text: "A filling and a crown solve different problems. The right choice depends on how much of the tooth is damaged.",
+        links: [
+          {
+            text: "how much of the tooth is damaged",
+            href: "/blog/dental-crown-vs-filling",
+          },
+        ],
       },
       {
         type: "table",
@@ -7364,6 +7370,1191 @@ export const blogPosts: BlogPost[] = [
           "@type": "MedicalProcedure",
           name: "Scaling and root planing",
         },
+      },
+    ],
+  },
+  {
+    slug: "teeth-grinding-bruxism-treatment",
+    title: "Teeth Grinding (Bruxism): Causes, Symptoms & Treatment Options",
+    metaTitle: "Teeth Grinding (Bruxism): Causes, Signs & Treatment",
+    metaDescription:
+      "What causes teeth grinding, the signs only a dentist can see, how bruxism differs from TMJ, and what a night guard really costs ($300–$800 custom). Reviewed by a Southampton PA family dentist.",
+    excerpt:
+      "A night guard protects your teeth — it doesn't stop the grinding. Here's what causes bruxism, how it differs from TMJ, what a guard really costs, and when a drugstore guard is good enough.",
+    category: "General Dentistry",
+    publishedAt: "2026-11-05",
+    readTime: "13 min read",
+    reviewedBy: "Dr. Jeffrey Brenner, DMD",
+    lastReviewedLabel: "Last reviewed November 2026",
+    hero: {
+      src: "/images/blog/teeth-grinding-bruxism-treatment.webp",
+      alt: "Adult with morning jaw soreness from teeth grinding — bruxism guide from Hampton Family Dental, Southampton PA",
+      width: 1672,
+      height: 941,
+    },
+    answerBox: {
+      text: "Teeth grinding, or bruxism, is treated two ways at once: a custom night guard protects your teeth from the force, and separate work addresses what's causing it — usually stress, disrupted sleep, or a bite problem. A guard does not stop the grinding; it stops the damage. At Hampton Family Dental in Southampton, PA, Dr. Jeffrey Brenner checks for grinding at every exam.",
+    },
+    keyTakeaways: [
+      {
+        text: "A night guard protects your teeth. It does not stop the grinding and it does not repair damage already done.",
+      },
+      {
+        text: "Most people who grind don't know it. The clearest signs — wear facets, hairline cracks — are only visible at a dental exam.",
+      },
+      {
+        text: "A dentist-made custom guard typically costs $300–$800. An over-the-counter guard costs $15–$50 and is a reasonable short-term stopgap, not a long-term answer.",
+      },
+      {
+        text: "Bruxism and TMJ disorder are not the same thing. Bruxism is the behaviour; TMD is a problem with the joint. One can cause the other.",
+      },
+      {
+        text: "Untreated grinding gets expensive. A $300–$800 guard protects against repairs that run $1,000–$2,500 per crown and more if a tooth is lost.",
+      },
+    ],
+    sections: [
+      {
+        type: "callout",
+        variant: "danger",
+        heading: "When to get urgent care",
+        text: "If your jaw locks and will not open or close, if you have facial swelling that affects your breathing or swallowing, or if you have uncontrolled bleeding, call 911 or go to the emergency room. For a tooth that cracks or breaks, call Hampton Family Dental at (215) 357-2224 — we reserve time daily for emergencies.",
+      },
+
+      { type: "heading", level: 2, text: "What is bruxism?" },
+      {
+        type: "paragraph",
+        text: "Bruxism is the medical term for grinding, gnashing, or clenching your teeth. According to ADA MouthHealthy, it affects both adults and children, and many people have no idea they do it.",
+        links: [
+          {
+            text: "ADA MouthHealthy",
+            href: "https://www.mouthhealthy.org/all-topics-a-z/teeth-grinding",
+            external: true,
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "There are two kinds, and they behave differently:",
+      },
+      {
+        type: "list",
+        variant: "plus",
+        items: [
+          {
+            text: "Sleep bruxism happens while you're unconscious. You can't catch yourself doing it, the forces involved are much higher than normal chewing, and usually a partner hears it before you notice anything.",
+          },
+          {
+            text: "Awake bruxism is usually clenching rather than grinding — the jaw-tightening you do at a screen, in traffic, or during a hard conversation. This one you can learn to catch.",
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "The distinction matters because the treatment is different. Sleep bruxism needs physical protection, because you can't modify a behaviour you're not awake for. Awake clenching responds to awareness and habit work.",
+      },
+
+      { type: "heading", level: 2, text: "What causes teeth grinding?" },
+      {
+        type: "paragraph",
+        text: "There's rarely one cause. Mayo Clinic groups the contributing factors like this:",
+        links: [
+          {
+            text: "Mayo Clinic",
+            href: "https://www.mayoclinic.org/diseases-conditions/bruxism/symptoms-causes/syc-20356095",
+            external: true,
+          },
+        ],
+      },
+      {
+        type: "table",
+        columns: ["Factor", "How it contributes"],
+        rows: [
+          [
+            "Stress and anxiety",
+            "The most commonly reported trigger for both sleep and awake bruxism. Tends to flare during difficult periods.",
+          ],
+          [
+            "Disrupted sleep",
+            "Sleep bruxism often clusters with other sleep disturbances, including snoring and pauses in breathing.",
+          ],
+          [
+            "Caffeine, alcohol, tobacco",
+            "All three are associated with more grinding, especially in the hours before bed.",
+          ],
+          [
+            "Certain medications",
+            "Some antidepressants and stimulants list bruxism as a side effect. Never stop a prescription on your own — raise it with the prescribing doctor.",
+          ],
+          [
+            "Bite problems",
+            "Teeth that don't meet evenly can contribute, though this is less often the sole cause than people assume.",
+          ],
+          [
+            "Age",
+            "Sleep bruxism is common in children and often decreases into adulthood.",
+          ],
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Is it just stress? Often it's the main driver — but not always, and assuming it is can mean missing a sleep or medication factor that would have been straightforward to address. That's one reason the exam matters.",
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "Signs you may be grinding your teeth",
+      },
+      { type: "heading", level: 3, text: "Signs you can notice yourself" },
+      {
+        type: "list",
+        variant: "plus",
+        items: [
+          { text: "Waking with a sore, tired, or tight jaw" },
+          {
+            text: "A dull headache around the temples, usually in the morning",
+          },
+          { text: "Teeth that feel sensitive to hot, cold, or sweet" },
+          {
+            text: "Front teeth that look flatter or shorter than they used to",
+          },
+          { text: "A partner who hears grinding at night" },
+          { text: "Ridged or scalloped edges along the sides of your tongue" },
+          {
+            text: "A pale raised line along the inside of your cheek, level with your bite",
+          },
+          { text: "Aching that spreads into the ear or the side of the face" },
+        ],
+      },
+      { type: "heading", level: 3, text: "Signs only a dentist can see" },
+      {
+        type: "paragraph",
+        text: "This is the part you can't self-check, and it's usually the part that confirms it. At a routine checkup and X-rays appointment, a dentist looks for:",
+        links: [
+          {
+            text: "routine checkup and X-rays",
+            href: "/general-dentistry/checkups-and-x-rays",
+          },
+        ],
+      },
+      {
+        type: "list",
+        variant: "plus",
+        items: [
+          {
+            text: "Wear facets — flat, polished patches where opposing teeth have ground against each other",
+          },
+          {
+            text: "Hairline cracks in the enamel that aren't visible in a mirror",
+          },
+          {
+            text: "Enlarged jaw muscles, felt by hand along the side of the face",
+          },
+          {
+            text: "Gum recession and notching at the gumline, which can overlap with signs of gum disease",
+            links: [
+              { text: "signs of gum disease", href: "/blog/signs-of-gum-disease" },
+            ],
+          },
+          {
+            text: "Fillings, crowns, or veneers that are failing earlier than they should",
+          },
+          {
+            text: "Changes in wear patterns compared with previous records — the clearest evidence of all",
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "None of these are things you can diagnose from a mirror or a photo online. If several of the self-check signs sound familiar, an exam is the way to find out.",
+      },
+
+      { type: "heading", level: 2, text: "Is it teeth grinding or TMJ?" },
+      {
+        type: "paragraph",
+        text: "These get used interchangeably and they shouldn't be. Bruxism is the behaviour — the grinding or clenching. TMJ disorder (properly, TMD) is a problem with the temporomandibular joint itself, the hinge in front of your ear. Per NIDCR, TMD covers a range of conditions affecting the joint, the muscles around it, or both.",
+        links: [
+          {
+            text: "NIDCR",
+            href: "https://www.nidcr.nih.gov/health-info/tmj",
+            external: true,
+          },
+        ],
+      },
+      {
+        type: "table",
+        columns: ["", "Bruxism", "TMJ disorder (TMD)"],
+        rows: [
+          [
+            "What it is",
+            "A behaviour — grinding or clenching",
+            "A condition of the jaw joint or its muscles",
+          ],
+          [
+            "Where you feel it",
+            "Teeth, jaw muscles, temples",
+            "The joint itself, in front of the ear",
+          ],
+          [
+            "Typical signs",
+            "Worn teeth, morning soreness, headaches",
+            "Clicking, popping, locking, limited opening",
+          ],
+          [
+            "When it's worst",
+            "On waking (sleep type) or under stress (awake type)",
+            "When chewing, yawning, or opening wide",
+          ],
+          [
+            "First-line approach",
+            "Protect the teeth, address the cause",
+            "Evaluate the joint before anything else",
+          ],
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "They overlap constantly. Sustained grinding can overload the joint and lead to TMD; an uncomfortable joint can change how you hold your jaw and encourage clenching. Plenty of patients have both — which is exactly why a guard alone isn't always the right answer. If your jaw clicks, catches, or locks, that needs evaluating before anyone fits you for anything.",
+      },
+      {
+        type: "image",
+        src: "/images/blog/grinding-clenching-or-tmj-symptom-sorter.webp",
+        alt: "Grinding, clenching or TMJ symptom sorter — mornings point to likely sleep bruxism, daytime clenching points to likely awake clenching, and clicking, locking or pain in front of the ear points to a possible TMJ disorder.",
+        caption: "Grinding, clenching, or TMJ? A symptom sorter",
+        width: 1999,
+        height: 1116,
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "What happens if you don't treat it?",
+      },
+      {
+        type: "paragraph",
+        text: "Grinding is cumulative. A single night does nothing. Years of it does a great deal, and the damage follows a fairly predictable sequence:",
+      },
+      {
+        type: "list",
+        variant: "plus",
+        items: [
+          {
+            text: "Enamel wears down, teeth shorten and flatten, and sensitivity increases as the dentine underneath is exposed.",
+          },
+          {
+            text: "Existing dental work starts failing early — fillings, crowns, and veneers take force they weren't designed for.",
+          },
+          {
+            text: "Hairline cracks develop and deepen. A cracked tooth can go from manageable to urgent without much warning.",
+          },
+          {
+            text: "Jaw muscles stay chronically tight, which is where the headaches and facial aching come from.",
+          },
+          {
+            text: "Gums recede at the loaded teeth, exposing root surfaces that decay more easily.",
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Here's the part that tends to focus people: the repair costs climb fast. A worn tooth may need dental fillings; a cracked one usually needs one of our dental crowns; a crack that reaches the nerve needs a root canal first. If a tooth splits badly enough it can't be saved at all.",
+        links: [
+          {
+            text: "dental fillings",
+            href: "/restorative-dentistry/dental-fillings",
+          },
+          {
+            text: "dental crowns",
+            href: "/restorative-dentistry/dental-crowns",
+          },
+        ],
+      },
+      {
+        type: "image",
+        src: "/images/blog/teeth-grinding-cost-of-waiting.webp",
+        alt: "Horizontal bar chart showing escalating dental costs from untreated teeth grinding. Custom night guard $300–$800. Dental filling for a worn or chipped tooth $200–$600. Dental crown for a cracked tooth $1,000–$2,500. Root canal plus crown $2,000–$4,000. Extraction plus implant $3,000–$6,000.",
+        caption: "The cost of waiting: protecting teeth vs repairing them later",
+        width: 1560,
+        height: 760,
+      },
+      {
+        type: "paragraph",
+        text: "A tooth that cracks or breaks is urgent — a cracked tooth is a dental emergency, and waiting usually makes it worse. If that happens, here's what to do in a dental emergency.",
+        links: [
+          {
+            text: "a cracked tooth is a dental emergency",
+            href: "/general-dentistry/emergency-dentistry",
+          },
+          {
+            text: "what to do in a dental emergency",
+            href: "/blog/dental-emergency-what-to-do",
+          },
+        ],
+      },
+
+      { type: "heading", level: 2, text: "How is teeth grinding treated?" },
+      {
+        type: "paragraph",
+        text: "There isn't one treatment. There's a ladder, and most patients need more than one rung. General dentistry at Hampton Family Dental covers the protective and restorative side; the cause work is often shared with your physician.",
+        links: [
+          {
+            text: "General dentistry at Hampton Family Dental",
+            href: "/general-dentistry",
+          },
+        ],
+      },
+      { type: "heading", level: 3, text: "Custom night guards" },
+      {
+        type: "paragraph",
+        text: "This is the first-line treatment for sleep bruxism and the one most people come in for. A custom guard is made from an impression or digital scan of your teeth, so it fits closely, stays put all night, and spreads the grinding force across the whole arch instead of concentrating it on a few teeth.",
+      },
+      {
+        type: "paragraph",
+        text: "What it does: protects enamel and existing dental work from further wear, and often reduces morning jaw soreness.",
+      },
+      {
+        type: "paragraph",
+        text: "What it doesn't do: stop the grinding, or repair damage already there. This is worth being clear about, because a lot of patients expect the guard to cure the habit and are disappointed when it doesn't.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Addressing stress and daytime clenching",
+      },
+      {
+        type: "paragraph",
+        text: "For awake bruxism, awareness does most of the work. The standard advice is to notice the clench and reset — lips together, teeth apart, tongue resting on the roof of the mouth. Your teeth should only touch when you're eating.",
+      },
+      {
+        type: "paragraph",
+        text: "Alongside that: cutting caffeine and alcohol in the evening, regular exercise, and whatever genuinely lowers your stress load. If anxiety is the driver, treating the anxiety does more for the grinding than anything a dentist can fit. Some patients find a physiotherapist or a counsellor more useful here than another dental appointment, and that's a fine outcome.",
+      },
+      { type: "heading", level: 3, text: "Bite adjustment" },
+      {
+        type: "paragraph",
+        text: "If teeth don't meet evenly, selectively reshaping a high spot can reduce the trigger. This is a conservative, small adjustment — not a full-mouth reconstruction — and it's only appropriate when the exam actually shows a bite discrepancy. It's worth being sceptical of anyone who proposes extensive bite work as the opening move for grinding.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Repairing damage that's already done",
+      },
+      {
+        type: "paragraph",
+        text: "Protection and repair are separate jobs. Worn or chipped teeth can be rebuilt with fillings or bonding; cracked teeth usually need crowns; badly worn bites sometimes need a staged restorative plan. The sequence matters — there's no sense placing new crowns without a guard to protect them, or they'll fail the same way the originals did.",
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "How much does a night guard cost?",
+      },
+      { type: "paragraph", text: "Here's the range, by type:" },
+      {
+        type: "table",
+        columns: ["Guard type", "Typical cost", "Lifespan", "Notes"],
+        rows: [
+          [
+            "OTC boil-and-bite",
+            "$15–$50",
+            "A few months",
+            "Available tonight; loose fit; bulky",
+          ],
+          [
+            'Mail-order "custom"',
+            "$100–$200",
+            "1–2 years",
+            "Better than boil-and-bite; no clinical exam behind it",
+          ],
+          [
+            "Dentist-made soft guard",
+            "$200–$500",
+            "1–3 years",
+            "Comfortable; can wear through with heavy grinding",
+          ],
+          [
+            "Dentist-made hard / dual-laminate",
+            "$300–$800",
+            "3–5+ years",
+            "Most durable; standard for moderate-to-heavy grinding",
+          ],
+        ],
+        caption:
+          "Estimated national ranges from ADA fee-survey and industry data. Your exact cost depends on your exam, the material chosen, and your plan.",
+      },
+      {
+        type: "image",
+        src: "/images/blog/night-guard-cost-by-type.webp",
+        alt: "Horizontal bar chart comparing night guard costs. Over-the-counter boil-and-bite guard $15–$50. Mail-order custom guard $100–$200. Dentist-made soft guard $200–$500. Dentist-made custom hard or dual-laminate guard $300–$800.",
+        caption: "What a night guard costs: over-the-counter vs dentist-made",
+        width: 1520,
+        height: 700,
+      },
+      {
+        type: "paragraph",
+        text: "Insurance: many dental plans cover part of the cost of a custom occlusal guard when a dentist documents clinical signs of grinding, but coverage, frequency limits, and waiting periods vary a lot. We'll verify your benefits before any treatment so you know your out-of-pocket cost in advance. If you're uninsured, our current specials and membership plan starts at $288 a year and includes 15% off other procedures.",
+        links: [
+          {
+            text: "We'll verify your benefits",
+            href: "/patient-information/insurance-and-payment",
+          },
+          {
+            text: "current specials and membership plan",
+            href: "/specials",
+          },
+        ],
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "Are over-the-counter night guards good enough?",
+      },
+      {
+        type: "paragraph",
+        text: "Honest answer: for mild grinding, as a short-term stopgap, an over-the-counter guard is better than nothing. If you're waking with a sore jaw tonight and your appointment is in three weeks, buy one. We'd rather you had something between your teeth than nothing.",
+      },
+      { type: "paragraph", text: "But know what you're getting:" },
+      {
+        type: "image",
+        src: "/images/blog/night-guard-otc-vs-custom-comparison.webp",
+        alt: "Grouped bar chart comparing over-the-counter and dentist-made night guards across six features. Fit accuracy: OTC 3, custom 10. Durability: OTC 2, custom 9. Protection level: OTC 4, custom 10. All-night comfort: OTC 3, custom 9. Bite safety: OTC 3, custom 10. Up-front affordability: OTC 10, custom 5.",
+        caption:
+          "Over-the-counter vs dentist-made night guards, feature by feature (illustrative scoring)",
+        width: 1600,
+        height: 740,
+      },
+      {
+        type: "list",
+        variant: "plus",
+        items: [
+          {
+            text: "Fit. A boil-and-bite moulds roughly. It tends to loosen, shift, or fall out overnight, which is why many people stop wearing them within weeks.",
+          },
+          {
+            text: "Durability. Soft OTC material wears through fast under real grinding force. A few months is typical.",
+          },
+          {
+            text: "Bite safety. This is the real concern. A guard that only covers some teeth, or sits unevenly, can let the uncovered teeth drift over months. That's a bigger problem than the one you started with.",
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Where OTC genuinely wins: price and availability. Where it doesn't: everything else. If you're grinding heavily, already have crowns or veneers, or have any jaw-joint symptoms, skip the drugstore and get examined — in those cases a poorly fitting guard can do real harm.",
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "Is teeth grinding linked to sleep apnea?",
+      },
+      {
+        type: "paragraph",
+        text: "Sometimes, and this is worth taking seriously — but carefully. Sleep bruxism is associated with obstructive sleep apnea in some patients, and the ADA recognises a screening role for dentists in identifying patients who should be evaluated further.",
+        links: [
+          {
+            text: "ADA recognises a screening role for dentists",
+            href: "https://www.ada.org/resources/ada-library/oral-health-topics/sleep-apnea",
+            external: true,
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "An association is not a diagnosis. Most people who grind their teeth do not have sleep apnea, and no dentist can diagnose it from a dental exam. Only a sleep study, ordered by a physician, can do that.",
+      },
+      {
+        type: "paragraph",
+        text: "What's worth flagging to your doctor is the combination. If you grind your teeth and also:",
+      },
+      {
+        type: "list",
+        variant: "plus",
+        items: [
+          {
+            text: "Snore loudly, or your partner notices you stop breathing",
+          },
+          { text: "Wake up gasping or choking" },
+          {
+            text: "Feel exhausted during the day despite a full night in bed",
+          },
+          {
+            text: "Wake with a dry mouth or a morning headache most days",
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Then that pattern is worth raising with your physician, who can arrange a sleep study. The American Academy of Dental Sleep Medicine explains how dentists and physicians work together once a diagnosis exists. We'll flag what we see; the diagnosis belongs with your doctor.",
+        links: [
+          {
+            text: "American Academy of Dental Sleep Medicine",
+            href: "https://www.aadsm.org/",
+            external: true,
+          },
+        ],
+      },
+      {
+        type: "cta",
+        heading: "Schedule a bruxism evaluation",
+        text: "Not sure whether it's grinding, clenching, or the joint? That's exactly what a bruxism evaluation is for.",
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "When should you see a dentist about grinding?",
+      },
+      {
+        type: "paragraph",
+        text: "Book an appointment if any of these apply:",
+      },
+      {
+        type: "list",
+        variant: "check",
+        items: [
+          {
+            text: "You wake with jaw soreness or temple headaches more than occasionally",
+          },
+          { text: "Someone has told you that you grind at night" },
+          {
+            text: "Your teeth look shorter, flatter, or more see-through at the edges than they used to",
+          },
+          { text: "You have new tooth sensitivity without an obvious cause" },
+          { text: "Fillings or crowns are chipping or coming loose" },
+          { text: "Your jaw clicks, catches, or locks" },
+          { text: "You've been wearing an OTC guard and it isn't helping" },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "A bruxism evaluation is straightforward: an exam of the teeth and jaw muscles, a look at wear patterns against previous records where we have them, a few questions about sleep and stress, and a clear explanation of what's actually happening. Dr. Jeffrey Brenner, DMD has practised in Southampton for over twenty years and checks for grinding at every exam. If a guard is the right answer, we'll say so. If the joint needs looking at first, we'll say that instead.",
+        links: [
+          {
+            text: "Dr. Jeffrey Brenner, DMD",
+            href: "/about/dr-jeffrey-brenner",
+          },
+        ],
+      },
+
+      { type: "heading", level: 2, text: "The short version" },
+      {
+        type: "paragraph",
+        text: "If you're waking with a sore jaw, get an over-the-counter guard tonight and an appointment this month. The drugstore guard buys you time; the exam tells you what's actually happening — whether it's grinding, the joint, or both — and what it will cost to protect your teeth properly. Hampton Family Dental is on Second Street Pike in Southampton, PA, and we reserve time daily for patients who need to be seen quickly.",
+      },
+      {
+        type: "cta",
+        heading: "Ask about custom night guards",
+        text: "Book a bruxism evaluation. We'll check your teeth and jaw, explain what we find, and verify your benefits so you know your cost before anything begins.",
+      },
+    ],
+    faqs: [
+      {
+        q: "How do I stop grinding my teeth at night?",
+        a: "There is no single switch that stops sleep bruxism, because it happens while you are unconscious. The standard approach is two-part: a custom night guard to protect your teeth from the force, plus work on whatever is driving it — stress, disrupted sleep, caffeine or alcohol late in the day, or a bite problem. A dentist's exam identifies which factors apply to you.",
+      },
+      {
+        q: "Can a night guard fix teeth grinding?",
+        a: "No. A night guard protects your teeth from the damage grinding causes, but it does not stop the grinding itself and it does not repair wear that has already happened. Think of it as a seatbelt rather than a cure. Most patients still need to address the underlying cause separately.",
+      },
+      {
+        q: "How much does a night guard cost at the dentist?",
+        a: "A dentist-made custom night guard typically costs $300 to $800 without insurance, depending on the material and whether it is a hard, soft, or dual-laminate guard. An over-the-counter boil-and-bite guard costs $15 to $50. Many dental plans cover part of the cost of a custom guard when grinding is documented at an exam.",
+      },
+      {
+        q: "Is teeth grinding a sign of stress?",
+        a: "Stress and anxiety are among the most commonly reported triggers for both sleep and awake bruxism, according to the ADA and Mayo Clinic. They are not the only cause — disrupted sleep, certain medications, caffeine, alcohol, tobacco, and bite problems all contribute — but for many patients stress is the main driver, and it tends to flare during difficult periods.",
+      },
+      {
+        q: "What are the symptoms of bruxism?",
+        a: "Common signs include waking with a sore or tired jaw, a dull headache around the temples, tooth sensitivity, teeth that look flat or shortened, a partner who hears grinding at night, and ridged or scalloped edges on the tongue. A dentist can also see wear facets, hairline cracks, and gum recession that you cannot spot yourself.",
+      },
+      {
+        q: "Can teeth grinding be cured?",
+        a: "Bruxism is usually managed rather than cured. Many people grind less once the underlying trigger improves — better sleep, lower stress, a medication change made with their physician, or a corrected bite. The teeth are protected with a guard in the meantime. Some patients grind for years and then stop; others need long-term protection.",
+      },
+      {
+        q: "Is grinding your teeth linked to sleep apnea?",
+        a: "Sleep bruxism is associated with obstructive sleep apnea in some patients, and the ADA recognises a screening role for dentists. An association is not a diagnosis. If you grind your teeth and also snore loudly, wake gasping, or feel exhausted despite a full night's sleep, that combination is worth raising with your physician, who can arrange a sleep study.",
+      },
+      {
+        q: "Does insurance cover a night guard?",
+        a: "Many dental plans cover part of the cost of a custom occlusal guard when a dentist documents clinical signs of grinding, though coverage, frequency limits, and waiting periods vary widely by plan. We verify your specific benefits before any treatment so you know your out-of-pocket cost in advance.",
+      },
+    ],
+    extraSchema: [
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalWebPage",
+        name: "Teeth Grinding (Bruxism): Causes, Symptoms & Treatment Options",
+        url: "https://www.hamptonfamilydentist.com/blog/teeth-grinding-bruxism-treatment",
+        about: [
+          {
+            "@type": "MedicalCondition",
+            name: "Bruxism",
+            alternateName: "Teeth grinding",
+          },
+          {
+            "@type": "MedicalCondition",
+            name: "Temporomandibular joint disorder",
+            alternateName: "TMD",
+          },
+        ],
+        mentions: [
+          {
+            "@type": "MedicalDevice",
+            name: "Occlusal guard",
+            alternateName: "Night guard",
+          },
+          { "@type": "MedicalTherapy", name: "Occlusal splint therapy" },
+        ],
+        lastReviewed: "2026-11-05",
+        reviewedBy: {
+          "@type": "Person",
+          name: "Dr. Jeffrey Brenner, DMD",
+          jobTitle: "Dentist",
+          medicalSpecialty: "Dentistry",
+          worksFor: "Hampton Family Dental",
+        },
+        publisher: { "@type": "Organization", name: "Hampton Family Dental" },
+      },
+      {
+        ...dentistSchema,
+        medicalSpecialty: "Dentistry",
+        availableService: {
+          "@type": "MedicalTherapy",
+          name: "Occlusal splint therapy",
+          alternateName: "Custom night guard",
+        },
+      },
+    ],
+  },
+  {
+    slug: "dental-crown-vs-filling",
+    title: "Dental Crown vs Filling: Which Does Your Tooth Need?",
+    metaTitle: "Dental Crown vs Filling: Which Does Your Tooth Need?",
+    metaDescription:
+      "A filling repairs a tooth that's mostly intact; a crown covers one that can't hold a filling. Here's the real criterion dentists use, the middle option most articles skip, and what each costs. Southampton PA.",
+    excerpt:
+      "It isn't the size of the cavity that decides it — it's how much healthy tooth is left. Here's the reasoning your dentist uses, the onlay option in between, and what each one costs.",
+    category: "Restorative Dentistry",
+    publishedAt: "2026-11-13",
+    readTime: "12 min read",
+    reviewedBy: "Dr. Jeffrey Brenner, DMD",
+    lastReviewedLabel: "Last reviewed November 2026",
+    hero: {
+      src: "/images/blog/dental-crown-vs-filling.webp",
+      alt: "A tooth with a filling beside a tooth with a crown — dental crown vs filling guide from Hampton Family Dental in Southampton PA",
+      width: 1672,
+      height: 941,
+    },
+    answerBox: {
+      text: "A filling repairs a tooth that's still mostly intact. A crown covers a tooth that has lost too much structure to hold a filling safely. The deciding factor isn't the size of the cavity — it's how much healthy tooth is left once the decay is removed. At Hampton Family Dental in Southampton, PA, Dr. Jeffrey Brenner uses an exam and X-ray to make that call, and there's a middle option between the two that most people have never heard of.",
+    },
+    keyTakeaways: [
+      {
+        text: "What decides it is how much healthy tooth remains after the decay is cleaned out — not how big the cavity looked on the X-ray.",
+      },
+      {
+        text: "There's a third option. Inlays and onlays sit between a filling and a crown, and most comparison articles skip them entirely.",
+      },
+      {
+        text: "Cost per tooth without insurance: filling $100–$450, inlay or onlay $650–$1,200, crown $1,000–$2,500.",
+      },
+      {
+        text: "A crown on a tooth that only needed a filling removes healthy structure you can't get back. The right answer is the most conservative option that will actually hold.",
+      },
+      {
+        text: "If a crown is recommended and you're unsure, ask to see the X-ray and ask whether an onlay would work. A dentist confident in the recommendation won't mind the question.",
+      },
+    ],
+    sections: [
+      { type: "heading", level: 2, text: "Crown vs filling at a glance" },
+      {
+        type: "table",
+        columns: ["", "Filling", "Inlay / onlay", "Crown"],
+        rows: [
+          [
+            "What it covers",
+            "Inside the cavity only",
+            "Inside the cusps, or over one or more of them",
+            "The entire visible tooth",
+          ],
+          ["Healthy tooth removed", "Least", "Moderate", "Most"],
+          ["Visits", "One", "Usually two", "Usually two (sometimes one)"],
+          ["Typical cost", "$100–$450", "$650–$1,200", "$1,000–$2,500"],
+          ["Typical lifespan", "5–15 years", "10–20 years", "10–30 years"],
+          [
+            "Best for",
+            "A tooth that's still mostly intact",
+            "A tooth too damaged for a filling but not yet needing a crown",
+            "A tooth that can't support a filling, or is cracked",
+          ],
+          ["Available at Hampton Family Dental", "Yes", "Yes", "Yes"],
+        ],
+        caption:
+          "Estimated national ranges from ADA fee-survey and industry data. Your exact cost depends on your exam, the tooth, and your plan.",
+      },
+
+      { type: "heading", level: 2, text: "What a filling actually does" },
+      {
+        type: "paragraph",
+        text: "A filling replaces the part of the tooth that decay destroyed. The dentist removes the decayed tissue, cleans the cavity, and packs the space with a material that bonds to or sits within the remaining tooth. Dental fillings at Hampton Family Dental are usually done in a single visit.",
+        links: [
+          {
+            text: "Dental fillings at Hampton Family Dental",
+            href: "/restorative-dentistry/dental-fillings",
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "The two common materials, per ADA MouthHealthy:",
+        links: [
+          {
+            text: "ADA MouthHealthy",
+            href: "https://www.mouthhealthy.org/all-topics-a-z/fillings",
+            external: true,
+          },
+        ],
+      },
+      {
+        type: "list",
+        variant: "plus",
+        items: [
+          {
+            text: "Composite resin — tooth-coloured, bonds to the tooth, typically lasts 5 to 10 years. The usual choice for visible teeth.",
+          },
+          {
+            text: "Amalgam — silver-coloured, very durable under heavy chewing force, typically lasts 10 to 15 years. Still used on back teeth where strength matters more than appearance.",
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "The limitation is structural. A filling fills a hole; it doesn't hold the tooth together. The surrounding walls of the tooth still do that work. Once those walls get thin enough, a filling can act like a wedge every time you bite, and the tooth cracks around it.",
+      },
+
+      { type: "heading", level: 2, text: "What a crown actually does" },
+      {
+        type: "paragraph",
+        text: "A crown is a cap that covers the whole visible tooth. The dentist reshapes what remains, takes an impression or digital scan, and fits a custom-made cover over it. See dental crowns at Hampton Family Dental for the full process, or ADA MouthHealthy for the general overview.",
+        links: [
+          {
+            text: "dental crowns at Hampton Family Dental",
+            href: "/restorative-dentistry/dental-crowns",
+          },
+          {
+            text: "ADA MouthHealthy",
+            href: "https://www.mouthhealthy.org/all-topics-a-z/crowns",
+            external: true,
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "The point of a crown is the opposite of a filling. Instead of filling a hole, it wraps the tooth and holds it together, so chewing force is carried by the crown rather than by weakened tooth walls. That's why crowns are the answer for cracked teeth and heavily rebuilt teeth.",
+      },
+      {
+        type: "paragraph",
+        text: "The trade-off: fitting a crown means removing healthy tooth structure all the way around, and you don't get that back. A crown is the right call when the tooth genuinely needs it and an unnecessary loss when it doesn't. That's the whole reason this decision matters.",
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "What decides it: how much healthy tooth is left",
+      },
+      {
+        type: "paragraph",
+        text: "Here's the part most articles leave out. The decision isn't made from the cavity you can see — it's made after the decay is removed, when the dentist can see how much solid tooth is actually left. Per Cleveland Clinic, full coverage is indicated when a tooth is too weak or too broken down to be restored any other way.",
+        links: [
+          {
+            text: "Cleveland Clinic",
+            href: "https://my.clevelandclinic.org/health/treatments/10923-dental-crowns",
+            external: true,
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "The practical criteria a dentist weighs:",
+      },
+      {
+        type: "list",
+        variant: "plus",
+        items: [
+          {
+            text: "How much of the tooth's width the damage covers. Roughly past the halfway mark, the remaining walls get too thin to trust.",
+          },
+          {
+            text: "Whether any cusp — the raised points on the chewing surface — is broken or undermined. An undermined cusp will eventually snap off.",
+          },
+          { text: "Whether there's a crack, and how far it runs." },
+          {
+            text: "How much force the tooth takes. Back molars do the heavy chewing and are less forgiving than front teeth.",
+          },
+          {
+            text: "Whether you grind your teeth, which multiplies the load on whatever is placed.",
+            links: [
+              {
+                text: "grind your teeth",
+                href: "/blog/teeth-grinding-bruxism-treatment",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        type: "image",
+        src: "/images/blog/crown-vs-filling-treatment-spectrum.webp",
+        alt: "Horizontal spectrum showing which dental treatment suits each level of tooth damage. Small cavity: filling. Moderate decay: large filling or onlay. Large decay with a cusp at risk: onlay or crown. Cusp lost, cracked, or root-canal treated: crown.",
+        caption:
+          "Simplified illustration of the clinical reasoning — only an exam and X-ray can determine which option your tooth needs",
+        width: 1640,
+        height: 660,
+      },
+      {
+        type: "image",
+        src: "/images/blog/filling-onlay-or-crown-decision-tree.webp",
+        alt: "Decision tree showing when a tooth needs a filling, an inlay or onlay, or a crown — checking for a crack, a previous root canal, the extent of decay, and whether the cusps are still solid.",
+        caption: "Filling, onlay, or crown? What your dentist is actually looking at",
+        width: 1999,
+        height: 1116,
+      },
+      {
+        type: "callout",
+        variant: "warning",
+        heading: "Worth saying clearly",
+        text: "You can't apply this to your own tooth from a mirror or a photo. The decay visible on the surface is routinely smaller than what's underneath, and the only way to know what's left is an exam with an X-ray. What this framework gives you is the ability to understand the recommendation — and to ask good questions about it.",
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "There's a third option: inlays and onlays",
+      },
+      {
+        type: "paragraph",
+        text: "Crown-versus-filling is a false choice for a lot of teeth. There's a middle category, and it's underused:",
+      },
+      {
+        type: "list",
+        variant: "plus",
+        items: [
+          {
+            text: "An inlay is a lab-made or milled piece that fits inside the cusps, like a very precise filling made outside the mouth.",
+          },
+          {
+            text: "An onlay covers one or more cusps as well, without wrapping the entire tooth.",
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Why it matters: an onlay protects a weakened cusp the way a crown does, but removes noticeably less healthy tooth. For a tooth that's too far gone for a filling but doesn't yet need full coverage, it's often the better answer — stronger than a large filling, more conservative than a crown, and usually somewhere between the two on cost.",
+      },
+      {
+        type: "paragraph",
+        text: 'If a crown has been recommended, "would an onlay work here?" is a completely fair question to ask.',
+      },
+
+      { type: "heading", level: 2, text: "When a filling is never enough" },
+      {
+        type: "paragraph",
+        text: "Some situations rule out a filling regardless of cavity size.",
+      },
+      { type: "heading", level: 3, text: "A cracked tooth" },
+      {
+        type: "paragraph",
+        text: "A crack moves under pressure. Every bite flexes the two halves slightly apart, which is why cracked teeth often hurt on release rather than on biting down. A filling placed into a crack doesn't stop that movement and can make it worse. A crown protects the remaining tooth by holding it together so the crack can't propagate.",
+        links: [
+          {
+            text: "A crown protects the remaining tooth",
+            href: "/restorative-dentistry/dental-crowns",
+          },
+        ],
+      },
+      { type: "heading", level: 3, text: "After a root canal" },
+      {
+        type: "paragraph",
+        text: "A tooth that's had root canal treatment has been hollowed out and is more brittle than it was. Back teeth in particular are usually crowned afterwards, because the chewing load on an unprotected root-treated molar tends to split it. If you're weighing the overall cost of that pathway, here's what a root canal costs.",
+        links: [
+          {
+            text: "root canal treatment",
+            href: "/restorative-dentistry/root-canal",
+          },
+          { text: "what a root canal costs", href: "/blog/root-canal-cost" },
+        ],
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "A large old filling that's failing",
+      },
+      {
+        type: "paragraph",
+        text: "This is the most common real-world version. A big amalgam placed twenty years ago leaves thin surrounding walls, and over time those walls flex, leak at the margins, or fracture. Replacing it with another large filling usually buys a few years at best. If an old filling is cracking at the edges or feeling sensitive, it's worth having the tooth checked before it gets worse — the options are better while the cusps are still intact.",
+        links: [
+          {
+            text: "the tooth checked before it gets worse",
+            href: "/restorative-dentistry/dental-fillings",
+          },
+        ],
+      },
+
+      { type: "heading", level: 2, text: "How much does each one cost?" },
+      { type: "paragraph", text: "Side by side, without insurance:" },
+      {
+        type: "table",
+        columns: ["Option", "Typical cost per tooth", "Visits"],
+        rows: [
+          ["Amalgam filling", "$100–$300", "One"],
+          ["Composite filling", "$150–$450", "One"],
+          ["Inlay or onlay", "$650–$1,200", "Usually two"],
+          ["Crown", "$1,000–$2,500", "Usually two"],
+        ],
+        caption:
+          "Estimated national ranges from ADA fee-survey and industry data. Multi-surface fillings and premium crown materials sit at the upper end of each band.",
+      },
+      {
+        type: "image",
+        src: "/images/blog/crown-vs-filling-cost-comparison.webp",
+        alt: "Horizontal bar chart comparing dental restoration costs per tooth. Amalgam filling $100–$300. Composite filling $150–$450. Inlay or onlay $650–$1,200. Dental crown $1,000–$2,500.",
+        caption: "What each option costs: filling, inlay/onlay, or crown",
+        width: 1560,
+        height: 760,
+      },
+      {
+        type: "paragraph",
+        text: "For the full picture on crown pricing specifically — materials, lab fees, and what drives the range — see what a dental crown costs in detail.",
+        links: [
+          {
+            text: "what a dental crown costs in detail",
+            href: "/blog/dental-crown-cost",
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Insurance: most dental plans cover both fillings and crowns, usually at different percentages, and crowns more often carry waiting periods or frequency limits. We'll verify your benefits before treatment so you know your out-of-pocket cost in advance. If you're uninsured, our membership plan starts at $288 a year and includes 15% off restorative procedures.",
+        links: [
+          {
+            text: "We'll verify your benefits",
+            href: "/patient-information/insurance-and-payment",
+          },
+          { text: "membership plan", href: "/specials" },
+        ],
+      },
+
+      { type: "heading", level: 2, text: "Which one lasts longer?" },
+      {
+        type: "paragraph",
+        text: "Crowns last longest, but the gap matters less than the arithmetic behind it.",
+      },
+      {
+        type: "image",
+        src: "/images/blog/crown-vs-filling-lifespan.webp",
+        alt: "Horizontal bar chart comparing how long dental restorations last. Composite filling 5–10 years. Amalgam filling 10–15 years. Inlay or onlay 10–20 years. Dental crown 10–30 years.",
+        caption:
+          "How long each option lasts — lifespan depends on bite force, grinding, oral hygiene, and how much healthy tooth remains",
+        width: 1520,
+        height: 700,
+      },
+      {
+        type: "paragraph",
+        text: "Here's the part worth thinking about. If a tooth is borderline and a large filling is likely to fail within a few years, the sequence becomes: pay for the filling, then pay for the crown anyway when it fails — and possibly for a root canal in between if the failure cracks the tooth. That total exceeds the crown on its own.",
+      },
+      {
+        type: "paragraph",
+        text: "It cuts the other way too. If the tooth is genuinely sound enough for a filling, a crown costs several times more and removes healthy structure for nothing. Neither option is automatically the economical one — it depends entirely on how likely the filling is to hold, which is a judgement made at the exam.",
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "Why did my dentist recommend a crown?",
+      },
+      {
+        type: "paragraph",
+        text: "Let's address the question underneath this one, because a lot of people are thinking it and not asking: am I being upsold?",
+      },
+      {
+        type: "paragraph",
+        text: "It's a reasonable thing to wonder. A crown costs several times what a filling costs. So here are the legitimate reasons a crown gets recommended:",
+      },
+      {
+        type: "list",
+        variant: "plus",
+        items: [
+          { text: "Too little solid tooth remained once the decay came out" },
+          { text: "A cusp is cracked, undermined, or already broken" },
+          {
+            text: "A large existing filling is failing and can't be reliably replaced",
+          },
+          { text: "The tooth has had a root canal" },
+          { text: "There's a visible crack line" },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "And here's what to ask if you're unsure:",
+      },
+      {
+        type: "list",
+        variant: "check",
+        items: [
+          {
+            text: '"Can you show me the X-ray and point out what you\'re seeing?"',
+          },
+          { text: '"Roughly how much of the tooth is affected?"' },
+          { text: '"Would an onlay work instead of a full crown?"' },
+          { text: '"What happens if we try a filling first?"' },
+          { text: '"What\'s the risk if I wait six months?"' },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Any dentist confident in the recommendation will answer all five without hesitation and show you the image. If the answers feel evasive, a second opinion is a perfectly normal thing to get — most dentists would rather you were sure. If you want the pricing side laid out first, our full breakdown of crown pricing covers it.",
+        links: [
+          {
+            text: "our full breakdown of crown pricing",
+            href: "/blog/dental-crown-cost",
+          },
+        ],
+      },
+      {
+        type: "cta",
+        heading: "Request a dental evaluation",
+        text: "See the X-ray, hear the reasoning, and get a written estimate for your tooth before anything begins.",
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "How your Southampton dentist makes the call",
+      },
+      {
+        type: "paragraph",
+        text: "Dr. Jeffrey Brenner, DMD has practised in Southampton for over twenty years and places fillings, onlays and crowns. Here's the sequence at an evaluation:",
+        links: [
+          {
+            text: "Dr. Jeffrey Brenner, DMD",
+            href: "/about/dr-jeffrey-brenner",
+          },
+        ],
+      },
+      {
+        type: "list",
+        variant: "check",
+        items: [
+          {
+            text: "Step 1 — Exam and X-ray. The X-ray shows how deep the decay runs and whether it's near the nerve. The visual exam checks the cusps and looks for crack lines.",
+          },
+          {
+            text: "Step 2 — Remove the decay. This is the moment the real answer appears. Decay is frequently larger underneath than it looks on the surface, which is why a plan occasionally changes mid-appointment.",
+          },
+          {
+            text: "Step 3 — Assess what's left. How much solid structure remains, whether the cusps are sound, whether the walls will take chewing force.",
+          },
+          {
+            text: "Step 4 — Choose the most conservative option that will hold. Filling if the tooth can support one. Onlay if a cusp needs protecting but the tooth doesn't need wrapping. Crown if it does.",
+          },
+          {
+            text: "Step 5 — Explain it and price it before anything starts. You see the X-ray, you hear the reasoning, and you get a written estimate. Restorative dentistry services at Hampton Family Dental cover the full range, so the recommendation is driven by the tooth rather than by what's available.",
+            links: [
+              {
+                text: "Restorative dentistry services",
+                href: "/restorative-dentistry",
+              },
+            ],
+          },
+        ],
+      },
+
+      { type: "heading", level: 2, text: "The short version" },
+      {
+        type: "paragraph",
+        text: "If your tooth is mostly intact, a filling is the right answer and a crown would be more than it needs. If a cusp is cracked or most of the tooth is gone, a filling won't hold and a crown is the honest recommendation. Plenty of teeth sit in between, and that's what onlays are for. An exam with an X-ray is the only way to know which one you're dealing with — and you should expect to see the image and hear the reasoning before you agree to anything. Hampton Family Dental is on Second Street Pike in Southampton, PA.",
+      },
+      {
+        type: "cta",
+        heading: "Get a cost estimate for your tooth",
+        text: "Request a dental evaluation. We'll show you the X-ray, explain whether a filling, onlay, or crown fits, and price it before anything starts.",
+      },
+    ],
+    faqs: [
+      {
+        q: "When do you need a crown instead of a filling?",
+        a: "A crown is generally needed when too little healthy tooth remains to hold a filling securely. As a rough guide, that point is reached when the decay involves more than about half the width of the tooth, when a cusp is undermined or already broken, when the tooth is cracked, or after a root canal on a back tooth. Only an exam and X-ray can determine which applies to your tooth.",
+      },
+      {
+        q: "Is a crown better than a filling?",
+        a: "Neither is better in general; they solve different problems. A filling is the right answer for a tooth that is still mostly intact, and placing a crown on such a tooth removes healthy structure unnecessarily. A crown is the right answer when the tooth can no longer support a filling. The best treatment is the most conservative one that will actually hold.",
+      },
+      {
+        q: "Can a large cavity be filled instead of crowned?",
+        a: "Sometimes, but it depends on what is left rather than on the size of the cavity alone. A wide but shallow cavity with intact cusps may still take a filling. A deep cavity that has undermined a cusp usually will not, because the remaining walls can fracture under chewing force. An inlay or onlay is often the middle option for teeth in between.",
+      },
+      {
+        q: "How much more does a crown cost than a filling?",
+        a: "A crown typically costs several times more than a filling. Without insurance, a filling runs about $100 to $450 per tooth, an inlay or onlay about $650 to $1,200, and a crown about $1,000 to $2,500. The gap narrows over time, because crowns typically last longer and a filling that fails and is then crowned costs more in total than the crown alone.",
+      },
+      {
+        q: "Why did my dentist recommend a crown?",
+        a: "The usual reasons are that too little tooth structure remains after removing decay, a cusp is cracked or undermined, a large old filling is failing, or the tooth has had a root canal. It is reasonable to ask to see the X-ray, ask what percentage of the tooth is affected, ask whether an onlay would work instead, and ask what happens if you wait. A dentist confident in the recommendation will welcome those questions.",
+      },
+      {
+        q: "Can a filling be replaced with a crown later?",
+        a: "Yes, and this is a common sequence. Many teeth are filled first and crowned years later when the filling fails or the tooth cracks. Starting with the filling is often reasonable, but if your dentist expects it to fail quickly, paying for the filling first and the crown afterwards costs more in total than going straight to the crown.",
+      },
+      {
+        q: "What happens if you don't get a crown?",
+        a: "A tooth that needs a crown and does not get one is at risk of fracturing, and where the fracture runs determines what happens next. A shallow fracture may still be restorable; one that extends below the gum or into the root can make the tooth impossible to save. Delaying usually narrows the options rather than preserving them.",
+      },
+      {
+        q: "Does a crown always need a root canal?",
+        a: "No. Most crowns are placed on teeth with healthy nerves and no root canal is involved. A root canal is only needed when the pulp inside the tooth is infected or irreversibly inflamed. The two procedures often appear together because a tooth damaged enough to need a root canal usually also needs a crown afterwards, but a crown on its own is common.",
+      },
+    ],
+    extraSchema: [
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalWebPage",
+        name: "Dental Crown vs Filling: Which Does Your Tooth Need?",
+        url: "https://www.hamptonfamilydentist.com/blog/dental-crown-vs-filling",
+        about: [
+          { "@type": "MedicalProcedure", name: "Dental filling" },
+          { "@type": "MedicalProcedure", name: "Dental crown" },
+          { "@type": "MedicalProcedure", name: "Dental inlay and onlay" },
+        ],
+        mentions: [
+          {
+            "@type": "MedicalCondition",
+            name: "Dental caries",
+            alternateName: "Tooth decay",
+          },
+          { "@type": "MedicalCondition", name: "Cracked tooth syndrome" },
+        ],
+        lastReviewed: "2026-11-13",
+        reviewedBy: {
+          "@type": "Person",
+          name: "Dr. Jeffrey Brenner, DMD",
+          jobTitle: "Dentist",
+          medicalSpecialty: "Dentistry",
+          worksFor: "Hampton Family Dental",
+        },
+        publisher: { "@type": "Organization", name: "Hampton Family Dental" },
+      },
+      {
+        ...dentistSchema,
+        medicalSpecialty: "Dentistry",
+        availableService: [
+          { "@type": "MedicalProcedure", name: "Dental fillings" },
+          { "@type": "MedicalProcedure", name: "Inlays and onlays" },
+          { "@type": "MedicalProcedure", name: "Dental crowns" },
+        ],
       },
     ],
   },
