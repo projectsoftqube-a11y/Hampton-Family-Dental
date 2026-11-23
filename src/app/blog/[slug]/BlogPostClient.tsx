@@ -162,14 +162,15 @@ export default function BlogPostClient({ post }: { post: BlogPost }) {
             />
           </div>
 
-          <div className="grid lg:grid-cols-12 gap-10 xl:gap-14 items-start">
+          {/* minmax(0,1fr) on mobile: a wide table scrolls inside its own box instead of widening the page */}
+          <div className="grid grid-cols-[minmax(0,1fr)] lg:grid-cols-12 gap-10 xl:gap-14 items-start">
             {/* ── Table of contents — sticky beside the article on desktop ── */}
-            <aside className="lg:col-span-4 lg:order-2 lg:sticky lg:top-28">
+            <aside className="min-w-0 lg:col-span-4 lg:order-2 lg:sticky lg:top-28">
               <TableOfContents items={toc} />
             </aside>
 
             {/* ── Article body ── */}
-            <div className="lg:col-span-8 lg:order-1">
+            <div className="min-w-0 lg:col-span-8 lg:order-1">
               {/* Answer box */}
               <div className="relative rounded-3xl bg-navy-dark text-white p-6 md:p-8 shadow-lg overflow-hidden mb-10">
                 <div className="absolute top-[-50%] right-[-10%] w-[260px] h-[260px] rounded-full bg-primary/15 blur-3xl pointer-events-none" />
